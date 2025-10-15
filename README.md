@@ -38,6 +38,7 @@ sudo chown -R your-user-name /usr/share/code
 6. Customize the css or js from this repo to make it look the way you want to, or even better, explore areas of VS Code that you want to customize.
 7. After making some changes, reload the extension (Reload Custom CSS and JS) from VS Code's command dialog.
 
+```
 Installed Extension:
 1.  Easy Icon Theme
 2.  React Dev Theme (dark)
@@ -58,8 +59,9 @@ Installed Extension:
 17. es6-string-css
 
 Installed Fonts
-1.  Fira Code iScript
-2.  Fira Code
-3.  Cascadia Code
+1.  Fira Code iScript (developer font)
+2.  Fira Code (developer font)
+3.  Cascadia Code (developer font)
 4.  Akaya Kanadaka (google font)
 5.  Merienda (google font)
+```
