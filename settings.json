@@ -1,0 +1,232 @@
+// MY VSCODE JSON SETTINGS
+{
+  // THEME & UI
+  "workbench.iconTheme": "easy-icons",
+  "workbench.colorTheme": "React Dev Theme (dark)",
+  "workbench.list.smoothScrolling": true,
+
+  // FORMATTING
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+
+  // PRETTIER
+  "prettier.singleQuote": true,
+  "prettier.semi": true,
+  "prettier.trailingComma": "es5",
+  "prettier.bracketSameLine": true,
+
+  // ESLINT
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.alwaysShowStatus": true,
+
+  // ES6
+  "es6-string-html.enable": true,
+  "es6-string-html.tag": ["html", "raw", "template"],
+
+  "es6-string-cc.enable": true,
+  "es6-string-css.tag": ["html", "style", "styled"],
+
+  "es6-string-javascript.enable": true,
+  "es6-string-javascript.tag": ["js", "javascript", "code"],
+
+  // Run ESLint + Prettier fixes on save
+  "editor.codeActionsOnSave": [
+    "source.fixAll.eslint",
+    "source.organizeImports"
+  ],
+
+  // BRACKETS & GUIDES
+  "editor.matchBrackets": "never",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": false,
+  "editor.guides.highlightActiveBracketPair": false,
+
+  // BRACKET COLORIZER (built-in, stable palette)
+  "workbench.colorCustomizations": {
+    "editorBracketHighlight.foreground1": "#61AFEF", // bright blue
+    "editorBracketHighlight.foreground2": "#E5C07B", // warm yellow
+    "editorBracketHighlight.foreground3": "#56B6C2", // teal
+    "editorBracketHighlight.foreground4": "#98C379", // green
+    "editorBracketHighlight.foreground5": "#D19A66", // soft orange
+    "editorBracketHighlight.foreground6": "#ABB2BF" // gray
+  },
+
+  // EXPLORER AND GIT DECORATION
+  "explorer.compactFolders": false,
+  "explorer.decorations.badges": true,
+  "git.decorations.enabled": true,
+
+  // WINDOW SETTINGS
+  "window.zoomLevel": 0.2,
+  "window.menuBarVisibility": "classic",
+  "window.titleBarStyle": "native",
+
+  // EDITORS FONTS AND
+  "editor.fontFamily": "'Fira Code iScript'",
+  "editor.fontLigatures": true, // enable all ligatures available in Fira Code
+  "editor.fontVariations": true, // allow stylistic alternates (needed for iScript italics)
+  "editor.fontSize": 15,
+  "editor.fontWeight": "400",
+  "editor.lineHeight": 25,
+  "editor.letterSpacing": 0.5,
+
+  // FONT STYLING IN DOCUMENT & TOKEN COLORS
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "source",
+        "settings": {
+          "foreground": "#d4d4d4"
+        }
+      },
+      {
+        "scope": "storage.type.function.arrow",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "comment",
+          "punctuation.definition.comment",
+          "comment.line.double-slash",
+          "comment.block"
+        ],
+        "settings": {
+          "foreground": "#008c7d",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "entity.name.type.class",
+          "keyword",
+          "storage.modifier",
+          "storage.type",
+          "support.class.builtin",
+          "keyword.control",
+          "constant.language",
+          "entity.other.attribute-name",
+          "entity.name.method",
+          "support.function",
+          "support.function.dom",
+          "support.variable.property.dom",
+          "variable.language.this"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "support.function.builtin.js",
+          "support.function.dom.js",
+          "variable.other.property.js"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": ["entity.name.function.js"],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+
+  // CURSOR
+  "editor.cursorStyle": "line",
+  "editor.cursorWidth": 3,
+  "editor.cursorBlinking": "blink",
+
+  // WHITESPACE
+  "editor.renderWhitespace": "all",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+
+  // AUTOSAVE
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 800,
+
+  // FILE ASSOCIATIONS
+  "files.associations": {
+    "*.css": "css",
+    "*.js": "javascript",
+    "*.jsx": "javascriptreact",
+    "*.ts": "typescript",
+    "*.tsx": "typescriptreact",
+    "*.html": "html"
+  },
+
+  // GIT
+  "git.openRepositoryInParentFolders": "always",
+  "gitlens.views.commits.showStashes": true,
+
+  // SECURITY
+  "security.workspace.trust.untrustedFiles": "open",
+
+  // EMMET & HTML inside template literals
+  "emmet.includeLanguages": {
+    "javascript": "html",
+    "javascriptreact": "html",
+    "typescript": "html",
+    "typescriptreact": "html"
+  },
+  "emmet.triggerExpansionOnTab": true,
+
+  // TAILWIND
+  "tailwindCSS.experimental.classRegex": [
+    "tw`([^`]*)",
+    "cn\\(([^)]*)\\)",
+    "clsx\\(([^)]*)\\)",
+    "cva\\(([^)]*)\\)"
+  ],
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "typescriptreact": "javascript"
+  },
+
+  // JS / TS FORMATTING
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+
+  // LIVE SERVER
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  // WORKBENCH AND MY CUSTOM VSCODE SETTINGS
+  "workbench.statusBar.visible": false,
+  "editor.minimap.enabled": false,
+  "workbench.activityBar.location": "hidden",
+  "workbench.startupEditor": "none",
+  "editor.stickyScroll.enabled": false,
+  "editor.snippetSuggestions": "top",
+
+  // CUSTOM CSS AND SCRIPTS SETTINGS FOR VSCODE
+  "vscode_custom_css.imports": [
+    "file:///home/omodudu/.VSC_customize/custom-css.css",
+    "file:///home/omodudu/.VSC_customize/custom-script.js"
+  ]
+}
