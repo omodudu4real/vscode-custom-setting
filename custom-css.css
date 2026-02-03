@@ -47,16 +47,16 @@ li.action-item.icon.checked a.action-label.codicon {
 .quick-input-list
   .monaco-list:not(.drop-target):not(.dragging)
   .monaco-list-row:hover:not(.selected):not(.focused) {
-  background-color: #d4705a !important;
+  background-color: #bc9abc !important;
 }
 
 .quick-input-list [class^='monaco-list list_id'] .monaco-list-row.focused {
-  background-color: #d4705a !important;
+  background-color: #bc9abc !important;
 }
 
 .quick-input-list .quick-input-list-entry {
   padding: 0 2px;
-  border-top-color: #53b2c7 !important;
+  border-top-color: red !important;
 }
 
 .quick-input-list .monaco-list-row {
@@ -76,6 +76,7 @@ a.action-label {
 /* Editor's Settings */
 /* Editor Screen */
 .line-numbers {
+  font-family: 'Akaya Kanadaka' !important;
   transform: scale(1);
   transition: all 10 linear;
 }
@@ -91,7 +92,7 @@ a.action-label {
   }
 
   100% {
-    transform: scale(1.82) translateX(-3px);
+    transform: scale(2) translateX(-3px);
   }
 }
 
@@ -116,7 +117,7 @@ span.mtk6 {
   font-size: 16px !important;
 }
 
-/*  */
+/* Notification List Items */
 div.notification-list-item.expanded {
   border-radius: 15px !important;
   border: none !important;
@@ -127,7 +128,6 @@ div.notification-list-item.expanded {
 /* Folder Name Display at Top */
 span.search-label {
   font-family: 'Akaya Kanadaka' !important;
-
   font-size: 16px !important;
 }
 
@@ -138,27 +138,24 @@ span.mtk16.mtki {
 
 /* File Title Name */
 .monaco-highlighted-label {
-  font-family: 'Cascadia Code' !important;
-  font-style: italic !important;
+  font-family: 'Akaya Kanadaka' !important;
 }
 
 span.mtk11 {
   font-family: 'Akaya Kanadaka' !important;
   font-size: 16px !important;
-  font-weight: -100 !important;
 }
 
 span.mtk19 {
   font-family: 'Akaya Kanadaka' !important;
   font-size: 16px !important;
-  font-weight: 200 !important;
 }
 
 /* Line Number */
 .line-numbers.lh-odd {
   color: #fff !important;
-  font-family: Merienda !important;
-  font-size: 15px !important;
+  font-family: 'Akaya Kanadaka' !important;
+  font-size: 16px !important;
 }
 
 /* Label name */
@@ -173,7 +170,6 @@ a.label.name {
   color: #fff !important;
   font-family: 'Fira Code iScipt' !important;
   font-size: 14px !important;
-  font-style: italic !important;
 }
 
 /* Title Bar Menu Items on Hover */
