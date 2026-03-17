@@ -1,0 +1,6 @@
+this is the fix for vscodium when you change the permission and it refuses to lunch
+
+1.  codium --verbose
+2.  sudo chown root:root /usr/share/codium/chrome-sandbox
+sudo chmod 4755 /usr/share/codium/chrome-sandbox
+3.  lauch vscodium 
