@@ -11,18 +11,31 @@
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
 
-  // PRETTIER
+  // ✅ PRETTIER
   "prettier.singleQuote": true,
   "prettier.semi": true,
   "prettier.trailingComma": "es5",
   "prettier.bracketSameLine": true,
+
+  // JSON / JSONC override
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "prettier.trailingComma": "none"
+  },
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "prettier.trailingComma": "none"
+  },
 
   // ESLINT
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     "typescript",
-    "typescriptreact",
+    "typescriptreact"
   ],
   "eslint.alwaysShowStatus": true,
 
@@ -39,7 +52,7 @@
   // Run ESLint + Prettier fixes on save
   "editor.codeActionsOnSave": [
     "source.fixAll.eslint",
-    "source.organizeImports",
+    "source.organizeImports"
   ],
 
   // BRACKETS & GUIDES Editor Settings
@@ -59,7 +72,7 @@
     "editorBracketHighlight.foreground6": "#ABB2BF", // gray
     "inlineparameters.annotationBackground": "#282A3600",
     "inlineparameters.annotationForeground": "#7b82af",
-    "scrollbar.shadow": "#24292e00",
+    "scrollbar.shadow": "#24292e00"
   },
 
   "workbench.tree.indent": 20,
@@ -77,10 +90,10 @@
   "editor.fontFamily": "'Fira Code iScript'",
   "editor.fontLigatures": true, // enable all ligatures available in Fira Code
   "editor.fontVariations": true, // allow stylistic alternates (needed for iScript italics)
-  "editor.fontSize": 16,
+  "editor.fontSize": 17,
   "editor.fontWeight": "450",
   "editor.lineHeight": 26,
-  "editor.letterSpacing": 1,
+  "editor.letterSpacing": 2,
   "editor.lineNumbers": "on",
   "editor.folding": true,
   "editor.glyphMargin": true,
@@ -95,26 +108,26 @@
       {
         "scope": "source",
         "settings": {
-          "foreground": "#d4d4d4",
-        },
+          "foreground": "#d4d4d4"
+        }
       },
       {
         "scope": "storage.type.function.arrow",
         "settings": {
-          "fontStyle": "italic",
-        },
+          "fontStyle": "italic"
+        }
       },
       {
         "scope": [
           "comment",
           "punctuation.definition.comment",
           "comment.line.double-slash",
-          "comment.block",
+          "comment.block"
         ],
         "settings": {
           "foreground": "#008c7d",
-          "fontStyle": "italic",
-        },
+          "fontStyle": "italic"
+        }
       },
       {
         "scope": [
@@ -130,27 +143,27 @@
           "support.function",
           "support.function.dom",
           "support.variable.property.dom",
-          "variable.language.this",
+          "variable.language.this"
         ],
         "settings": {
-          "fontStyle": "italic",
-        },
+          "fontStyle": "italic"
+        }
       },
       {
         "scope": [
           "support.function.builtin.js",
           "support.function.dom.js",
-          "variable.other.property.js",
+          "variable.other.property.js"
         ],
         "settings": {
-          "fontStyle": "italic",
-        },
+          "fontStyle": "italic"
+        }
       },
       {
         "scope": ["entity.name.function.js"],
         "settings": {
-          "fontStyle": "",
-        },
+          "fontStyle": ""
+        }
       },
       {
         "scope": [
@@ -159,26 +172,26 @@
           "constant.numeric.css",
           "keyword.other.unit.px.css",
           "constant.numeric.decimal.js",
-          "constant.numeric.json",
+          "constant.numeric.json"
         ],
         "settings": {
-          "fontStyle": "",
-        },
-      },
-    ],
+          "fontStyle": ""
+        }
+      }
+    ]
   },
   "breadcrumbs.enabled": false,
 
   // TERMINAL CONFIGURATION
   "terminal.integrated.fontFamily": "Akaya Kanadaka",
-  "terminal.integrated.letterSpacing": 0.1,
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.enableMultiLinePasteWarning": "always",
+  "terminal.integrated.letterSpacing": 0.5,
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
 
   // CURSOR
-  "editor.cursorWidth": 3,
+  "editor.cursorWidth": 4,
   "editor.cursorBlinking": "blink",
 
   // WHITESPACE
@@ -188,7 +201,7 @@
 
   // AUTOSAVE
   "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 800,
+  "files.autoSaveDelay": 300000,
 
   // FILE ASSOCIATIONS
   "files.associations": {
@@ -197,7 +210,7 @@
     "*.jsx": "javascriptreact",
     "*.ts": "typescript",
     "*.tsx": "typescriptreact",
-    "*.html": "html",
+    "*.html": "html"
   },
 
   // GIT
@@ -212,7 +225,7 @@
     "javascript": "javascriptreact",
     "javascriptreact": "html",
     "typescript": "html",
-    "typescriptreact": "html",
+    "typescriptreact": "html"
   },
   "emmet.triggerExpansionOnTab": true,
 
@@ -221,16 +234,15 @@
     "tw`([^`]*)",
     "cn\\(([^)]*)\\)",
     "clsx\\(([^)]*)\\)",
-    "cva\\(([^)]*)\\)",
+    "cva\\(([^)]*)\\)"
   ],
   "tailwindCSS.includeLanguages": {
     "typescript": "javascript",
-    "typescriptreact": "javascript",
+    "typescriptreact": "javascript"
   },
 
   // JS / TS FORMATTING
-  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
-  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "js/ts.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
 
   // LIVE SERVER
   "liveServer.settings.donotShowInfoMsg": true,
@@ -243,14 +255,14 @@
     "**/.svn": true,
     "**/.hg": true,
     "**/.DS_Store": true,
-    "**/Thumbs.db": true,
+    "**/Thumbs.db": true
   },
 
   // Emoji Enabler:: emojisense
   "emojisense.languages": {
     "plaintext": {
       "markupCompletionsEnabled": false,
-      "emojiDecoratorsEnabled": false,
+      "emojiDecoratorsEnabled": false
     },
     "scminput": true,
     "javascript.validate.enable": false,
@@ -359,9 +371,10 @@
 
     "xsl": true,
 
-    "yaml": true,
+    "yaml": true
   },
 
+  "json.schemaDownload.enable": false,
   "liveServer.settings.donotVerifyTags": true,
   "workbench.secondarySideBar.defaultVisibility": "visible",
   "chat.agent.enabled": false,
@@ -371,7 +384,9 @@
   // CUSTOM CSS AND SCRIPTS SETTINGS FOR VSCODE
   "vscode_custom_css.imports": [
     "file:///home/omodudu/.VSC_customize/custom-css.css",
-    "file:///home/omodudu/.VSC_customize/custom-script.js",
+    "file:///home/omodudu/.VSC_customize/custom-script.js"
   ],
+  "symbols.hidesExplorerArrows": false
+  //   sudo chown -R $(whoami) "$(which code)"
+  //   sudo chown -R $(whoami) /usr/share/code
 }
-
