@@ -10,6 +10,24 @@ const myObservation = new MutationObserver(() => {
       ) {
         element.style.display = 'none'; // Hide the corrupt install notification
       }
+
+      if (
+        element.textContent.includes(
+          // Lists of servers
+          'VSCode Command Server started on port 3000.' ||
+            'VSCode Command Server started on port 3001.' ||
+            'VSCode Command Server started on port 3002.' ||
+            'VSCode Command Server started on port 3003.' ||
+            'VSCode Command Server started on port 3004.' ||
+            'VSCode Command Server started on port 3005.' ||
+            'VSCode Command Server started on port 3006.' ||
+            'VSCode Command Server started on port 3007.' ||
+            'VSCode Command Server started on port 3008.' ||
+            'VSCode Command Server started on port 3009.'
+        )
+      ) {
+        element.style.display = 'none'; // Hide the corrupt install notification
+      }
     });
 });
 
@@ -143,5 +161,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const treeWidget = document.querySelector('.monaco-tree-sticky-container');
     treeWidget && (treeWidget.style.opacity = 1);
+  }
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.altKey && e.code === 'Comma') {
+    e.preventDefault();
+
+    const accountIcon = document.querySelector(
+      '.action-label.codicon.codicon-accounts-view-bar-icon[aria-label="Accounts"]'
+    );
+    if (accountIcon) {
+      accountIcon.click();
+
+      setTimeout(() => {
+        debugger;
+      }, 150);
+    }
   }
 });

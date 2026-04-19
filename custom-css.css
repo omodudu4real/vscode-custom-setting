@@ -1,25 +1,281 @@
+@import url('file:///home/omodudu/.VSC_customize/colors/colors.css');
+
+/* Setting styles */
+div.settings-toc-entry,
+div.setting-item-description,
+div.settings-group-title-label,
+div.setting-item-contents p {
+  color: var(--primary) !important;
+}
+
+span.setting-item-label {
+  color: var(--primary) !important;
+}
+
+div.option-text {
+  color: var(--primary) !important;
+}
+
+.select-box-details-pane.border-top p {
+  color: var(--primary) !important;
+}
+
+.option-decorator-right {
+  color: var(--secondary) !important;
+}
+
+.input.setting-control-focus-target,
+.monaco-select-box.setting-control-focus-target,
+.monaco-custom-toggle.codicon.codicon-check.setting-value-checkbox.setting-control-focus-target.checked::before,
+div.setting-item-control.select-container::after {
+  color: var(--secondary) !important;
+}
+
+.monaco-custom-toggle.codicon.codicon-check.setting-value-checkbox.setting-control-focus-target.checked {
+  outline-color: var(--primary) !important;
+}
+
+span.setting-item-category,
+span.setting-item-overrides.setting-indicator,
+div.setting-item-contents code,
+div.setting-item-contents span {
+  color: var(--secondary) !important;
+}
+
+div.setting-item-contents a {
+  text-decoration: none !important;
+  color: var(--inverse_primary) !important;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+div.setting-list-value.no-sibling {
+  color: var(--primary);
+}
+
+/* settings codicons */
+a.action-label.codicon.codicon-settings-more-action,
+a.action-label.codicon.codicon-preferences-clear-input.disabled,
+div.monaco-custom-toggle.action-label.codicon.codicon-preferences-ai-results.disabled,
+a.action-label.codicon.codicon-preferences-clear-input.disabled::before,
+a.action-label.codicon.codicon-settings-more-action::before,
+div.monaco-custom-toggle.action-label.codicon.codicon-preferences-ai-results.disabled::before {
+  color: var(--primary) !important;
+}
+
 /* Custom CSS Style For Dark Theme */
+/* Notification Popup */
+div.notification-list-item-message,
+div.notification-list-item-source {
+  color: var(--primary);
+}
+
+/* Notification Popup toast */
+/* Notification Popup toast */
+.notifications-toasts div[id^='list_id_'][id$='_0'].monaco-list-row {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+  outline: 1px !important;
+  padding-bottom: 10px !important;
+}
+
+.notifications-toasts.bottom-right {
+  margin-right: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+a.monaco-button.monaco-text-button {
+  background-color: var(--primary) !important;
+  color: var(--on_primary) !important;
+  /* padding: 6px !important; */
+  /* margin-bottom: 3px !important; */
+}
+
+/* Active tab color */
+div.tab-border-top-container {
+  background-color: var(--primary) !important;
+}
+
+/* Three dot Menubar that appears when collapsed */
+.menubar-menu-title.toolbar-toggle-more.codicon.codicon-menubar-more::before {
+  color: var(--primary);
+}
+
+/* Update Popup */
+div.update-indicator.prominent {
+  background-color: var(--primary) !important;
+  border: 2px solid var(--primary) !important;
+  color: var(--on_primary) !important;
+  font-family: 'Akaya Kanadaka' !important;
+}
+
+/* Status change state i.e unsaved state */
+div.dirty-count.monaco-count-badge.long {
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 7px !important;
+  border: 1px solid var(--primary) !important;
+}
+
+/* Suggestion Popups */
+p.docs,
+p.type.auto-wrap,
+span.details-label,
+div.monaco-tokenized-source {
+  color: var(--primary) !important;
+  font-family: 'Akaya Kanadaka' !important;
+}
+
+div.editor-widget.suggest-widget.shows-details.visible {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+  outline: 1px !important;
+  padding-right: 3px !important;
+  padding-left: 5px !important;
+  padding-top: 5px !important;
+  padding-bottom: 10px !important;
+  margin-left: 13px !important;
+}
+
+div.editor-widget.suggest-widget.visible {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+  outline: 1px !important;
+  padding-right: 3px !important;
+  padding-left: 5px !important;
+  padding-top: 5px !important;
+  padding-bottom: 10px !important;
+}
+
+div.suggest-details.detail-and-doc,
+div.suggest-details.no-type {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+  outline: 1px !important;
+  padding-right: 3px !important;
+  padding-left: 5px !important;
+  padding-top: 5px !important;
+  padding-bottom: 10px !important;
+  margin-left: -17px !important;
+}
+
+div.suggest-icon.codicon.codicon-symbol-keyword,
+div.suggest-icon.codicon.codicon-symbol-snippet,
+div.suggest-icon.codicon.codicon-symbol-property,
+div.suggest-icon.codicon.codicon-symbol-function,
+div.suggest-icon.codicon.codicon-symbol-variable,
+div.suggest-icon.codicon.codicon-symbol-text,
+div.twisty-container.codicon-view-pane-container-collapsed.codicon,
+div.twisty-container.codicon-view-pane-container-expanded.codicon,
+div.monaco-tl-twistie.codicon.codicon-tree-item-expanded.collapsible,
+div.suggest-icon.codicon.codicon-symbol-keyword::before,
+div.suggest-icon.codicon.codicon-symbol-snippet::before,
+div.suggest-icon.codicon.codicon-symbol-property::before,
+div.suggest-icon.codicon.codicon-symbol-function::before,
+div.suggest-icon.codicon.codicon-symbol-variable::before,
+div.suggest-icon.codicon.codicon-symbol-text::before,
+div.twisty-container.codicon-view-pane-container-expanded.codicon::before,
+div.twisty-container.codicon-view-pane-container-collapsed.codicon::before,
+div.monaco-tl-twistie.codicon.codicon-tree-item-expanded.collapsible::before {
+  color: var(--primary) !important;
+}
+
+div[id^='list_id_2_'].monaco-list-row.focused {
+  background-color: var(--on_primary) !important;
+  border-radius: 10px !important;
+}
+
+div[id^='list_id_2_'].monaco-list-row:hover:not(.selected):not(.focused) {
+  background-color: var(--on_primary) !important;
+  border-radius: 10px !important;
+}
+
+span.highlight {
+  color: var(--secondary) !important;
+}
+
+/* Find box */
+div.editor-widget.find-widget.visible {
+  background-color: var(--primary) !important;
+  color: var(--inverse_primary) !important;
+  border-radius: 10px !important;
+}
+
+div.monaco-inputbox.idle.synthetic-focus {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 5px !important;
+  border: 1px solid var(--primary) !important;
+  outline: 1px !important;
+  margin-left: 2px !important;
+}
+
+div.button.codicon.codicon-find-previous-match,
+div.button.codicon.codicon-find-next-match,
+div.button.codicon.codicon-widget-close,
+div.button.toggle.left.codicon-find-collapsed.codicon,
+div.button.toggle.left.codicon-find-collapsed.codicon::before,
+div.button.codicon.codicon-find-previous-match::before,
+div.button.codicon.codicon-find-next-match::before,
+div.button.codicon.codicon-widget-close::before {
+  color: var(--inverse_primary) !important;
+}
 
 /* Product Icon Style */
 li.action-item.icon {
   border: 1px solid transparent;
 }
 
-li.action-item.icon:hover {
-  border-left: 1px solid #bc9abc;
+a.action-label.codicon.codicon-chat-sparkle::before {
+  display: none !important;
 }
 
-li.action-item.icon.checked:hover .codicon:before {
-  color: #bc9abc !important;
+a.action-label.codicon.codicon-settings-view-bar-icon,
+a.action-label.codicon.codicon-accounts-view-bar-icon,
+a.action-label.codicon.codicon-extensions-view-icon,
+a.action-label.codicon.codicon-run-view-icon,
+a.action-label.codicon.codicon-search-view-icon,
+a.action-label.codicon.codicon-explorer-view-icon,
+a.action-label.codicon.codicon-explorer-view-icon::before,
+a.action-label.codicon.codicon-search-view-icon::before,
+a.action-label.codicon.codicon-run-view-icon::before,
+a.action-label.codicon.codicon-extensions-view-icon::before,
+a.action-label.codicon.codicon-accounts-view-bar-icon::before,
+a.action-label.codicon.codicon-settings-view-bar-icon::before {
+  color: var(--primary);
+}
+
+.uri-icon {
+  background-color: var(--primary) !important;
+}
+
+li.action-item.icon.checked:hover .codicon::before {
+  color: var(--primary) !important;
 }
 
 li.action-item.icon.checked {
-  border: 3px solid #bc9abc;
+  border: 3px solid var(--primary);
   border-radius: 17px;
 }
 
+li.action-item.icon:hover {
+  border-left: 3px solid var(--primary);
+  margin-left: 2px;
+}
+
 li.action-item.icon.checked a.action-label.codicon {
-  color: #bc9abc !important;
+  color: var(--primary) !important;
   border-radius: 17px !important;
 }
 
@@ -47,16 +303,18 @@ li.action-item.icon.checked a.action-label.codicon {
 .quick-input-list
   .monaco-list:not(.drop-target):not(.dragging)
   .monaco-list-row:hover:not(.selected):not(.focused) {
-  background-color: #bc9abc !important;
+  background-color: var(--on_primary) !important;
+  border-radius: 10px !important;
 }
 
 .quick-input-list [class^='monaco-list list_id'] .monaco-list-row.focused {
-  background-color: #bc9abc !important;
+  background-color: var(--on_primary) !important;
+  border-radius: 10px !important;
 }
 
 .quick-input-list .quick-input-list-entry {
   padding: 0 2px;
-  border-top-color: red !important;
+  border-top-color: var(--primary) !important;
 }
 
 .quick-input-list .monaco-list-row {
@@ -69,7 +327,7 @@ li.action-item.icon.checked a.action-label.codicon {
 
 /* Action Label */
 a.action-label {
-  color: #fff !important;
+  color: var(--primary) !important;
   font-size: 14px !important;
 }
 
@@ -79,6 +337,11 @@ a.action-label {
   font-family: 'Akaya Kanadaka' !important;
   transform: scale(1);
   transition: all 10 linear;
+}
+
+/* status bar at the botton ... e.g prettier, notification git, and other extensions */
+a.statusbar-item-label {
+  color: var(--primary) !important;
 }
 
 .line-numbers.active-line-number {
@@ -100,7 +363,8 @@ a.action-label {
 .mtk25 {
   font-family: 'Cartograph CF' !important;
   font-style: italic !important;
-  color: #008c7d !important;
+  color: var(--inverse_primary) !important;
+  font-weight: bold;
 }
 
 /* Span Code */
@@ -125,12 +389,6 @@ div.notification-list-item.expanded {
   padding: 8px !important;
 }
 
-/* Folder Name Display at Top */
-span.search-label {
-  font-family: 'Akaya Kanadaka' !important;
-  font-size: 16px !important;
-}
-
 /* Ligature Enabler */
 span.mtk16.mtki {
   font-family: 'Fira Code iScript' !important;
@@ -153,7 +411,7 @@ span.mtk19 {
 
 /* Line Number */
 .line-numbers.lh-odd {
-  color: #fff !important;
+  color: var(--primary) !important;
   font-family: 'Akaya Kanadaka' !important;
   font-size: 16px !important;
 }
@@ -161,21 +419,26 @@ span.mtk19 {
 /* Label name */
 a.label.name {
   font-family: 'Cascadian Code' !important;
-  color: #fff !important;
+  color: var(--primary) !important;
   font-style: italic !important;
 }
 
 /* Title Bar Menu Items */
 .menubar-menu-items-holder.monaco-menu-container a {
-  color: #fff !important;
+  color: var(--primary) !important;
   font-family: 'Fira Code iScipt' !important;
   font-size: 14px !important;
 }
 
 /* Title Bar Menu Items on Hover */
+.menubar-menu-items-holder.monaco-menu-container a {
+  color: var(--primary) !important;
+}
+
 .menubar-menu-items-holder.monaco-menu-container a:hover {
   border-radius: 15px !important;
-  background-color: #008c7d !important;
+  color: var(--on_primary) !important;
+  background-color: var(--primary) !important;
   font-size: 16px !important;
   font-family: 'Fira Code iScipt' !important;
 }
@@ -199,17 +462,39 @@ a.label.name {
 .menubar-menu-button {
   font-family: 'Fira Code' !important;
   font-size: 14px !important;
-  color: #fff !important;
+  color: var(--primary) !important;
 }
 
+/* Terminal settings */
 /* Terminal Action Label */
 a.action-label {
-  color: #fff !important;
+  color: var(--primary) !important;
+  font-size: 16px !important;
+}
+
+a.action-label.single-terminal-tab {
+  font-size: 13px !important;
+}
+
+a.action-label.codicon.codicon-more::before {
+  color: var(--primary);
+}
+
+span.codicon.codicon-terminal,
+span.codicon.codicon-terminal::before {
+  color: var(--primary) !important;
 }
 
 /* Terminal Input Empty */
 .input.empty {
   border-radius: 4px !important;
+}
+
+/* Terminal Find */
+div.simple-find-part.visible.visible-transition {
+  background-color: var(--primary) !important;
+  color: var(--inverse_primary) !important;
+  border-radius: 10px !important;
 }
 
 /* Italize New Keyword */
@@ -237,15 +522,15 @@ a.action-label {
 
 /* Side bar */
 .part.sidebar {
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.22);
 }
 
 /* File Explorer Selected Item */
 .monaco-list.list_id_1 .monaco-list-row.selected {
-  background-color: #4f5971 !important;
+  background-color: var(--on_primary) !important;
   opacity: 1 !important;
-  border-top: 1px #727b90 solid;
-  border-bottom: 1px #727b90 solid;
+  border: 2px var(--primary) solid;
+  border-radius: 6px;
 }
 
 /* File Explorer Text  */
@@ -256,12 +541,12 @@ a.action-label {
 /* File Explorer Title */
 h3.title {
   font-weight: 'bold' !important;
-  color: #fff !important;
+  color: var(--primary) !important;
 }
 
 /* List item label name */
 .monaco-list.list_id_1 .monaco-list-row.selected .label-name {
-  color: #fff !important;
+  color: var(--primary) !important;
   opacity: 1 !important;
 }
 
@@ -272,7 +557,7 @@ h3.title {
   font-style: italic !important;
   font-size: 15px !important;
   font-weight: 400 !important;
-  color: #fff !important;
+  color: var(--primary) !important;
 }
 
 .explorer-item-edited {
@@ -299,7 +584,7 @@ h3.title {
   font-family: 'Akaya Kanadaka' !important;
   font-size: 16px !important;
   text-transform: uppercase;
-  color: #bc9abc !important;
+  color: var(--primary) !important;
 }
 
 .search-label {
@@ -319,25 +604,29 @@ div.terminal.xterm .xterm-decoration-overview-ruler {
 }
 
 /* The Thumb/Scroll Bar */
-.slider {
+.slider,
+div.xterm-slider {
   position: absolute !important;
   right: 1px !important;
-  width: 1.5px !important;
-  background: #f475f4 !important;
+  width: 3px !important;
+  background: var(--primary) !important;
   left: auto !important;
   border-radius: 9999px !important;
-  border-color: #afafaf !important;
-  border-width: 0.7px !important;
+  border-color: black !important;
+  /* border-width: 2px !important; */
   border-style: solid !important;
+  margin-right: 6px;
 }
 
 /* The Slidder on Hover */
-.slider:hover {
-  border-color: #afafaf !important;
-  border-width: 0.7px !important;
+.slider:hover,
+div.xterm-slider:hover {
+  border-color: var(--secondary) !important;
+  margin-right: 6px;
+  /* border-width: 0.7px !important; */
   border-radius: 9999px !important;
-  background: #fcbffc !important;
-  width: 4px !important;
+  background: var(--secondary) !important;
+  width: 5px !important;
 }
 
 /* Terminal Track on Hover */
@@ -373,25 +662,35 @@ div.terminal.xterm .xterm-decoration-overview-ruler:hover {
 }
 
 /* Project title's style at the top. */
-.monaco-workbench
-  .part.titlebar
-  > .titlebar-container
-  > .titlebar-center
-  > .window-title
-  > .command-center
-  .action-item.command-center-center {
-  border: 5px solid #bc9abc !important;
-  border-radius: 20px !important;
+.action-item.command-center-center {
+  display: none !important;
 }
 
-/* Project Title */
+/* Search Box */
+div.agent-status-pill.chat-input-mode.compact-mode {
+  border: 4px solid var(--primary) !important;
+  border-radius: 13px !important;
+}
 
 /* Search Label */
-.search-label {
+span.agent-status-label {
   font-family: 'Akaya Kanadaka' !important;
   font-size: 17px !important;
-  color: #fff;
-  display: block !important;
+  color: var(--primary);
+  text-align: center !important;
+}
+
+span.agent-status-label::before {
+  content: '\2711\ ' !important;
+  font-family: 'pi-fluent-icons' !important;
+  font-size: 14px !important;
+  margin: auto;
+}
+
+.action-label.codicon.codicon-arrow-left,
+.action-label.codicon.codicon-arrow-right,
+.agent-status-badge-section.sparkle.monaco-dropdown-with-primary {
+  display: none !important;
 }
 
 /* Command Palette */
@@ -410,6 +709,18 @@ div.terminal.xterm .xterm-decoration-overview-ruler:hover {
   min-height: 400px !important;
 }
 
+span.monaco-keybinding-key {
+  color: var(--primary) !important;
+}
+
+span.monaco-keybinding-key-separator {
+  color: var(--primary) !important;
+}
+
+div.quick-input-list-separator {
+  color: var(--primary) !important;
+}
+
 /* Remove background for lists */
 .monaco-list-rows {
   background: transparent !important;
@@ -417,8 +728,10 @@ div.terminal.xterm .xterm-decoration-overview-ruler:hover {
 
 /* Command palette text input */
 .quick-input-filter .monaco-inputbox {
+  box-shadow: 0 0 0 3px var(--primary) !important;
   border-radius: 12px !important;
   padding: 16px !important;
+  outline: 3px solid var(--primary) !important;
   border: none !important;
   font-family: 'Akaya Kanadaka' !important;
   font-size: 18px !important;
@@ -478,3 +791,27 @@ div.terminal.xterm .xterm-decoration-overview-ruler:hover {
   background-size: contain !important;
   max-width: 60%;
 }
+
+/* Popups that cones from clicking Accounts or Settings */
+div.monaco-menu {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+  outline: 1px !important;
+  padding-bottom: 3px !important;
+  color: var(--primary) !important;
+}
+
+a.action-menu-item,
+span.submenu-indicator.codicon.codicon-menu-submenu,
+span.submenu-indicator.codicon.codicon-menu-submenu::before {
+  color: var(--primary) !important;
+}
+
+div.monaco-menu a.action-menu-item:hover:not(.selected):not(.focused) {
+  border-radius: 10px !important;
+}
+
+/* Worrkspace Left click toggle */
+/* note: it uses user theme */
