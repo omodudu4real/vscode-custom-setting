@@ -537,6 +537,26 @@ a.action-label {
   font-size: 16px !important;
 }
 
+a.action-label[aria-label='Problems (Ctrl+Shift+M)'] {
+  font-size: 13px !important;
+}
+
+a.action-label[aria-label='Output (Ctrl+K Ctrl+H)'] {
+  font-size: 13px !important;
+}
+
+a.action-label[aria-label='Debug Console (Ctrl+Shift+Y)'] {
+  font-size: 13px !important;
+}
+
+a.action-label[aria-label='Terminal (Ctrl+`)'] {
+  font-size: 13px !important;
+}
+
+a.action-label[aria-label='Ports'] {
+  font-size: 13px !important;
+}
+
 a.action-label.single-terminal-tab {
   font-size: 13px !important;
 }
@@ -598,6 +618,67 @@ div.simple-find-part.visible.visible-transition
 /* Side bar */
 .part.sidebar {
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.22);
+}
+
+/* Menu Bar Fade Out Color */
+span.action-label[aria-label='Save All'] {
+  color: var(--inverse_primary) !important;
+}
+
+span.action-label[aria-label^='Step'] {
+  color: var(--inverse_primary) !important;
+}
+
+span.action-label[aria-label='Show Running Tasks...'] {
+  color: var(--inverse_primary) !important;
+}
+
+span.action-label[aria-label='Restart Running Task...'] {
+  color: var(--inverse_primary) !important;
+}
+
+span.action-label[aria-label='Terminate Task...'] {
+  color: var(--inverse_primary) !important;
+}
+
+span.action-label[aria-label='Continue'] {
+  color: var(--inverse_primary) !important;
+}
+
+span.action-label[aria-label='Open Configurations'] {
+  color: var(--inverse_primary) !important;
+}
+
+span.action-label[aria-label='Stop Debugging'] {
+  color: var(--inverse_primary) !important;
+}
+
+span.action-label[aria-label='Restart Debugging'] {
+  color: var(--inverse_primary) !important;
+}
+
+span.action-label[aria-label='Forward'] {
+  color: var(--inverse_primary) !important;
+}
+
+span.action-label[aria-label='Reopen Closed Editor'] {
+  color: var(--inverse_primary) !important;
+}
+
+span.action-label[aria-label='Back'] {
+  color: var(--inverse_primary) !important;
+}
+
+span.action-label[aria-label^='Group']:not([aria-label^='Group 1']):not(
+    [aria-label^='Group 2']
+  ) {
+  color: var(--inverse_primary) !important;
+}
+
+span.action-label[aria-label$='Group']:not([aria-label='Switch Group']):not(
+    [aria-label='Split in Group']
+  ) {
+  color: var(--inverse_primary) !important;
 }
 
 /* File Explorer Selected Item */
