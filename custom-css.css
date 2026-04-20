@@ -1,4 +1,27 @@
+/* Custom CSS Style For Dark Theme */
+
+/* Color Generated based on wallpaper
+also note that this is when using hyprland
+using window or any linux based that isnot hyprland might fail to generate color
+so the color pushed to eith this file will be used
+feel free to change the color in the
+:root {
+  --primary: red;
+  --secondary: red;
+  --inverse_primary: red;
+  --on_primary: red;
+  }
+  red is just an example you can change it */
+
+/* use the color of your choosing red is just an example */
 @import url('file:///home/omodudu/.VSC_customize/colors/colors.css');
+
+/* :root {
+  --primary: red;
+  --secondary: red;
+  --inverse_primary: red;
+  --on_primary: red;
+} */
 
 /* Setting styles */
 div.settings-toc-entry,
@@ -35,6 +58,24 @@ div.setting-item-control.select-container::after {
   outline-color: var(--primary) !important;
 }
 
+/* Setting Input Box */
+div.setting-item-control div.monaco-inputbox.idle {
+  border: 1px solid var(--primary) !important;
+  border-radius: 10px !important;
+  outline: none !important;
+}
+
+select.monaco-select-box.setting-control-focus-target {
+  border: 1px solid var(--primary) !important;
+  border-radius: 10px !important;
+  outline: none !important;
+}
+
+div.setting-list-object-key,
+div.setting-list-object-value {
+  color: var(--primary) !important;
+}
+
 span.setting-item-category,
 span.setting-item-overrides.setting-indicator,
 div.setting-item-contents code,
@@ -61,11 +102,31 @@ a.action-label.codicon.codicon-preferences-clear-input.disabled,
 div.monaco-custom-toggle.action-label.codicon.codicon-preferences-ai-results.disabled,
 a.action-label.codicon.codicon-preferences-clear-input.disabled::before,
 a.action-label.codicon.codicon-settings-more-action::before,
+div.monaco-custom-toggle.codicon.codicon-check.setting-value-checkbox.checked::before,
 div.monaco-custom-toggle.action-label.codicon.codicon-preferences-ai-results.disabled::before {
   color: var(--primary) !important;
 }
 
-/* Custom CSS Style For Dark Theme */
+div.select-box-details-pane.border-top {
+  color: var(--primary) !important;
+}
+
+div.context-view.monaco-component.bottom.right
+  div.monaco-select-box-dropdown-container.visible {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+  outline: 1px !important;
+  margin-top: 4px !important;
+}
+
+div.search-container.with-ai-toggle div.suggest-input-container {
+  border: 1px solid var(--primary) !important;
+  border-radius: 10px !important;
+  outline: none !important;
+}
+
 /* Notification Popup */
 div.notification-list-item-message,
 div.notification-list-item-source {
@@ -111,6 +172,7 @@ div.update-indicator.prominent {
   border: 2px solid var(--primary) !important;
   color: var(--on_primary) !important;
   font-family: 'Akaya Kanadaka' !important;
+  outline: none !important;
 }
 
 /* Status change state i.e unsaved state */
@@ -140,7 +202,7 @@ div.editor-widget.suggest-widget.shows-details.visible {
   padding-right: 3px !important;
   padding-left: 5px !important;
   padding-top: 5px !important;
-  padding-bottom: 10px !important;
+  padding-bottom: 5px !important;
   margin-left: 13px !important;
 }
 
@@ -153,7 +215,7 @@ div.editor-widget.suggest-widget.visible {
   padding-right: 3px !important;
   padding-left: 5px !important;
   padding-top: 5px !important;
-  padding-bottom: 10px !important;
+  padding-bottom: 5px !important;
 }
 
 div.suggest-details.detail-and-doc,
@@ -166,7 +228,7 @@ div.suggest-details.no-type {
   padding-right: 3px !important;
   padding-left: 5px !important;
   padding-top: 5px !important;
-  padding-bottom: 10px !important;
+  padding-bottom: 5px !important;
   margin-left: -17px !important;
 }
 
@@ -191,16 +253,6 @@ div.monaco-tl-twistie.codicon.codicon-tree-item-expanded.collapsible::before {
   color: var(--primary) !important;
 }
 
-div[id^='list_id_2_'].monaco-list-row.focused {
-  background-color: var(--on_primary) !important;
-  border-radius: 10px !important;
-}
-
-div[id^='list_id_2_'].monaco-list-row:hover:not(.selected):not(.focused) {
-  background-color: var(--on_primary) !important;
-  border-radius: 10px !important;
-}
-
 span.highlight {
   color: var(--secondary) !important;
 }
@@ -212,10 +264,10 @@ div.editor-widget.find-widget.visible {
   border-radius: 10px !important;
 }
 
-div.monaco-inputbox.idle.synthetic-focus {
+div.editor-widget.find-widget.visible div.monaco-inputbox.idle.synthetic-focus {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 5px !important;
+  border-radius: 10px !important;
   border: 1px solid var(--primary) !important;
   outline: 1px !important;
   margin-left: 2px !important;
@@ -252,12 +304,20 @@ a.action-label.codicon.codicon-search-view-icon::before,
 a.action-label.codicon.codicon-run-view-icon::before,
 a.action-label.codicon.codicon-extensions-view-icon::before,
 a.action-label.codicon.codicon-accounts-view-bar-icon::before,
+a.action-label.codicon.codicon-source-control-view-icon::before,
 a.action-label.codicon.codicon-settings-view-bar-icon::before {
   color: var(--primary);
 }
 
 .uri-icon {
   background-color: var(--primary) !important;
+  --insert-border-color: 
+;
+}
+
+div.badge-content {
+  background-color: var(--primary) !important;
+  color: var(--on_primary) !important;
 }
 
 li.action-item.icon.checked:hover .codicon::before {
@@ -305,24 +365,29 @@ li.action-item.icon.checked a.action-label.codicon {
   .monaco-list-row:hover:not(.selected):not(.focused) {
   background-color: var(--on_primary) !important;
   border-radius: 10px !important;
+  outline: none !important;
 }
 
 .quick-input-list [class^='monaco-list list_id'] .monaco-list-row.focused {
   background-color: var(--on_primary) !important;
   border-radius: 10px !important;
+  outline: none !important;
 }
 
 .quick-input-list .quick-input-list-entry {
   padding: 0 2px;
   border-top-color: var(--primary) !important;
+  outline: none !important;
 }
 
 .quick-input-list .monaco-list-row {
   border-radius: 5px !important;
+  outline: none !important;
 }
 
 .quick-input-list .quick-input-list-entry-action-bar .action-label.codicon {
   margin-right: 0;
+  outline: none !important;
 }
 
 /* Action Label */
@@ -497,6 +562,16 @@ div.simple-find-part.visible.visible-transition {
   border-radius: 10px !important;
 }
 
+div.simple-find-part.visible.visible-transition
+  div.monaco-inputbox.idle.synthetic-focus {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 10px !important;
+  border: 1px solid var(--primary) !important;
+  outline: 1px !important;
+  margin-left: 2px !important;
+}
+
 /* Italize New Keyword */
 .mtk6 {
   font-family: 'Fira Code iScript' !important;
@@ -531,6 +606,7 @@ div.simple-find-part.visible.visible-transition {
   opacity: 1 !important;
   border: 2px var(--primary) solid;
   border-radius: 6px;
+  outline: none !important;
 }
 
 /* File Explorer Text  */
@@ -616,6 +692,10 @@ div.xterm-slider {
   /* border-width: 2px !important; */
   border-style: solid !important;
   margin-right: 6px;
+}
+
+div.visible.scrollbar.horizontal div.slider {
+  display: none !important;
 }
 
 /* The Slidder on Hover */
@@ -728,14 +808,24 @@ div.quick-input-list-separator {
 
 /* Command palette text input */
 .quick-input-filter .monaco-inputbox {
-  box-shadow: 0 0 0 3px var(--primary) !important;
-  border-radius: 12px !important;
-  padding: 16px !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  box-shadow: 0px 0px 2x var(--primary) !important;
   outline: 3px solid var(--primary) !important;
+  border-radius: 24px !important;
+  padding: 16px !important;
   border: none !important;
   font-family: 'Akaya Kanadaka' !important;
   font-size: 18px !important;
   margin-bottom: 16px !important;
+}
+
+div.quick-input-box
+  div.monaco-findInput
+  div.monaco-inputbox.idle.synthetic-focus {
+  outline: 3px solid var(--primary);
+  border-radius: 24px !important;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
 #command-blur {
@@ -792,8 +882,20 @@ div.quick-input-list-separator {
   max-width: 60%;
 }
 
-/* Popups that cones from clicking Accounts or Settings */
-div.monaco-menu {
+div[id^='list_id_2_'].monaco-list-row.focused {
+  background-color: var(--on_primary) !important;
+  border-radius: 10px !important;
+  outline: none !important;
+}
+
+div[id^='list_id_2_'].monaco-list-row:hover:not(.selected):not(.focused) {
+  background-color: var(--on_primary) !important;
+  border-radius: 10px !important;
+  outline: none !important;
+}
+
+/* Popups that comes from clicking Accounts or Settings or others popups */
+/* .context-view.monaco-component.monaco-menu-container.top.right div.monaco-menu {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-radius: 16px !important;
@@ -801,7 +903,7 @@ div.monaco-menu {
   outline: 1px !important;
   padding-bottom: 3px !important;
   color: var(--primary) !important;
-}
+} */
 
 a.action-menu-item,
 span.submenu-indicator.codicon.codicon-menu-submenu,
@@ -813,5 +915,48 @@ div.monaco-menu a.action-menu-item:hover:not(.selected):not(.focused) {
   border-radius: 10px !important;
 }
 
-/* Worrkspace Left click toggle */
-/* note: it uses user theme */
+span.codicon.codicon-close,
+.readMore.codicon.codicon-suggest-more-info,
+span.codicon.codicon-close::before,
+.readMore.codicon.codicon-suggest-more-info::before {
+  color: var(--primary) !important;
+}
+
+div.menubar-menu-items-holder.monaco-menu-container
+  div.monaco-scrollable-element {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+  outline: 1px !important;
+  padding-bottom: 3px !important;
+  color: var(--primary) !important;
+}
+
+div.menubar-menu-items-holder.monaco-menu-container
+  div.monaco-scrollable-element
+  div.monaco-menu {
+  outline: none !important;
+  border: none !important;
+}
+
+div.context-view.monaco-component.monaco-menu-container.top.right
+  div.monaco-scrollable-element {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+  outline: 1px !important;
+  padding-bottom: 0px !important;
+  color: var(--primary) !important;
+}
+
+span.menu-item-check.codicon.codicon-menu-selection::before {
+  color: var(--primary) !important;
+  outline: 1px solid var(--primary) !important;
+  border-radius: 3px !important;
+}
+
+/* Worrkspace Left click toggle and terminal dropdown for shell type like
+bash, zsh, fish are not customizable using js and css loader
+note: it uses user theme */

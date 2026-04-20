@@ -12,7 +12,7 @@ curl -fsS -m 2 -X POST http://localhost:3000/execute \
   -d '{"command":"extension.updateCustomCSS","args":[]}' >/dev/null 2>&1 || exit 0
 
 # Small pause so VS Code registers the update request
-sleep 0.4
+# sleep 0.4
 
 # Reload the current VS Code window for server 1
 curl -fsS -m 2 -X POST http://localhost:3000/execute \
