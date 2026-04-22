@@ -156,6 +156,13 @@ a.monaco-button.monaco-text-button {
   /* margin-bottom: 3px !important; */
 }
 
+.notification-list-item-icon.codicon.codicon-info,
+.notification-list-item-icon.codicon.codicon-warning,
+.notification-list-item-icon.codicon.codicon-info::before,
+.notification-list-item-icon.codicon.codicon-warning::before {
+  color: var(--primary) !important;
+}
+
 /* Active tab color */
 div.tab-border-top-container {
   background-color: var(--primary) !important;
@@ -963,7 +970,7 @@ div.quick-input-box
   max-width: 60%;
 }
 
-div[id^='list_id_2_'].monaco-list-row.focused {
+/* div[id^='list_id_2_'].monaco-list-row.focused {
   background-color: var(--on_primary) !important;
   border-radius: 10px !important;
   outline: none !important;
@@ -973,10 +980,10 @@ div[id^='list_id_2_'].monaco-list-row:hover:not(.selected):not(.focused) {
   background-color: var(--on_primary) !important;
   border-radius: 10px !important;
   outline: none !important;
-}
+} */
 
 /* Popups that comes from clicking Accounts or Settings or others popups */
-/* .context-view.monaco-component.monaco-menu-container.top.right div.monaco-menu {
+.context-view.monaco-component.monaco-menu-container.top.right div.monaco-menu {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-radius: 16px !important;
@@ -984,7 +991,7 @@ div[id^='list_id_2_'].monaco-list-row:hover:not(.selected):not(.focused) {
   outline: 1px !important;
   padding-bottom: 3px !important;
   color: var(--primary) !important;
-} */
+}
 
 a.action-menu-item,
 span.submenu-indicator.codicon.codicon-menu-submenu,
@@ -1036,6 +1043,153 @@ span.menu-item-check.codicon.codicon-menu-selection::before {
   color: var(--primary) !important;
   outline: 1px solid var(--primary) !important;
   border-radius: 3px !important;
+}
+
+/* Chat Toggle */
+span.codicon.codicon-chat-sparkle::before {
+  color: var(--primary) !important;
+}
+
+div.chat-welcome-view p {
+  color: var(--primary) !important;
+}
+
+div.chat-welcome-view div.chat-welcome-view-title {
+  color: var(--primary) !important;
+}
+
+div.chat-welcome-view a {
+  color: var(--inverse_primary) !important;
+}
+
+div.interactive-input-and-side-toolbar div.chat-input-container {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+  outline: 1px !important;
+  padding-bottom: 0px !important;
+  color: var(--primary) !important;
+}
+
+div.chat-attached-context-attachment.show-file-icons.implicit {
+  /* border: 1px solid var(--primary) !important; */
+  border-radius: 10px !important;
+  outline: none !important;
+}
+
+a.monaco-button.codicon.codicon-,
+a.monaco-button.codicon.codicon-x::before {
+  color: var(--primary) !important;
+}
+
+a.label-name span.monaco-highlighted-label {
+  color: var(--primary) !important;
+}
+
+span.ced-chat-session-detail-2009f8dc-3.ced-chat-session-detail-3,
+span.ced-chat-session-detail-2009f8dc-4.ced-chat-session-detail-4,
+span.ced-chat-session-detail-2009f8dc-4.ced-chat-session-detail-4::before {
+  color: var(--primary) !important;
+}
+
+div.chat-editor-container div.view-lines.monaco-mouse-cursor-text {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+a.action-label.codicon.codicon-add,
+span.codicon.codicon-question,
+span.codicon.codicon-chevron-down,
+span.codicon.codicon-vm,
+span.codicon.codicon-chevron-down,
+a.action-label.disabled.codicon.codicon-arrow-up,
+a.action-label.codicon.codicon-add::before,
+span.codicon.codicon-question::before,
+span.codicon.codicon-chevron-down::before,
+a.action-label.disabled.codicon.codicon-arrow-up::before,
+span.codicon.codicon-vm::before,
+span.codicon.codicon-chevron-down::before {
+  color: var(--primary) !important;
+}
+
+div.context-view.monaco-component.top.right div.action-widget {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+  outline: 1px !important;
+  padding-bottom: 0px !important;
+  color: var(--primary) !important;
+}
+
+div.hover-contents div.rendered-markdown {
+  color: var(--primary) !important;
+}
+
+div.rendered-markdown a {
+  color: var(--inverse_primary) !important;
+}
+
+div.monaco-tokenized-source span.mtk3 {
+  color: var(--inverse_primary) !important;
+}
+
+/* Chat signup box */
+div.monaco-dialog-modal-block.dimmed
+  div.dialog-shadow
+  div.monaco-dialog-box.align-vertical.chat-setup-dialog {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+  outline: 1px !important;
+  padding-bottom: 0px !important;
+  color: var(--primary) !important;
+}
+
+div#monaco-dialog-footer.dialog-footer p {
+  color: var(--primary);
+}
+
+.monaco-button.secondary.link-button.monaco-text-button,
+div#monaco-dialog-footer.dialog-footer a {
+  color: var(--inverse_primary);
+}
+
+div#monaco-dialog-icon.dialog-icon.codicon.codicon-copilot-large,
+div#monaco-dialog-icon.dialog-icon.codicon.codicon-copilot-large::before {
+  color: var(--primary) !important;
+}
+
+a.monaco-button.secondary.continue-button.apple.monaco-text-button,
+a.monaco-button.secondary.continue-button.google.monaco-text-button,
+a.monaco-button.continue-button.default.monaco-text-button {
+  background-color: var(--primary) !important;
+}
+
+a.monaco-button.secondary.link-button.monaco-text-button {
+  color: var(--primary) !important;
+}
+
+a.action-label.codicon.codicon-refresh,
+a.action-label.codicon.codicon-copy,
+a.action-label.codicon.codicon-copy::before,
+a.action-label.codicon.codicon-refresh::before {
+  color: var(--primary) !important;
+}
+
+.interactive-item-container.editing-session.interactive-response.chat-most-recent-response
+  p {
+  color: var(--primary) !important;
+}
+
+.chat-markdown-part.rendered-markdown.clickable p {
+  color: var(--inverse_primary) !important;
+}
+
+.chat-markdown-part.rendered-markdown.clickable p span {
+  color: var(--primary);
 }
 
 /* Worrkspace Left click toggle and terminal dropdown for shell type like
