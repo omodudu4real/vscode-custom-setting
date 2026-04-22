@@ -3,6 +3,7 @@ const myObservation = new MutationObserver(() => {
   document
     .querySelectorAll('.notification-toast-container')
     .forEach((element) => {
+      const ports = [];
       if (
         element.textContent.includes(
           'Your Code installation appears to be corrupt. Please reinstall.'
@@ -11,20 +12,9 @@ const myObservation = new MutationObserver(() => {
         element.style.display = 'none'; // Hide the corrupt install notification
       }
 
+      // VSCode Command Server started on port 3000 but you can have as many port as possible
       if (
-        element.textContent.includes(
-          // Lists of servers
-          'VSCode Command Server started on port 3000.' ||
-            'VSCode Command Server started on port 3001.' ||
-            'VSCode Command Server started on port 3002.' ||
-            'VSCode Command Server started on port 3003.' ||
-            'VSCode Command Server started on port 3004.' ||
-            'VSCode Command Server started on port 3005.' ||
-            'VSCode Command Server started on port 3006.' ||
-            'VSCode Command Server started on port 3007.' ||
-            'VSCode Command Server started on port 3008.' ||
-            'VSCode Command Server started on port 3009.'
-        )
+        /VSCode Command Server started on port \d+\.?/.test(element.textContent)
       ) {
         element.style.display = 'none'; // Hide the corrupt install notification
       }
@@ -163,6 +153,8 @@ document.addEventListener('DOMContentLoaded', function () {
     treeWidget && (treeWidget.style.opacity = 1);
   }
 });
+
+/* FOR DEBUGGING ALT + , */
 
 document.addEventListener('keydown', (e) => {
   if (e.altKey && e.code === 'Comma') {
