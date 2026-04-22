@@ -1135,6 +1135,10 @@ div.monaco-tokenized-source span.mtk3 {
   color: var(--inverse_primary) !important;
 }
 
+/* Worrkspace Left click toggle and terminal dropdown for shell type like
+bash, zsh, fish are not customizable using js and css loader
+note: it uses user theme */
+
 /* Chat signup box */
 div.monaco-dialog-modal-block.dimmed
   div.dialog-shadow
@@ -1192,6 +1196,84 @@ a.action-label.codicon.codicon-refresh::before {
   color: var(--primary);
 }
 
-/* Worrkspace Left click toggle and terminal dropdown for shell type like
-bash, zsh, fish are not customizable using js and css loader
-note: it uses user theme */
+/* Ctrl + Shift + F file of folder search */
+div.more.codicon.codicon-search-details,
+div.monaco-custom-toggle.codicon.codicon-regex,
+div.more.codicon.codicon-search-details::before,
+a.action-label.disabled.codicon.codicon-search-list,
+div.monaco-custom-toggle.codicon.codicon-whole-word,
+a.action-label.disabled.codicon.codicon-search-refresh,
+div.monaco-custom-toggle.codicon.codicon-regex::before,
+div.monaco-custom-toggle.codicon.codicon-preserve-case,
+div.monaco-custom-toggle.codicon.codicon-case-sensitive,
+a.action-label.disabled.codicon.codicon-search-new-editor,
+a.action-label.codicon.codicon-search-replace-all.disabled,
+a.action-label.disabled.codicon.codicon-search-list::before,
+div.monaco-custom-toggle.codicon.codicon-whole-word::before,
+a.action-label.disabled.codicon.codicon-search-clear-results,
+a.action-label.disabled.codicon.codicon-search-refresh::before,
+div.monaco-custom-toggle.codicon.codicon-preserve-case::before,
+a.action-label.disabled.codicon.codicon-search-collapse-results,
+div.monaco-custom-toggle.codicon.codicon-case-sensitive::before,
+a.action-label.disabled.codicon.codicon-search-new-editor::before,
+a.action-label.codicon.codicon-search-replace-all.disabled::before,
+a.action-label.disabled.codicon.codicon-search-clear-results::before,
+a.action-label.disabled.codicon.codicon-search-collapse-results::before,
+a.monaco-button.toggle-replace-button.codicon.codicon-search-show-replace,
+a.monaco-button.toggle-replace-button.codicon.codicon-search-hide-replace,
+a.monaco-button.toggle-replace-button.codicon.codicon-search-show-replace::before,
+a.monaco-button.toggle-replace-button.codicon.codicon-search-hide-replace::before {
+  color: var(--primary) !important;
+}
+
+div.messages.text-search-provider-messages div.message p {
+  color: var(--primary) !important;
+}
+
+div.messages.text-search-provider-messages div.message {
+  color: var(--primary) !important;
+}
+
+div.messages.text-search-provider-messages div.message p a.pointer {
+  color: var(--inverse_primary) !important;
+}
+
+div.messages.text-search-provider-messages div.message a.pointer {
+  color: var(--inverse_primary) !important;
+}
+
+div.monaco-count-badge {
+  background-color: var(--primary) !important;
+  color: var(--on_primary) !important;
+}
+
+div.search-container.input-box
+  div.monaco-findInput
+  div.monaco-scrollable-element
+  div.monaco-inputbox.idle {
+  border: 1px solid var(--primary) !important;
+  border-radius: 10px !important;
+  outline: none !important;
+}
+
+div.replace-container
+  div.monaco-findInput
+  div.monaco-scrollable-element
+  div.monaco-inputbox.idle {
+  border: 1px solid var(--primary) !important;
+  border-radius: 10px !important;
+  outline: none !important;
+}
+
+div.monaco-custom-toggle.codicon.codicon-regex.checked,
+div.monaco-custom-toggle.codicon.codicon-whole-word.checked,
+div.monaco-custom-toggle.codicon.codicon-regex.checked::before,
+div.monaco-custom-toggle.codicon.codicon-case-sensitive.checked,
+div.monaco-custom-toggle.codicon.codicon-whole-word.checked::before,
+div.monaco-custom-toggle.codicon.codicon-case-sensitive.checked::before {
+  background-color: var(--inverse_primary) !important;
+  border-color: var(--inverse_primary) !important;
+  border-radius: 4px !important;
+  margin-right: 2px !important;
+  margin-bottom: 2px !important;
+}
