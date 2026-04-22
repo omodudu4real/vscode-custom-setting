@@ -345,6 +345,12 @@ div.editor-widget.find-widget.visible {
   outline: none !important;
 }
 
+span.monaco-icon-description-container
+  span.label-description
+  span.monaco-highlighted-label {
+  color: var(--inverse_primary) !important;
+}
+
 div.editor-widget.find-widget.visible div.monaco-inputbox.idle.synthetic-focus {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -587,6 +593,42 @@ a.label.name {
   background-color: var(--primary) !important;
   font-size: 16px !important;
   font-family: 'Fira Code iScipt' !important;
+}
+
+span.monaco-icon-name-container a.label-name {
+  color: var(--primary) !important;
+}
+
+a.action-label.codicon.codicon-filter {
+  background-color: var(--inverse_primary) !important;
+}
+
+span.agent-session-section-count,
+div.agent-session-section span.agent-session-section-label {
+  color: var(--primary) !important;
+}
+
+div.agent-session-status span.agent-session-status-time {
+  color: var(--primary) !important;
+}
+
+div.agent-session-icon.codicon.codicon-circle-filled,
+div.agent-session-icon.codicon.codicon-circle-filled::before {
+  color: var(--inverse_primary) !important;
+}
+
+div.agent-sessions-title-container span.agent-sessions-title {
+  color: var(--primary);
+}
+
+span.agent-status-badge-section.unread.filtered {
+  background-color: var(--secondary) !important;
+}
+
+span.agent-status-icon span.agent-status-text,
+span.agent-status-icon span.codicon.codicon-circle-filled,
+span.agent-status-icon span.codicon.codicon-circle-filled::before {
+  color: var(--inverse_primary) !important;
 }
 
 .label-name a {
