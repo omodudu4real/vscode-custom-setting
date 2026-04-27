@@ -239,21 +239,21 @@ div.suggest-details.no-type {
   margin-left: -17px !important;
 }
 
+div.suggest-icon.codicon.codicon-symbol-text,
 div.suggest-icon.codicon.codicon-symbol-keyword,
 div.suggest-icon.codicon.codicon-symbol-snippet,
 div.suggest-icon.codicon.codicon-symbol-property,
 div.suggest-icon.codicon.codicon-symbol-function,
 div.suggest-icon.codicon.codicon-symbol-variable,
-div.suggest-icon.codicon.codicon-symbol-text,
-div.twisty-container.codicon-view-pane-container-collapsed.codicon,
-div.twisty-container.codicon-view-pane-container-expanded.codicon,
-div.monaco-tl-twistie.codicon.codicon-tree-item-expanded.collapsible,
-div.suggest-icon.codicon.codicon-symbol-keyword::before,
-div.suggest-icon.codicon.codicon-symbol-snippet::before,
-div.suggest-icon.codicon.codicon-symbol-property::before,
-div.suggest-icon.codicon.codicon-symbol-function::before,
-div.suggest-icon.codicon.codicon-symbol-variable::before,
 div.suggest-icon.codicon.codicon-symbol-text::before,
+div.suggest-icon.codicon.codicon-symbol-snippet::before,
+div.suggest-icon.codicon.codicon-symbol-keyword::before,
+div.suggest-icon.codicon.codicon-symbol-property::before,
+div.suggest-icon.codicon.codicon-symbol-variable::before,
+div.suggest-icon.codicon.codicon-symbol-function::before,
+div.twisty-container.codicon-view-pane-container-expanded.codicon,
+div.twisty-container.codicon-view-pane-container-collapsed.codicon,
+div.monaco-tl-twistie.codicon.codicon-tree-item-expanded.collapsible,
 div.twisty-container.codicon-view-pane-container-expanded.codicon::before,
 div.twisty-container.codicon-view-pane-container-collapsed.codicon::before,
 div.monaco-tl-twistie.codicon.codicon-tree-item-expanded.collapsible::before {
@@ -872,6 +872,22 @@ h3.title {
   position: relative !important;
   width: max-content !important;
   font-size: 20px !important;
+}
+
+/* Title Bar */
+div.menubar-menu-button
+  div.menubar-menu-title:not(
+    div.menubar-menu-title.toolbar-toggle-more.codicon.codicon-menubar-more
+  ) {
+  font-family: 'Akaya Kanadaka' !important;
+}
+
+div.monaco-action-bar.vertical a.action-menu-item span.keybinding {
+  font-family: 'Akaya Kanadaka' !important;
+}
+
+div.monaco-action-bar.vertical a.action-menu-item span.action-label {
+  font-family: 'Akaya Kanadaka' !important;
 }
 
 /* Terminal Track */
