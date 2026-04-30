@@ -422,16 +422,19 @@ div.button.codicon.codicon-widget-close,
 div.button.codicon.codicon-find-next-match,
 div.button.codicon.codicon-find-previous-match,
 div.button.codicon.codicon-widget-close::before,
-div.button.codicon.codicon-find-replace.disabled,
 div.button.codicon.codicon-find-next-match::before,
 div.button.toggle.left.codicon.codicon-find-expanded,
-div.button.codicon.codicon-find-replace-all.disabled,
 div.button.toggle.left.codicon-find-collapsed.codicon,
 div.button.codicon.codicon-find-previous-match::before,
-div.button.codicon.codicon-find-replace.disabled::before,
 div.button.toggle.left.codicon.codicon-find-expanded::before,
-div.button.codicon.codicon-find-replace-all.disabled::before,
 div.button.toggle.left.codicon-find-collapsed.codicon::before {
+  color: var(--inverse_primary) !important;
+}
+
+div.button.codicon.codicon-find-replace.disabled,
+div.button.codicon.codicon-find-replace-all.disabled,
+div.button.codicon.codicon-find-replace.disabled::before,
+div.button.codicon.codicon-find-replace-all.disabled::before {
   color: var(--inverse_primary) !important;
 }
 
