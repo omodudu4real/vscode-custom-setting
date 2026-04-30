@@ -438,6 +438,11 @@ div.button.codicon.codicon-find-replace-all.disabled::before {
   color: var(--inverse_primary) !important;
 }
 
+div.button.codicon.codicon-find-replace[aria-label='Replace (Enter)'],
+div.button.codicon.codicon-find-replace-all[aria-label='Replace All (Ctrl+Alt+Enter)'] {
+  color: var(--inverse_primary) !important;
+}
+
 /* Product Icon Style */
 li.action-item.icon {
   border: 1px solid transparent;
