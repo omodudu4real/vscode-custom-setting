@@ -5,6 +5,7 @@
 1. Install "Custom CSS and JS Loader" VS Code Extension.
 2. Copy the contents of settings.json to your VS Code's settings.json (warning: it will overwrite your settings).
 3. Add `vscode_custom_css.imports` array to your settings.json file:
+
 ```
 "vscode_custom_css.imports": [
     // Absolute file paths for your css/js files
@@ -17,7 +18,9 @@
     // "file:///C:/path-of-custom-css/custom-vscode-script.js"
 ],
 ```
+
 4. You might need to take ownership of the CSS/JS files you made or run VS Code with admin privileges on certain operating system:
+
 ```
 Mac and Linux users
 The extension would NOT work if Visual Studio Code cannot modify itself. The cases include:
@@ -34,6 +37,7 @@ sudo chown -R $(whoami) /usr/share/code
 Note: Replace /usr/share/code where your VS Code is installed.
 sudo chown -R your-user-name /usr/share/code
 ```
+
 5. Enable "Custom CSS and JS Loader" from VS Code's command dialog.
 6. Customize the css or js from this repo to make it look the way you want to, or even better, explore areas of VS Code that you want to customize.
 7. After making some changes, reload the extension (Reload Custom CSS and JS) from VS Code's command dialog.
@@ -57,6 +61,14 @@ Installed Extension:
 15. es6-string-html
 16. es6-string-javascipt
 17. es6-string-css
+18. VSCode Command Server
+19. Thunder Client
+20.Emojisense
+21. Easy icon theme
+22. Fluent icons
+23. Even Better TOML
+24. Carbon Product icons
+25. Custom CSS Hot Reload
 
 Installed Fonts
 1.  Fira Code iScript (developer font)
