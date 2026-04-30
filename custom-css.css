@@ -337,6 +337,64 @@ div.publisher div.publisher-name.ellipsis {
   color: var(--inverse_primary) !important;
 }
 
+div.message-container span.message-text span.message {
+  color: var(--primary) !important;
+}
+
+a.action-label.codicon.extension-action.label.prominent.install.action-dropdown {
+  background-color: var(--primary) !important;
+}
+
+span.install-count span.count {
+  color: var(--primary) !important;
+}
+
+span.ratings.extension-ratings.small span.count {
+  color: var(--primary) !important;
+}
+
+span.codicon.codicon-info,
+span.codicon.codicon-extensions-star-full,
+span.codicon.codicon-extensions-install-count,
+span.codicon.codicon-info::before,
+span.codicon.codicon-extensions-star-full::before,
+span.codicon.codicon-extensions-install-count::before,
+span.extension-restart-required.codicon.codicon-extension-restart-required,
+span.extension-restart-required.codicon.codicon-extension-restart-required::before {
+  color: var(--primary) !important;
+}
+
+span.restart-required span.extension-restart-required-label {
+  color: var(--secondary) !important;
+}
+
+div.notification-actions span.message-action-button {
+  color: var(--inverse_primary) !important;
+  background-color: var(--primary) !important;
+}
+
+span.message-text span.message-text-action {
+  color: var(--inverse_primary) !important;
+}
+
+/* MCP Servers */
+span.codicon.codicon-mcp-server,
+span.codicon.codicon-mcp-server::before {
+  color: var(--primary) !important;
+}
+
+div.mcp-welcome-title {
+  color: var(--primary) !important;
+}
+
+div.mcp-welcome-title div.rendered-markdown p {
+  color: var(--primary) !important;
+}
+
+div.rendered-markdown p a {
+  color: var(--inverse_primary) !important;
+}
+
 /* Find box */
 div.editor-widget.find-widget.visible {
   background-color: var(--primary) !important;
@@ -360,14 +418,20 @@ div.editor-widget.find-widget.visible div.monaco-inputbox.idle.synthetic-focus {
   margin-left: 2px !important;
 }
 
-div.button.codicon.codicon-find-previous-match,
-div.button.codicon.codicon-find-next-match,
 div.button.codicon.codicon-widget-close,
-div.button.toggle.left.codicon-find-collapsed.codicon,
-div.button.toggle.left.codicon-find-collapsed.codicon::before,
-div.button.codicon.codicon-find-previous-match::before,
+div.button.codicon.codicon-find-next-match,
+div.button.codicon.codicon-find-previous-match,
+div.button.codicon.codicon-widget-close::before,
+div.button.codicon.codicon-find-replace.disabled,
 div.button.codicon.codicon-find-next-match::before,
-div.button.codicon.codicon-widget-close::before {
+div.button.toggle.left.codicon.codicon-find-expanded,
+div.button.codicon.codicon-find-replace-all.disabled,
+div.button.toggle.left.codicon-find-collapsed.codicon,
+div.button.codicon.codicon-find-previous-match::before,
+div.button.codicon.codicon-find-replace.disabled::before,
+div.button.toggle.left.codicon.codicon-find-expanded::before,
+div.button.codicon.codicon-find-replace-all.disabled::before,
+div.button.toggle.left.codicon-find-collapsed.codicon::before {
   color: var(--inverse_primary) !important;
 }
 
@@ -1256,7 +1320,7 @@ div.context-view.monaco-component.top.right div.action-widget {
   color: var(--primary) !important;
 }
 
-div.hover-contents div.rendered-markdown {
+div.rendered-markdown p {
   color: var(--primary) !important;
 }
 
