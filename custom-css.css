@@ -1482,3 +1482,37 @@ div.monaco-custom-toggle.codicon.codicon-case-sensitive.checked::before {
   margin-right: 2px !important;
   margin-bottom: 2px !important;
 }
+
+div.monaco-submenu.menubar-menu-items-holder.context-view.monaco-menu-container
+  div.monaco-scrollable-element
+  div.monaco-menu {
+  border-radius: 16px !important;
+  border: none !important;
+  outline: none !important;
+  padding-bottom: 3px !important;
+  margin-bottom: 10px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+}
+
+div.monaco-submenu.menubar-menu-items-holder.context-view.monaco-menu-container
+  div.monaco-scrollable-element
+  div.monaco-menu
+  div.monaco-action-bar.vertical {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+div.codicon.codicon-light-bulb,
+div.codicon.codicon-light-bulb::before,
+div.lightBulbWidget.codicon.codicon-sparkle-filled::after,
+div.lightBulbWidget.codicon.codicon-sparkle-filled::before,
+div.lightBulbWidget.codicon.codicon-lightbulb-sparkle::after,
+div.lightBulbWidget.codicon.codicon-lightbulb-sparkle::before {
+  color: var(--primary) !important;
+}
+
+div.monaco-list-row.group-header[role='separator'] span {
+  color: var(--primary) !important;
+}
