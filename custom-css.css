@@ -470,7 +470,7 @@ a.action-label.codicon.codicon-settings-view-bar-icon::before {
 
 .uri-icon {
   background-color: var(--primary) !important;
-  --insert-border-color: 
+  --insert-border-color:
 ;
 }
 
@@ -1516,3 +1516,4 @@ div.lightBulbWidget.codicon.codicon-lightbulb-sparkle::before {
 div.monaco-list-row.group-header[role='separator'] span {
   color: var(--primary) !important;
 }
+
