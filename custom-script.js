@@ -1,3 +1,40 @@
+/*  __     __   ______    ______    ______   _______   ________         ______   __    __   ______   ________  ______   __       __  ______  ________   ______   ________  ______   ______   __    __
+/  |   /  | /      \  /      \  /      \ /       \ /        |       /      \ /  |  /  | /      \ /        |/      \ /  \     /  |/      |/        | /      \ /        |/      | /      \ /  \  /  |
+$$ |   $$ |/$$$$$$  |/$$$$$$  |/$$$$$$  |$$$$$$$  |$$$$$$$$/       /$$$$$$  |$$ |  $$ |/$$$$$$  |$$$$$$$$//$$$$$$  |$$  \   /$$ |$$$$$$/ $$$$$$$$/ /$$$$$$  |$$$$$$$$/ $$$$$$/ /$$$$$$  |$$  \ $$ |
+$$ |   $$ |$$ \__$$/ $$ |  $$/ $$ |  $$ |$$ |  $$ |$$ |__          $$ |  $$/ $$ |  $$ |$$ \__$$/    $$ |  $$ |  $$ |$$$  \ /$$$ |  $$ |      /$$/  $$ |__$$ |   $$ |     $$ |  $$ |  $$ |$$$  \$$ |
+$$  \ /$$/ $$      \ $$ |      $$ |  $$ |$$ |  $$ |$$    |         $$ |      $$ |  $$ |$$      \    $$ |  $$ |  $$ |$$$$  /$$$$ |  $$ |     /$$/   $$    $$ |   $$ |     $$ |  $$ |  $$ |$$$$  $$ |
+ $$  /$$/   $$$$$$  |$$ |   __ $$ |  $$ |$$ |  $$ |$$$$$/          $$ |   __ $$ |  $$ | $$$$$$  |   $$ |  $$ |  $$ |$$ $$ $$/$$ |  $$ |    /$$/    $$$$$$$$ |   $$ |     $$ |  $$ |  $$ |$$ $$ $$ |
+  $$ $$/   /  \__$$ |$$ \__/  |$$ \__$$ |$$ |__$$ |$$ |_____       $$ \__/  |$$ \__$$ |/  \__$$ |   $$ |  $$ \__$$ |$$ |$$$/ $$ | _$$ |_  /$$/____ $$ |  $$ |   $$ |    _$$ |_ $$ \__$$ |$$ |$$$$ |
+   $$$/    $$    $$/ $$    $$/ $$    $$/ $$    $$/ $$       |______$$    $$/ $$    $$/ $$    $$/    $$ |  $$    $$/ $$ | $/  $$ |/ $$   |/$$      |$$ |  $$ |   $$ |   / $$   |$$    $$/ $$ | $$$ |
+    $/      $$$$$$/   $$$$$$/   $$$$$$/  $$$$$$$/  $$$$$$$$//      |$$$$$$/   $$$$$$/   $$$$$$/     $$/    $$$$$$/  $$/      $$/ $$$$$$/ $$$$$$$$/ $$/   $$/    $$/    $$$$$$/  $$$$$$/  $$/   $$/
+                                                            $$$$$$/
+
+
+                                                                                     _______   __      __
+                                                                                    /       \ /  \    /  |
+                                                                                    $$$$$$$  |$$  \  /$$/__
+                                                                                    $$ |__$$ | $$  \/$$//  |
+                                                                                    $$    $$<   $$  $$/ $$/
+                                                                                    $$$$$$$  |   $$$$/   __
+                                                                                    $$ |__$$ |    $$ |  /  |
+                                                                                    $$    $$/     $$ |  $$/
+                                                                                    $$$$$$$/      $$/
+
+
+
+                                                              ______   __       __   ______   _______   __    __  _______   __    __
+                                                             /      \ /  \     /  | /      \ /       \ /  |  /  |/       \ /  |  /  |
+                                                            /$$$$$$  |$$  \   /$$ |/$$$$$$  |$$$$$$$  |$$ |  $$ |$$$$$$$  |$$ |  $$ |
+                                                            $$ |  $$ |$$$  \ /$$$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |
+                                                            $$ |  $$ |$$$$  /$$$$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |
+                                                            $$ |  $$ |$$ $$ $$/$$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |
+                                                            $$ \__$$ |$$ |$$$/ $$ |$$ \__$$ |$$ |__$$ |$$ \__$$ |$$ |__$$ |$$ \__$$ |
+                                                            $$    $$/ $$ | $/  $$ |$$    $$/ $$    $$/ $$    $$/ $$    $$/ $$    $$/
+                                                             $$$$$$/  $$/      $$/  $$$$$$/  $$$$$$$/   $$$$$$/  $$$$$$$/   $$$$$$/
+
+
+                                                                                                                                                                                                         */
+
 // This code checks for annoying "Code Installation Corrupt" notifications and prevents them from showing
 const myObservation = new MutationObserver(() => {
   document
@@ -171,4 +208,44 @@ document.addEventListener('keydown', (e) => {
       }, 150);
     }
   }
+});
+
+/* Styling the RightClick and other popups
+this is done here because it's a lifecycle
+element so it get destroyed and re-born. */
+const rootObserver = new MutationObserver(() => {
+  const host = document.querySelector('.shadow-root-host');
+  if (!host || !host.shadowRoot) return;
+
+  const shadow = host.shadowRoot;
+
+  if (!shadow.querySelector('#custom-menu-style')) {
+    const style = document.createElement('style');
+    style.id = 'custom-menu-style';
+    style.textContent = `
+      .monaco-menu {
+        box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+        background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+        border-radius: 16px !important;
+        border: 1px solid var(--primary) !important;
+        outline: 1px !important;
+        padding-bottom: 0px !important;
+        color: var(--primary) !important;
+        overflow: hidden !important;
+      }
+
+      /* This ensures the text inside actually uses your variable */
+      .monaco-menu .action-label,
+      .monaco-menu .keybinding,
+      .monaco-menu .action-menu-item {
+        color: var(--primary) !important;
+      }
+    `;
+    shadow.appendChild(style);
+  }
+});
+
+rootObserver.observe(document.body, {
+  childList: true,
+  subtree: true,
 });

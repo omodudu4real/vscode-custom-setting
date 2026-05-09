@@ -1,3 +1,40 @@
+/*  __     __   ______    ______    ______   _______   ________         ______   __    __   ______   ________  ______   __       __  ______  ________   ______   ________  ______   ______   __    __
+/  |   /  | /      \  /      \  /      \ /       \ /        |       /      \ /  |  /  | /      \ /        |/      \ /  \     /  |/      |/        | /      \ /        |/      | /      \ /  \  /  |
+$$ |   $$ |/$$$$$$  |/$$$$$$  |/$$$$$$  |$$$$$$$  |$$$$$$$$/       /$$$$$$  |$$ |  $$ |/$$$$$$  |$$$$$$$$//$$$$$$  |$$  \   /$$ |$$$$$$/ $$$$$$$$/ /$$$$$$  |$$$$$$$$/ $$$$$$/ /$$$$$$  |$$  \ $$ |
+$$ |   $$ |$$ \__$$/ $$ |  $$/ $$ |  $$ |$$ |  $$ |$$ |__          $$ |  $$/ $$ |  $$ |$$ \__$$/    $$ |  $$ |  $$ |$$$  \ /$$$ |  $$ |      /$$/  $$ |__$$ |   $$ |     $$ |  $$ |  $$ |$$$  \$$ |
+$$  \ /$$/ $$      \ $$ |      $$ |  $$ |$$ |  $$ |$$    |         $$ |      $$ |  $$ |$$      \    $$ |  $$ |  $$ |$$$$  /$$$$ |  $$ |     /$$/   $$    $$ |   $$ |     $$ |  $$ |  $$ |$$$$  $$ |
+ $$  /$$/   $$$$$$  |$$ |   __ $$ |  $$ |$$ |  $$ |$$$$$/          $$ |   __ $$ |  $$ | $$$$$$  |   $$ |  $$ |  $$ |$$ $$ $$/$$ |  $$ |    /$$/    $$$$$$$$ |   $$ |     $$ |  $$ |  $$ |$$ $$ $$ |
+  $$ $$/   /  \__$$ |$$ \__/  |$$ \__$$ |$$ |__$$ |$$ |_____       $$ \__/  |$$ \__$$ |/  \__$$ |   $$ |  $$ \__$$ |$$ |$$$/ $$ | _$$ |_  /$$/____ $$ |  $$ |   $$ |    _$$ |_ $$ \__$$ |$$ |$$$$ |
+   $$$/    $$    $$/ $$    $$/ $$    $$/ $$    $$/ $$       |______$$    $$/ $$    $$/ $$    $$/    $$ |  $$    $$/ $$ | $/  $$ |/ $$   |/$$      |$$ |  $$ |   $$ |   / $$   |$$    $$/ $$ | $$$ |
+    $/      $$$$$$/   $$$$$$/   $$$$$$/  $$$$$$$/  $$$$$$$$//      |$$$$$$/   $$$$$$/   $$$$$$/     $$/    $$$$$$/  $$/      $$/ $$$$$$/ $$$$$$$$/ $$/   $$/    $$/    $$$$$$/  $$$$$$/  $$/   $$/
+                                                            $$$$$$/
+
+
+                                                                                     _______   __      __
+                                                                                    /       \ /  \    /  |
+                                                                                    $$$$$$$  |$$  \  /$$/__
+                                                                                    $$ |__$$ | $$  \/$$//  |
+                                                                                    $$    $$<   $$  $$/ $$/
+                                                                                    $$$$$$$  |   $$$$/   __
+                                                                                    $$ |__$$ |    $$ |  /  |
+                                                                                    $$    $$/     $$ |  $$/
+                                                                                    $$$$$$$/      $$/
+
+
+
+                                                              ______   __       __   ______   _______   __    __  _______   __    __
+                                                             /      \ /  \     /  | /      \ /       \ /  |  /  |/       \ /  |  /  |
+                                                            /$$$$$$  |$$  \   /$$ |/$$$$$$  |$$$$$$$  |$$ |  $$ |$$$$$$$  |$$ |  $$ |
+                                                            $$ |  $$ |$$$  \ /$$$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |
+                                                            $$ |  $$ |$$$$  /$$$$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |
+                                                            $$ |  $$ |$$ $$ $$/$$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |
+                                                            $$ \__$$ |$$ |$$$/ $$ |$$ \__$$ |$$ |__$$ |$$ \__$$ |$$ |__$$ |$$ \__$$ |
+                                                            $$    $$/ $$ | $/  $$ |$$    $$/ $$    $$/ $$    $$/ $$    $$/ $$    $$/
+                                                             $$$$$$/  $$/      $$/  $$$$$$/  $$$$$$$/   $$$$$$/  $$$$$$$/   $$$$$$/
+
+
+                                                                                                                                                                                                          */
+
 /* Custom CSS Style For Dark Theme */
 
 /* Color Generated based on wallpaper
@@ -14,14 +51,15 @@ feel free to change the color in the
   red is just an example you can change it */
 
 /* use the color of your choosing red is just an example */
-@import url('file:///home/omodudu/.VSC_customize/colors/colors.css');
 
 /* :root {
   --primary: red;
   --secondary: red;
   --inverse_primary: red;
   --on_primary: red;
-} */
+  } */
+
+@import url('file:///home/omodudu/.VSC_customize/colors/colors.css');
 
 /* Setting styles */
 div.settings-toc-entry,
@@ -470,7 +508,7 @@ a.action-label.codicon.codicon-settings-view-bar-icon::before {
 
 .uri-icon {
   background-color: var(--primary) !important;
-  --insert-border-color:
+  --insert-border-color: 
 ;
 }
 
@@ -1517,3 +1555,43 @@ div.monaco-list-row.group-header[role='separator'] span {
   color: var(--primary) !important;
 }
 
+div.icon.codicon.codicon-output-view-icon,
+div.icon.codicon.codicon-terminal-view-icon,
+div.icon.codicon.codicon-output-view-icon::before,
+div.icon.codicon.codicon-terminal-view-icon::before {
+  color: var(--primary) !important;
+}
+
+div.viewpane-filter div.monaco-inputbox.idle[data-keybinding-context] {
+  outline: none !important;
+  border: 3px solid var(--primary) !important;
+  border-radius: 8px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+div.pane.expanded.horizontal[data-keybinding-context] div.pane-header.expanded {
+  height: 30px !important;
+}
+
+div.pane.horizontal[data-keybinding-context]
+  div.pane-header[arial-label='Terminal Section'] {
+  height: 30px !important;
+}
+
+li.action-item.select-container::after {
+  color: var(--primary) !important;
+}
+
+li.action-item.select-container,
+select.monaco-select-box {
+  outline: none !important;
+  border: 1px solid var(--primary) !important;
+  border-radius: 8px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+/* End of style  */
