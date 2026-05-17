@@ -98,15 +98,21 @@ div.setting-item-control.select-container::after {
 
 /* Setting Input Box */
 div.setting-item-control div.monaco-inputbox.idle {
+  outline: none !important;
   border: 1px solid var(--primary) !important;
   border-radius: 10px !important;
-  outline: none !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
 select.monaco-select-box.setting-control-focus-target {
+  outline: none !important;
   border: 1px solid var(--primary) !important;
   border-radius: 10px !important;
-  outline: none !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
 div.setting-list-object-key,
@@ -160,9 +166,66 @@ div.context-view.monaco-component.bottom.right
 }
 
 div.search-container.with-ai-toggle div.suggest-input-container {
+  outline: none !important;
+  border: 1px solid var(--primary) !important;
+  border-radius: 10px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+.settings-editor
+  > .settings-body
+  .settings-tree-container
+  .setting-item-bool
+  .setting-value-checkbox {
+  border: 1px solid var(--primary) !important;
+  border-radius: 5px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+div.monaco-icon-label.codicon-settings-editor-label-icon.predefined-file-icon.tab-label.tab-label-has-badge {
+  color: var(--primary) !important;
+}
+
+div.monaco-editor.rename-box.preview div.rename-input-with-button {
   border: 1px solid var(--primary) !important;
   border-radius: 10px !important;
   outline: none !important;
+  margin: 0px 16px 10px 0px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+.monaco-editor .rename-box .rename-input:focus {
+  font-family: var(--favFont);
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+div.rename-input-with-button input.rename-input {
+  font-family: var(--favFont) !important;
+  padding: 4px !important;
+}
+
+div.monaco-editor.rename-box.preview {
+  border: 1px solid var(--primary) !important;
+  border-radius: 12px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  padding: 10px;
+}
+
+.monaco-editor .rename-box .rename-label {
+  color: var(--primary) !important;
+}
+
+div.rename-suggestions-button span.codicon-sparkle {
+  color: var(--primary) !important;
 }
 
 /* Notification Popup */
@@ -188,10 +251,11 @@ div.notification-list-item-source {
 }
 
 a.monaco-button.monaco-text-button {
-  background-color: var(--primary) !important;
-  color: var(--on_primary) !important;
-  /* padding: 6px !important; */
-  /* margin-bottom: 3px !important; */
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 10px !important;
+  border: 2px solid var(--primary) !important;
 }
 
 .notification-list-item-icon.codicon.codicon-info,
@@ -216,7 +280,7 @@ div.update-indicator.prominent {
   background-color: var(--primary) !important;
   border: 2px solid var(--primary) !important;
   color: var(--on_primary) !important;
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
   outline: none !important;
 }
 
@@ -235,7 +299,7 @@ p.type.auto-wrap,
 span.details-label,
 div.monaco-tokenized-source {
   color: var(--primary) !important;
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
 }
 
 div.editor-widget.suggest-widget.shows-details.visible {
@@ -324,9 +388,12 @@ span.codicon.codicon-extension-activation-time::before {
 div.composite.viewlet.extensions-viewlet
   div.extensions-search-container
   div.suggest-input-container {
+  outline: none !important;
   border: 1px solid var(--primary) !important;
   border-radius: 10px !important;
-  outline: none !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
 a.action-label.disabled.codicon.codicon-extensions-clear-search-results,
@@ -347,6 +414,8 @@ div.monaco-tl-contents div.scm-editor {
   border: 1px solid var(--primary) !important;
   border-radius: 10px !important;
   outline: 1px solid var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   padding-left: 2px !important;
   padding-top: 2px !important;
 }
@@ -415,6 +484,22 @@ span.message-text span.message-text-action {
   color: var(--inverse_primary) !important;
 }
 
+.settings-editor
+  > .settings-header
+  > .settings-header-controls
+  .settings-tabs-widget
+  .action-label.checked:not(:focus) {
+  border-bottom-color: var(--primary) !important;
+}
+
+.settings-editor
+  > .settings-body
+  .settings-tree-container
+  .setting-item-contents
+  .setting-item-modified-indicator {
+  border-color: var(--primary) !important;
+}
+
 /* MCP Servers */
 span.codicon.codicon-mcp-server,
 span.codicon.codicon-mcp-server::before {
@@ -433,12 +518,29 @@ div.rendered-markdown p a {
   color: var(--inverse_primary) !important;
 }
 
-/* Find box */
+/* Find box & Replace Box */
 div.editor-widget.find-widget.visible {
   background-color: var(--primary) !important;
   color: var(--inverse_primary) !important;
   border-radius: 10px !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   outline: none !important;
+}
+
+div.find-part
+  div.monaco-findInput
+  div.monaco-scrollable-element
+  div.monaco-inputbox.idle,
+div.replace-part
+  div.monaco-findInput
+  div.monaco-scrollable-element
+  div.monaco-inputbox.idle {
+  outline: none !important;
+  border: 1px solid var(--primary) !important;
+  border-radius: 10px !important;
+  color: var(--primary) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  width: 99% !important;
 }
 
 span.monaco-icon-description-container
@@ -508,8 +610,7 @@ a.action-label.codicon.codicon-settings-view-bar-icon::before {
 
 .uri-icon {
   background-color: var(--primary) !important;
-  --insert-border-color: 
-;
+  color: var(--on_primary) !important;
 }
 
 div.badge-content {
@@ -563,12 +664,15 @@ li.action-item.icon.checked a.action-label.codicon {
   background-color: var(--on_primary) !important;
   border-radius: 10px !important;
   outline: none !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
 }
 
 .quick-input-list [class^='monaco-list list_id'] .monaco-list-row.focused {
-  background-color: var(--on_primary) !important;
   border-radius: 10px !important;
   outline: none !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
 }
 
 .quick-input-list .quick-input-list-entry {
@@ -596,7 +700,7 @@ a.action-label {
 /* Editor's Settings */
 /* Editor Screen */
 .line-numbers {
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
   transform: scale(1);
   transition: all 10 linear;
 }
@@ -623,7 +727,7 @@ a.statusbar-item-label {
 
 /* Code Comment Style */
 .mtk25 {
-  font-family: 'Cartograph CF' !important;
+  font-family: var(--commentFont) !important;
   font-style: italic !important;
   color: var(--inverse_primary) !important;
   font-weight: bold;
@@ -631,7 +735,7 @@ a.statusbar-item-label {
 
 /* Span Code */
 span.mtk1 {
-  font-family: 'Cascadia Code' !important;
+  font-family: var(--fav2Font) !important;
   font-size: 15px !important;
   font-style: Italic !important;
 }
@@ -653,28 +757,28 @@ div.notification-list-item.expanded {
 
 /* Ligature Enabler */
 span.mtk16.mtki {
-  font-family: 'Fira Code iScript' !important;
+  font-family: var(--cursiveFont) !important;
 }
 
 /* File Title Name */
 .monaco-highlighted-label {
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
 }
 
 span.mtk11 {
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
   font-size: 16px !important;
 }
 
 span.mtk19 {
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
   font-size: 16px !important;
 }
 
 /* Line Number */
 .line-numbers.lh-odd {
   color: var(--primary) !important;
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
   font-size: 16px !important;
 }
 
@@ -742,7 +846,7 @@ span.agent-status-icon span.codicon.codicon-circle-filled::before {
 }
 
 .label-name a {
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
   font-size: 18px !important;
 }
 
@@ -814,6 +918,8 @@ div.simple-find-part.visible.visible-transition {
   color: var(--inverse_primary) !important;
   border-radius: 10px !important;
   outline: none !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
 div.simple-find-part.visible.visible-transition
@@ -828,13 +934,13 @@ div.simple-find-part.visible.visible-transition
 
 /* Italize New Keyword */
 .mtk6 {
-  font-family: 'Fira Code iScript' !important;
+  font-family: var(--cursiveFont) !important;
   font-style: italic !important;
 }
 
 /* Italize Event Keyword */
 .mtk17 {
-  font-family: 'Fira Code iScript' !important;
+  font-family: var(--cursiveFont) !important;
   font-style: italic !important;
 }
 
@@ -944,7 +1050,7 @@ h3.title {
 /* File Explorer Item Label */
 .monaco-tree .monaco-tree-row .label-name,
 .monaco-list .monaco-list-row .monaco-icon-label .label-name {
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
   font-style: italic !important;
   font-size: 15px !important;
   font-weight: 400 !important;
@@ -952,7 +1058,7 @@ h3.title {
 }
 
 .explorer-item-edited {
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
   font-size: 18px !important;
 }
 
@@ -972,7 +1078,7 @@ h3.title {
 
 .composite.title h2 {
   position: relative !important;
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
   font-size: 16px !important;
   text-transform: uppercase;
   color: var(--primary) !important;
@@ -989,15 +1095,15 @@ div.menubar-menu-button
   div.menubar-menu-title:not(
     div.menubar-menu-title.toolbar-toggle-more.codicon.codicon-menubar-more
   ) {
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
 }
 
 div.monaco-action-bar.vertical a.action-menu-item span.keybinding {
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
 }
 
 div.monaco-action-bar.vertical a.action-menu-item span.action-label {
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
 }
 
 /* Terminal Track */
@@ -1020,7 +1126,6 @@ div.xterm-slider {
   left: auto !important;
   border-radius: 9999px !important;
   border-color: black !important;
-  /* border-width: 2px !important; */
   border-style: solid !important;
   margin-right: 6px;
 }
@@ -1034,7 +1139,6 @@ div.visible.scrollbar.horizontal div.slider {
 div.xterm-slider:hover {
   border-color: var(--secondary) !important;
   margin-right: 6px;
-  /* border-width: 0.7px !important; */
   border-radius: 9999px !important;
   background: var(--secondary) !important;
   width: 4px !important;
@@ -1081,11 +1185,13 @@ div.terminal.xterm .xterm-decoration-overview-ruler:hover {
 div.agent-status-pill.chat-input-mode.compact-mode {
   border: 4px solid var(--primary) !important;
   border-radius: 13px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
 /* Search Label */
 span.agent-status-label {
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
   font-size: 17px !important;
   color: var(--primary);
   text-align: center !important;
@@ -1145,7 +1251,7 @@ div.quick-input-list-separator {
   border-radius: 24px !important;
   padding: 16px !important;
   border: none !important;
-  font-family: 'Akaya Kanadaka' !important;
+  font-family: var(--favFont) !important;
   font-size: 18px !important;
   margin-bottom: 16px !important;
 }
@@ -1213,17 +1319,31 @@ div.quick-input-box
   max-width: 60%;
 }
 
-/* div[id^='list_id_2_'].monaco-list-row.focused {
+div[id^='list_id_'].monaco-list-row.focused {
   background-color: var(--on_primary) !important;
   border-radius: 10px !important;
   outline: none !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
 }
 
-div[id^='list_id_2_'].monaco-list-row:hover:not(.selected):not(.focused) {
+div[id^='list_id_'].monaco-list-row:hover:not(.selected):not(.focused) {
   background-color: var(--on_primary) !important;
   border-radius: 10px !important;
   outline: none !important;
-} */
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
+}
+
+div.monaco-tl-contents.linematch a.plain.match span {
+  color: var(--primary) !important;
+}
+
+div.markers-panel-container div.message-box-container span {
+  color: var(--primary) !important;
+}
+
+
 
 /* Popups that comes from clicking Accounts or Settings or others popups */
 .context-view.monaco-component.monaco-menu-container.top.right div.monaco-menu {
@@ -1378,10 +1498,6 @@ div.monaco-tokenized-source span.mtk3 {
   color: var(--inverse_primary) !important;
 }
 
-/* Worrkspace Left click toggle and terminal dropdown for shell type like
-bash, zsh, fish are not customizable using js and css loader
-note: it uses user theme */
-
 /* Chat signup box */
 div.monaco-dialog-modal-block.dimmed
   div.dialog-shadow
@@ -1497,6 +1613,8 @@ div.search-container.input-box
   border: 1px solid var(--primary) !important;
   border-radius: 10px !important;
   outline: none !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
 div.replace-container
@@ -1506,6 +1624,8 @@ div.replace-container
   border: 1px solid var(--primary) !important;
   border-radius: 10px !important;
   outline: none !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
 div.monaco-custom-toggle.codicon.codicon-regex.checked,
@@ -1517,8 +1637,7 @@ div.monaco-custom-toggle.codicon.codicon-case-sensitive.checked::before {
   background-color: var(--inverse_primary) !important;
   border-color: var(--inverse_primary) !important;
   border-radius: 4px !important;
-  margin-right: 2px !important;
-  margin-bottom: 2px !important;
+  margin: 0px 3px 3px 2px !important;
 }
 
 div.monaco-submenu.menubar-menu-items-holder.context-view.monaco-menu-container
@@ -1572,12 +1691,19 @@ div.viewpane-filter div.monaco-inputbox.idle[data-keybinding-context] {
 }
 
 div.pane.expanded.horizontal[data-keybinding-context] div.pane-header.expanded {
-  height: 30px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
 div.pane.horizontal[data-keybinding-context]
   div.pane-header[arial-label='Terminal Section'] {
-  height: 30px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+div.split-view-view.visible div.pane.horizontal div.pane-header {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
 li.action-item.select-container::after {
@@ -1644,6 +1770,209 @@ span.left
 }
 
 span.monaco-icon-description-container span.label-description {
+  color: var(--primary) !important;
+}
+
+div.monaco-custom-toggle.codicon.codicon-keybindings-sort,
+div.monaco-custom-toggle.codicon.codicon-keybindings-record-keys,
+div.monaco-custom-toggle.codicon.codicon-keybindings-sort::before,
+div.monaco-custom-toggle.codicon.codicon-keybindings-record-keys::before {
+  color: var(--primary) !important;
+}
+
+div.keybindings-header
+  div.search-container
+  .settings-header-widget
+  div.settings-search-container
+  div.settings-search-input
+  div.monaco-inputbox.idle.synthetic-focus {
+  outline: none !important;
+  border: 1px solid var(--primary) !important;
+  border-radius: 10px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+div.chat-getting-started-tip-container {
+  outline: none !important;
+  border: 1px solid var(--primary) !important;
+  border-radius: 10px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  margin-bottom: 3px !important;
+}
+
+span.chat-input-picker-label {
+  color: var(--primary) !important;
+}
+
+div.chat-getting-started-tip-container div.chat-tip-widget {
+  outline: none !important;
+  border-radius: 10px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+div.checkpoint-line-left,
+div.checkpoint-line-right {
+  border: 1px solid var(--primary) !important;
+  color: var(--primary) !important;
+}
+
+span.chat-resource-widget span {
+  color: var(--primary) !important;
+}
+
+a.action-label.codicon.codicon-refresh,
+a.action-label.codicon.codicon-thumbsup,
+a.action-label.codicon.codicon-thumbsdown,
+a.action-label.codicon.codicon-refresh::before,
+a.action-label.codicon.codicon-thumbsup::before,
+a.action-label.codicon.codicon-thumbsdown::before {
+  color: var(--primary) !important;
+}
+
+div.chat-copy-action-icon.chat-copy-action-icon-copied.codicon.codicon-check[aria-hidden='true'],
+div.chat-copy-action-icon.chat-copy-action-icon-copied.codicon.codicon-check[aria-hidden='true']::after,
+div.chat-copy-action-icon.chat-copy-action-icon-copied.codicon.codicon-check[aria-hidden='true']::before {
+  color: var(--primary) !important;
+}
+
+a.action-label.codicon.codicon-arrow-up,
+a.action-label.codicon.codicon-arrow-up::before {
+  color: var(--primary) !important;
+}
+
+div.agent-session-hover-header div.agent-session-hover-title {
+  color: var(--primary) !important;
+}
+
+span.ced-chat-session-detail-2009f8dc-4.ced-chat-session-detail-4::after {
+  color: var(--primary) !important;
+}
+
+div.agent-session-hover-header div.agent-session-hover-details {
+  color: var(--primary) !important;
+}
+
+div.command.vertical-align-column[custom-hover='true']
+  div.command-label
+  span.monaco-highlighted-label {
+  color: var(--primary) !important;
+}
+
+div.command-id.code span.monaco-highlighted-tab span.highlight {
+  color: var(--secondary) !important;
+}
+
+div.split-view-view.visible div.monaco-table-th {
+  color: var(--primary) !important;
+}
+
+div.monaco-table-td div.source div.source-label span.monaco-highlighted-label {
+  color: var(--primary) !important;
+}
+
+div.source div.extension-container a.extension-label {
+  color: var(--secondary) !important;
+  text-decoration: none !important;
+}
+
+div.when-label.code span.monaco-highlighted-label {
+  color: var(--primary) !important;
+}
+
+div.monaco-table-tr div.monaco-table-td div.command div.command-label {
+  color: var(--primary) !important;
+}
+
+div.rendered-markdown.setting-item-markdown p code {
+  color: var(--primary) !important;
+  background-color: var(--on_primary) !important;
+}
+
+/* New Suggestion Styles  */
+div.inline-edits-view-gutter-indicator div.icon div[class-name='line-number'] {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  font-family: var(--favFont) !important;
+  color: var(--primary) !important;
+  border-radius: 10px !important;
+}
+
+div.inline-edits-view-gutter-indicator div.icon {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 10px !important;
+  border: 1px solid var(--primary) !important;
+}
+
+span.left
+  div.monaco-icon-label
+  div.monaco-icon-label-container
+  span.monaco-icon-name
+  a.label-name
+  span.monaco-highlighted-label
+  span.highlight {
+  color: var(--primary) !important;
+}
+
+.suggest-icon.codicon.codicon-symbol-unit,
+.suggest-icon.codicon.codicon-symbol-unit::before {
+  color: var(--primary) !important;
+}
+
+.codicon.codicon-keyboard-tab-above::before {
+  color: var(--primary) !important;
+}
+
+div.inline-edits-long-distance-hint-widget.show-file-icons {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+}
+
+div.monaco-hover-content div.hover-contents.html-hover-contents {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+  outline: none !important;
+}
+
+.interactive-item-container .monaco-toolbar .codicon {
+  color: var(--primary) !important;
+}
+
+div.monaco-hover-content
+  div.hover-contents.html-hover-contents
+  div.content
+  span {
+  color: var(--primary) !important;
+}
+
+div.monaco-hover-content div.hover-contents.html-hover-contents div.header {
+  color: var(--primary) !important;
+}
+
+span.codicon.codicon-gear,
+span.codicon.codicon-close,
+span.codicon.codicon-check,
+span.codicon.codicon-feedback,
+span.codicon.codicon-bell-slash,
+span.codicon.codicon-keyboard-tab,
+span.codicon.codicon-gear::before,
+span.codicon.codicon-collapse-all,
+span.codicon.codicon-check::before,
+span.codicon.codicon-close::before,
+span.codicon.codicon-feedback::before,
+span.codicon.codicon-bell-slash::before,
+span.codicon.codicon-collapse-all::before,
+span.codicon.codicon-keyboard-tab::before {
   color: var(--primary) !important;
 }
 
