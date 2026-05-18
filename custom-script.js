@@ -213,6 +213,7 @@ document.addEventListener('keydown', (e) => {
 /* Styling the RightClick and other popups
 this is done here because it's a lifecycle
 element so it get destroyed and re-born. */
+
 const rootObserver = new MutationObserver(() => {
   const host = document.querySelector('.shadow-root-host');
   if (!host || !host.shadowRoot) return;

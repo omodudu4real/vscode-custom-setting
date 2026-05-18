@@ -4,9 +4,10 @@
 */
 :root {
     --favFont: 'Akaya Kanadaka';
+    --fav2Font: 'Cascadia Code';
     --commentFont: 'Cartograph CF';
     --cursiveFont: 'Fira Code iScript';
-    --fav2Font: 'Cascadia Code';
+    --ligatureFont: 'Fira Code';
 
 
     --background: #1a1110;

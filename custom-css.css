@@ -184,6 +184,7 @@ div.search-container.with-ai-toggle div.suggest-input-container {
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  outline: none !important;
 }
 
 div.monaco-icon-label.codicon-settings-editor-label-icon.predefined-file-icon.tab-label.tab-label-has-badge {
@@ -228,6 +229,14 @@ div.rename-suggestions-button span.codicon-sparkle {
   color: var(--primary) !important;
 }
 
+div.sash-container div.monaco-sash.vertical {
+  color: var(--primary) !important;
+}
+
+div.settings-toc-count {
+  color: var(--primary) !important;
+}
+
 /* Notification Popup */
 div.notification-list-item-message,
 div.notification-list-item-source {
@@ -240,8 +249,8 @@ div.notification-list-item-source {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-radius: 16px !important;
-  border: 1px solid var(--primary) !important;
-  outline: 1px !important;
+  border: 3px solid var(--primary) !important;
+  outline: none !important;
   padding-bottom: 10px !important;
 }
 
@@ -521,7 +530,7 @@ div.rendered-markdown p a {
 /* Find box & Replace Box */
 div.editor-widget.find-widget.visible {
   background-color: var(--primary) !important;
-  color: var(--inverse_primary) !important;
+  color: var(--primary) !important;
   border-radius: 10px !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   outline: none !important;
@@ -555,6 +564,7 @@ div.editor-widget.find-widget.visible div.monaco-inputbox.idle.synthetic-focus {
   border-radius: 10px !important;
   border: 1px solid var(--primary) !important;
   outline: 1px !important;
+  outline-color: var(--primary) !important;
   margin-left: 2px !important;
 }
 
@@ -569,6 +579,7 @@ div.button.codicon.codicon-find-previous-match::before,
 div.button.toggle.left.codicon.codicon-find-expanded::before,
 div.button.toggle.left.codicon-find-collapsed.codicon::before {
   color: var(--inverse_primary) !important;
+  outline-color: var(--primary) !important;
 }
 
 div.button.codicon.codicon-find-replace.disabled,
@@ -576,11 +587,13 @@ div.button.codicon.codicon-find-replace-all.disabled,
 div.button.codicon.codicon-find-replace.disabled::before,
 div.button.codicon.codicon-find-replace-all.disabled::before {
   color: var(--inverse_primary) !important;
+  outline-color: var(--primary) !important;
 }
 
 div.button.codicon.codicon-find-replace[aria-label='Replace (Enter)'],
 div.button.codicon.codicon-find-replace-all[aria-label='Replace All (Ctrl+Alt+Enter)'] {
   color: var(--inverse_primary) !important;
+  outline-color: var(--primary) !important;
 }
 
 /* Product Icon Style */
@@ -661,7 +674,6 @@ li.action-item.icon.checked a.action-label.codicon {
 .quick-input-list
   .monaco-list:not(.drop-target):not(.dragging)
   .monaco-list-row:hover:not(.selected):not(.focused) {
-  background-color: var(--on_primary) !important;
   border-radius: 10px !important;
   outline: none !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
@@ -784,7 +796,7 @@ span.mtk19 {
 
 /* Label name */
 a.label.name {
-  font-family: 'Cascadian Code' !important;
+  font-family: var(--fav2Font) !important;
   color: var(--primary) !important;
   font-style: italic !important;
 }
@@ -792,7 +804,7 @@ a.label.name {
 /* Title Bar Menu Items */
 .menubar-menu-items-holder.monaco-menu-container a {
   color: var(--primary) !important;
-  font-family: 'Fira Code iScipt' !important;
+  font-family: var(--cursiveFont) !important;
   font-size: 14px !important;
 }
 
@@ -803,10 +815,12 @@ a.label.name {
 
 .menubar-menu-items-holder.monaco-menu-container a:hover {
   border-radius: 15px !important;
-  color: var(--on_primary) !important;
-  background-color: var(--primary) !important;
+  color: var(--primary) !important;
   font-size: 16px !important;
-  font-family: 'Fira Code iScipt' !important;
+  font-family: var(--cursiveFont) !important;
+  outline: none !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
 }
 
 span.monaco-icon-name-container a.label-name {
@@ -862,7 +876,7 @@ span.agent-status-icon span.codicon.codicon-circle-filled::before {
 
 /* Title Bar Menu Text Explorer Session */
 .menubar-menu-button {
-  font-family: 'Fira Code' !important;
+  font-family: var(--ligatureFont) !important;
   font-size: 14px !important;
   color: var(--primary) !important;
 }
@@ -914,8 +928,7 @@ span.codicon.codicon-terminal::before {
 
 /* Terminal Find */
 div.simple-find-part.visible.visible-transition {
-  background-color: var(--primary) !important;
-  color: var(--inverse_primary) !important;
+  color: var(--primary) !important;
   border-radius: 10px !important;
   outline: none !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
@@ -928,7 +941,7 @@ div.simple-find-part.visible.visible-transition
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-radius: 10px !important;
   border: 1px solid var(--primary) !important;
-  outline: 1px !important;
+  outline: 1px solid var(--primary) !important;
   margin-left: 2px !important;
 }
 
@@ -1023,11 +1036,12 @@ span.action-label[aria-label$='Group']:not([aria-label='Switch Group']):not(
 
 /* File Explorer Selected Item */
 .monaco-list.list_id_1 .monaco-list-row.selected {
-  background-color: var(--on_primary) !important;
-  opacity: 1 !important;
-  border: 2px var(--primary) solid;
-  border-radius: 6px;
+  border-radius: 10px !important;
   outline: none !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
+  opacity: 1 !important;
+  border: 2px solid var(--primary) !important;
 }
 
 /* File Explorer Text  */
@@ -1319,8 +1333,24 @@ div.quick-input-box
   max-width: 60%;
 }
 
+a.action-label.inlineSuggestionStatusBarItemLabel {
+  color: var(--primary) !important;
+}
+
+a.action-label.codicon.codicon-toolbar-more,
+a.action-label.codicon.codicon-toolbar-more::before,
+a.action-label.codicon.codicon-inline-suggestion-hints-next,
+a.action-label.codicon.codicon-inline-suggestion-hints-previous,
+a.action-label.codicon.codicon-inline-suggestion-hints-next::before,
+a.action-label.codicon.codicon-inline-suggestion-hints-previous::before {
+  color: var(--primary) !important;
+}
+
+div.inlineSuggestionsHints {
+  border: 1px solid var(--primary) !important;
+}
+
 div[id^='list_id_'].monaco-list-row.focused {
-  background-color: var(--on_primary) !important;
   border-radius: 10px !important;
   outline: none !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
@@ -1328,7 +1358,6 @@ div[id^='list_id_'].monaco-list-row.focused {
 }
 
 div[id^='list_id_'].monaco-list-row:hover:not(.selected):not(.focused) {
-  background-color: var(--on_primary) !important;
   border-radius: 10px !important;
   outline: none !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
@@ -1343,7 +1372,13 @@ div.markers-panel-container div.message-box-container span {
   color: var(--primary) !important;
 }
 
-
+div.composite.title.has-composite-bar.has-actions {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-bottom: 3px solid var(--primary) !important;
+  border-radius: 5px !important;
+  margin-bottom: 4px !important;
+}
 
 /* Popups that comes from clicking Accounts or Settings or others popups */
 .context-view.monaco-component.monaco-menu-container.top.right div.monaco-menu {
@@ -1364,6 +1399,9 @@ span.submenu-indicator.codicon.codicon-menu-submenu::before {
 
 div.monaco-menu a.action-menu-item:hover:not(.selected):not(.focused) {
   border-radius: 10px !important;
+  outline: none !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
 }
 
 span.codicon.codicon-close,
@@ -1693,10 +1731,12 @@ div.viewpane-filter div.monaco-inputbox.idle[data-keybinding-context] {
 div.pane.expanded.horizontal[data-keybinding-context] div.pane-header.expanded {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 5px !important;
 }
 
 div.pane.horizontal[data-keybinding-context]
   div.pane-header[arial-label='Terminal Section'] {
+  border-radius: 5px !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
@@ -1963,16 +2003,193 @@ span.codicon.codicon-gear,
 span.codicon.codicon-close,
 span.codicon.codicon-check,
 span.codicon.codicon-feedback,
+span.codicon.codicon-arrow-up,
 span.codicon.codicon-bell-slash,
 span.codicon.codicon-keyboard-tab,
 span.codicon.codicon-gear::before,
 span.codicon.codicon-collapse-all,
+span.codicon.codicon-symbol-class,
 span.codicon.codicon-check::before,
 span.codicon.codicon-close::before,
+span.codicon.codicon-arrow-up::before,
 span.codicon.codicon-feedback::before,
+span.codicon.codicon-keyboard-tab-below,
 span.codicon.codicon-bell-slash::before,
+span.codicon.codicon-symbol-class::before,
 span.codicon.codicon-collapse-all::before,
-span.codicon.codicon-keyboard-tab::before {
+span.codicon.codicon-keyboard-tab::before,
+span.codicon.codicon-keyboard-tab-below::before {
+  color: var(--primary) !important;
+}
+
+div.inline-edits-long-distance-hint-widget.show-file-icons {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+}
+
+div.inline-edits-long-distance-hint-widget.show-file-icons div.bar,
+div.inline-edits-long-distance-hint-widget.show-file-icons div.editorContainer {
+  background: transparent !important;
+}
+
+div.view-lines.monaco-mouse-cursor-text[aria-hidden='true']
+  div.view-line
+  span.mtk10 {
+  font-family: var(--favFont) !important;
+}
+
+.monaco-custom-toggle.action-label.codicon.codicon-preferences-ai-results,
+.monaco-custom-toggle.action-label.codicon.codicon-preferences-ai-results::before {
+  color: var(--primary) !important;
+}
+
+a.statusbar-item-label[role='button'] {
+  color: var(--primary) !important;
+}
+
+div#monaco-dialog-message-text.dialog-message-text,
+div#monaco-dialog-message-detail.dialog-message-detail {
+  color: var(--primary) !important;
+}
+
+div.monaco-dialog-box {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+}
+
+a.monaco-button.monaco-text-button {
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 10px !important;
+  outline: none !important;
+}
+
+div#monaco-dialog-icon.dialog-icon.codicon.codicon-loading.codicon-modifier-spin,
+div#monaco-dialog-icon.dialog-icon.codicon.codicon-loading.codicon-modifier-spin::before {
+  color: var(--primary) !important;
+}
+
+/* Additional Settings */
+
+div.hover-language-status div.left,
+div.hover-language-status div.element div.right a.monaco-link {
+  color: var(--primary) !important;
+}
+
+span.separator::before,
+span.codicon.codicon-plus::before,
+span.codicon.codicon-cloud::before,
+span.codicon.codicon-copilot::before,
+span.codicon.codicon-git-branch::before,
+span.codicon.codicon-debug-disconnect::before,
+span.codicon.codicon-copilot-not-connected::before {
+  color: var(--primary) !important;
+}
+
+span.codicon.codicon-circle-small-filled::before {
+  color: var(--inverse_primary) !important;
+}
+
+div.quota-indicator div.quota-title {
+  color: var(--primary) !important;
+}
+
+div.quota-indicator div.quota-bar {
+  background-color: var(--primary) !important;
+}
+
+div.quota-percentage span.quota-value,
+div.quota-percentage span.quota-value-suffix {
+  color: var(--primary) !important;
+}
+
+div.quota-indicator div.quota-bit {
+  background-color: var(--in_primary) !important;
+}
+
+div.quota-details span.quota-reset {
+  color: var(--primary) !important;
+}
+
+div.collapsible-content span.setting-overridden {
+  color: var(--inverse_primary) !important;
+}
+
+button.collapsible-header span.collapsible-label,
+button.collapsible-header span.collapsible-status {
+  color: var(--primary) !important;
+}
+
+div.collapsible-content span.setting-label,
+div.collapsible-content span.suggest-option-text {
+  color: var(--primary) !important;
+}
+
+div.collapsible-content span.snooze-label {
+  color: var(--inverse_primary) !important;
+}
+
+div.collapsible-content
+  div.suggest-option-select-container.select-container::after {
+  color: var(--primary) !important;
+}
+
+div.collapsible-inner div.section-description {
+  color: var(--primary) !important;
+}
+
+div.collapsible-inner a.monaco-link {
+  color: var(--inverse_primary) !important;
+}
+
+div.section-detail a.monaco-link {
+  color: var(--inverse_primary) !important;
+}
+
+div.monaco-custom-toggle.monaco-checkbox,
+div.monaco-custom-toggle.monaco-checkbox::before,
+div.monaco-custom-toggle.monaco-checkbox.disabled,
+div.monaco-custom-toggle.monaco-checkbox.disabled::before,
+div.monaco-custom-toggle.codicon.codicon-dash.monaco-checkbox,
+div.monaco-custom-toggle.monaco-checkbox.codicon.codicon-check,
+div.monaco-custom-toggle.codicon.codicon-dash.monaco-checkbox::before,
+div.monaco-custom-toggle.monaco-checkbox.codicon.codicon-check::before {
+  border: 1px solid var(--primary) !important;
+  border-radius: 5px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+div.notifications-center.bottom-right.visible {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 3px solid var(--primary) !important;
+  outline: none !important;
+  padding-bottom: 10px !important;
+  margin-right: 5px !important;
+}
+
+div.notification-list-item-buttons-container
+  a.monaco-button.monaco-text-button {
+  margin-bottom: 3px !important;
+}
+
+div.notifications-center.bottom-right.visible
+  span.notifications-center-header-title {
+  color: var(--primary) !important;
+}
+
+div.terminal-command-decoration.codicon.xterm-decoration.success.codicon-terminal-decoration-success,
+div.terminal-command-decoration.codicon.xterm-decoration.success.codicon-terminal-decoration-success::before,
+div.xterm-decoration.xterm-decoration-top-layer.quick-fix.codicon.terminal-command-decoration.explainOnly.codicon-sparkle,
+div.xterm-decoration.xterm-decoration-top-layer.quick-fix.codicon.terminal-command-decoration.explainOnly.codicon-sparkle::before {
   color: var(--primary) !important;
 }
 
