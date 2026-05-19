@@ -57,6 +57,11 @@ feel free to change the color in the
   --secondary: red;
   --inverse_primary: red;
   --on_primary: red;
+  --favFont: 'Akaya Kanadaka';
+  --fav2Font: 'Cascadia Code';
+  --commentFont: 'Cartograph CF';
+  --cursiveFont: 'Fira Code iScript';
+  --ligatureFont: 'Fira Code';
   } */
 
 @import url('file:///home/omodudu/.VSC_customize/colors/colors.css');
@@ -97,13 +102,41 @@ div.setting-item-control.select-container::after {
 }
 
 /* Setting Input Box */
-div.setting-item-control div.monaco-inputbox.idle {
+div.setting-item-control div.monaco-inputbox.idle,
+div.keybindings-header div.monaco-inputbox.idle,
+.monaco-workbench
+  .explorer-folders-view
+  .explorer-item
+  .monaco-inputbox
+  input[type='text'] {
   outline: none !important;
   border: 1px solid var(--primary) !important;
   border-radius: 10px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+.monaco-workbench
+  .explorer-folders-view
+  .explorer-item
+  .monaco-inputbox
+  > .ibwrapper
+  > .input {
+  padding: 5px !important;
+  outline: none !important;
+}
+
+div.context-view.monaco-component.top.right
+  div.monaco-inputbox-container
+  span.monaco-inputbox-message.error {
+  outline: none !important;
+  border: 1px solid var(--primary) !important;
+  border-radius: 10px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  padding: 5px !important;
 }
 
 select.monaco-select-box.setting-control-focus-target {
@@ -265,6 +298,7 @@ a.monaco-button.monaco-text-button {
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-radius: 10px !important;
   border: 2px solid var(--primary) !important;
+  outline: none !important;
 }
 
 .notification-list-item-icon.codicon.codicon-info,
@@ -311,42 +345,27 @@ div.monaco-tokenized-source {
   font-family: var(--favFont) !important;
 }
 
-div.editor-widget.suggest-widget.shows-details.visible {
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 16px !important;
-  border: 1px solid var(--primary) !important;
-  outline: 1px !important;
-  padding-right: 3px !important;
-  padding-left: 5px !important;
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-  margin-left: 13px !important;
-}
-
-div.editor-widget.suggest-widget.visible {
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 16px !important;
-  border: 1px solid var(--primary) !important;
-  outline: 1px !important;
-  padding-right: 3px !important;
-  padding-left: 5px !important;
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-}
-
+div.editor-widget.suggest-widget.visible,
+div.editor-widget.suggest-widget.shows-details.visible,
 div.suggest-details.detail-and-doc,
 div.suggest-details.no-type {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-radius: 16px !important;
   border: 1px solid var(--primary) !important;
-  outline: 1px !important;
+  outline: none !important;
   padding-right: 3px !important;
   padding-left: 5px !important;
   padding-top: 5px !important;
   padding-bottom: 5px !important;
+}
+
+div.editor-widget.suggest-widget.shows-details.visible {
+  margin-left: 13px !important;
+}
+
+div.suggest-details.detail-and-doc,
+div.suggest-details.no-type {
   margin-left: -17px !important;
 }
 
@@ -422,7 +441,7 @@ a.monaco-button.monaco-dropdown-button.codicon.codicon-drop-down-button::before 
 div.monaco-tl-contents div.scm-editor {
   border: 1px solid var(--primary) !important;
   border-radius: 10px !important;
-  outline: 1px solid var(--primary) !important;
+  outline: none var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   padding-left: 2px !important;
@@ -723,7 +742,7 @@ a.statusbar-item-label {
 }
 
 .line-numbers.active-line-number {
-  transform: scale(1.25) translateX(-3px);
+  transform: scale(1.5) translateX(-3px);
   animation: 0.2s ease-out scaleSize;
 }
 
@@ -789,23 +808,23 @@ span.mtk19 {
 
 /* Line Number */
 .line-numbers.lh-odd {
-  color: var(--primary) !important;
   font-family: var(--favFont) !important;
   font-size: 16px !important;
+  color: var(--primary) !important;
 }
 
 /* Label name */
 a.label.name {
   font-family: var(--fav2Font) !important;
-  color: var(--primary) !important;
   font-style: italic !important;
+  color: var(--primary) !important;
 }
 
 /* Title Bar Menu Items */
 .menubar-menu-items-holder.monaco-menu-container a {
-  color: var(--primary) !important;
   font-family: var(--cursiveFont) !important;
   font-size: 14px !important;
+  color: var(--primary) !important;
 }
 
 /* Title Bar Menu Items on Hover */
@@ -814,13 +833,10 @@ a.label.name {
 }
 
 .menubar-menu-items-holder.monaco-menu-container a:hover {
-  border-radius: 15px !important;
-  color: var(--primary) !important;
-  font-size: 16px !important;
-  font-family: var(--cursiveFont) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
+  border-radius: 10px !important;
   outline: none !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
-  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
 }
 
 span.monaco-icon-name-container a.label-name {
@@ -884,8 +900,8 @@ span.agent-status-icon span.codicon.codicon-circle-filled::before {
 /* Terminal settings */
 /* Terminal Action Label */
 a.action-label {
-  color: var(--primary) !important;
   font-size: 16px !important;
+  color: var(--primary) !important;
 }
 
 a.action-label[aria-label='Problems (Ctrl+Shift+M)'] {
@@ -928,20 +944,20 @@ span.codicon.codicon-terminal::before {
 
 /* Terminal Find */
 div.simple-find-part.visible.visible-transition {
-  color: var(--primary) !important;
-  border-radius: 10px !important;
-  outline: none !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  border-radius: 10px !important;
+  color: var(--primary) !important;
+  outline: none !important;
 }
 
 div.simple-find-part.visible.visible-transition
   div.monaco-inputbox.idle.synthetic-focus {
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   border-radius: 10px !important;
   border: 1px solid var(--primary) !important;
-  outline: 1px solid var(--primary) !important;
+  outline: none !important;
   margin-left: 2px !important;
 }
 
@@ -1036,12 +1052,12 @@ span.action-label[aria-label$='Group']:not([aria-label='Switch Group']):not(
 
 /* File Explorer Selected Item */
 .monaco-list.list_id_1 .monaco-list-row.selected {
-  border-radius: 10px !important;
-  outline: none !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
   background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
-  opacity: 1 !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 10px !important;
   border: 2px solid var(--primary) !important;
+  opacity: 1 !important;
+  outline: none !important;
 }
 
 /* File Explorer Text  */
@@ -1135,12 +1151,12 @@ div.terminal.xterm .xterm-decoration-overview-ruler {
 div.xterm-slider {
   position: absolute !important;
   right: 1px !important;
+  left: auto !important;
   width: 3px !important;
   background: var(--primary) !important;
-  left: auto !important;
   border-radius: 9999px !important;
-  border-color: black !important;
   border-style: solid !important;
+  border-color: black !important;
   margin-right: 6px;
 }
 
@@ -1350,18 +1366,37 @@ div.inlineSuggestionsHints {
   border: 1px solid var(--primary) !important;
 }
 
-div[id^='list_id_'].monaco-list-row.focused {
+div[id^='list_id_'].monaco-list-row.focused,
+div[id^='list_id_'].monaco-list-row:hover:not(.selected):not(.focused) {
   border-radius: 10px !important;
   outline: none !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
   background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
 }
 
-div[id^='list_id_'].monaco-list-row:hover:not(.selected):not(.focused) {
-  border-radius: 10px !important;
+div[id^='list_id_2_'].monaco-list-row.focused,
+div[id^='list_id_2_'].monaco-list-row:hover:not(.selected):not(.focused) {
+  width: 97% !important;
+  border-radius: 8px !important;
   outline: none !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
-  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
+  box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
+  background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
+  border: 1px solid var(--primary) !important;
+  margin-left: 6px !important;
+  margin-right: 6px !important;
+}
+
+div.monaco-editor-overlaymessage.fadeIn div.message {
+  border: 1px solid var(--primary) !important;
+  border-radius: 5px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  padding: 10px !important;
+}
+
+div.monaco-editor-overlaymessage.fadeIn div.anchor.below {
+  border-top-color: var(--primary) !important;
 }
 
 div.monaco-tl-contents.linematch a.plain.match span {
@@ -2087,7 +2122,9 @@ span.codicon.codicon-cloud::before,
 span.codicon.codicon-copilot::before,
 span.codicon.codicon-git-branch::before,
 span.codicon.codicon-debug-disconnect::before,
-span.codicon.codicon-copilot-not-connected::before {
+span.codicon.codicon-copilot-not-connected::before,
+div.monaco-icon-label.codicon-keybindings-editor-label-icon.predefined-file-icon.tab-label.tab-label-has-badge,
+div.monaco-icon-label.codicon-keybindings-editor-label-icon.predefined-file-icon.tab-label.tab-label-has-badge::before {
   color: var(--primary) !important;
 }
 
