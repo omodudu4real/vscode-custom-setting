@@ -320,9 +320,10 @@ div.tab-border-top-container {
 
 /* Update Popup */
 div.update-indicator.prominent {
-  background-color: var(--primary) !important;
+  box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
+  background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
   border: 2px solid var(--primary) !important;
-  color: var(--on_primary) !important;
+  color: var(--primary) !important;
   font-family: var(--favFont) !important;
   outline: none !important;
 }
@@ -1376,14 +1377,14 @@ div[id^='list_id_'].monaco-list-row:hover:not(.selected):not(.focused) {
 
 div[id^='list_id_2_'].monaco-list-row.focused,
 div[id^='list_id_2_'].monaco-list-row:hover:not(.selected):not(.focused) {
-  width: 97% !important;
   border-radius: 8px !important;
+  width: 97%;
   outline: none !important;
   box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
   background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
   border: 1px solid var(--primary) !important;
-  margin-left: 6px !important;
-  margin-right: 6px !important;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 div.monaco-editor-overlaymessage.fadeIn div.message {
@@ -2195,7 +2196,8 @@ div.monaco-custom-toggle.monaco-checkbox.disabled::before,
 div.monaco-custom-toggle.codicon.codicon-dash.monaco-checkbox,
 div.monaco-custom-toggle.monaco-checkbox.codicon.codicon-check,
 div.monaco-custom-toggle.codicon.codicon-dash.monaco-checkbox::before,
-div.monaco-custom-toggle.monaco-checkbox.codicon.codicon-check::before {
+div.monaco-custom-toggle.monaco-checkbox.codicon.codicon-check::before,
+.action-label.codicon.disabled.extension-action.text.extension-status-label::before {
   border: 1px solid var(--primary) !important;
   border-radius: 5px !important;
   color: var(--primary) !important;
@@ -2228,6 +2230,138 @@ div.terminal-command-decoration.codicon.xterm-decoration.success.codicon-termina
 div.xterm-decoration.xterm-decoration-top-layer.quick-fix.codicon.terminal-command-decoration.explainOnly.codicon-sparkle,
 div.xterm-decoration.xterm-decoration-top-layer.quick-fix.codicon.terminal-command-decoration.explainOnly.codicon-sparkle::before {
   color: var(--primary) !important;
+}
+
+div.codicon.codicon-repo::before,
+div.codicon.codicon-issues::before,
+div.codicon.codicon-link-external::before,
+div.monaco-icon-label.codicon-extensions-editor-label-icon.predefined-file-icon.tab-label.tab-label-has-badge::before {
+  color: var(--primary) !important;
+}
+
+div.additional-details-container div.additional-details-content {
+  color: var(--primary) !important;
+}
+div.categories span.category.clickable,
+div.actions-status-container.list-layout
+  div.monaco-action-bar
+  li.action-item.action-dropdown-item,
+div.editor-instance div.details div.title span.builtin,
+div.editor-instance div.details div.title span.preview {
+  box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
+  background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
+  border: 2px solid var(--primary) !important;
+  border-radius: 10px !important;
+  color: var(--primary) !important;
+  font-family: var(--favFont) !important;
+  outline: none !important;
+}
+
+div.header div.extension-icon {
+  display: flex;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0% #2a2b38 100%) !important;
+  border: 3px solid var(--primary) !important;
+  border-radius: 16px !important;
+  height: 128px !important;
+  width: 128px !important;
+  padding: 0px !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+div.header div.extension-icon img.icon {
+  height: 120px !important;
+  width: 110px !important;
+  padding: 0px !important;
+}
+
+div.header div.details div.title span.name {
+  color: var(--primary) !important;
+}
+
+div.feature-header div.feature-title,
+div.header div.details div.description,
+div.subtitle-entry span.install span.count,
+div.runtime-status div.rendered-markdown h3,
+div.header div.details span.rating.clickable span,
+div.extension-editor div.title span.namae.clickable,
+li.action-item.checkbox-action-item span.checkbox-label,
+div.monaco-list-row.extension-feature-list-item div.extension-feature-label {
+  color: var(--primary) !important;
+}
+
+.cgmr.codicon.codicon.codicon-settings-edit::before {
+  color: var(--primary) !important;
+}
+
+li::marker {
+  color: var(--primary) !important;
+}
+
+div.more-info-container.additional-details-element
+  div.more-info
+  div.more-info-entry {
+  color: var(--primary) !important;
+}
+
+/* This is not working trying
+ to fix it with javaScript it's
+ the text for the explorer  */
+/* div.extension-editor
+  > div.body
+  > div.content
+  > div.details
+  > div.content-container {
+  color: red !important;
+} */
+
+.extension-editor
+  > .body
+  > .content
+  > .details
+  > .additional-details-container
+  .more-info-container
+  > .more-info
+  > .more-info-entry
+  > .link,
+a {
+  color: var(--inverse_primary) !important;
+}
+
+.extension-editor
+  > .body
+  > .navbar
+  > .monaco-action-bar
+  > .actions-container
+  > .action-item
+  > .action-label.checked {
+  border-bottom: 1px solid var(--primary);
+}
+
+.monaco-editor .parameter-hints-widget.multiple {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+}
+
+.monaco-editor .parameter-hints-widget .overloads {
+  color: var(--primary) !important;
+}
+
+.monaco-editor .parameter-hints-widget .code {
+  font-family: var(--favFont) !important;
+  color: var(--primary) !important;
+}
+
+.monaco-workbench .codicon {
+  color: var(--primary) !important;
+}
+
+.monaco-editor .parameter-hints-widget .signature .parameter.active {
+  color: var(--inverse_primary) !important;
+  font-weight: 500 !important;
 }
 
 /* End of style  */

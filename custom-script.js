@@ -36,30 +36,35 @@ $$  \ /$$/ $$      \ $$ |      $$ |  $$ |$$ |  $$ |$$    |         $$ |      $$ 
                                                                                                                                                                                                          */
 
 // This code checks for annoying "Code Installation Corrupt" notifications and prevents them from showing
-const myObservation = new MutationObserver(() => {
-  document
-    .querySelectorAll('.notification-toast-container')
-    .forEach((element) => {
-      const ports = [];
-      if (
-        element.textContent.includes(
-          'Your Code installation appears to be corrupt. Please reinstall.'
-        )
-      ) {
-        element.style.display = 'none'; // Hide the corrupt install notification
-      }
 
-      // VSCode Command Server started on port 3000 but you can have as many port as possible
-      if (
-        /VSCode Command Server started on port \d+\.?/.test(element.textContent)
-      ) {
-        element.style.display = 'none'; // Hide the corrupt install notification
-      }
-    });
+window.addEventListener('DOMContentLoaded', () => {
+  const myObservation = new MutationObserver(() => {
+    document
+      .querySelectorAll('.notification-toast-container')
+      .forEach((element) => {
+        const ports = [];
+        if (
+          element.textContent.includes(
+            'Your Code installation appears to be corrupt. Please reinstall.'
+          )
+        ) {
+          element.style.display = 'none'; // Hide the corrupt install notification
+        }
+
+        // VSCode Command Server started on port 3000 but you can have as many port as possible
+        if (
+          /VSCode Command Server started on port \d+\.?/.test(
+            element.textContent
+          )
+        ) {
+          element.style.display = 'none'; // Hide the corrupt install notification
+        }
+      });
+  });
+
+  // Start observing the body for new notifications
+  myObservation.observe(document.body, { childList: true, subtree: true });
 });
-
-// Start observing the body for new notifications
-myObservation.observe(document.body, { childList: true, subtree: true });
 
 document.addEventListener('DOMContentLoaded', function () {
   // ✅ Use a counter to avoid endless retries
@@ -89,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
         fallbackObserver.observe(document.body, {
           childList: true,
-          subtree: true,
+          subtree: true
         });
       } else {
         console.log('Command dialog not found yet. Retrying...');
@@ -214,16 +219,17 @@ document.addEventListener('keydown', (e) => {
 this is done here because it's a lifecycle
 element so it get destroyed and re-born. */
 
-const rootObserver = new MutationObserver(() => {
-  const host = document.querySelector('.shadow-root-host');
-  if (!host || !host.shadowRoot) return;
+window.addEventListener('DOMContentLoaded', () => {
+  const rootObserver = new MutationObserver(() => {
+    const host = document.querySelector('.shadow-root-host');
+    if (!host || !host.shadowRoot) return;
 
-  const shadow = host.shadowRoot;
+    const shadow = host.shadowRoot;
 
-  if (!shadow.querySelector('#custom-menu-style')) {
-    const style = document.createElement('style');
-    style.id = 'custom-menu-style';
-    style.textContent = `
+    if (!shadow.querySelector('#custom-menu-style')) {
+      const style = document.createElement('style');
+      style.id = 'custom-menu-style';
+      style.textContent = `
       .monaco-menu {
         box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
         background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -242,11 +248,13 @@ const rootObserver = new MutationObserver(() => {
         color: var(--primary) !important;
       }
     `;
-    shadow.appendChild(style);
-  }
-});
+      shadow.appendChild(style);
+    }
+  });
 
-rootObserver.observe(document.body, {
-  childList: true,
-  subtree: true,
+  rootObserver.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+  ``;
 });
