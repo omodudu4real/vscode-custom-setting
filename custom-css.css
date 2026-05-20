@@ -2361,7 +2361,67 @@ a {
 
 .monaco-editor .parameter-hints-widget .signature .parameter.active {
   color: var(--inverse_primary) !important;
-  font-weight: 500 !important;
+  font-weight: 600 !important;
+}
+
+div.editor-placeholder-label-container span {
+  color: var(--primary) !important;
+}
+
+div.modal-editor-shadow {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+}
+
+div.image-carousel-editor
+  div.slideshow-container[role='group'][label='Images Preview'] {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+button.thumbnail.active img.thumbnail.active {
+  border: 1px solid var(--primary) !important;
+}
+
+div.modal-editor-title.show-file-icons[id='modal-editor-title']
+  div.monaco-icon-label::before {
+  color: var(--primary) !important;
+}
+
+.monaco-modal-editor-block .modal-editor-header {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+.image-carousel-editor .bottom-bar {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+span.codicon.codicon-chevron-left::before,
+span.codicon.codicon-chevron-right::before {
+  color: var(--primary) !important;
+}
+
+div.slideshow-container div.image-area div.main-image-container {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+div.image-area button.nav-arrow.prev-arrow,
+div.image-area button.nav-arrow.next-arrow {
+  box-shadow: 12px 15px 46px rgba(0, 0, 0, 0.81) !important;
+  background-image: linear-gradient(#3c3c43 16%, #2a2b21 84%) !important;
+}
+
+div.image-info-bar span.image-counter {
+  color: var(--primary) !important;
+}
+
+.image-carousel-editor .thumbnail.active {
+  border-color: var(--primary) !important;
 }
 
 /* End of style  */
