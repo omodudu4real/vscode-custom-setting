@@ -2569,4 +2569,8 @@ div.command-id.code span.monaco-highlighted-label {
   color: var(--surface_tint) !important;
 }
 
+div.cgmr.codicon.codicon.codicon-debug-hint::before {
+  color: var(--primary) !important;
+}
+
 /* End of style  */
