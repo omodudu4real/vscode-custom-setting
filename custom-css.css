@@ -2565,4 +2565,8 @@ div.defineKeybindingWidget .existing .existingText {
   color: var(--primary) !important;
 }
 
+div.command-id.code span.monaco-highlighted-label {
+  color: var(--surface_tint) !important;
+}
+
 /* End of style  */
