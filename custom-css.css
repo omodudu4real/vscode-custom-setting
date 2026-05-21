@@ -277,14 +277,34 @@ div.notification-list-item-source {
 }
 
 /* Notification Popup toast */
-/* Notification Popup toast */
-.notifications-toasts div[id^='list_id_'][id$='_0'].monaco-list-row {
+
+div.notifications-toasts.visible.bottom-right {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-radius: 16px !important;
   border: 3px solid var(--primary) !important;
   outline: none !important;
   padding-bottom: 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.notifications-toasts div[id^='list_id_'][id$='_0'].monaco-list-row {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+
+  border: none !important;
+  outline: none !important;
+}
+
+.notification-toast-container div[id^='list_id_'].monaco-list-row.focused,
+.notification-toast-container
+  div[id^='list_id_'].monaco-list-row:hover:not(.selected):not(.focused) {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border: none !important;
+  outline: none !important;
 }
 
 .notifications-toasts.bottom-right {
@@ -299,6 +319,7 @@ a.monaco-button.monaco-text-button {
   border-radius: 10px !important;
   border: 2px solid var(--primary) !important;
   outline: none !important;
+  /* margin-bottom: 14px !important; */
 }
 
 .notification-list-item-icon.codicon.codicon-info,
@@ -688,23 +709,6 @@ li.action-item.icon.checked a.action-label.codicon {
   .action-label:not(.codicon) {
   width: 45px !important;
   height: 45px !important;
-}
-
-/* Command Palette */
-.quick-input-list
-  .monaco-list:not(.drop-target):not(.dragging)
-  .monaco-list-row:hover:not(.selected):not(.focused) {
-  border-radius: 10px !important;
-  outline: none !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
-  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
-}
-
-.quick-input-list [class^='monaco-list list_id'] .monaco-list-row.focused {
-  border-radius: 10px !important;
-  outline: none !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
-  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
 }
 
 .quick-input-list .quick-input-list-entry {
@@ -1369,22 +1373,102 @@ div.inlineSuggestionsHints {
 
 div[id^='list_id_'].monaco-list-row.focused,
 div[id^='list_id_'].monaco-list-row:hover:not(.selected):not(.focused) {
-  border-radius: 10px !important;
+  border-radius: 9px !important;
   outline: none !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
-  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
+  box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
+  background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
+  border: 1px solid var(--primary) !important;
 }
 
 div[id^='list_id_2_'].monaco-list-row.focused,
 div[id^='list_id_2_'].monaco-list-row:hover:not(.selected):not(.focused) {
   border-radius: 8px !important;
-  width: 97%;
+  width: 98%;
   outline: none !important;
   box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
   background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
   border: 1px solid var(--primary) !important;
-  margin-left: 6px;
-  margin-right: 6px;
+  margin-right: 2px !important;
+}
+
+div.monaco-resizable-hover div.monaco-hover.fade-in {
+  border-radius: 16px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
+  border: 4px solid var(--primary) !important;
+}
+
+div.markdown-hover
+  div.hover-contents.code-hover-contents
+  div.rendered-markdown
+  p {
+  font-size: 16px !important;
+  font-family: var(--favFont) !important;
+}
+
+div.markdown-hover
+  div.hover-contents.code-hover-contents
+  div.rendered-markdown {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
+  padding: 10px !important;
+}
+
+.monaco-hover p:first-child,
+.monaco-hover .code:first-child,
+.monaco-hover ul:first-child {
+  margin-bottom: 7px !important;
+  font-size: 16px !important;
+}
+
+div.rendered-markdown p img {
+  padding: 5px !important;
+  border: 3px solid var(--primary) !important;
+  border-radius: 8px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+div.monaco-hover.fade-in div.monaco-scrollable-element .monaco-hover-content {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
+}
+
+div.colorpicker-widget div.colorpicker-body:not(.opacity-strip) {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
+}
+
+div.markdown-hover
+  div.hover-contents.code-hover-contents
+  div.rendered-markdown
+  div.colorpicker-header {
+  font-family: var(--favFont) !important;
+}
+
+div.saturation-selection {
+  border-color: var(--primary) !important;
+}
+
+/* Command Palette */
+.quick-input-list
+  .monaco-list:not(.drop-target):not(.dragging)
+  .monaco-list-row:hover:not(.selected):not(.focused) {
+  border-radius: 9px !important;
+  outline: none !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
+}
+
+.quick-input-list [class^='monaco-list list_id'] .monaco-list-row.focused {
+  border-radius: 9px !important;
+  outline: none !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
+}
+
+.monaco-workbench [tabindex='0']:focus {
+  outline-color: var(--primary) !important;
 }
 
 div.monaco-editor-overlaymessage.fadeIn div.message {
@@ -1510,7 +1594,6 @@ div.interactive-input-and-side-toolbar div.chat-input-container {
 }
 
 div.chat-attached-context-attachment.show-file-icons.implicit {
-  /* border: 1px solid var(--primary) !important; */
   border-radius: 10px !important;
   outline: none !important;
 }
@@ -2385,11 +2468,6 @@ button.thumbnail.active img.thumbnail.active {
   border: 1px solid var(--primary) !important;
 }
 
-div.modal-editor-title.show-file-icons[id='modal-editor-title']
-  div.monaco-icon-label::before {
-  color: var(--primary) !important;
-}
-
 .monaco-modal-editor-block .modal-editor-header {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -2424,4 +2502,24 @@ div.image-info-bar span.image-counter {
   border-color: var(--primary) !important;
 }
 
+div.xterm-helpers textarea.xterm-helper-textarea {
+  border-color: var(--primary) !important;
+}
+
+span.terminal-initial-hint-prose {
+  color: var(--inverse_primaryary) !important;
+}
+
+div.monaco-keybinding span.monaco-keybinding-key {
+  border-radius: 4px !important;
+  border: 1px solid var(--primary);
+  margin: 3px !important;
+  padding: 5px !important;
+}
+
+.monaco-workbench .terminal-initial-hint {
+  color: var(--surface_tint) !important;
+}
+
 /* End of style  */
+
