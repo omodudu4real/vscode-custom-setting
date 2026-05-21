@@ -2521,5 +2521,43 @@ div.monaco-keybinding span.monaco-keybinding-key {
   color: var(--surface_tint) !important;
 }
 
-/* End of style  */
+div.overlay-container div.defineKeybindingWidget {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 16px !important;
+  border: 4px solid var(--primary) !important;
+  padding: 10px !important;
+}
 
+.settings-header-widget
+  > .settings-search-container
+  > .settings-search-input
+  > .monaco-inputbox
+  .input {
+  outline: none !important;
+  border: 1px solid var(--primary) !important;
+  border-radius: 10px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+.settings-header-widget .synthetic-focus {
+  outline: none !important;
+}
+
+div.output {
+  color: var(--surface_tint) !important;
+}
+
+div.defineKeybindingWidget .message {
+  color: var(--primary) !important;
+}
+
+div.defineKeybindingWidget .existing .existingText {
+  text-decoration: none !important;
+  margin-bottom: 5px !important;
+  color: var(--inverse_primary) !important;
+}
+
+/* End of style  */
