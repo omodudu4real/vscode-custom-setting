@@ -2560,6 +2560,7 @@ div.defineKeybindingWidget .existing .existingText {
   color: var(--inverse_primary) !important;
 }
 
+.monaco-icon-label.codicon-settings-editor-label-icon.predefined-file-icon.open-editor::before,
 .monaco-icon-label.codicon-keybindings-editor-label-icon.predefined-file-icon.open-editor::before {
   color: var(--primary) !important;
 }
