@@ -1219,8 +1219,8 @@ div.terminal.xterm .xterm-decoration-overview-ruler:hover {
 div.agent-status-pill.chat-input-mode.compact-mode {
   border: 4px solid var(--primary) !important;
   border-radius: 13px !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.43) !important;
+  background-image: linear-gradient(#3c3c52 12%, #2a2b29 79%) !important;
 }
 
 /* Search Label */
@@ -2283,12 +2283,12 @@ div.monaco-custom-toggle.monaco-checkbox.codicon.codicon-check::before,
   border: 1px solid var(--primary) !important;
   border-radius: 5px !important;
   color: var(--primary) !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
 div.notifications-center.bottom-right.visible {
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-radius: 16px !important;
   border: 3px solid var(--primary) !important;
@@ -2330,7 +2330,7 @@ div.actions-status-container.list-layout
   li.action-item.action-dropdown-item,
 div.editor-instance div.details div.title span.builtin,
 div.editor-instance div.details div.title span.preview {
-  box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
+  box-shadow: inset 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
   background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
   border: 2px solid var(--primary) !important;
   border-radius: 10px !important;
