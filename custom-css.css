@@ -1232,10 +1232,14 @@ span.agent-status-label {
 }
 
 span.agent-status-label::before {
-  content: '\2711\ ' !important;
+  content: '\2710\ ' !important;
   font-family: 'pi-fluent-icons' !important;
-  font-size: 14px !important;
+  font-size: 13px !important;
   margin: auto;
+}
+
+div.monaco-icon-label.codicon-settings-editor-label-icon.predefined-file-icon::before {
+  color: var(--primary) !important;
 }
 
 .action-label.codicon.codicon-arrow-left,
