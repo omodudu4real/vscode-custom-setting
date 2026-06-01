@@ -2701,7 +2701,7 @@ div.model-cost-grid {
 }
 
 .action-widget .monaco-list-row.action .title {
-  color: var(--in_primary) !important;
+  color: var(--secondary) !important;
 }
 
 div.model-token-limits {
