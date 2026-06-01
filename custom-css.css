@@ -2644,4 +2644,42 @@ div.monaco-tl-contents.setting-item.setting-item-enum {
   background-image: linear-gradient(#3c3c50 15%, #2a2b38 80%) !important;
 }
 
+.action-widget {
+  color: var(--primary) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  border-radius: 16px !important;
+  border: 1px solid var(--primary) !important;
+}
+
+.chat-model-hover-cost-line-label {
+  color: var(--primary);
+}
+
+chat-model-hover-cost-line {
+  color: var(--secondary);
+}
+
+.action-widget .action-list-filter-input.chat-model-picker-filter-input,
+.action-widget .action-list-filter-input.chat-model-picker-filter-input:focus {
+  border: 1px solid var(--primary) !important;
+  border-radius: 10px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+?? small box like the update one .chat-model-hover-cost-tag {
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid
+    var(--vscode-contrastBorder, var(--vscode-editorWidget-border));
+  background: transparent;
+  font-size: 11px;
+}
+
+a.action-label.codicon.codicon-close::before {
+  color: var(--primary) !important;
+}
+
 /* End of style  */
