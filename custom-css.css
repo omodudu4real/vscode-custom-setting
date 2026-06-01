@@ -2716,4 +2716,16 @@ div.model-cost-grid {
 div.model-token-limits {
   color: var(--primary) !important;
 }
+
+div.monaco-tl-contents
+  div.monaco-icon-label.folder-icon.portfolio-name-dir-icon.stylesheets-name-folder-icon.explorer-item::after {
+  /* Untrack color*/
+  color: var(--inverse_primary) !important;
+}
+
+div.monaco-tl-contents
+  div.monaco-icon-label.css-name-file-icon.explorer-item::after {
+  /* Modified color */
+  color: var(--surface_tint) !important;
+}
 /* End of style  */
