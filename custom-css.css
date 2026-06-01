@@ -2652,11 +2652,11 @@ div.monaco-tl-contents.setting-item.setting-item-enum {
   border: 1px solid var(--primary) !important;
 }
 
-.chat-model-hover-cost-line-label {
+div.chat-model-hover-cost-line-label span {
   color: var(--primary);
 }
 
-.chat-model-hover-cost-line {
+div.chat-model-hover-cost-line .chat-model-hover-cost-line-label {
   color: var(--secondary);
 }
 
@@ -2700,9 +2700,11 @@ div.model-cost-grid {
   color: var(--primary) !important;
 }
 
-div.split-view-container {
-  box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
-  background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
+.action-widget .monaco-list-row.action .title {
+  color: var(--in_primary) !important;
 }
 
+div.model-token-limits {
+  color: var(--primary) !important;
+}
 /* End of style  */
