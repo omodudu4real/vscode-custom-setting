@@ -2652,12 +2652,21 @@ div.monaco-tl-contents.setting-item.setting-item-enum {
   border: 1px solid var(--primary) !important;
 }
 
-div.chat-model-hover-cost-line-label span {
-  color: var(--primary);
+div.chat-model-hover-cost-title {
+  color: var(--primary) !important;
 }
 
-div.chat-model-hover-cost-line .chat-model-hover-cost-line-label {
-  color: var(--secondary);
+div.chat-model-hover-context-value,
+div.chat-model-hover-context-label {
+  color: var(--secondary) !important;
+}
+
+div.chat-model-hover-cost-line span {
+  color: var(--secondary) !important;
+}
+
+div.chat-model-hover-cost-line span.chat-model-hover-cost-line-label {
+  color: var(--primary) !important;
 }
 
 .action-widget .action-list-filter-input.chat-model-picker-filter-input,
