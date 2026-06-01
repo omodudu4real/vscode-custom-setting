@@ -2718,14 +2718,18 @@ div.model-token-limits {
 }
 
 div.monaco-tl-contents
-  div.monaco-icon-label.folder-icon.portfolio-name-dir-icon.stylesheets-name-folder-icon.explorer-item::after {
+  div.monaco-icon-label.folder-icon.portfolio-name-dir-icon.stylesheets-name-folder-icon.explorer-item::after,
+div.monaco-tl-contents div.monaco-icon-label.folder-icon.explorer-item::after {
   /* Untrack color*/
-  color: var(--inverse_primary) !important;
+  color: var(--error) !important;
 }
 
-div.monaco-tl-contents
-  div.monaco-icon-label.css-name-file-icon.explorer-item::after {
-  /* Modified color */
-  color: var(--surface_tint) !important;
+.monaco-icon-label:after {
+  color: var(--primary_fixed) !important;
+}
+
+.monaco-list:focus .selected .monaco-icon-label,
+.monaco-list:focus .selected .monaco-icon-label:after {
+  color: var(--primary_fixed_dim) !important;
 }
 /* End of style  */
