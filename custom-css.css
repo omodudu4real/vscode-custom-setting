@@ -2721,15 +2721,15 @@ div.monaco-tl-contents
   div.monaco-icon-label.folder-icon.portfolio-name-dir-icon.stylesheets-name-folder-icon.explorer-item::after,
 div.monaco-tl-contents div.monaco-icon-label.folder-icon.explorer-item::after {
   /* Untrack color*/
-  color: var(--error) !important;
+  color: var(--inverse_primary) !important;
 }
 
 .monaco-icon-label:after {
-  color: var(--primary_fixed) !important;
+  color: var(--inverse_primary) !important;
 }
 
 .monaco-list:focus .selected .monaco-icon-label,
 .monaco-list:focus .selected .monaco-icon-label:after {
-  color: var(--primary_fixed_dim) !important;
+  color: var(--inverse_surface) !important;
 }
 /* End of style  */
