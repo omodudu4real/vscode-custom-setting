@@ -2732,4 +2732,8 @@ div.monaco-tl-contents div.monaco-icon-label.folder-icon.explorer-item::after {
 .monaco-list:focus .selected .monaco-icon-label:after {
   color: var(--inverse_surface) !important;
 }
+
+.open-editors .monaco-list .monaco-list-row .editor-group {
+  color: var(--primary) !important;
+}
 /* End of style  */
