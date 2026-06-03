@@ -2736,4 +2736,31 @@ div.monaco-tl-contents div.monaco-icon-label.folder-icon.explorer-item::after {
 .open-editors .monaco-list .monaco-list-row .editor-group {
   color: var(--primary) !important;
 }
+
+.browser-welcome-title {
+  color: var(--primary) !important;
+}
+
+.browser-welcome-subtitle {
+  color: var(--secondary) !important;
+}
+
+div.monaco-icon-label.codicon-globe.predefined-file-icon.tab-label.tab-label-has-badge.italic::before {
+  color: var(--primary) !important;
+}
+
+span.browser-url-display.placeholder,
+input.browser-url-input {
+  border: 1px solid var(--primary) !important;
+  border-radius: 10px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  outline: none !important;
+}
+
+div.browser-url-container {
+  outline: none !important;
+  border: none !important;
+}
+
 /* End of style  */
