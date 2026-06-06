@@ -2768,8 +2768,8 @@ div.browser-url-container {
   > .items-container
   > .statusbar-item.error-kind {
   background-color: var(--error) !important;
-  color: var(--on_error) !important;
-  border-radius: 10px;
+  color: var(--primary) !important;
+  border-radius: 6px !important;
 }
 
 /* End of style  */
