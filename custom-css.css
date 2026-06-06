@@ -2763,4 +2763,13 @@ div.browser-url-container {
   border: none !important;
 }
 
+.monaco-workbench
+  .part.statusbar
+  > .items-container
+  > .statusbar-item.error-kind {
+  background-color: var(--error) !important;
+  color: var(--on_error) !important;
+  border-radius: 10px;
+}
+
 /* End of style  */
