@@ -2767,9 +2767,12 @@ div.browser-url-container {
   .part.statusbar
   > .items-container
   > .statusbar-item.error-kind {
-  background-color: var(--error) !important;
-  color: var(--primary) !important;
-  border-radius: 6px !important;
+  background-color: var(--on_primary_fixed_variant) !important;
+  /* background-color: var(--on_primary) !important; */
+  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 8px !important;
 }
+--on_error_container
+kk
 
 /* End of style  */
