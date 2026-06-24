@@ -2246,6 +2246,20 @@ div.quota-details span.quota-reset {
   color: var(--primary) !important;
 }
 
+span.quota-reset,
+span.callout-text,
+span.collapsible-label,
+span.collapsible-status {
+  color: var(--primary) !important;
+}
+
+.chat-status-bar-entry-tooltip .quota-callout.info {
+  border: 1px solid var(--primary) !important;
+  border-radius: 5px !important;
+  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
 div.collapsible-content span.setting-overridden {
   color: var(--inverse_primary) !important;
 }
