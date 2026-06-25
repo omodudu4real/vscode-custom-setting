@@ -3090,10 +3090,16 @@ div.product-info div.product-logo {
 
 .monaco-workbench .suggest-details {
   border-radius: 10px !important;
-  border-top: 1px solid var(--primary) !important;
-  border-bottom: 1px solid var(--inverse_primary) !important;
-  border-left: 1px solid var(--primary) !important;
-  border-right: 1px solid var(--inverse_primary) !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+}
+
+div.menubar-menu-title:not(
+    div.menubar-menu-title.toolbar-toggle-more.codicon.codicon-menubar-more
+  ) {
+  outline: none !important;
 }
 
 /* End of style  */
