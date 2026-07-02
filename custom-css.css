@@ -3193,8 +3193,8 @@ div.zone-widget {
   border-left: 4px solid var(--primary) !important;
   border-right: 4px solid var(--inverse_primary) !important;
   border-radius: 16px !important;
-  margin-left: 20px !important;
-  margin-right: 10px !important;
+  margin-left: 13px !important;
+  margin-right: 15px !important;
   max-width: 98% !important;
 }
 
