@@ -82,8 +82,18 @@ div.option-text {
   color: var(--primary) !important;
 }
 
+.monaco-editor .marker-widget .descriptioncontainer .message {
+  font-family: var(--favFont) !important;
+  color: var(--primary) !important;
+}
+
 .select-box-details-pane.border-top p {
   color: var(--primary) !important;
+}
+
+div.hover-content {
+  color: var(--primary) !important;
+  font-family: var(--favFont) !important;
 }
 
 .option-decorator-right {
@@ -3173,6 +3183,41 @@ a.action-label.codicon.extension-action.label.prominent.install.action-dropdown 
   border-right: 5px solid var(--inverse_primary) !important;
   border-radius: 10px !important;
   padding: 10px !important;
+}
+
+div.zone-widget {
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  border-top: 4px solid var(--primary) !important;
+  border-bottom: 4px solid var(--inverse_primary) !important;
+  border-left: 4px solid var(--primary) !important;
+  border-right: 4px solid var(--inverse_primary) !important;
+  border-radius: 16px !important;
+  margin-left: 20px !important;
+  margin-right: 10px !important;
+  max-width: 98% !important;
+}
+
+.monaco-editor .marker-widget,
+.monaco-editor .peekview-widget .head {
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+}
+
+.monaco-editor .peekview-widget .head .peekview-title {
+  color: var(--inverse_primary) !important;
+}
+
+span.dirname,
+span.filename,
+span.details span.source {
+  color: var(--primary) !important;
+}
+
+span.details a.code-link,
+span.details a.code-link::before,
+span.details a.code-link::after {
+  color: var(--surface_tint) !important;
 }
 
 /* End of style  */
