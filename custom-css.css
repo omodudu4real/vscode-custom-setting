@@ -3263,4 +3263,8 @@ div.browser-error-detail {
   color: var(--primary) !important;
 }
 
+.extensions-viewlet > .extensions .message-container .message,
+.extensions-viewlet .codicon-warning:before {
+  color: var(--primary);
+}
 /* End of style  */
