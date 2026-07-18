@@ -3274,6 +3274,19 @@ div.browser-error-detail {
   color: var(--primary) !important;
   font-size: 16px !important;
   font-family: var(--favFont) !important;
+  position: relative;
+}
+
+.vs-dark.monaco-editor
+  span[class^='ced-'][class*='TextEditorDecorationType']::before {
+  content: '';
+  position: absolute !important;
+  bottom: -5px !important;
+  display: inline-block !important;
+  width: 38% !important;
+  height: 4px !important;
+  border-radius: 99px !important;
+  background-color: var(--primary) !important;
 }
 
 /* End of style  */
