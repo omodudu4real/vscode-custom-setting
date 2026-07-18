@@ -3268,12 +3268,18 @@ div.browser-error-detail {
   color: var(--primary);
 }
 
-.vs-dark.monaco-editor [class^='ced-2-TextEditorDecorationType25']::after {
+
+/* import cost extension style optional*/
+.vs-dark.monaco-editor
+  span[class^='ced-'][class*='TextEditorDecorationType']::after {
   border-top: 2px solid var(--primary) !important;
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
   color: var(--primary) !important;
+  font-size: 18px !important;
+  border-radius: 6px !important;
+  font-family: var(--favFont) !important;
 }
 
 /* End of style  */
