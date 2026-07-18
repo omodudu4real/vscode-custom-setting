@@ -3268,7 +3268,6 @@ div.browser-error-detail {
   color: var(--primary);
 }
 
-
 /* import cost extension style optional*/
 .vs-dark.monaco-editor
   span[class^='ced-'][class*='TextEditorDecorationType']::after {
@@ -3277,9 +3276,11 @@ div.browser-error-detail {
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
   color: var(--primary) !important;
-  font-size: 18px !important;
+  font-size: 15px !important;
   border-radius: 6px !important;
   font-family: var(--favFont) !important;
+  padding: 6px !important;
+  margin-bottom: 3px !important;
 }
 
 /* End of style  */
