@@ -3275,13 +3275,14 @@ div.browser-error-detail {
   font-size: 16px !important;
   font-family: var(--favFont) !important;
   position: relative;
+  left: 5px !important;
 }
 
 .vs-dark.monaco-editor
   span[class^='ced-'][class*='TextEditorDecorationType']::before {
   content: '';
   position: absolute !important;
-  bottom: -5px !important;
+  bottom: -4px !important;
   display: inline-block !important;
   width: 38% !important;
   height: 4px !important;
