@@ -3271,16 +3271,11 @@ div.browser-error-detail {
 /* import cost extension style optional*/
 .vs-dark.monaco-editor
   span[class^='ced-'][class*='TextEditorDecorationType']::after {
-  border-top: 2px solid var(--primary) !important;
-  border-bottom: 2px solid var(--inverse_primary) !important;
-  border-left: 2px solid var(--primary) !important;
-  border-right: 2px solid var(--inverse_primary) !important;
   color: var(--primary) !important;
   font-size: 15px !important;
   border-radius: 6px !important;
   font-family: var(--favFont) !important;
-  padding: 6px !important;
-  margin-bottom: 3px !important;
+  margin-left: 10px !important;
 }
 
 /* End of style  */
