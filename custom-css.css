@@ -382,7 +382,6 @@ a.monaco-button.monaco-text-button {
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
   outline: none !important;
-  /* margin-bottom: 14px !important; */
 }
 
 .notification-list-item-icon.codicon.codicon-info,
