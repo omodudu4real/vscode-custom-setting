@@ -311,20 +311,44 @@ div.notification-list-item-source {
 }
 
 /* Notification Popup toast */
-
 div.notifications-toasts.visible.bottom-right {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 16px !important;
-  border-top: 3px solid var(--primary) !important;
-  border-bottom: 3px solid var(--inverse_primary) !important;
-  border-left: 3px solid var(--primary) !important;
-  border-right: 3px solid var(--inverse_primary) !important;
+  background-image: transparent !important;
+  border: none !important;
   outline: none !important;
-  padding-bottom: 10px !important;
+  margin-right: 10px !important;
+  margin-bottom: 8px !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+}
+
+div.notifications-toasts.visible.bottom-right::before,
+div.notifications-toasts.visible.bottom-right::after {
+  content: '' !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 16px;
+  z-index: -1 !important;
+  animation: 18s animatedBorder linear infinite !important;
+}
+
+div.notifications-toasts.visible.bottom-right::before {
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 90%,
+    var(--primary)
+  );
+}
+div.notifications-toasts.visible.bottom-right::after {
+  background-image: conic-gradient(
+    from calc(var(--angle) + 180deg),
+    transparent 80%,
+    var(--primary)
+  );
 }
 
 .notifications-toasts div[id^='list_id_'][id$='_0'].monaco-list-row {
@@ -1321,17 +1345,6 @@ div.monaco-icon-label.codicon-settings-editor-label-icon.predefined-file-icon::b
 .action-label.codicon.codicon-arrow-right,
 .agent-status-badge-section.sparkle.monaco-dropdown-with-primary {
   display: none !important;
-}
-
-/* Command Palette */
-.quick-input-widget {
-  transform: translateY(-50%) !important;
-  top: 50% !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35) !important;
-  padding: 10px 10px 18px 10px !important;
-  background: #3c3c50 !important;
-  backdrop-filter: blur(3px) !important;
-  border-radius: 20px !important;
 }
 
 .quick-input-list,
@@ -2535,14 +2548,32 @@ div.editor-instance div.details div.title span.preview {
   outline: none !important;
 }
 
+div.monaco-button-dropdown-separator div {
+  background-color: var(--primary) !important;
+}
+
+.monaco-hover.workbench-hover.compact .hover-contents {
+  color: var(--primary) !important;
+}
+
+div.monaco-hover.fade-in.workbench-hover.compact.with-pointer {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+  border-radius: 6px !important;
+}
+
+.monaco-hover .hover-row.status-bar .info {
+  color: var(--inverse_primary) !important;
+}
+
 div.header div.extension-icon {
   display: flex;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-top: 6px solid var(--primary) !important;
-  border-bottom: 6px solid var(--inverse_primary) !important;
-  border-left: 6px solid var(--primary) !important;
-  border-right: 6px solid var(--inverse_primary) !important;
   border-radius: 18px !important;
   height: 128px !important;
   width: 128px !important;
@@ -2551,10 +2582,116 @@ div.header div.extension-icon {
   align-items: center !important;
 }
 
+div.icon-container {
+  position: relative !important;
+  z-index: 10 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+div.header div.extension-icon::before,
+div.header div.extension-icon::after {
+  content: '' !important;
+  display: block !important;
+  position: absolute !important;
+  height: 128px !important;
+  width: 128px !important;
+  border-radius: 16px;
+  padding: 4px !important;
+  z-index: -1 !important;
+  animation: 15s animatedBorder linear infinite !important;
+}
+
+div.header div.extension-icon::after {
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 75%,
+    var(--primary)
+  );
+}
+
+div.header div.extension-icon::before {
+  background-image: conic-gradient(
+    from calc(var(--angle) + 180deg),
+    transparent 75%,
+    var(--primary)
+  );
+}
+
+@keyframes animatedBorder {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
 div.header div.extension-icon img.icon {
   height: 120px !important;
   width: 110px !important;
   margin: auto !important;
+}
+
+/* Command Palette */
+.quick-input-widget {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.quick-input-widget-background {
+  position: absolute !important;
+  transform: translateY(-50%) !important;
+  top: 50% !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: #3c3c50 !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35) !important;
+  padding: 10px 10px 18px 10px !important;
+  backdrop-filter: blur(3px) !important;
+  border-radius: 20px !important;
+}
+
+.quick-input-widget-border {
+  position: absolute !important;
+  transform: translateY(-50%) !important;
+  left: -5px !important;
+  top: 50% !important;
+  width: 100% !important;
+  height: 100% !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35) !important;
+  padding: 15px 15px 23px 15px !important;
+  background-image: conic-gradient(
+    from var(--angle),
+    transparent 75%,
+    var(--primary)
+  );
+  backdrop-filter: blur(3px) !important;
+  border-radius: 20px !important;
+  animation: 30s animatedBorder linear infinite !important;
+}
+
+.quick-input-widget-border::before {
+  content: '' !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  background-image: conic-gradient(
+    from calc(var(--angle) + 180deg),
+    transparent 75%,
+    var(--primary)
+  );
+  height: 100% !important;
+  width: 100% !important;
+  border-radius: 20px;
+  animation: 30s animatedBorder linear infinite !important;
 }
 
 div.header div.details div.title span.name {

@@ -41,8 +41,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const myObservation = new MutationObserver(() => {
     document
       .querySelectorAll('.notification-toast-container')
-      .forEach((element) => {
-        const ports = [];
+      .forEach(element => {
         if (
           element.textContent.includes(
             'Your Code installation appears to be corrupt. Please reinstall.'
@@ -66,7 +65,7 @@ window.addEventListener('DOMContentLoaded', () => {
   myObservation.observe(document.body, { childList: true, subtree: true });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   // ✅ Use a counter to avoid endless retries
   let retryCount = 0;
   const maxRetries = 20; // ~10 seconds (20 * 500ms)
@@ -104,14 +103,24 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Function: attach observer to watch show/hide state
   function setupObserver(commandDialog) {
+    if (!commandDialog.querySelector('.quick-input-widget-background')) {
+      const border = document.createElement('div');
+      border.className = 'quick-input-widget-border';
+
+      const background = document.createElement('div');
+      background.className = 'quick-input-widget-background';
+
+      commandDialog.prepend(background);
+      commandDialog.prepend(border);
+    }
     // Apply blur immediately if dialog is already visible
     if (commandDialog.style.display !== 'none') {
       runMyScript();
     }
 
     // Watch for open/close changes via style attribute
-    const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
+    const observer = new MutationObserver(mutations => {
+      mutations.forEach(mutation => {
         if (
           mutation.type === 'attributes' &&
           mutation.attributeName === 'style'
@@ -130,7 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Key listener: Ctrl+P / Cmd+P opens palette → run blur
-  document.addEventListener('keydown', function (event) {
+  document.addEventListener('keydown', event => {
     if ((event.metaKey || event.ctrlKey) && event.key === 'p') {
       event.preventDefault();
       runMyScript();
@@ -143,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Global Escape listener (capture phase, catches all Esc presses)
   document.addEventListener(
     'keydown',
-    function (event) {
+    event => {
       if (event.key === 'Escape' || event.key === 'Esc') {
         handleEscape();
       }
@@ -158,12 +167,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Remove existing blur overlay
     const existingElement = document.getElementById('command-blur');
-    existingElement && existingElement.remove();
+    if (existingElement) {
+      existingElement.remove();
+    }
 
     // Create new blur overlay
     const newElement = document.createElement('div');
     newElement.setAttribute('id', 'command-blur');
-    newElement.addEventListener('click', function () {
+    newElement.addEventListener('click', () => {
       newElement.remove();
     });
 
@@ -172,33 +183,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Hide sticky widgets
     const widgets = document.querySelectorAll('.sticky-widget');
-    widgets.forEach((widget) => {
+    widgets.forEach(widget => {
       widget.style.opacity = 0;
     });
 
     const treeWidget = document.querySelector('.monaco-tree-sticky-container');
-    treeWidget && (treeWidget.style.opacity = 0);
+    if (treeWidget) {
+      treeWidget.style.opacity = 0;
+    }
   }
 
   // Function: removes blur overlay and restores widgets
   function handleEscape() {
     const element = document.getElementById('command-blur');
-    element && element.click();
+    if (element) {
+      element.click();
+    }
 
     // Restore sticky widgets
     const widgets = document.querySelectorAll('.sticky-widget');
-    widgets.forEach((widget) => {
+    widgets.forEach(widget => {
       widget.style.opacity = 1;
     });
 
     const treeWidget = document.querySelector('.monaco-tree-sticky-container');
-    treeWidget && (treeWidget.style.opacity = 1);
+
+    if (treeWidget) {
+      treeWidget.style.opacity = '1';
+    }
   }
 });
 
 /* FOR DEBUGGING ALT + , */
 
-document.addEventListener('keydown', (e) => {
+document.addEventListener('keydown', e => {
   if (e.altKey && e.code === 'Comma') {
     e.preventDefault();
 
@@ -222,7 +240,9 @@ element so it get destroyed and re-born. */
 window.addEventListener('DOMContentLoaded', () => {
   const rootObserver = new MutationObserver(() => {
     const host = document.querySelector('.shadow-root-host');
-    if (!host || !host.shadowRoot) return;
+    if (!host?.shadowRoot) {
+      return;
+    }
 
     const shadow = host.shadowRoot;
 
@@ -257,4 +277,17 @@ window.addEventListener('DOMContentLoaded', () => {
     subtree: true
   });
   ``;
+});
+
+const commandPalette = new MutationObserver(() => {
+  const widget = document.querySelector('.quick-input-widget');
+
+  if (widget) {
+    console.log('Found!', widget);
+  }
+});
+
+commandPalette.observe(document.body, {
+  childList: true,
+  subtree: true
 });
