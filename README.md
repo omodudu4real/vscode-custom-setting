@@ -1,79 +1,238 @@
-# Instructions
+# VS Code UI Redesign
 
-**NOTE:** Please take time to read the short documentation of **"Custom CSS and JS Loader"** for some useful tips for various operating systems to avoid issues regarding the changes not taking effect.
+A modern Visual Studio Code interface redesign built with **CSS** and **JavaScript** using the **Custom CSS and JS Loader** extension.
 
-1. Install "Custom CSS and JS Loader" VS Code Extension.
-2. Copy the contents of settings.json to your VS Code's settings.json (warning: it will overwrite your settings).
-3. Add `vscode_custom_css.imports` array to your settings.json file:
+This project enhances the default VS Code experience with improved layouts, refined animations, cleaner spacing, and a more polished user interface while maintaining the familiar workflow developers love.
+
+> ⚠️ This project is **not** a VS Code extension. It customizes the VS Code interface using injected CSS and JavaScript.
+
+---
+
+# Preview
+
+> **Screenshots and GIFs coming soon**
+
+## Explorer
+
+![Explorer](images/explorer.png)
+
+## Extensions
+
+![Extensions](images/extensions.png)
+
+## Notifications
+
+![Notifications](images/notifications.gif)
+
+---
+
+# Features
+
+- Modern VS Code interface redesign
+- Beautiful notification animations
+- Redesigned Extension Details panel
+- Improved hover effects
+- Cleaner spacing and alignment
+- Better typography
+- Custom UI components
+- Lightweight visual effects
+- Performance-conscious animations
+- Easy to customize
+
+---
+
+# Performance
+
+Performance was one of the goals while developing this project.
+
+Instead of allowing animations to run continuously in the background, UI elements are designed so animations only run when they are actually visible.
+
+Some optimizations include:
+
+- Dynamic UI injection using JavaScript
+- MutationObserver for detecting newly created VS Code elements
+- Animations that activate only when required
+- Reduced unnecessary rendering work
+- Battery-friendly animation behavior
+
+---
+
+# Requirements
+
+Install the following VS Code extension:
+
+- **Custom CSS and JS Loader**
+
+---
+
+# Installation
+
+## 1. Install Custom CSS and JS Loader
+
+Install the extension from the Visual Studio Code Marketplace.
+
+---
+
+## 2. Clone this repository
+
+```bash
+git clone https://github.com/your-username/your-repository.git
+```
+
+---
+
+## 3. Copy the project files
+
+Place the CSS and JavaScript files somewhere on your computer.
+
+Example:
 
 ```
+C:\VSCode-Custom\
+```
+
+or
+
+```
+~/VSCode-Custom/
+```
+
+---
+
+## 4. Update your settings.json
+
+Add:
+
+```json
 "vscode_custom_css.imports": [
-    // Absolute file paths for your css/js files
-    // For Mac or Linux
-    // "file:///home/your-user-name/file-name.extension(.css)",
-    // "file:///Users/your-user-name/file-name.extension(.js)"
-
-    // For Windows
-    // "file:///C:/path-of-custom-css/custom-vscode.css",
-    // "file:///C:/path-of-custom-css/custom-vscode-script.js"
-],
+    "file:///absolute/path/custom-vscode.css",
+    "file:///absolute/path/custom-vscode.js"
+]
 ```
 
-4. You might need to take ownership of the CSS/JS files you made or run VS Code with admin privileges on certain operating system:
+Examples:
+
+Linux
+
+```json
+"file:///home/username/custom-vscode.css"
+```
+
+Windows
+
+```json
+"file:///C:/VSCode-Custom/custom-vscode.css"
+```
+
+---
+
+## 5. Enable Custom CSS
+
+Open the Command Palette.
+
+Run:
 
 ```
-Mac and Linux users
-The extension would NOT work if Visual Studio Code cannot modify itself. The cases include:
+Enable Custom CSS and JS
+```
 
-Code files being read-only, like on a read-only file system or,
-Code is not started with the permissions to modify itself.
-You need to claim ownership on Visual Studio Code's installation directory, by running this command:
+Restart VS Code.
 
-To Fix this just type this in your Linux or MacOs
+---
+
+## 6. Reload after making changes
+
+Whenever you modify the CSS or JavaScript files, run:
+
+```
+Reload Custom CSS and JS
+```
+
+---
+
+# Linux & macOS
+
+If VS Code cannot modify itself, change the ownership of the installation directory.
+
+```bash
 sudo chown -R $(whoami) "$(which code)"
 sudo chown -R $(whoami) /usr/share/code
-
-
-Note: Replace /usr/share/code where your VS Code is installed.
-sudo chown -R your-user-name /usr/share/code
 ```
 
-5. Enable "Custom CSS and JS Loader" from VS Code's command dialog.
-6. Customize the css or js from this repo to make it look the way you want to, or even better, explore areas of VS Code that you want to customize.
-7. After making some changes, reload the extension (Reload Custom CSS and JS) from VS Code's command dialog.
+If your installation directory is different, replace:
 
 ```
-Installed Extension:
-1.  Easy Icon Theme
-2.  React Dev Theme (dark)
-3.  Prettier Code Formater
-4.  ESLint
-5.  Emmet
-6.  Custom CSS and JS Loader
-7.  HTML CSS Support
-8.  HTML/CSS/JavaScript Snippets
-9.  Intellisense for CSS class names in HTML
-10. Live Server
-11. Material Icon Theme
-12. vscode-styled components
-13. Tailwind CSS intellisense
-14. lit-html
-15. es6-string-html
-16. es6-string-javascipt
-17. es6-string-css
-18. VSCode Command Server
-19. Thunder Client
-20.Emojisense
-21. Easy icon theme
-22. Fluent icons
-23. Even Better TOML
-24. Carbon Product icons
-25. Custom CSS Hot Reload
-
-Installed Fonts
-1.  Fira Code iScript (developer font)
-2.  Fira Code (developer font)
-3.  Cascadia Code (developer font)
-4.  Akaya Kanadaka (google font)
-5.  Merienda (google font)
+/usr/share/code
 ```
+
+with the correct location.
+
+---
+
+# Customization
+
+Feel free to customize:
+
+- Colors
+- Fonts
+- Icons
+- Animations
+- Borders
+- Shadows
+- Layouts
+- JavaScript behavior
+
+Make it your own.
+
+---
+
+# Recommended Fonts
+
+- Fira Code
+- Cascadia Code
+- JetBrains Mono
+
+---
+
+# Recommended Extensions
+
+- Custom CSS and JS Loader
+- Material Icon Theme
+- Fluent Icons
+- Prettier
+- ESLint
+
+---
+
+# Roadmap
+
+- [x] Notification redesign
+- [x] Extension panel redesign
+- [x] Custom animations
+- [x] JavaScript enhancements
+- [ ] Activity Bar redesign
+- [ ] Search panel redesign
+- [ ] Settings redesign
+- [ ] Command Palette redesign
+
+---
+
+# Contributing
+
+Suggestions, bug reports, and pull requests are welcome.
+
+If you have ideas for improving the interface or performance, feel free to open an issue.
+
+---
+
+# License
+
+This project is licensed under the MIT License.
+
+---
+
+# Acknowledgements
+
+- Microsoft Visual Studio Code
+- Custom CSS and JS Loader
+- The VS Code community

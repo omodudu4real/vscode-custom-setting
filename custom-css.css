@@ -2670,6 +2670,10 @@ div.header div.extension-icon img.icon {
   border-radius: 20px !important;
 }
 
+.codicon-chat-model-provider-copilot:before {
+  color: var(--primary) !important;
+}
+
 .quick-input-widget-border {
   position: absolute !important;
   transform: translateY(-50%) !important;
