@@ -383,8 +383,8 @@
 
   // CUSTOM CSS AND SCRIPTS SETTINGS FOR VSCODE
   "vscode_custom_css.imports": [
-    "file:///home/omodudu/.VSC_customize/custom-css.css",
-    "file:///home/omodudu/.VSC_customize/custom-script.js"
+    "file:///home/omodudu/.VSC_customize/custom-css.css"
+     "file:///home/omodudu/.VSC_customize/custom-script.js"
   ],
   "symbols.hidesExplorerArrows": false
   //   sudo chown -R $(whoami) "$(which code)"

@@ -42,27 +42,30 @@ window.addEventListener('DOMContentLoaded', () => {
     document
       .querySelectorAll('.notification-toast-container')
       .forEach(element => {
-        if (
-          element.textContent.includes(
-            'Your Code installation appears to be corrupt. Please reinstall.'
-          )
-        ) {
-          element.style.display = 'none'; // Hide the corrupt install notification
-        }
+        // Add custom div only once
+        if (!element.querySelector('.my-custom-div')) {
+          const customDiv = document.createElement('div');
+          customDiv.className = 'my-custom-div';
 
-        // VSCode Command Server started on port 3000 but you can have as many port as possible
-        if (
-          /VSCode Command Server started on port \d+\.?/.test(
-            element.textContent
-          )
-        ) {
-          element.style.display = 'none'; // Hide the corrupt install notification
+          element.prepend(customDiv);
+        }
+        const text = element.textContent || '';
+        const shouldHide =
+          text.includes(
+            'Your Code installation appears to be corrupt. Please reinstall.'
+          ) || /VSCode Command Server started on port \d+\.?/.test(text);
+
+        if (shouldHide) {
+          element.style.setProperty('display', 'none', 'important');
         }
       });
   });
 
-  // Start observing the body for new notifications
-  myObservation.observe(document.body, { childList: true, subtree: true });
+  // Make sure to observe the target node (e.g., document.body)
+  myObservation.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
