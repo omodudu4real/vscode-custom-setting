@@ -3420,9 +3420,21 @@ div.browser-error-detail {
   color: var(--primary);
 }
 
-/* debug */
+.monaco-editor
+  .suggest-details
+  > .monaco-scrollable-element
+  > .body
+  > .header
+  > .type {
+  color: var(--primary) !important;
+}
+
 .vs-dark.monaco-editor span[class^='ced-'][class*='TextEditorDecorationType'] {
   position: relative !important;
+}
+
+.monaco-workbench .inline-chat .status .label {
+  color: var(--secondary) !important;
 }
 
 /* import cost extension, GitLens style optional*/
@@ -3434,6 +3446,17 @@ div.browser-error-detail {
   margin-left: 5em !important;
   border-radius: 8px !important;
   padding: 2px !important;
+}
+
+.monaco-hover .markdown-hover > .hover-contents:not(.code-hover-contents) {
+  color: var(--primary) !important;
+}
+
+.monaco-hover.workbench-hover.with-pointer.extension-hover {
+  border-top: 2px solid var(--primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
 }
 
 .vs-dark.monaco-editor
