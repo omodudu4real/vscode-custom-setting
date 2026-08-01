@@ -3541,6 +3541,10 @@ div.time div.activation-time {
   color: var(--primary) !important;
 }
 
+.extensions-viewlet .codicon-error:before {
+  color: var(--primary) !important;
+}
+
 .style-override
   .part.statusbar
   > .items-container
