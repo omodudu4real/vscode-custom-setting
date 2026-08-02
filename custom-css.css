@@ -3573,4 +3573,10 @@ div.time div.activation-time {
   color: var(--secondary) !important;
 }
 
+.monaco-hover.workbench-hover {
+  border: 2px solid var(--primary) !important;
+  font-size: 13px !important;
+  border-radius: 12px !important;
+}
+
 /* End of style  */
