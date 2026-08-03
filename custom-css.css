@@ -3579,4 +3579,14 @@ div.time div.activation-time {
   border-radius: 12px !important;
 }
 
+.codicon-error:before,
+.codicon-warning:before {
+  color: var(--primary) !important;
+}
+
+.agent-status-badge-section.unread span {
+  color: var(--inverse_primary) !important;
+}
+
+
 /* End of style  */
