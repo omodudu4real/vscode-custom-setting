@@ -1,4 +1,4 @@
-// MY VSCODE JSON SETTINGS
+// My VSCode json Settings
 {
   // THEME & UI
   "workbench.iconTheme": "symbols",
@@ -7,28 +7,36 @@
 
   // FORMATTING
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
   "editor.formatOnType": true,
 
-  // ✅ PRETTIER
+  // LANGUAGE FORMATTERS
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.biome": "never",
+      "source.organizeImports.biome": "never"
+    }
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+
+  // PRETTIER
   "prettier.singleQuote": true,
   "prettier.semi": true,
-  "prettier.trailingComma": "es5",
+  "prettier.trailingComma": "none",
   "prettier.bracketSameLine": true,
-
-  // JSON / JSONC override
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "prettier.trailingComma": "none"
-  },
-
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "prettier.trailingComma": "none"
-  },
+  "prettier.arrowParens": "avoid",
+  "prettier.jsxSingleQuote": true,
 
   // ESLINT
   "eslint.validate": [
@@ -75,6 +83,8 @@
     "scrollbar.shadow": "#24292e00"
   },
 
+  "editor.acceptSuggestionOnCommitCharacter": false,
+
   "workbench.tree.indent": 20,
 
   // EXPLORER AND GIT DECORATION
@@ -84,7 +94,6 @@
 
   // WINDOW SETTINGS
   "window.zoomLevel": 0.2,
-  "window.titleBarStyle": "native",
 
   // EDITORS FONTS AND
   "editor.fontFamily": "'Fira Code iScript'",
@@ -177,6 +186,12 @@
         "settings": {
           "fontStyle": ""
         }
+      },
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
       }
     ]
   },
@@ -198,19 +213,18 @@
   "editor.renderWhitespace": "all",
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-
-  // AUTOSAVE
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 300000,
+  "files.autoSaveDelay": 10,
 
   // FILE ASSOCIATIONS
   "files.associations": {
+    "flake.lock": "json",
     "*.css": "css",
     "*.js": "javascript",
     "*.jsx": "javascriptreact",
     "*.ts": "typescript",
     "*.tsx": "typescriptreact",
-    "*.html": "html"
+    "*.html": "html",
+    ".env*": "dotenv"
   },
 
   // GIT
@@ -379,14 +393,63 @@
   "workbench.secondarySideBar.defaultVisibility": "visible",
   "chat.agent.enabled": false,
   "workbench.productIconTheme": "fluent-icons",
-  "window.menuBarVisibility": "toggle",
+
+  "symbols.hidesExplorerArrows": false,
+  "window.menuStyle": "custom",
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "{git,gitlens,chat-editing-snapshot-text-model,copilot,git-graph,git-graph-3}:/**/*.qrc": "default",
+    "*.qrc": "default",
+    "*.svg": "default"
+  },
+
+  "custom_css_hot_reload.hotReloadMode": "onChange",
+  "window.titleBarStyle": "native",
+  "workbench.editor.useModal": "off",
 
   // CUSTOM CSS AND SCRIPTS SETTINGS FOR VSCODE
   "vscode_custom_css.imports": [
-    "file:///home/omodudu/.VSC_customize/custom-css.css"
-     "file:///home/omodudu/.VSC_customize/custom-script.js"
+    "file:///home/omodudu/.VSC_customize/custom-css.css",
+    "file:///home/omodudu/.VSC_customize/custom-script.js",
+    "file:///home/omodudu/.VSC_customize/colors/colors.css"
   ],
-  "symbols.hidesExplorerArrows": false
-  //   sudo chown -R $(whoami) "$(which code)"
-  //   sudo chown -R $(whoami) /usr/share/code
+
+  "editor.formatOnPaste": true,
+  "editor.wrapOnEscapedLineFeeds": true,
+  "chat.viewSessions.orientation": "stacked",
+  "files.autoSave": "afterDelay",
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "css": false
+  },
+
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "json.schemaDownload.trustedDomains": {
+    "https://schemastore.azurewebsites.net/": true,
+    "https://raw.githubusercontent.com/microsoft/vscode/": true,
+    "https://raw.githubusercontent.com/devcontainers/spec/": true,
+    "https://www.schemastore.org/": true,
+    "https://json.schemastore.org/": true,
+    "https://json-schema.org/": true,
+    "https://developer.microsoft.com/json-schemas/": true,
+    "https://biomejs.dev": true
+  },
+  "harper.dialect": "American",
+  "cSpell.userWords": ["caffiend", "fanta", "hypr", "Insatiates"],
+  "@azure.argTenant": "",
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilotcli:",
+  "editor.tabSize": 2,
+  "editor.linkedEditing": true,
+  "editor.codeActions.triggerOnFocusChange": true,
+  "editor.formatOnSave": true
+
+  // Commands for reference:
+  // sudo chown -R $(whoami) "$(which code)"
+  // sudo chown -R $(whoami) /usr/share/code
 }

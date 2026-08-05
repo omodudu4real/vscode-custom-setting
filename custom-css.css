@@ -3590,6 +3590,7 @@ div.time div.activation-time {
 
 .monaco-list[class*='list_id_'] .monaco-tl-indent > .indent-guide.active {
   color: var(--primary) !important;
+  border-width: 2px !important;
 }
 
 /* End of style  */
