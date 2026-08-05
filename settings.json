@@ -1,9 +1,13 @@
-// My VSCode json Settings
 {
   // THEME & UI
   "workbench.iconTheme": "symbols",
   "workbench.colorTheme": "React Dev Theme (dark)",
   "workbench.list.smoothScrolling": true,
+
+  // Point VS Code to your global Biome binary
+  "biome.lsp.bin": "/usr/bin/biome",
+  "biome.enabled": true,
+  "biome.requireConfiguration": false,
 
   // FORMATTING
   "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -11,6 +15,7 @@
 
   // LANGUAGE FORMATTERS
   "[css]": {
+    "biome.enabled": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
       "source.fixAll.biome": "never",
