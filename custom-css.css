@@ -304,10 +304,56 @@ div.settings-toc-count {
   color: var(--primary) !important;
 }
 
+.style-override
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-item.checked
+  .action-label:not(.codicon),
+.style-override
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-item:not(.checked)
+  .action-label:not(.codicon) {
+  background-color: var(--primary) !important;
+  margin-left: -7px !important;
+}
+.monaco-workbench
+  .activitybar
+  > .content
+  :not(.monaco-menu)
+  > .monaco-action-bar
+  .action-label:not(.codicon) {
+  margin-left: -7px !important;
+  transform: scale(0.8);
+}
+
+.monaco-workbench
+  .activitybar
+  .monaco-action-bar
+  .action-label.activity-workbench-view-extension-thunder-client-a84db9a0bac4692e83a4412dcb1a2edef55fa7b8 {
+  width: 10px !important;
+  height: 10px !important;
+}
+
 /* Notification Popup */
 div.notification-list-item-message,
 div.notification-list-item-source {
   color: var(--primary);
+}
+
+h2.feature__ttitle p,
+h2.feature__ttitle span {
+  color: var(--primary) !important;
+}
+
+.codicon-gitlens-gitlens-inspect:before,
+.codicon-gitlens-gitlens:before {
+  color: var(--primary) !important;
+  font-size: 16px !important;
 }
 
 /* Notification Popup toast */
