@@ -2812,12 +2812,12 @@ div.header div.extension-icon img.icon {
 
 /* Bracket level-7 */
 .monaco-editor .bracket-highlighting-6 {
-  color: #61afef !important;
+  color: var(--tertiary_fixed) !important;
 }
 
-/* Bracket level-5 */
-.monaco-editor .bracket-highlighting-4 {
-  color: #61afef !important;
+/* Bracket level-8 */
+.monaco-editor .bracket-highlighting-7 {
+  color: var(--inverse_primary) !important;
 }
 
 .codicon-chat-model-provider-copilot:before {
