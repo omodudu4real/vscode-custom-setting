@@ -2777,47 +2777,61 @@ div.header div.extension-icon img.icon {
 .monaco-editor [class*='bracket-highlighting-'] {
   font-weight: 600 !important;
   font-size: 20px !important;
-  text-shadow: 0 0 4px currentColor !important;
 }
 
 /* Bracket level-1 */
 .monaco-editor .bracket-highlighting-0 {
-  color: var(--primary_fixed_dim) !important;
+  color: var(--primary) !important;
+  text-shadow: 0 0 7px currentColor !important;
+  opacity: 1 !important;
 }
 
 /* Bracket level-2 */
 .monaco-editor .bracket-highlighting-1 {
-  color: var(--tertiary_fixed_dim) !important;
+  color: var(--inverse_primary) !important;
+  text-shadow: 0 0 6px currentColor !important;
+  opacity: 0.95 !important;
 }
 
 /* Bracket level-3 */
 .monaco-editor .bracket-highlighting-2 {
-  color: var(--secondary_fixed_dim) !important;
+  color: var(--outline) !important;
+  text-shadow: 0 0 5px currentColor !important;
+  opacity: 0.9 !important;
 }
 
 /* Bracket level-4 */
 .monaco-editor .bracket-highlighting-3 {
   color: var(--on_surface_variant) !important;
+  text-shadow: 0 0 4px currentColor !important;
+  opacity: 0.85 !important;
 }
 
 /* Bracket level-5 */
 .monaco-editor .bracket-highlighting-4 {
-  color: var(--outline) !important;
+  color: var(--primary_fixed) !important;
+  text-shadow: 0 0 3px currentColor !important;
+  opacity: 0.8 !important;
 }
 
 /* Bracket level-6 */
 .monaco-editor .bracket-highlighting-5 {
-  color: var(--on_primary_fixed_variant) !important;
+  color: var(--secondary) !important;
+  text-shadow: 0 0 2px currentColor !important;
+  opacity: 0.75 !important;
 }
 
 /* Bracket level-7 */
 .monaco-editor .bracket-highlighting-6 {
   color: var(--tertiary_fixed) !important;
+  text-shadow: 0 0 1px currentColor !important;
+  opacity: 0.7 !important;
 }
 
 /* Bracket level-8 */
 .monaco-editor .bracket-highlighting-7 {
-  color: var(--inverse_primary) !important;
+  color: var(--source_color) !important;
+  opacity: 0.65 !important;
 }
 
 .codicon-chat-model-provider-copilot:before {
