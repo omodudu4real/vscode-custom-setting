@@ -898,6 +898,13 @@ li.action-item.icon.checked a.action-label.codicon {
   height: 45px !important;
 }
 
+/* Floating Error Notification Box */
+.monaco-editor .monaco-resizable-hover {
+  top: 320px !important;
+  left: 1160px !important;
+  max-width: 800px !important;
+}
+
 .quick-input-list .quick-input-list-entry {
   padding: 0 2px;
   border-top-color: var(--primary) !important;
@@ -906,7 +913,7 @@ li.action-item.icon.checked a.action-label.codicon {
 
 .quick-input-list .monaco-list-row {
   border-radius: 5px !important;
-  outline: none !important;
+  outline: none !important;;
 }
 
 .quick-input-list .quick-input-list-entry-action-bar .action-label.codicon {
