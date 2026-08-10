@@ -8,10 +8,17 @@
   "biome.lsp.bin": "/usr/bin/biome",
   "biome.enabled": true,
   "biome.requireConfiguration": false,
+  "biome.css.linter.enabled": false,
 
   // FORMATTING
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnType": true,
+
+  // Enables word wrap globally at the viewport boundary
+  "editor.wordWrap": "on",
+
+  // Keeps wrapped lines indented to match the original line's indentation
+  "editor.wrappingIndent": "indent",
 
   // LANGUAGE FORMATTERS
   "[css]": {
@@ -77,12 +84,6 @@
 
   // BRACKET COLORIZER (built-in, stable palette) Editor Settings
   "workbench.colorCustomizations": {
-    "editorBracketHighlight.foreground1": "#61AFEF", // bright blue
-    "editorBracketHighlight.foreground2": "#E5C07B", // warm yellow
-    "editorBracketHighlight.foreground3": "#56B6C2", // teal
-    "editorBracketHighlight.foreground4": "#98C379", // green
-    "editorBracketHighlight.foreground5": "#D19A66", // soft orange
-    "editorBracketHighlight.foreground6": "#ABB2BF", // gray
     "inlineparameters.annotationBackground": "#282A3600",
     "inlineparameters.annotationForeground": "#7b82af",
     "scrollbar.shadow": "#24292e00"
@@ -114,7 +115,7 @@
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.cursorStyle": "line",
-  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.enabled": false,
 
   // FONT STYLING IN DOCUMENT & TOKEN COLORS
   "editor.tokenColorCustomizations": {
@@ -212,8 +213,8 @@
 
   // CURSOR
   "editor.cursorWidth": 4,
-  "editor.cursorBlinking": "blink",
-
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
   // WHITESPACE
   "editor.renderWhitespace": "all",
   "files.trimTrailingWhitespace": true,
@@ -445,14 +446,15 @@
     "https://biomejs.dev": true
   },
   "harper.dialect": "American",
-  "cSpell.userWords": ["caffiend", "fanta", "hypr", "Insatiates"],
+  "cSpell.userWords": ["caffiend", "fanta", "hypr", "Insatiates", "Muhammed"],
   "@azure.argTenant": "",
   "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilotcli:",
+  "gitlens.ai.vscode.model": "copilot:gpt-4o-mini",
   "editor.tabSize": 2,
   "editor.linkedEditing": true,
   "editor.codeActions.triggerOnFocusChange": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "go.toolsManagement.autoUpdate": true
 
   // Commands for reference:
   // sudo chown -R $(whoami) "$(which code)"
