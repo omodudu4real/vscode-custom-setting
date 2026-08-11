@@ -397,7 +397,7 @@ div.my-custom-div::after {
   background-image: conic-gradient(
     from calc(var(--angle) + 180deg),
     transparent 90%,
-    var(--primary)
+    var(--inverse_primary)
   );
 }
 
@@ -901,8 +901,8 @@ li.action-item.icon.checked a.action-label.codicon {
 /* Floating Error Notification Box */
 .monaco-editor .monaco-resizable-hover {
   top: 320px !important;
-  left: 1160px !important;
-  max-width: 800px !important;
+  left: 1180px !important;
+  max-width: 600px !important;
 }
 
 .quick-input-list .quick-input-list-entry {
@@ -913,7 +913,7 @@ li.action-item.icon.checked a.action-label.codicon {
 
 .quick-input-list .monaco-list-row {
   border-radius: 5px !important;
-  outline: none !important;;
+  outline: none !important;
 }
 
 .quick-input-list .quick-input-list-entry-action-bar .action-label.codicon {
@@ -2728,7 +2728,7 @@ div.header div.extension-icon::before {
   background-image: conic-gradient(
     from calc(var(--angle) + 180deg),
     transparent 75%,
-    var(--primary)
+    var(--inverse_primary)
   );
 }
 
@@ -2872,7 +2872,7 @@ div.header div.extension-icon img.icon {
   background-image: conic-gradient(
     from calc(var(--angle) + 180deg),
     transparent 75%,
-    var(--primary)
+    var(--inverse_primary)
   );
   height: 100% !important;
   width: 100% !important;
