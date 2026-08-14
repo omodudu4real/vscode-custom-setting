@@ -2785,61 +2785,49 @@ div.header div.extension-icon img.icon {
 .monaco-editor [class*='bracket-highlighting-'] {
   font-weight: 600 !important;
   font-size: 20px !important;
+  opacity: 0.95 !important;
+  text-shadow: 0 0 7px currentColor !important;
 }
 
 /* Bracket level-1 */
 .monaco-editor .bracket-highlighting-0 {
   color: var(--primary) !important;
-  text-shadow: 0 0 7px currentColor !important;
-  opacity: 1 !important;
 }
 
 /* Bracket level-2 */
 .monaco-editor .bracket-highlighting-1 {
   color: var(--inverse_primary) !important;
-  text-shadow: 0 0 6px currentColor !important;
-  opacity: 0.95 !important;
 }
 
 /* Bracket level-3 */
 .monaco-editor .bracket-highlighting-2 {
   color: var(--outline) !important;
-  text-shadow: 0 0 5px currentColor !important;
-  opacity: 0.9 !important;
 }
 
 /* Bracket level-4 */
 .monaco-editor .bracket-highlighting-3 {
   color: var(--on_surface_variant) !important;
-  text-shadow: 0 0 4px currentColor !important;
-  opacity: 0.85 !important;
 }
 
 /* Bracket level-5 */
 .monaco-editor .bracket-highlighting-4 {
   color: var(--primary_fixed) !important;
   text-shadow: 0 0 3px currentColor !important;
-  opacity: 0.8 !important;
 }
 
 /* Bracket level-6 */
 .monaco-editor .bracket-highlighting-5 {
   color: var(--secondary) !important;
-  text-shadow: 0 0 2px currentColor !important;
-  opacity: 0.75 !important;
 }
 
 /* Bracket level-7 */
 .monaco-editor .bracket-highlighting-6 {
   color: var(--tertiary_fixed) !important;
-  text-shadow: 0 0 1px currentColor !important;
-  opacity: 0.7 !important;
 }
 
 /* Bracket level-8 */
 .monaco-editor .bracket-highlighting-7 {
   color: var(--source_color) !important;
-  opacity: 0.65 !important;
 }
 
 .codicon-chat-model-provider-copilot:before {
@@ -3420,9 +3408,6 @@ div.product-info div.product-logo {
   ) !important;
 }
 
-/* .monaco-editor .suggest-details > .monaco-scrollable-element > .body {
-} */
-
 .monaco-editor .suggest-details > .monaco-scrollable-element {
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
@@ -3467,6 +3452,28 @@ div.menubar-menu-title:not(
   .extension-action.action-dropdown {
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+}
+
+div.quick-input-and-message div.quick-input-message {
+  color: var(--primary) !important;
+}
+
+.monaco-workbench
+  .part.statusbar
+  > .items-container
+  > .statusbar-item.prominent-kind {
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  border: 1px solid var(--primary);
+  border-radius: 5px !important;
+}
+
+/* bracket matching style */
+.monaco-editor .bracket-match {
+  background-color: var(--outline_variant) !important;
+  border: 1px solid var(--primary);
+  border-radius: 5px !important;
+  box-shadow: 0 0 0 1px rgba(200, 150, 255, 0.7) !important;
 }
 
 .extension-editor
