@@ -3751,4 +3751,8 @@ div.time div.activation-time {
   font-family: var(--favFont) !important;
 }
 
+.tiw-theme-selector {
+  font-family: var(--favFont) !important;
+}
+
 /* End of style  */

@@ -3,111 +3,112 @@
 * Generated with Matugen
 */
 :root {
-  --favFont: 'Akaya Kanadaka';
-  --fav2Font: 'Cascadia Code';
-  /* --commentFont: 'Cartograph CF'; */
-  --commentFont: 'Malthon DEMO';
-  /* --commentFont: 'Ampher'; */
-  --cursiveFont: 'Fira Code iScript';
-  --ligatureFont: 'Fira Code';
+    --favFont: 'Akaya Kanadaka';
+    --fav2Font: 'Cascadia Code';
+    /* --commentFont: 'Cartograph CF'; main comment font */
+    --commentFont: 'Malthon DEMO';
+    --cursiveFont: 'Fira Code iScript';
+    --ligatureFont: 'Fira Code';
 
-  --background: #15140c;
 
-  --error: #ffb4ab;
+    --background: #131318;
 
-  --error_container: #93000a;
+    --error: #ffb4ab;
 
-  --inverse_on_surface: #323027;
+    --error_container: #93000a;
 
-  --inverse_primary: #686013;
+    --inverse_on_surface: #303036;
 
-  --inverse_surface: #e7e2d5;
+    --inverse_primary: #565992;
 
-  --on_background: #e7e2d5;
+    --inverse_surface: #e4e1e9;
 
-  --on_error: #690005;
+    --on_background: #e4e1e9;
 
-  --on_error_container: #ffdad6;
+    --on_error: #690005;
 
-  --on_primary: #363100;
+    --on_error_container: #ffdad6;
 
-  --on_primary_container: #f1e58a;
+    --on_primary: #272b60;
 
-  --on_primary_fixed: #1f1c00;
+    --on_primary_container: #e0e0ff;
 
-  --on_primary_fixed_variant: #4f4800;
+    --on_primary_fixed: #11144b;
 
-  --on_secondary: #343117;
+    --on_primary_fixed_variant: #3e4278;
 
-  --on_secondary_container: #eae3bd;
+    --on_secondary: #2e2f42;
 
-  --on_secondary_fixed: #1f1c05;
+    --on_secondary_container: #e1e0f9;
 
-  --on_secondary_fixed_variant: #4b472b;
+    --on_secondary_fixed: #191a2c;
 
-  --on_surface: #e7e2d5;
+    --on_secondary_fixed_variant: #444559;
 
-  --on_surface_variant: #cbc6b5;
+    --on_surface: #e4e1e9;
 
-  --on_tertiary: #103726;
+    --on_surface_variant: #c7c5d0;
 
-  --on_tertiary_container: #c2ecd3;
+    --on_tertiary: #46263b;
 
-  --on_tertiary_fixed: #002113;
+    --on_tertiary_container: #ffd8ed;
 
-  --on_tertiary_fixed_variant: #284e3c;
+    --on_tertiary_fixed: #2e1125;
 
-  --outline: #959181;
+    --on_tertiary_fixed_variant: #5f3c52;
 
-  --outline_variant: #49473a;
+    --outline: #918f9a;
 
-  --primary: #d4c872;
+    --outline_variant: #46464f;
 
-  --primary_container: #4f4800;
+    --primary: #bfc2ff;
 
-  --primary_fixed: #f1e58a;
+    --primary_container: #3e4278;
 
-  --primary_fixed_dim: #d4c872;
+    --primary_fixed: #e0e0ff;
 
-  --scrim: #000000;
+    --primary_fixed_dim: #bfc2ff;
 
-  --secondary: #cec7a3;
+    --scrim: #000000;
 
-  --secondary_container: #4b472b;
+    --secondary: #c5c4dd;
 
-  --secondary_fixed: #eae3bd;
+    --secondary_container: #444559;
 
-  --secondary_fixed_dim: #cec7a3;
+    --secondary_fixed: #e1e0f9;
 
-  --shadow: #000000;
+    --secondary_fixed_dim: #c5c4dd;
 
-  --source_color: #494633;
+    --shadow: #000000;
 
-  --surface: #15140c;
+    --source_color: #111116;
 
-  --surface_bright: #3b3930;
+    --surface: #131318;
 
-  --surface_container: #212017;
+    --surface_bright: #39383f;
 
-  --surface_container_high: #2c2a21;
+    --surface_container: #1f1f25;
 
-  --surface_container_highest: #37352c;
+    --surface_container_high: #2a292f;
 
-  --surface_container_low: #1d1c14;
+    --surface_container_highest: #35343a;
 
-  --surface_container_lowest: #0f0e07;
+    --surface_container_low: #1b1b21;
 
-  --surface_dim: #15140c;
+    --surface_container_lowest: #0e0e13;
 
-  --surface_tint: #d4c872;
+    --surface_dim: #131318;
 
-  --surface_variant: #49473a;
+    --surface_tint: #bfc2ff;
 
-  --tertiary: #a6d0b8;
+    --surface_variant: #46464f;
 
-  --tertiary_container: #284e3c;
+    --tertiary: #e8b9d4;
 
-  --tertiary_fixed: #c2ecd3;
+    --tertiary_container: #5f3c52;
 
-  --tertiary_fixed_dim: #a6d0b8;
+    --tertiary_fixed: #ffd8ed;
+
+    --tertiary_fixed_dim: #e8b9d4;
+
 }
