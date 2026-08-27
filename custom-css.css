@@ -3723,4 +3723,32 @@ div.time div.activation-time {
   border-width: 2px !important;
 }
 
+.monaco-editor .token-inspect-widget {
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+  border-radius: 10px !important;
+}
+
+.tiw-token {
+  font-family: var(--fav2Font) !important;
+}
+
+.tiw-metadata-key {
+  color: var(--primary) !important;
+}
+
+.tiw-metadata-value {
+  color: var(--primary) !important;
+  font-family: var(--favFont) !important;
+}
+
+.tiw-token-length {
+  color: var(--primary) !important;
+  font-family: var(--favFont) !important;
+}
+
 /* End of style  */
