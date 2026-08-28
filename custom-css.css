@@ -901,8 +901,26 @@ li.action-item.icon.checked a.action-label.codicon {
 /* Floating Error Notification Box */
 .monaco-editor .monaco-resizable-hover {
   top: 320px !important;
-  left: 1180px !important;
+  left: 800px !important;
   max-width: 600px !important;
+}
+
+/* Explorer empty input error  */
+.monaco-inputbox-container .monaco-inputbox-message {
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+  border-radius: 10px !important;
+  margin-top: 5px !important;
+  color: var(--inverse_primary) !important;
+}
+
+/* Explorer empty input border on linux */
+.monaco-workbench.linux .explorer-folders-view .explorer-item .monaco-inputbox {
+  border: none !important;
 }
 
 .quick-input-list .quick-input-list-entry {
