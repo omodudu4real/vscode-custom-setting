@@ -5,110 +5,112 @@
 :root {
     --favFont: 'Akaya Kanadaka';
     --fav2Font: 'Cascadia Code';
+    --fav3Font: 'Ampher';
     /* --commentFont: 'Cartograph CF'; main comment font */
-    --commentFont: 'Malthon DEMO';
+    /* --commentFont: 'Malthon DEMO'; secondary comment font */
+    --commentFont: 'Ampher';
     --cursiveFont: 'Fira Code iScript';
     --ligatureFont: 'Fira Code';
 
 
-    --background: #131318;
+    --background: #1a1110;
 
     --error: #ffb4ab;
 
     --error_container: #93000a;
 
-    --inverse_on_surface: #303036;
+    --inverse_on_surface: #392e2c;
 
-    --inverse_primary: #565992;
+    --inverse_primary: #904b3d;
 
-    --inverse_surface: #e4e1e9;
+    --inverse_surface: #f1dfdb;
 
-    --on_background: #e4e1e9;
+    --on_background: #f1dfdb;
 
     --on_error: #690005;
 
     --on_error_container: #ffdad6;
 
-    --on_primary: #272b60;
+    --on_primary: #561e14;
 
-    --on_primary_container: #e0e0ff;
+    --on_primary_container: #ffdad3;
 
-    --on_primary_fixed: #11144b;
+    --on_primary_fixed: #3a0a03;
 
-    --on_primary_fixed_variant: #3e4278;
+    --on_primary_fixed_variant: #733428;
 
-    --on_secondary: #2e2f42;
+    --on_secondary: #442a24;
 
-    --on_secondary_container: #e1e0f9;
+    --on_secondary_container: #ffdad3;
 
-    --on_secondary_fixed: #191a2c;
+    --on_secondary_fixed: #2c1511;
 
-    --on_secondary_fixed_variant: #444559;
+    --on_secondary_fixed_variant: #5d3f39;
 
-    --on_surface: #e4e1e9;
+    --on_surface: #f1dfdb;
 
-    --on_surface_variant: #c7c5d0;
+    --on_surface_variant: #d8c2bd;
 
-    --on_tertiary: #46263b;
+    --on_tertiary: #3d2f04;
 
-    --on_tertiary_container: #ffd8ed;
+    --on_tertiary_container: #f9e0a6;
 
-    --on_tertiary_fixed: #2e1125;
+    --on_tertiary_fixed: #241a00;
 
-    --on_tertiary_fixed_variant: #5f3c52;
+    --on_tertiary_fixed_variant: #554519;
 
-    --outline: #918f9a;
+    --outline: #a08c88;
 
-    --outline_variant: #46464f;
+    --outline_variant: #534340;
 
-    --primary: #bfc2ff;
+    --primary: #ffb4a5;
 
-    --primary_container: #3e4278;
+    --primary_container: #733428;
 
-    --primary_fixed: #e0e0ff;
+    --primary_fixed: #ffdad3;
 
-    --primary_fixed_dim: #bfc2ff;
+    --primary_fixed_dim: #ffb4a5;
 
     --scrim: #000000;
 
-    --secondary: #c5c4dd;
+    --secondary: #e7bdb5;
 
-    --secondary_container: #444559;
+    --secondary_container: #5d3f39;
 
-    --secondary_fixed: #e1e0f9;
+    --secondary_fixed: #ffdad3;
 
-    --secondary_fixed_dim: #c5c4dd;
+    --secondary_fixed_dim: #e7bdb5;
 
     --shadow: #000000;
 
-    --source_color: #111116;
+    --source_color: #9f4230;
 
-    --surface: #131318;
+    --surface: #1a1110;
 
-    --surface_bright: #39383f;
+    --surface_bright: #423734;
 
-    --surface_container: #1f1f25;
+    --surface_container: #271d1b;
 
-    --surface_container_high: #2a292f;
+    --surface_container_high: #322826;
 
-    --surface_container_highest: #35343a;
+    --surface_container_highest: #3d3230;
 
-    --surface_container_low: #1b1b21;
+    --surface_container_low: #231918;
 
-    --surface_container_lowest: #0e0e13;
+    --surface_container_lowest: #140c0b;
 
-    --surface_dim: #131318;
+    --surface_dim: #1a1110;
 
-    --surface_tint: #bfc2ff;
+    --surface_tint: #ffb4a5;
 
-    --surface_variant: #46464f;
+    --surface_variant: #534340;
 
-    --tertiary: #e8b9d4;
+    --tertiary: #dcc48c;
 
-    --tertiary_container: #5f3c52;
+    --tertiary_container: #554519;
 
-    --tertiary_fixed: #ffd8ed;
+    --tertiary_fixed: #f9e0a6;
 
-    --tertiary_fixed_dim: #e8b9d4;
+    --tertiary_fixed_dim: #dcc48c;
 
 }
