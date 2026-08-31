@@ -256,8 +256,8 @@ window.addEventListener('DOMContentLoaded', () => {
       .monaco-menu {
         box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
         background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-        border-radius: 16px !important;
-        border: 1px solid var(--primary) !important;
+        border-radius: 0px 16px !important;
+        border: 4px solid var(--primary) !important;
         outline: 1px !important;
         padding-bottom: 0px !important;
         color: var(--primary) !important;
