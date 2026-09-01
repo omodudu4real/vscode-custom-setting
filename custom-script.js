@@ -264,6 +264,12 @@ window.addEventListener('DOMContentLoaded', () => {
         overflow: hidden !important;
       }
 
+      /* this removes the left over background color */
+      .monaco-scrollable-element {
+        background-color: transparent !important;
+      }
+
+
       /* This ensures the text inside actually uses your variable */
       .monaco-menu .action-label,
       .monaco-menu .keybinding,

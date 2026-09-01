@@ -1678,6 +1678,9 @@ a.action-label.codicon.codicon-inline-suggestion-hints-previous::before {
   border-bottom: 4px solid var(--inverse_primary) !important;
   font-size: 13px !important;
   border-radius: 0px 26px !important;
+}
+
+.monaco-hover.workbench-hover {
   margin-left: 10px !important;
   margin-top: 10px !important;
 }
@@ -1687,9 +1690,10 @@ a.action-label.codicon.codicon-inline-suggestion-hints-previous::before {
   background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
 }
 
-.context-view.monaco-menu-container {
-  border-radius: 0px 26px !important;
-  margin-top: 10px;
+div.context-view.monaco-component.monaco-menu-container.bottom.right
+  div.monaco-scrollable-element {
+  background-color: transparent !important;
+  margin-top: 10px !important;
 }
 
 div.inlineSuggestionsHints {
