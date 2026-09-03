@@ -67,6 +67,29 @@ feel free to change the color in the
 @import url('file:///home/omodudu/.VSC_customize/colors/colors.css');
 
 /* Setting styles */
+
+.monaco-select-box-dropdown-container.visible {
+  margin-top: 8px !important;
+  border-top: 3px solid var(--primary) !important;
+  border-bottom: 3px solid var(--inverse_primary) !important;
+  border-left: 3px solid var(--primary) !important;
+  border-right: 3px solid var(--inverse_primary) !important;
+  border-radius: 0px 26px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+.monaco-button-dropdown .monaco-button-dropdown-separator {
+  display: none !important;
+}
+
+div.monaco-tl-contents
+  a.monaco-button.monaco-dropdown-button.codicon.codicon-drop-down-button {
+  border-radius: 0px 10px !important;
+  margin-left: 5px !important;
+}
+
 div.settings-toc-entry,
 div.setting-item-description,
 div.settings-group-title-label,
@@ -124,7 +147,7 @@ div.keybindings-header div.monaco-inputbox.idle,
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -148,7 +171,7 @@ div.context-view.monaco-component.top.right
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -161,7 +184,7 @@ select.monaco-select-box.setting-control-focus-target {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -226,7 +249,7 @@ div.search-container.with-ai-toggle div.suggest-input-container {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -241,7 +264,7 @@ div.search-container.with-ai-toggle div.suggest-input-container {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 5px !important;
+  border-radius: 0px 7px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -257,7 +280,7 @@ div.monaco-editor.rename-box.preview div.rename-input-with-button {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   outline: none !important;
   margin: 0px 16px 10px 0px !important;
   color: var(--primary) !important;
@@ -369,25 +392,54 @@ div.notification-toast-container {
   background-color: transparent !important;
 }
 
+/* Notification Source  */
+.monaco-workbench
+  .notifications-list-container
+  .notification-list-item
+  .notification-list-item-source {
+  box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  color: var(--primary) !important;
+  font-family: var(--favFont) !important;
+  outline: none !important;
+  border-radius: 0px 19px !important;
+  padding: 4px 8px !important;
+  margin: 4px 5px 3px !important;
+}
+
+div.notifications-list-container
+  div.monaco-list.[class*='list_id_'].mouse-support.selection-none {
+  border-radius: 0px 46px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+.monaco-workbench
+  > .notifications-toasts
+  .notification-toast-container
+  > .notification-toast
+  .monaco-list-row {
+  border-radius: 0px 26px !important;
+}
+
 div.notification-toast-container div.my-custom-div {
   position: absolute;
   height: 98%;
   width: 98%;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 0px 26px;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45);
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%);
+  border-radius: 0px 46px;
 }
 
 div.my-custom-div::before,
 div.my-custom-div::after {
   content: '';
   position: absolute;
-  height: 100%;
-  width: 100%;
-  left: -7px;
-  top: -7px;
+  height: 97%;
+  width: 99%;
+  left: -5px;
+  top: -5px;
   z-index: -1;
-  border-radius: 0px 26px;
+  border-radius: 0px 46px;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   padding: 7px;
   animation: 15s animatedBorder linear infinite !important;
@@ -396,7 +448,7 @@ div.my-custom-div::after {
 div.my-custom-div::after {
   background-image: conic-gradient(
     from calc(var(--angle) + 180deg),
-    transparent 90%,
+    transparent 85%,
     var(--inverse_primary)
   );
 }
@@ -404,13 +456,13 @@ div.my-custom-div::after {
 div.my-custom-div::before {
   background-image: conic-gradient(
     from var(--angle),
-    transparent 90%,
+    transparent 85%,
     var(--primary)
   );
 }
 
 .notifications-toasts div[id^='list_id_'][id$='_0'].monaco-list-row {
-  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border: none !important;
   outline: none !important;
@@ -419,10 +471,47 @@ div.my-custom-div::before {
 .notification-toast-container div[id^='list_id_'].monaco-list-row.focused,
 .notification-toast-container
   div[id^='list_id_'].monaco-list-row:hover:not(.selected):not(.focused) {
-  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border: none !important;
   outline: none !important;
+}
+
+.notification-toast-container
+  div[id^='list_id_'].monaco-list-row:hover:not(.selected):not(.focused) {
+  border-radius: 0px 46px !important;
+}
+
+/* check the unncessary points */
+.monaco-workbench > .notifications-toasts .notifications-list-container,
+.monaco-workbench
+  > .notifications-toasts
+  .notification-toast-container
+  > .notification-toast,
+.monaco-workbench
+  > .notifications-toasts
+  .notification-toast-container
+  > .notification-toast
+  .monaco-scrollable-element,
+.monaco-workbench
+  > .notifications-toasts
+  .notification-toast-container
+  > .notification-toast
+  .monaco-list:not(.element-focused):focus:before,
+.monaco-workbench
+  > .notifications-toasts
+  .notification-toast-container
+  > .notification-toast
+  .monaco-list-row {
+  border-radius: 0px 46px !important;
+}
+
+.monaco-workbench
+  > .notifications-toasts
+  .notification-toast-container
+  > .notification-toast
+  .monaco-scrollable-element {
+  border-radius: 0px 46px !important;
 }
 
 .notifications-toasts.bottom-right {
@@ -432,9 +521,9 @@ div.my-custom-div::before {
 
 a.monaco-button.monaco-text-button {
   color: var(--primary) !important;
-  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 0px 10px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #5d6089 100%) !important;
+  border-radius: 0px 16px !important;
   border-top: 2px solid var(--primary) !important;
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
@@ -457,24 +546,6 @@ div.tab-border-top-container {
 /* Three dot Menubar that appears when collapsed */
 .menubar-menu-title.toolbar-toggle-more.codicon.codicon-menubar-more::before {
   color: var(--primary);
-}
-
-/* Update Popup */
-div.update-indicator.prominent {
-  box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
-  background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
-  border-top: 2px solid var(--primary) !important;
-  border-bottom: 2px solid var(--inverse_primary) !important;
-  border-left: 2px solid var(--primary) !important;
-  border-right: 2px solid var(--inverse_primary) !important;
-  color: var(--primary) !important;
-  font-family: var(--favFont) !important;
-  outline: none !important;
-  border-radius: 0px 10px !important;
-}
-
-div.update-tooltip div.header div.title {
-  color: var(--primary) !important;
 }
 
 /* Status change state i.e unsaved state */
@@ -583,7 +654,7 @@ div.composite.viewlet.extensions-viewlet
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -608,7 +679,7 @@ div.monaco-tl-contents div.scm-editor {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   outline: none var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -624,6 +695,11 @@ div.scm-editor.container
   margin: 2px !important;
 }
 
+.monaco-editor .find-widget.no-results .matchesCount {
+  color: var(--primary) !important;
+  font-family: var(--fav3Font) !important;
+}
+
 div.monaco-tl-contents div.resource-group div.name {
   color: var(--primary) !important;
 }
@@ -634,10 +710,14 @@ div.monaco-scrollable-element div.welcome-view-content p {
 
 div.monaco-scrollable-element div.welcome-view-content p a {
   color: var(--inverse_primary) !important;
+  font-family: var(--fav3Font) !important;
+  font-size: 14px !important;
 }
 
 div.publisher div.publisher-name.ellipsis {
   color: var(--inverse_primary) !important;
+  font-family: var(--fav3Font) !important;
+  font-size: 14px !important;
 }
 
 div.message-container span.message-text span.message {
@@ -712,15 +792,20 @@ div.mcp-welcome-title div.rendered-markdown p {
 
 div.rendered-markdown p a {
   color: var(--inverse_primary) !important;
+  font-family: var(--fav3Font) !important;
 }
 
 /* Find box & Replace Box */
 div.editor-widget.find-widget.visible {
   background-color: var(--primary) !important;
   color: var(--primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 20px !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   outline: none !important;
+}
+
+.monaco-editor .find-widget .monaco-sash {
+  background-color: var(--primary) !important;
 }
 
 div.find-part
@@ -736,7 +821,7 @@ div.replace-part
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   color: var(--primary) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   width: 99% !important;
@@ -751,7 +836,7 @@ span.monaco-icon-description-container
 div.editor-widget.find-widget.visible div.monaco-inputbox.idle.synthetic-focus {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   border-top: 2px solid var(--primary) !important;
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
@@ -849,7 +934,7 @@ div.badge-content {
   color: var(--on_primary) !important;
   display: flex !important;
   justify-content: center !important;
-  border-radius: 0px 5px !important;
+  border-radius: 0px 7px !important;
 }
 
 li.action-item.icon.checked:hover .codicon::before {
@@ -861,7 +946,7 @@ li.action-item.icon.checked {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 10px 35px;
+  border-radius: 22px 22px 10px 10px;
 }
 
 .style-override
@@ -915,8 +1000,8 @@ li.action-item.icon.checked a.action-label.codicon {
 
 /* Floating Error Notification Box */
 .monaco-editor .monaco-resizable-hover {
-  top: 320px !important;
-  left: 800px !important;
+  /* top: 320px !important; */
+  /* left: 800px !important; */
   max-width: 600px !important;
 }
 
@@ -928,7 +1013,7 @@ li.action-item.icon.checked a.action-label.codicon {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   margin-top: 5px !important;
   color: var(--inverse_primary) !important;
 }
@@ -945,7 +1030,7 @@ li.action-item.icon.checked a.action-label.codicon {
 }
 
 .quick-input-list .monaco-list-row {
-  border-radius: 0px 5px !important;
+  border-radius: 0px 7px !important;
   outline: none !important;
 }
 
@@ -1018,7 +1103,7 @@ div.editor-widget.suggest-widget.shows-details.visible {
 .monaco-editor .suggest-details code {
   font-family: var(--favFont) !important;
   background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -1109,7 +1194,7 @@ a.label.name {
 
 .menubar-menu-items-holder.monaco-menu-container a:hover {
   background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   outline: none !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
 }
@@ -1142,6 +1227,11 @@ div.agent-sessions-title-container span.agent-sessions-title {
 
 span.agent-status-badge-section.unread.filtered {
   background-color: var(--secondary) !important;
+  border-radius: 0px 10px !important;
+  margin: 5px !important;
+  width: 18px !important;
+  height: 18px !important;
+  justify-content: center !important;
 }
 
 span.agent-status-icon span.agent-status-text,
@@ -1229,7 +1319,7 @@ span.codicon.codicon-terminal::before {
 div.simple-find-part.visible.visible-transition {
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 20px !important;
   color: var(--primary) !important;
   outline: none !important;
 }
@@ -1238,7 +1328,7 @@ div.simple-find-part.visible.visible-transition
   div.monaco-inputbox.idle.synthetic-focus {
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   border-top: 2px solid var(--primary) !important;
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
@@ -1340,7 +1430,7 @@ span.action-label[aria-label$='Group']:not([aria-label='Switch Group']):not(
 .monaco-list.list_id_1 .monaco-list-row.selected {
   background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   border-top: 2px solid var(--primary) !important;
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
@@ -1506,8 +1596,8 @@ div.agent-status-pill.chat-input-mode.compact-mode {
   border-bottom: 4px solid var(--inverse_primary) !important;
   border-left: 4px solid var(--primary) !important;
   border-right: 4px solid var(--inverse_primary) !important;
-  border-radius: 0px 13px !important;
-  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.43) !important;
+  border-radius: 0px 20px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.43) !important;
   background-image: linear-gradient(#3c3c52 12%, #2a2b29 79%) !important;
 }
 
@@ -1707,7 +1797,7 @@ div[id^='list_id_'].monaco-list-row.focused,
 div[id^='list_id_'].monaco-list-row:hover:not(.selected):not(.focused) {
   border-radius: 0px 9px !important;
   outline: none !important;
-  box-shadow: inset 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
+  box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
   background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
   border: 1px solid var(--primary) !important;
 }
@@ -1717,7 +1807,7 @@ div[id^='list_id_2_'].monaco-list-row:hover:not(.selected):not(.focused) {
   border-radius: 0px 8px !important;
   width: 98%;
   outline: none !important;
-  box-shadow: inset 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
+  box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
   background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
   border: 1px solid var(--primary) !important;
   margin-right: 2px !important;
@@ -1794,14 +1884,14 @@ div.saturation-selection {
   .monaco-list-row:hover:not(.selected):not(.focused) {
   border-radius: 0px 9px !important;
   outline: none !important;
-  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
   background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
 }
 
 .quick-input-list [class^='monaco-list list_id'] .monaco-list-row.focused {
   border-radius: 0px 9px !important;
   outline: none !important;
-  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
   background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
 }
 
@@ -1814,7 +1904,7 @@ div.monaco-editor-overlaymessage.fadeIn div.message {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 5px !important;
+  border-radius: 0px 7px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -1837,7 +1927,7 @@ div.composite.title.has-composite-bar.has-actions {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-bottom: 5px solid var(--primary) !important;
-  border-radius: 0px 5px !important;
+  border-radius: 10px 36px !important;
   margin-bottom: 4px !important;
 }
 
@@ -1862,7 +1952,7 @@ span.submenu-indicator.codicon.codicon-menu-submenu::before {
 }
 
 div.monaco-menu a.action-menu-item:hover:not(.selected):not(.focused) {
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   outline: none !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
   background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
@@ -1947,7 +2037,7 @@ div.interactive-input-and-side-toolbar div.chat-input-container {
 }
 
 div.chat-attached-context-attachment.show-file-icons.implicit {
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   outline: none !important;
 }
 
@@ -2124,7 +2214,7 @@ div.monaco-count-badge {
   color: var(--on_primary) !important;
   display: flex;
   justify-content: center;
-  border-radius: 0px 5px;
+  border-radius: 0px 7px;
 }
 
 div.search-container.input-box
@@ -2135,7 +2225,7 @@ div.search-container.input-box
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   outline: none !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -2149,7 +2239,7 @@ div.replace-container
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   outline: none !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -2163,8 +2253,21 @@ div.monaco-custom-toggle.codicon.codicon-whole-word.checked::before,
 div.monaco-custom-toggle.codicon.codicon-case-sensitive.checked::before {
   background-color: var(--inverse_primary) !important;
   border-color: var(--inverse_primary) !important;
-  border-radius: 0px 4px !important;
-  margin: 0px 3px 3px 2px !important;
+  border-radius: 0px 8px !important;
+  /* margin: 0px 5px 3px 2px !important; */
+}
+
+.monaco-findInput > .controls {
+  right: 10px !important;
+}
+
+.monaco-editor .find-widget .matchesCount {
+  font-family: var(--fav3Font) !important;
+}
+
+.simple-find-part .monaco-inputbox > .ibwrapper > input {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
 div.monaco-submenu.menubar-menu-items-holder.context-view.monaco-menu-container
@@ -2199,7 +2302,16 @@ div.lightBulbWidget.codicon.codicon-lightbulb-sparkle::before {
 div.monaco-list-row.group-header[role='separator'] span {
   color: var(--primary) !important;
 }
-d div.icon.codicon.codicon-output-view-icon,
+
+.monaco-editor .zone-widget .zone-widget-container {
+  border: none !important;
+}
+
+.monaco-editor .marker-widget .descriptioncontainer {
+  border-top: 2px solid var(--primary) !important;
+}
+
+div.icon.codicon.codicon-output-view-icon,
 div.icon.codicon.codicon-terminal-view-icon,
 div.icon.codicon.codicon-output-view-icon::before,
 div.icon.codicon.codicon-terminal-view-icon::before {
@@ -2212,7 +2324,7 @@ div.viewpane-filter div.monaco-inputbox.idle[data-keybinding-context] {
   border-bottom: 3px solid var(--inverse_primary) !important;
   border-left: 3px solid var(--primary) !important;
   border-right: 3px solid var(--inverse_primary) !important;
-  border-radius: 0px 8px !important;
+  border-radius: 0px 20px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -2221,12 +2333,12 @@ div.viewpane-filter div.monaco-inputbox.idle[data-keybinding-context] {
 div.pane.expanded.horizontal[data-keybinding-context] div.pane-header.expanded {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 0px 5px !important;
+  border-radius: 0px 7px !important;
 }
 
 div.pane.horizontal[data-keybinding-context]
   div.pane-header[arial-label='Terminal Section'] {
-  border-radius: 0px 5px !important;
+  border-radius: 0px 7px !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
@@ -2247,7 +2359,7 @@ select.monaco-select-box {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 8px !important;
+  border-radius: 0px 20px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -2327,7 +2439,7 @@ div.keybindings-header
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -2339,7 +2451,7 @@ div.chat-getting-started-tip-container {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -2352,7 +2464,7 @@ span.chat-input-picker-label {
 
 div.chat-getting-started-tip-container div.chat-tip-widget {
   outline: none !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -2437,6 +2549,8 @@ div.monaco-table-tr div.monaco-table-td div.command div.command-label {
 div.rendered-markdown.setting-item-markdown p code {
   color: var(--primary) !important;
   background-color: var(--on_primary) !important;
+  font-family: var(--fav3Font) !important;
+  font-size: 14px !important;
 }
 
 /* New Suggestion Styles  */
@@ -2445,13 +2559,13 @@ div.inline-edits-view-gutter-indicator div.icon div[class-name='line-number'] {
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   font-family: var(--favFont) !important;
   color: var(--primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
 }
 
 div.inline-edits-view-gutter-indicator div.icon {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   border-top: 2px solid var(--primary) !important;
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
@@ -2585,7 +2699,7 @@ a.monaco-button.monaco-text-button {
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   outline: none !important;
 }
 
@@ -2650,8 +2764,8 @@ span.collapsible-status {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 5px !important;
-  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  border-radius: 0px 7px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
@@ -2705,12 +2819,12 @@ div.monaco-custom-toggle.monaco-checkbox.codicon.codicon-check::before,
   border-right: 2px solid var(--inverse_primary) !important;
   border-radius: 5px !important;
   color: var(--primary) !important;
-  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
 div.notifications-center.bottom-right.visible {
-  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-radius: 0px 26px !important;
   border-top: 3px solid var(--primary) !important;
@@ -2755,13 +2869,13 @@ div.actions-status-container.list-layout
   li.action-item.action-dropdown-item,
 div.editor-instance div.details div.title span.builtin,
 div.editor-instance div.details div.title span.preview {
-  box-shadow: inset 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
+  box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
   background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
   border-top: 2px solid var(--primary) !important;
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   color: var(--primary) !important;
   font-family: var(--favFont) !important;
   outline: none !important;
@@ -2793,7 +2907,7 @@ div.header div.extension-icon {
   display: flex;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 0px 18px !important;
+  border-radius: 0px 30px !important;
   height: 128px !important;
   width: 128px !important;
   padding: 0px !important;
@@ -2816,7 +2930,7 @@ div.header div.extension-icon::after {
   position: absolute !important;
   height: 128px !important;
   width: 128px !important;
-  border-radius: 0px 26px;
+  border-radius: 0px 34px;
   padding: 4px !important;
   z-index: -1 !important;
   animation: 15s animatedBorder linear infinite !important;
@@ -2863,7 +2977,7 @@ div.header div.extension-icon img.icon {
 .quick-input-widget {
   background-color: transparent !important;
   border: none !important;
-  border-radius: 0px 20px !important;
+  border-radius: 0px 45px !important;
   padding: 15px 15px 23px 15px !important;
 }
 
@@ -2871,12 +2985,13 @@ div.header div.extension-icon img.icon {
   position: absolute !important;
   transform: translateY(-50%) !important;
   top: 50% !important;
+  right: 4px !important;
   width: 98.4% !important;
   height: 98% !important;
   background: #3c3c50 !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35) !important;
   backdrop-filter: blur(3px) !important;
-  border-radius: 0px 20px !important;
+  border-radius: 0px 45px !important;
 }
 
 /* Change Cursor style */
@@ -2943,13 +3058,13 @@ div.header div.extension-icon img.icon {
 .quick-input-widget-border {
   position: absolute !important;
   transform: translateY(-50%) !important;
-  left: 10px !important;
+  left: 1px !important;
   top: 50% !important;
   width: 100% !important;
   height: 100% !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35) !important;
   backdrop-filter: blur(3px) !important;
-  border-radius: 0px 20px !important;
+  border-radius: 0px 45px !important;
   background-image: conic-gradient(
     from var(--angle),
     transparent 75%,
@@ -2961,7 +3076,7 @@ div.header div.extension-icon img.icon {
 .quick-input-widget-border::before {
   content: '' !important;
   position: absolute !important;
-  left: 0 !important;
+  left: 0px !important;
   top: 0 !important;
   background-image: conic-gradient(
     from calc(var(--angle) + 180deg),
@@ -2970,7 +3085,7 @@ div.header div.extension-icon img.icon {
   );
   height: 100% !important;
   width: 100% !important;
-  border-radius: 0px 20px;
+  border-radius: 0px 45px;
   animation: 30s animatedBorder linear infinite !important;
 }
 
@@ -3170,7 +3285,7 @@ div.overlay-container div.defineKeybindingWidget {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -3244,7 +3359,7 @@ div.monaco-tl-contents.setting-item.setting-item-enum {
   .monaco-tl-contents {
   overflow: hidden !important;
   background-color: #222328 !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
 }
 
 .monaco-select-box-dropdown-container
@@ -3282,7 +3397,7 @@ div.monaco-tl-contents.setting-item.setting-item-enum {
   .settings-tree-container
   .setting-item.setting-item-list
   .setting-list-row.selected:not(:focus) {
-  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.83) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.83) !important;
   background-image: linear-gradient(#3c3c50 15%, #2a2b38 80%) !important;
 }
 
@@ -3320,7 +3435,7 @@ div.chat-model-hover-cost-line span.chat-model-hover-cost-line-label {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -3352,7 +3467,7 @@ div.monaco-icon-label.codicon-models-management-editor-label-icon.predefined-fil
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -3409,7 +3524,7 @@ input.browser-url-input {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   outline: none !important;
@@ -3425,7 +3540,7 @@ div.browser-url-container {
   > .items-container
   > .statusbar-item.error-kind {
   background-color: var(--on_primary_fixed_variant) !important;
-  box-shadow: inset 0px 8px 32px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.15) !important;
   border-radius: 0px 8px !important;
 }
 
@@ -3456,6 +3571,24 @@ div.product-details span {
 }
 
 div.product-release-date {
+  color: var(--primary) !important;
+}
+
+/* Update Popup */
+div.update-indicator.prominent {
+  box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
+  background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+  color: var(--primary) !important;
+  font-family: var(--favFont) !important;
+  outline: none !important;
+  border-radius: 0px 16px !important;
+}
+
+div.update-tooltip div.header div.title {
   color: var(--primary) !important;
 }
 
@@ -3516,7 +3649,7 @@ div.product-info div.product-logo {
 }
 
 .monaco-workbench .suggest-details {
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   border-top: 2px solid var(--primary) !important;
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
@@ -3573,7 +3706,7 @@ div.quick-input-and-message div.quick-input-message {
 .monaco-editor .bracket-match {
   background-color: var(--outline_variant) !important;
   border: 1px solid var(--primary);
-  border-radius: 0px 5px !important;
+  border-radius: 0px 7px !important;
   box-shadow: 0 0 0 1px rgba(200, 150, 255, 0.7) !important;
 }
 
@@ -3599,6 +3732,8 @@ div.quick-input-and-message div.quick-input-message {
 .monaco-action-bar .action-dropdown-item .action-label.extension-action.label {
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  border-radius: 0px 8px !important;
+  display: grid;
 }
 
 a.action-label.codicon.extension-action.label.prominent.install.action-dropdown {
@@ -3620,7 +3755,7 @@ a.action-label.codicon.extension-action.label.prominent.install.action-dropdown 
   border-bottom: 5px solid var(--inverse_primary) !important;
   border-left: 5px solid var(--primary) !important;
   border-right: 5px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
   padding: 10px !important;
 }
 
@@ -3666,7 +3801,7 @@ div.browser-url-container {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
 }
 
 div.browser-link-opened-hint-pill {
@@ -3825,7 +3960,7 @@ div.time div.activation-time {
   border-bottom: 4px solid var(--inverse_primary) !important;
   border-left: 4px solid var(--primary) !important;
   border-right: 4px solid var(--inverse_primary) !important;
-  border-radius: 0px 10px !important;
+  border-radius: 0px 16px !important;
 }
 
 .tiw-token {
@@ -3850,14 +3985,13 @@ s .tiw-token-length {
   font-family: var(--favFont) !important;
 }
 
-s
-  .monaco-workbench
+/* .monaco-workbench
   > .notifications-toasts
   .notification-toast-container
   > .notification-toast
   .monaco-list-row {
   border-radius: 0px 26px !important;
-}
+} */
 
 .monaco-workbench
   .part.panel
