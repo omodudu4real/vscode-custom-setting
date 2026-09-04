@@ -66,8 +66,217 @@ feel free to change the color in the
 
 @import url('file:///home/omodudu/.VSC_customize/colors/colors.css');
 
-/* Setting styles */
+/* Welcome Page Styling */
+.monaco-workbench .part.editor > .content .gettingStartedContainer h1,
+.monaco-workbench .part.editor > .content .gettingStartedContainer h2 {
+  color: var(--primary) !important;
+}
 
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .description {
+  color: color-mix(in srgb, var(--primary) 50%, transparent) !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .gettingStartedSlide
+  .getting-started-category
+  .featured {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-color: var(--primary) !important;
+  border-top-left-radius: 0px !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .gettingStartedSlideCategories
+  .path {
+  color: color-mix(
+    in srgb,
+    var(--on_primary) 50%,
+    var(--primary) 30%
+  ) !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .gettingStartedSlideCategories
+  .category-title {
+  color: var(--primary) !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .button-link {
+  color: color-mix(in srgb, var(--primary) 50%, var(--on_primary)) !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .gettingStartedSlide
+  .openAWalkthrough
+  > button,
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .gettingStartedSlide
+  .showOnStartup {
+  color: var(--primary) !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .gettingStartedSlideCategories
+  .progress-bar-inner {
+  background-color: var(--primary) !important;
+  margin-left: 19px !important;
+  border-radius: 100px !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .gettingStartedSlide
+  .getting-started-category
+  .description-content {
+  color: color-mix(in srgb, var(--primary) 50%, transparent) !important;
+}
+
+.monaco-workbench .part.editor > .content .gettingStartedContainer .icon-widget,
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .gettingStartedSlideCategories
+  .featured-icon,
+.codicon-getting-started-beginner:before {
+  color: var(--primary) !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .getting-started-category
+  .codicon-star-full:before {
+  color: color-mix(in srgb, var(--primary) 50%, var(--on_primary)) !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .gettingStartedSlideCategories
+  .codicon:not(.icon-widget, .featured-icon, .hide-category-button) {
+  border-radius: 0px 6px !important;
+  border: 2px solid var(--primary) !important;
+  color: var(--primary) !important;
+}
+
+p.showOnStartup
+  .monaco-custom-toggle.codicon.codicon-check.getting-started-checkbox.checked {
+  color: var(--primary) !important;
+  border-radius: 0px 6px !important;
+  border: 2px solid var(--primary) !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .gettingStartedSlideCategories
+  .getting-started-category {
+  border-radius: 6px 36px !important;
+  padding: 13px !important;
+  border-top: 4px solid var(--primary) !important;
+  border-bottom: 4px solid var(--inverse_primary) !important;
+  border-left: 4px solid var(--primary) !important;
+  border-right: 4px solid var(--inverse_primary) !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .gettingStartedSlide
+  .getting-started-category
+  .new-badge {
+  border-radius: 0px 8px !important;
+  color: var(--on_primary) !important;
+  background-color: var(--primary) !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .gettingStartedSlideCategories
+  > .gettingStartedCategoriesContainer
+  > .footer
+  > .agents-banner {
+  border: none !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .gettingStartedSlideCategories
+  > .gettingStartedCategoriesContainer
+  > .footer
+  > .agents-banner
+  .agents-banner-button {
+  border-radius: 0px 30px !important;
+  border-top: 4px solid var(--primary) !important;
+  border-bottom: 4px solid var(--inverse_primary) !important;
+  border-left: 4px solid var(--primary) !important;
+  border-right: 4px solid var(--inverse_primary) !important;
+}
+
+/* .monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  button:hover {
+  background-color: color-mix(
+    in srgb,
+    var(--primary) 50%,
+    transparent
+  ) !important;
+} */
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .gettingStartedContainer
+  .hide-category-button:before {
+  color: var(--primary) !important;
+  background-color: color-mix(
+    in srgb,
+    var(--primary) 50%,
+    transparent
+  ) !important;
+  border-radius: 0px 6px !important;
+  padding: 2px !important;
+}
+
+/* Setting styles */
 .settings-editor
   > .settings-body
   .settings-tree-container
@@ -146,6 +355,30 @@ div.setting-item-control.select-container::after {
 
 .monaco-custom-toggle.codicon.codicon-check.setting-value-checkbox.setting-control-focus-target.checked {
   outline-color: var(--primary) !important;
+}
+
+/* ctrl + shift + j */
+.search-view .query-details.more h4 {
+  color: var(--primary) !important;
+}
+
+div.file-types.excludes div.monaco-findInput div.monaco-inputbox.idle,
+div.file-types.includes div.monaco-findInput div.monaco-inputbox.idle {
+  outline: none !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+  border-radius: 0px 16px !important;
+  color: var(--primary) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+div.monaco-custom-toggle.codicon.codicon-exclude.useExcludesAndIgnoreFiles.checked,
+div.monaco-custom-toggle.codicon.codicon-edit-code.checked,
+div.monaco-custom-toggle.codicon.ucodicon-book {
+  background-color: var(--on_primary) !important;
+  border-color: var(--primary) !important;
 }
 
 /* Setting Input Box */
@@ -818,6 +1051,10 @@ div.editor-widget.find-widget.visible {
   outline: none !important;
 }
 
+.monaco-editor .find-widget > .find-part .monaco-inputbox {
+  border: 1px solid var(--on_primary) !important;
+}
+
 .monaco-editor .find-widget .monaco-sash {
   background-color: var(--primary) !important;
 }
@@ -866,15 +1103,14 @@ div.editor-widget.find-widget.visible div.monaco-inputbox.idle.synthetic-focus {
   display: none !important;
 }
 
-/* Close Button on Hover */
+/* Buttons on Hover */
 .monaco-workbench
   .monaco-action-bar:not(.vertical)
   .action-label:not(.disabled):hover {
-  background-color: var(--on_primary) !important;
   border-radius: 0px 10px !important;
   padding: 3px !important;
-  display: grid !important;
-  place-items: center !important;
+  background-color: none !important;
+  outline: 2px solid var(--inverse_primary) !important;
 }
 
 div.button.codicon.codicon-widget-close,
@@ -1032,7 +1268,7 @@ li.action-item.icon.checked a.action-label.codicon {
 /* Floating Error Inline-Notification Box */
 .monaco-editor .monaco-resizable-hover {
   top: 100px !important;
-  /* left: 800px !important; */
+  left: 700px !important;
   max-width: 600px !important;
 }
 
@@ -1040,7 +1276,7 @@ li.action-item.icon.checked a.action-label.codicon {
   .menubar:not(.compact)
   > .menubar-menu-button.open
   .menubar-menu-title {
-  background-color: var(--on_primary) !important;
+  border: 2px solid var(--primary) !important;
   border-radius: 0px 16px !important;
 }
 
@@ -1332,6 +1568,7 @@ a.action-label.single-terminal-tab {
 /* Progress bit */
 div.monaco-progress-container.active.infinite div.progress-bit {
   background-color: var(--primary) !important;
+  border-radius: 100px !important;
 }
 
 .xterm .xterm-scrollable-element > .xterm-visible {
@@ -1946,12 +2183,13 @@ div.saturation-selection {
   outline-color: var(--primary) !important;
 }
 
+/* Ctrl + Period styling */
 div.monaco-editor-overlaymessage.fadeIn div.message {
   border-top: 2px solid var(--primary) !important;
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 7px !important;
+  border-radius: 0px 26px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -1960,6 +2198,7 @@ div.monaco-editor-overlaymessage.fadeIn div.message {
 
 div.monaco-editor-overlaymessage.fadeIn div.anchor.below {
   border-top-color: var(--primary) !important;
+  left: 15px !important;
 }
 
 div.monaco-tl-contents.linematch a.plain.match span {
@@ -4107,6 +4346,17 @@ div.markdown-hover
 .monaco-editor .lines-content .core-guide-indent {
   filter: drop-shadow(0 0 3px var(--primary));
   border-left: 1px solid var(--on_primary) !important;
+}
+
+/* Debug content style */
+
+div.view-lines.monaco-mouse-cursor-text
+  > div.view-line
+  > span
+  span.ced-replinputdecoration-14f10d14-4.ced-replinputdecoration-4::after {
+  color: var(--primary) !important;
+  font-family: var(--favFont) !important;
+  font-size: 17px !important;
 }
 
 /* End of style  */
