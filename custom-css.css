@@ -3059,7 +3059,11 @@ div.header div.extension-icon img.icon {
 
 /* Change Cursor style */
 .monaco-editor .cursor {
-  background-color: var(--on-primary) !important;
+  background-color: color-mix(
+    in srgb,
+    var(--primary) 50%,
+    transparent
+  ) !important;
   border: 3px solid var(--primary) !important;
   padding: 1px !important;
   border-radius: 0px 26px !important;
