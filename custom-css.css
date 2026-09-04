@@ -119,6 +119,11 @@ div.option-text {
   color: var(--primary) !important;
 }
 
+.monaco-editor .marker-widget .descriptioncontainer {
+  border-top: 2px solid var(--primary) !important;
+  width: 100% !important;
+}
+
 .select-box-details-pane.border-top p {
   color: var(--primary) !important;
 }
@@ -2369,10 +2374,6 @@ div.monaco-list-row.group-header[role='separator'] span {
   border: none !important;
 }
 
-.monaco-editor .marker-widget .descriptioncontainer {
-  border-top: 2px solid var(--primary) !important;
-}
-
 div.icon.codicon.codicon-output-view-icon,
 div.icon.codicon.codicon-terminal-view-icon,
 div.icon.codicon.codicon-output-view-icon::before,
@@ -4058,6 +4059,37 @@ s .tiw-token-length {
   .action-item:hover
   .action-label {
   color: var(--inverse_primary) !important;
+}
+
+div.markdown-hover
+  div.hover-contents.code-hover-contents
+  div.rendered-markdown {
+  background-image: color-mix(
+    in srgb,
+    var(--primary) 70%,
+    transparent
+  ) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  border-radius: 0px 46px !important;
+}
+
+.monaco-editor .monaco-hover .hover-row .actions {
+  background-color: transparent !important;
+  margin: -4px 0px 0px 16px !important;
+}
+
+.monaco-editor .monaco-hover .hover-copy-button {
+  background-image: color-mix(
+    in srgb,
+    var(--primary) 50%,
+    transparent
+  ) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  display: grid !important;
+  place-items: center !important;
+  border-radius: 0px 16px !important;
+  margin: 2px 9px 0px 0px !important;
+  padding: 8px !important;
 }
 
 /* Indentation Guils Line */
