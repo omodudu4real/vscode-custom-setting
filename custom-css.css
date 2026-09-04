@@ -68,6 +68,15 @@ feel free to change the color in the
 
 /* Setting styles */
 
+.settings-editor
+  > .settings-body
+  .settings-tree-container
+  .setting-item-contents
+  .setting-item-validation-message {
+  border: none !important;
+  border-radius: 0px 16px !important;
+}
+
 .monaco-select-box-dropdown-container.visible {
   margin-top: 8px !important;
   border-top: 3px solid var(--primary) !important;
@@ -846,6 +855,23 @@ div.editor-widget.find-widget.visible div.monaco-inputbox.idle.synthetic-focus {
   margin-left: 2px !important;
 }
 
+.workbench-hover-pointer:after,
+.workbench-hover-pointer:before {
+  /* border: 2px solid var(--primary) !important; */
+  display: none !important;
+}
+
+/* Close Button on Hover */
+.monaco-workbench
+  .monaco-action-bar:not(.vertical)
+  .action-label:not(.disabled):hover {
+  background-color: var(--on_primary) !important;
+  border-radius: 0px 10px !important;
+  padding: 3px !important;
+  display: grid !important;
+  place-items: center !important;
+}
+
 div.button.codicon.codicon-widget-close,
 div.button.codicon.codicon-find-next-match,
 div.button.codicon.codicon-find-previous-match,
@@ -998,11 +1024,19 @@ li.action-item.icon.checked a.action-label.codicon {
   height: 45px !important;
 }
 
-/* Floating Error Notification Box */
+/* Floating Error Inline-Notification Box */
 .monaco-editor .monaco-resizable-hover {
-  /* top: 320px !important; */
+  top: 100px !important;
   /* left: 800px !important; */
   max-width: 600px !important;
+}
+
+.monaco-workbench
+  .menubar:not(.compact)
+  > .menubar-menu-button.open
+  .menubar-menu-title {
+  background-color: var(--on_primary) !important;
+  border-radius: 0px 16px !important;
 }
 
 /* Explorer empty input error  */
@@ -1154,6 +1188,14 @@ span.mtk16.mtki {
 /* File Title Name */
 .monaco-highlighted-label {
   font-family: var(--favFont) !important;
+}
+
+.monaco-workbench
+  .menubar:not(:focus-within):not(.compact)
+  > .menubar-menu-button:hover
+  .menubar-menu-title {
+  border: 2px solid var(--primary) !important;
+  border-radius: 0px 16px !important;
 }
 
 span.mtk11 {
@@ -1945,6 +1987,11 @@ div.composite.title.has-composite-bar.has-actions {
   color: var(--primary) !important;
 }
 
+div.context-view.monaco-component.context-view-menu-motion.monaco-menu-container.top.left
+  div.monaco-scrollable-element {
+  border-radius: 0px 26px !important;
+}
+
 a.action-menu-item,
 span.submenu-indicator.codicon.codicon-menu-submenu,
 span.submenu-indicator.codicon.codicon-menu-submenu::before {
@@ -1967,17 +2014,32 @@ span.codicon.codicon-close::before,
 
 div.menubar-menu-items-holder.monaco-menu-container
   div.monaco-scrollable-element {
+  /* background: transparent !important;
+  margin-left: 0 !important; */
+
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-radius: 0px 26px !important;
-  border-top: 2px solid var(--primary) !important;
-  border-bottom: 2px solid var(--inverse_primary) !important;
-  border-left: 2px solid var(--primary) !important;
-  border-right: 2px solid var(--inverse_primary) !important;
-  outline: 2px !important;
+  border-top: 4px solid var(--primary) !important;
+  border-bottom: 4px solid var(--inverse_primary) !important;
+  border-left: 4px solid var(--primary) !important;
+  border-right: 4px solid var(--inverse_primary) !important;
+  /* outline: 2px !important; */
   padding-bottom: 3px !important;
   color: var(--primary) !important;
 }
+
+/* li.action-item
+  div.monaco-submenu.menubar-menu-items-holder
+  context-view.monaco-menu-container
+  div.monaco-scrollable-element,
+li.action-item.focused
+  div.monaco-submenu.menubar-menu-items-holder.context-view.monaco-menu-container
+  div.monaco-scrollable-element {
+  background: transparent !important;
+  margin-left: 0px !important;
+  border: none !important;
+} */
 
 div.menubar-menu-items-holder.monaco-menu-container
   div.monaco-scrollable-element
@@ -2003,7 +2065,7 @@ div.context-view.monaco-component.monaco-menu-container.top.right
 span.menu-item-check.codicon.codicon-menu-selection::before {
   color: var(--primary) !important;
   outline: 2px solid var(--primary) !important;
-  border-radius: 0px 3px !important;
+  border-radius: 0px 6px !important;
 }
 
 /* Chat Toggle */
@@ -2996,10 +3058,12 @@ div.header div.extension-icon img.icon {
 
 /* Change Cursor style */
 .monaco-editor .cursor {
-  background-color: var(--primary) !important;
-  border-color: var(--primary) !important;
-  border-radius: 99px !important;
+  background-color: var(--on-primary) !important;
+  border: 3px solid var(--primary) !important;
+  padding: 1px !important;
+  border-radius: 0px 26px !important;
   box-shadow: 0 0 8px var(--primary) !important;
+  filter: drop-shadow(0 0 5px #3c3c50);
 }
 
 /* All Bracket levels */
@@ -3243,13 +3307,13 @@ span.terminal-initial-hint-prose {
 }
 
 div.monaco-keybinding span.monaco-keybinding-key {
-  border-radius: 0px 4px !important;
+  border-radius: 0px 16px !important;
   border-top: 2px solid var(--primary) !important;
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  margin: 3px !important;
-  padding: 5px !important;
+  margin: 4px 3px 2px 5px !important;
+  padding: 5px 5px !important;
 }
 
 div.editor-widget.suggest-widget.visible,
@@ -3585,7 +3649,7 @@ div.update-indicator.prominent {
   color: var(--primary) !important;
   font-family: var(--favFont) !important;
   outline: none !important;
-  border-radius: 0px 16px !important;
+  border-radius: 0px 18px !important;
 }
 
 div.update-tooltip div.header div.title {
@@ -3985,14 +4049,6 @@ s .tiw-token-length {
   font-family: var(--favFont) !important;
 }
 
-/* .monaco-workbench
-  > .notifications-toasts
-  .notification-toast-container
-  > .notification-toast
-  .monaco-list-row {
-  border-radius: 0px 26px !important;
-} */
-
 .monaco-workbench
   .part.panel
   > .title
@@ -4002,6 +4058,19 @@ s .tiw-token-length {
   .action-item:hover
   .action-label {
   color: var(--inverse_primary) !important;
+}
+
+/* Indentation Guils Line */
+/* Active Scope Guide */
+.monaco-editor .lines-content .core-guide-indent.indent-active {
+  border-left: 2px solid var(--primary) !important;
+  filter: drop-shadow(0 0 3px var(--primary));
+}
+
+/* Inactive Scope Guides */
+.monaco-editor .lines-content .core-guide-indent {
+  filter: drop-shadow(0 0 3px var(--primary));
+  border-left: 1px solid var(--on_primary) !important;
 }
 
 /* End of style  */
