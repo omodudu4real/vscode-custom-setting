@@ -4350,10 +4350,19 @@ div.markdown-hover
 
 /* Debug content style */
 
-div.view-lines.monaco-mouse-cursor-text
+/* div.view-lines.monaco-mouse-cursor-text
   > div.view-line
   > span
   span.ced-replinputdecoration-14f10d14-4.ced-replinputdecoration-4::after {
+  color: var(--primary) !important;
+  font-family: var(--favFont) !important;
+  font-size: 17px !important;
+} */
+
+div.view-lines.monaco-mouse-cursor-text
+  > div.view-line
+  > span
+  span[class*='ced-replinputdecoration-'][class*='ced-replinputdecoration-']::after {
   color: var(--primary) !important;
   font-family: var(--favFont) !important;
   font-size: 17px !important;
