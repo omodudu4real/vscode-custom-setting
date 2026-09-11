@@ -34,5 +34,6 @@
     "ucodicon",
     "viewpane"
   ],
-  "workbench.commandPalette.preserveInput": true
+  "workbench.commandPalette.preserveInput": true,
+  "js/ts.experimental.useTsgo": false
 }
