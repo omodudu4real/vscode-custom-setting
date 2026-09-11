@@ -270,11 +270,15 @@ window.addEventListener("DOMContentLoaded", () => {
       }
 
       /* menu hover effect */
-      li.action-item.focused a.action-menu-item monaco-submenu-item{
-      border-radius: 0px 10px !important;
-      box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-      border: 1px solid var(--primary) !important;
-      }
+
+
+			.codicon-menu-selection:before {
+			color: var(--primary) !important
+			}
+
+			.monaco-menu .monaco-action-bar.vertical .submenu-indicator.codicon::before{
+			color: var(--primary) !important
+			}
 
 
       /* This ensures the text inside actually uses your variable */
