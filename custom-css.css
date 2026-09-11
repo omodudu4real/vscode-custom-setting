@@ -2057,7 +2057,8 @@ div.simple-find-part.visible.visible-transition
 
 /* Match Text */
 .currentFindMatchInline {
-  background: #000 !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
 }
 
 /* Side bar */
@@ -2219,6 +2220,15 @@ div.monaco-action-bar.vertical a.action-menu-item span.action-label {
   font-family: var(--favFont) !important;
 }
 
+.monaco-editor
+  .find-widget
+  > .find-part
+  .monaco-inputbox
+  > .ibwrapper
+  > .input {
+  color: var(--primary) !important;
+}
+
 /* Terminal Track */
 div.terminal.xterm .xterm-decoration-overview-ruler {
   width: 3px !important;
@@ -2227,6 +2237,7 @@ div.terminal.xterm .xterm-decoration-overview-ruler {
 /* The Track */
 .decorationsOverviewRuler {
   width: 3px !important;
+  display: none !important;
 }
 
 /* The Thumb/Scroll Bar */
@@ -2389,7 +2400,7 @@ div.quick-input-box
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.22);
   top: 0;
   left: 0;
   backdrop-filter: blur(8px);
@@ -3717,10 +3728,23 @@ div.header div.extension-icon img.icon {
   right: 4px !important;
   width: 98.4% !important;
   height: 98% !important;
-  background: #3c3c50 !important;
+  background-image: linear-gradient(#3c3c50 0%, #3c3c50 100%) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.35) !important;
-  backdrop-filter: blur(3px) !important;
+  backdrop-filter: blur(10px) !important;
   border-radius: 0px 45px !important;
+}
+
+/* extension image icon */
+div.extension-list-item div.icon-container div.extension-icon img,
+.codicon-extension-default-icon:before {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 6px 20px !important;
+  padding: 8px 9px 8px !important;
+  background-image: linear-gradient(
+    var(--primary) -4%,
+    var(--on_primary) 11%
+  ) !important;
 }
 
 /* Change Cursor style */
@@ -4631,7 +4655,7 @@ ul.actions-container li.action-item.focused a.action-label {
   font-size: 14px !important;
   font-family: var(--favFont) !important;
   margin-left: 5em !important;
-  border-radius: 0px 8px !important;
+  border-radius: 0px 10px !important;
   padding: 2px !important;
 }
 
@@ -4697,7 +4721,7 @@ ul.actions-container li.action-item.focused a.action-label {
 .monaco-editor [class*='ced-'][class*='-TextEditorDecorationType8-']::before,
 .monaco-editor [class*='ced-'][class*='-TextEditorDecorationType9-']::before {
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 0px 8px !important;
+  border-radius: 0px 10px !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   color: var(--primary) !important;
 }
@@ -4889,6 +4913,19 @@ div.view-lines.monaco-mouse-cursor-text
   border-top: 2px solid var(--primary) !important;
 }
 
+.monaco-menu
+  .monaco-action-bar.vertical
+  .action-menu-item.checked
+  .menu-item-check,
+.codicon-menu-selection:before {
+  color: var(--primary) !important;
+}
+
+/* Hover Styling for Extension and others */
+.monaco-hover.workbench-hover {
+  /* background: transparent !important; */
+}
+
 .modern-ui-tabs
   .settings-editor
   .settings-tabs-widget
@@ -4964,9 +5001,9 @@ div.view-lines.monaco-mouse-cursor-text
   outline: none !important;
 }
 
-.action-label.codicon.extension-action.icon.manage.codicon-extensions-manage {
+/* .action-label.codicon.extension-action.icon.manage.codicon-extensions-manage {
   margin-top: -3px !important;
-}
+} */
 
 /* Extention new setting */
 /* Feature ==== Command */
@@ -5117,10 +5154,42 @@ div.view-line > span:nth-child(2)::after {
   color: var(--primary) !important;
 }
 
+.monaco-action-bar
+  .action-item
+  .action-label.extension-action.extension-status-info:before {
+  color: color-mix(
+    in srgb,
+    var(--primary) 70%,
+    var(--inverse_primary) 30%
+  ) !important;
+}
+
 /* github Accout Image */
 .monaco-workbench .monaco-action-bar .action-label .accounts-avatar {
   width: 28px !important;
   height: 31px !important;
+}
+
+div.monaco-icon-label.file-icon.name-file-icon.css-ext-file-icon.ext-file-icon.css-lang-file-icon.explorer-item.monaco-decoration-itemColor.monaco-decoration-itemColor-mqijuv[class*='monaco-decoration-itemBadge-'][class*='monaco-decoration-iconBadge-']::after {
+  color: color-mix(
+    in srgb,
+    var(--on_primary) 60%,
+    var(--primary) 30%
+  ) !important;
+}
+
+.extension-bookmark > .recommendation {
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  color: var(--primary) !important;
+  padding: 10px !important;
+  border-radius: 6px 0px !important;
+}
+
+.extension-bookmark > .pre-release {
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  color: var(--primary) !important;
 }
 
 /* End of style  */

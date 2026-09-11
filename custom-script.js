@@ -37,222 +37,222 @@ $$  \ /$$/ $$      \ $$ |      $$ |  $$ |$$ |  $$ |$$    |         $$ |      $$ 
 
 // This code checks for annoying "Code Installation Corrupt" notifications and prevents them from showing
 
-window.addEventListener('DOMContentLoaded', () => {
-  const myObservation = new MutationObserver(() => {
-    document
-      .querySelectorAll('.notification-toast-container')
-      .forEach(element => {
-        // Add custom div only once
-        if (!element.querySelector('.my-custom-div')) {
-          const customDiv = document.createElement('div');
-          customDiv.className = 'my-custom-div';
+window.addEventListener("DOMContentLoaded", () => {
+	const myObservation = new MutationObserver(() => {
+		document
+			.querySelectorAll(".notification-toast-container")
+			.forEach((element) => {
+				// Add custom div only once
+				if (!element.querySelector(".my-custom-div")) {
+					const customDiv = document.createElement("div");
+					customDiv.className = "my-custom-div";
 
-          element.prepend(customDiv);
-        }
-        const text = element.textContent || '';
-        const shouldHide =
-          text.includes(
-            'Your Code installation appears to be corrupt. Please reinstall.'
-          ) || /VSCode Command Server started on port \d+\.?/.test(text);
+					element.prepend(customDiv);
+				}
+				const text = element.textContent || "";
+				const shouldHide =
+					text.includes(
+						"Your Code installation appears to be corrupt. Please reinstall.",
+					) || /VSCode Command Server started on port \d+\.?/.test(text);
 
-        if (shouldHide) {
-          element.style.setProperty('display', 'none', 'important');
-        }
-      });
-  });
+				if (shouldHide) {
+					element.style.setProperty("display", "none", "important");
+				}
+			});
+	});
 
-  // Make sure to observe the target node (e.g., document.body)
-  myObservation.observe(document.body, {
-    childList: true,
-    subtree: true
-  });
+	// Make sure to observe the target node (e.g., document.body)
+	myObservation.observe(document.body, {
+		childList: true,
+		subtree: true,
+	});
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  // ✅ Use a counter to avoid endless retries
-  let retryCount = 0;
-  const maxRetries = 20; // ~10 seconds (20 * 500ms)
+document.addEventListener("DOMContentLoaded", () => {
+	// ✅ Use a counter to avoid endless retries
+	let retryCount = 0;
+	const maxRetries = 20; // ~10 seconds (20 * 500ms)
 
-  const checkElement = setInterval(() => {
-    const commandDialog = document.querySelector('.quick-input-widget');
-    if (commandDialog) {
-      setupObserver(commandDialog);
-      clearInterval(checkElement); // ✅ Stop interval once found
-    } else {
-      retryCount++;
-      if (retryCount >= maxRetries) {
-        clearInterval(checkElement); // ✅ Prevent infinite console spam
-        console.warn(
-          'Command dialog not found after max retries. Waiting for DOM changes...'
-        );
+	const checkElement = setInterval(() => {
+		const commandDialog = document.querySelector(".quick-input-widget");
+		if (commandDialog) {
+			setupObserver(commandDialog);
+			clearInterval(checkElement); // ✅ Stop interval once found
+		} else {
+			retryCount++;
+			if (retryCount >= maxRetries) {
+				clearInterval(checkElement); // ✅ Prevent infinite console spam
+				console.warn(
+					"Command dialog not found after max retries. Waiting for DOM changes...",
+				);
 
-        // ✅ Fallback: watch for late creation of .quick-input-widget
-        const fallbackObserver = new MutationObserver(() => {
-          const lateDialog = document.querySelector('.quick-input-widget');
-          if (lateDialog) {
-            setupObserver(lateDialog);
-            fallbackObserver.disconnect(); // Stop watching once found
-          }
-        });
-        fallbackObserver.observe(document.body, {
-          childList: true,
-          subtree: true
-        });
-      } else {
-        console.log('Command dialog not found yet. Retrying...');
-      }
-    }
-  }, 500);
+				// ✅ Fallback: watch for late creation of .quick-input-widget
+				const fallbackObserver = new MutationObserver(() => {
+					const lateDialog = document.querySelector(".quick-input-widget");
+					if (lateDialog) {
+						setupObserver(lateDialog);
+						fallbackObserver.disconnect(); // Stop watching once found
+					}
+				});
+				fallbackObserver.observe(document.body, {
+					childList: true,
+					subtree: true,
+				});
+			} else {
+				console.log("Command dialog not found yet. Retrying...");
+			}
+		}
+	}, 500);
 
-  // Function: attach observer to watch show/hide state
-  function setupObserver(commandDialog) {
-    if (!commandDialog.querySelector('.quick-input-widget-background')) {
-      const border = document.createElement('div');
-      border.className = 'quick-input-widget-border';
+	// Function: attach observer to watch show/hide state
+	function setupObserver(commandDialog) {
+		if (!commandDialog.querySelector(".quick-input-widget-background")) {
+			const border = document.createElement("div");
+			border.className = "quick-input-widget-border";
 
-      const background = document.createElement('div');
-      background.className = 'quick-input-widget-background';
+			const background = document.createElement("div");
+			background.className = "quick-input-widget-background";
 
-      commandDialog.prepend(background);
-      commandDialog.prepend(border);
-    }
-    // Apply blur immediately if dialog is already visible
-    if (commandDialog.style.display !== 'none') {
-      runMyScript();
-    }
+			commandDialog.prepend(background);
+			commandDialog.prepend(border);
+		}
+		// Apply blur immediately if dialog is already visible
+		if (commandDialog.style.display !== "none") {
+			runMyScript();
+		}
 
-    // Watch for open/close changes via style attribute
-    const observer = new MutationObserver(mutations => {
-      mutations.forEach(mutation => {
-        if (
-          mutation.type === 'attributes' &&
-          mutation.attributeName === 'style'
-        ) {
-          if (commandDialog.style.display === 'none') {
-            handleEscape();
-          } else {
-            runMyScript();
-          }
-        }
-      });
-    });
+		// Watch for open/close changes via style attribute
+		const observer = new MutationObserver((mutations) => {
+			mutations.forEach((mutation) => {
+				if (
+					mutation.type === "attributes" &&
+					mutation.attributeName === "style"
+				) {
+					if (commandDialog.style.display === "none") {
+						handleEscape();
+					} else {
+						runMyScript();
+					}
+				}
+			});
+		});
 
-    observer.observe(commandDialog, { attributes: true });
-    console.log('✅ Command dialog observer attached.');
-  }
+		observer.observe(commandDialog, { attributes: true });
+		console.log("✅ Command dialog observer attached.");
+	}
 
-  // Key listener: Ctrl+P / Cmd+P opens palette → run blur
-  document.addEventListener('keydown', event => {
-    if ((event.metaKey || event.ctrlKey) && event.key === 'p') {
-      event.preventDefault();
-      runMyScript();
-    } else if (event.key === 'Escape' || event.key === 'Esc') {
-      event.preventDefault();
-      handleEscape();
-    }
-  });
+	// Key listener: Ctrl+P / Cmd+P opens palette → run blur
+	document.addEventListener("keydown", (event) => {
+		if ((event.metaKey || event.ctrlKey) && event.key === "p") {
+			event.preventDefault();
+			runMyScript();
+		} else if (event.key === "Escape" || event.key === "Esc") {
+			event.preventDefault();
+			handleEscape();
+		}
+	});
 
-  // Global Escape listener (capture phase, catches all Esc presses)
-  document.addEventListener(
-    'keydown',
-    event => {
-      if (event.key === 'Escape' || event.key === 'Esc') {
-        handleEscape();
-      }
-    },
-    true
-  );
+	// Global Escape listener (capture phase, catches all Esc presses)
+	document.addEventListener(
+		"keydown",
+		(event) => {
+			if (event.key === "Escape" || event.key === "Esc") {
+				handleEscape();
+			}
+		},
+		true,
+	);
 
-  // Function: adds blur overlay and hides widgets
-  function runMyScript() {
-    const targetDiv = document.querySelector('.monaco-workbench');
-    if (!targetDiv) return;
+	// Function: adds blur overlay and hides widgets
+	function runMyScript() {
+		const targetDiv = document.querySelector(".monaco-workbench");
+		if (!targetDiv) return;
 
-    // Remove existing blur overlay
-    const existingElement = document.getElementById('command-blur');
-    if (existingElement) {
-      existingElement.remove();
-    }
+		// Remove existing blur overlay
+		const existingElement = document.getElementById("command-blur");
+		if (existingElement) {
+			existingElement.remove();
+		}
 
-    // Create new blur overlay
-    const newElement = document.createElement('div');
-    newElement.setAttribute('id', 'command-blur');
-    newElement.addEventListener('click', () => {
-      newElement.remove();
-    });
+		// Create new blur overlay
+		const newElement = document.createElement("div");
+		newElement.setAttribute("id", "command-blur");
+		newElement.addEventListener("click", () => {
+			newElement.remove();
+		});
 
-    // Add overlay to workbench
-    targetDiv.appendChild(newElement);
+		// Add overlay to workbench
+		targetDiv.appendChild(newElement);
 
-    // Hide sticky widgets
-    const widgets = document.querySelectorAll('.sticky-widget');
-    widgets.forEach(widget => {
-      widget.style.opacity = 0;
-    });
+		// Hide sticky widgets
+		const widgets = document.querySelectorAll(".sticky-widget");
+		widgets.forEach((widget) => {
+			widget.style.opacity = 0;
+		});
 
-    const treeWidget = document.querySelector('.monaco-tree-sticky-container');
-    if (treeWidget) {
-      treeWidget.style.opacity = 0;
-    }
-  }
+		const treeWidget = document.querySelector(".monaco-tree-sticky-container");
+		if (treeWidget) {
+			treeWidget.style.opacity = 0;
+		}
+	}
 
-  // Function: removes blur overlay and restores widgets
-  function handleEscape() {
-    const element = document.getElementById('command-blur');
-    if (element) {
-      element.click();
-    }
+	// Function: removes blur overlay and restores widgets
+	function handleEscape() {
+		const element = document.getElementById("command-blur");
+		if (element) {
+			element.click();
+		}
 
-    // Restore sticky widgets
-    const widgets = document.querySelectorAll('.sticky-widget');
-    widgets.forEach(widget => {
-      widget.style.opacity = 1;
-    });
+		// Restore sticky widgets
+		const widgets = document.querySelectorAll(".sticky-widget");
+		widgets.forEach((widget) => {
+			widget.style.opacity = 1;
+		});
 
-    const treeWidget = document.querySelector('.monaco-tree-sticky-container');
+		const treeWidget = document.querySelector(".monaco-tree-sticky-container");
 
-    if (treeWidget) {
-      treeWidget.style.opacity = '1';
-    }
-  }
+		if (treeWidget) {
+			treeWidget.style.opacity = "1";
+		}
+	}
 });
 
 /* FOR DEBUGGING ALT + , */
 
-document.addEventListener('keydown', e => {
-  if (e.altKey && e.code === 'Comma') {
-    e.preventDefault();
+document.addEventListener("keydown", (e) => {
+	if (e.altKey && e.code === "Comma") {
+		e.preventDefault();
 
-    const accountIcon = document.querySelector(
-      '.action-label.codicon.codicon-accounts-view-bar-icon[aria-label="Accounts"]'
-    );
-    if (accountIcon) {
-      accountIcon.click();
+		const accountIcon = document.querySelector(
+			'.action-label.codicon.codicon-accounts-view-bar-icon[aria-label="Accounts"]',
+		);
+		if (accountIcon) {
+			accountIcon.click();
 
-      setTimeout(() => {
-        debugger;
-      }, 150);
-    }
-  }
+			setTimeout(() => {
+				debugger;
+			}, 150);
+		}
+	}
 });
 
 /* Styling the RightClick and other popups
 this is done here because it's a lifecycle
 element so it get destroyed and re-born. */
 
-window.addEventListener('DOMContentLoaded', () => {
-  const rootObserver = new MutationObserver(() => {
-    const host = document.querySelector('.shadow-root-host');
-    if (!host?.shadowRoot) {
-      return;
-    }
+window.addEventListener("DOMContentLoaded", () => {
+	const rootObserver = new MutationObserver(() => {
+		const host = document.querySelector(".shadow-root-host");
+		if (!host?.shadowRoot) {
+			return;
+		}
 
-    const shadow = host.shadowRoot;
+		const shadow = host.shadowRoot;
 
-    if (!shadow.querySelector('#custom-menu-style')) {
-      const style = document.createElement('style');
-      style.id = 'custom-menu-style';
-      style.textContent = `
+		if (!shadow.querySelector("#custom-menu-style")) {
+			const style = document.createElement("style");
+			style.id = "custom-menu-style";
+			style.textContent = `
       .monaco-menu {
         box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
         background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -269,6 +269,13 @@ window.addEventListener('DOMContentLoaded', () => {
         background-color: transparent !important;
       }
 
+      /* menu hover effect */
+      li.action-item focused a.action-menu-item.monaco-submenu-item{
+      border-radius: 0px 10px !important;
+      box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+      border: 1px solid var(--primary) !important;
+      }
+
 
       /* This ensures the text inside actually uses your variable */
       .monaco-menu .action-label,
@@ -277,29 +284,29 @@ window.addEventListener('DOMContentLoaded', () => {
         color: var(--primary) !important;
       }
     `;
-      shadow.appendChild(style);
-    }
-  });
+			shadow.appendChild(style);
+		}
+	});
 
-  rootObserver.observe(document.body, {
-    childList: true,
-    subtree: true
-  });
-  ``;
+	rootObserver.observe(document.body, {
+		childList: true,
+		subtree: true,
+	});
+	``;
 });
 
 /* Video Styles */
 
 /* command Palette */
 const commandPalette = new MutationObserver(() => {
-  const widget = document.querySelector('.quick-input-widget');
+	const widget = document.querySelector(".quick-input-widget");
 
-  if (widget) {
-    console.log('Found!', widget);
-  }
+	if (widget) {
+		console.log("Found!", widget);
+	}
 });
 
 commandPalette.observe(document.body, {
-  childList: true,
-  subtree: true
+	childList: true,
+	subtree: true,
 });
