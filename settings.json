@@ -5,7 +5,8 @@
   "workbench.list.smoothScrolling": true,
 
   // Point VS Code to your global Biome binary
-  "biome.lsp.bin": "/usr/bin/biome",
+
+  "biome.lsp.bin": "/home/omodudu/.nvm/versions/node/v24.20.0/bin/biome",
   "biome.enabled": true,
   "biome.requireConfiguration": false,
   "biome.css.linter.enabled": false,
@@ -16,6 +17,10 @@
 
   // Enables word wrap globally at the viewport boundary
   "editor.wordWrap": "on",
+
+  // Highlight Disabled
+  "editor.occurrencesHighlight": "off",
+  "editor.selectionHighlight": false,
 
   // Keeps wrapped lines indented to match the original line's indentation
   "editor.wrappingIndent": "indent",
@@ -267,7 +272,6 @@
   // LIVE SERVER
   "liveServer.settings.donotShowInfoMsg": true,
   "editor.minimap.enabled": false,
-  "workbench.startupEditor": "none",
   "editor.snippetSuggestions": "top",
 
   "files.exclude": {
@@ -433,7 +437,7 @@
     "css": false
   },
 
-  "explorer.confirmDelete": false,
+  "explorer.confirmDelete": true,
   "explorer.confirmDragAndDrop": false,
   "json.schemaDownload.trustedDomains": {
     "https://schemastore.azurewebsites.net/": true,
@@ -445,6 +449,7 @@
     "https://developer.microsoft.com/json-schemas/": true,
     "https://biomejs.dev": true
   },
+
   "harper.dialect": "American",
   "cSpell.userWords": ["caffiend", "fanta", "hypr", "Insatiates", "Muhammed"],
   "@azure.argTenant": "",
@@ -454,7 +459,11 @@
   "editor.linkedEditing": true,
   "editor.codeActions.triggerOnFocusChange": true,
   "editor.formatOnSave": true,
-  "go.toolsManagement.autoUpdate": true
+  "go.toolsManagement.autoUpdate": true,
+  "js/ts.experimental.useTsgo": true,
+
+  // Guild Lines
+  "workbench.tree.renderIndentGuides": "always"
 
   // Commands for reference:
   // sudo chown -R $(whoami) "$(which code)"

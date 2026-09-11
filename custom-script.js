@@ -288,6 +288,9 @@ window.addEventListener('DOMContentLoaded', () => {
   ``;
 });
 
+/* Video Styles */
+
+/* command Palette */
 const commandPalette = new MutationObserver(() => {
   const widget = document.querySelector('.quick-input-widget');
 
