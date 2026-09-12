@@ -956,7 +956,7 @@ a.monaco-button.monaco-text-button {
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #5d6089 100%) !important;
-  border-radius: 0px 16px !important;
+  border-radius: 0px 10px !important;
   border-top: 2px solid var(--primary) !important;
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
@@ -2643,9 +2643,7 @@ div.composite.title.has-composite-bar.has-actions {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-bottom: 5px solid var(--primary) !important;
-  border-left: 5px solid var(--primary) !important;
   border-radius: 10px 10px 36px 36px !important;
-  margin-bottom: 4px !important;
 }
 
 /* Popups that comes from clicking Accounts or Settings or others popups */
@@ -3199,7 +3197,7 @@ div.chat-getting-started-tip-container {
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  margin-bottom: 3px !important;
+  margin-bottom: 10px !important;
 }
 
 span.chat-input-picker-label {
@@ -3437,14 +3435,6 @@ div.monaco-dialog-box {
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-}
-
-a.monaco-button.monaco-text-button {
-  color: var(--primary) !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 0px 16px !important;
-  outline: none !important;
 }
 
 div#monaco-dialog-icon.dialog-icon.codicon.codicon-loading.codicon-modifier-spin,
@@ -5113,7 +5103,8 @@ div.dialog-buttons-row
   color: var(--primary) !important;
 }
 
-.marker-source .monaco-highlighted-label {
+.marker-source .monaco-highlighted-label,
+.ai-customization-management-editor .welcome-prompts-card-labe {
   color: color-mix(
     in srgb,
     var(--primary) 60%,
@@ -5190,6 +5181,191 @@ div.monaco-icon-label.file-icon.name-file-icon.css-ext-file-icon.ext-file-icon.c
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   color: var(--primary) !important;
+}
+
+/* Agent Customization */
+
+.ai-customization-management-editor .welcome-prompts-heading {
+  font-family: var(--fav3Font) !important;
+  font-size: 20px !important;
+  color: color-mix(
+    in srgb,
+    var(--inverse_primary) 20%,
+    var(--primary) 80%
+  ) !important;
+}
+
+.ai-customization-management-editor .welcome-prompts-subtitle {
+  color: var(--primary) !important;
+  font-family: var(--favFont) !important;
+}
+
+.ai-customization-management-editor .welcome-prompts-section-label {
+  color: color-mix(
+    in srgb,
+    var(--inverse_primary) 20%,
+    var(--primary) 80%
+  ) !important;
+  font-family: var(--fav3Font) !important;
+  font-size: 17px !important;
+}
+
+.ai-customization-management-editor .welcome-prompts-input-helper {
+  font-family: var(--favFont) !important;
+  color: var(--primary) !important;
+}
+
+.monaco-workbench .codicon[class*='codicon-'] {
+  color: var(--primary) !important;
+}
+
+.ai-customization-management-editor .welcome-prompts-primary {
+  border-radius: 0px 26px !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
+.monaco-workbench .ai-customization-management-editor .welcome-prompts-input {
+  color: var(--primary) !important;
+}
+
+.ai-customization-management-editor .welcome-prompts-input-row {
+  border-radius: 0px 20px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+}
+
+.ai-customization-management-editor .sidebar-home-label,
+.ai-customization-management-editor .section-label {
+  color: var(--primary) !important;
+}
+
+.ai-customization-management-editor .welcome-prompts-overview-section-title,
+.ai-customization-management-editor .welcome-prompts-card-label,
+.mcp-list-widget .section-title-header .section-title,
+.plugin-list-widget .plugin-card-section-title,
+.mcp-list-widget .mcp-empty-state .empty-text,
+.plugin-list-widget .plugin-list-item-name,
+.ai-customization-list-widget .section-title-header .section-title,
+.plugin-list-widget .plugin-list-item-name {
+  font-family: var(--fav3Font) !important;
+  color: color-mix(
+    in srgb,
+    var(--inverse_primary) 20%,
+    var(--primary) 80%
+  ) !important;
+  font-size: 18px !important;
+}
+
+.ai-customization-management-editor
+  .welcome-prompts-overview-section-description,
+.mcp-list-widget .section-title-header .section-title-description,
+.plugin-list-widget .plugin-card-section-description,
+.plugin-list-widget .plugin-inventory-empty,
+.mcp-list-widget .mcp-empty-state .empty-subtext,
+.plugin-list-widget .plugin-list-item-description,
+.ai-customization-list-widget .section-title-header .section-title-description,
+.plugin-list-widget .plugin-list-item-description {
+  color: var(--primary) !important;
+  font-family: var(--favFont) !important;
+  font-size: 13px !important;
+}
+
+.plugin-list-widget .plugin-list-item-status.disabled {
+  color: var(--inverse_primary) !important;
+  background: color-mix(in srgb, var(--primary) 40%, transparent) !important;
+}
+
+.plugin-list-widget .plugin-enable-switch.checked {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.monaco-inputbox > .ibwrapper > .input {
+  color: var(--primary) !important;
+}
+
+.ai-customization-management-editor .sidebar-home-button:hover {
+  border-radius: 0px 10px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border: 1px solid var(--primary) !important;
+}
+
+.ai-customization-management-editor .welcome-prompts-card {
+  border-radius: 0px 26px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+}
+
+.ai-customization-management-editor .welcome-prompts-card-description {
+  font-family: var(--favFont) !important;
+  color: var(--primary) !important;
+  font-size: 13px !important;
+}
+
+.ai-customization-management-editor .section-list-item .section-count {
+  color: var(--primary) !important;
+}
+
+/* link */
+.mcp-list-widget .section-title-header .section-title-link,
+.ai-customization-list-widget .section-title-header .section-title-link {
+  color: color-mix(
+    in srgb,
+    var(--primary) 15%,
+    var(--inverse_primary) 70%
+  ) !important;
+  font-family: var(--favFont) !important;
+}
+
+.mcp-list-widget .list-search-container .monaco-inputbox,
+.ai-customization-list-widget .list-search-container .monaco-inputbox {
+  border-radius: 0px 16px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+  color: var(--primary) !important;
+}
+
+.plugin-list-widget .plugin-card-grid.plugin-inventory-list {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c30 0%, #2a2d38 90%) !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+  border-radius: 0px 26px !important;
+}
+
+.plugin-list-widget .plugin-card-section-count {
+  border-radius: 0px 6px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c30 0%, #2a2d38 90%) !important;
+  color: var(--primary) !important;
+  margin-bottom: 1px !important;
+}
+
+.plugin-list-widget .customization-home-row:hover {
+  border: 1px solid var(--primary) !important;
+  border-radius: 0px 12px !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c30 0%, #2a2d38 70%) !important;
 }
 
 /* End of style  */
