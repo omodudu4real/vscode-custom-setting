@@ -1569,6 +1569,16 @@ li.action-item.icon.checked a.action-label.codicon {
   border-radius: 0px 16px !important;
 }
 
+.monaco-editor .marker-widget .descriptioncontainer .message a.code-link > span,
+.monaco-hover .hover-contents a.code-link > span {
+  color: color-mix(
+    in srgb,
+    var(--primary) 60%,
+    var(--inverse_primary) 28%
+  ) !important;
+  text-decoration: none !important;
+}
+
 /* Explorer empty input error  */
 .monaco-inputbox-container .monaco-inputbox-message {
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
