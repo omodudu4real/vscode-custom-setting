@@ -1554,8 +1554,10 @@ li.action-item.icon.checked a.action-label.codicon {
 
 /* Floating Error Inline-Notification Box */
 .monaco-editor .monaco-resizable-hover {
-  /* top: 9rem !important; move to prevent  disturbance */
-  /* left: 73rem !important; move to prevent disturbance */
+  /*  move to prevent  disturbance */
+  top: 9rem !important;
+  /* move to prevent disturbance */
+  left: 73rem !important;
   max-width: 600px !important;
 }
 
