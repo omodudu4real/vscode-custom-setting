@@ -1685,6 +1685,11 @@ div.monaco-icon-label span.timeline-timestamp {
   opacity: 0.29 !important;
 }
 
+.monaco-editor .contentWidgets .empty-editor-hint {
+  font-family: var(--favFont) !important;
+  color: var(--primary) !important;
+}
+
 /* Explorer empty input error  */
 .monaco-inputbox-container .monaco-inputbox-message {
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
