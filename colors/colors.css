@@ -19,9 +19,9 @@
 
     --error_container: #93000a;
 
-    --inverse_on_surface: #392e2d;
+    --inverse_on_surface: #392e2c;
 
-    --inverse_primary: #904a44;
+    --inverse_primary: #904a41;
 
     --inverse_surface: #f1dedc;
 
@@ -31,59 +31,59 @@
 
     --on_error_container: #ffdad6;
 
-    --on_primary: #561e1a;
+    --on_primary: #561e17;
 
-    --on_primary_container: #ffdad6;
+    --on_primary_container: #ffdad5;
 
-    --on_primary_fixed: #3b0907;
+    --on_primary_fixed: #3b0906;
 
-    --on_primary_fixed_variant: #73332e;
+    --on_primary_fixed_variant: #73342c;
 
-    --on_secondary: #442927;
+    --on_secondary: #442926;
 
-    --on_secondary_container: #ffdad6;
+    --on_secondary_container: #ffdad5;
 
-    --on_secondary_fixed: #2c1513;
+    --on_secondary_fixed: #2c1512;
 
-    --on_secondary_fixed_variant: #5d3f3c;
+    --on_secondary_fixed_variant: #5d3f3b;
 
     --on_surface: #f1dedc;
 
-    --on_surface_variant: #d8c2bf;
+    --on_surface_variant: #d8c2be;
 
-    --on_tertiary: #3f2e04;
+    --on_tertiary: #3e2e04;
 
-    --on_tertiary_container: #fedfa6;
+    --on_tertiary_container: #fcdfa6;
 
-    --on_tertiary_fixed: #261900;
+    --on_tertiary_fixed: #251a00;
 
-    --on_tertiary_fixed_variant: #584419;
+    --on_tertiary_fixed_variant: #574419;
 
-    --outline: #a08c8a;
+    --outline: #a08c89;
 
     --outline_variant: #534341;
 
-    --primary: #ffb4ab;
+    --primary: #ffb4a9;
 
-    --primary_container: #73332e;
+    --primary_container: #73342c;
 
-    --primary_fixed: #ffdad6;
+    --primary_fixed: #ffdad5;
 
-    --primary_fixed_dim: #ffb4ab;
+    --primary_fixed_dim: #ffb4a9;
 
     --scrim: #000000;
 
-    --secondary: #e7bdb8;
+    --secondary: #e7bdb7;
 
-    --secondary_container: #5d3f3c;
+    --secondary_container: #5d3f3b;
 
-    --secondary_fixed: #ffdad6;
+    --secondary_fixed: #ffdad5;
 
-    --secondary_fixed_dim: #e7bdb8;
+    --secondary_fixed_dim: #e7bdb7;
 
     --shadow: #000000;
 
-    --source_color: #b12523;
+    --source_color: #f0281f;
 
     --surface: #1a1110;
 
@@ -101,16 +101,16 @@
 
     --surface_dim: #1a1110;
 
-    --surface_tint: #ffb4ab;
+    --surface_tint: #ffb4a9;
 
     --surface_variant: #534341;
 
-    --tertiary: #e0c38c;
+    --tertiary: #dfc38c;
 
-    --tertiary_container: #584419;
+    --tertiary_container: #574419;
 
-    --tertiary_fixed: #fedfa6;
+    --tertiary_fixed: #fcdfa6;
 
-    --tertiary_fixed_dim: #e0c38c;
+    --tertiary_fixed_dim: #dfc38c;
 
 }

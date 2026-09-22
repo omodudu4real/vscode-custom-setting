@@ -522,7 +522,18 @@ div.monaco-custom-toggle.codicon.ucodicon-book {
 
 /* Setting Input Box */
 div.setting-item-control div.monaco-inputbox.idle,
-div.keybindings-header div.monaco-inputbox.idle,
+div.keybindings-header div.monaco-inputbox.idle {
+  outline: none !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+  border-radius: 0px 16px !important;
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+}
+
 .monaco-workbench
   .explorer-folders-view
   .explorer-item
@@ -533,10 +544,11 @@ div.keybindings-header div.monaco-inputbox.idle,
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
-  border-radius: 0px 16px !important;
+  border-radius: 0px 10px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  margin-top: 2px !important;
 }
 
 .monaco-workbench
@@ -689,6 +701,7 @@ div.monaco-icon-label.codicon-settings-editor-label-icon.predefined-file-icon.ta
   .badge
   .badge-content {
   top: 25px !important;
+  font-family: var(--fav3Font) !important;
 }
 
 div.monaco-editor.rename-box.preview div.rename-input-with-button {
@@ -781,12 +794,14 @@ div.settings-toc-count {
 /* Notification Popup */
 div.notification-list-item-message,
 div.notification-list-item-source {
-  color: var(--primary);
+  color: var(--primary) !important;
+  font-family: var(--favFont) !important;
 }
 
 h2.feature__ttitle p,
 h2.feature__ttitle span {
   color: var(--primary) !important;
+  font-family: var(--favFont);
 }
 
 .codicon-gitlens-gitlens-inspect:before,
@@ -837,13 +852,6 @@ div.notifications-list-container
 
 div.hover-row.hover-row-with-copy div.marker.hover-contents div > span {
   font-family: var(--fav3Font) !important;
-}
-
-.viewpane-filter > .viewpane-filter-controls .monaco-action-bar .action-label {
-  padding: 1px;
-  margin-left: -27px;
-  border-radius: 0px 16px 0px 0px !important;
-  background: transparent !important;
 }
 
 .monaco-workbench
@@ -952,10 +960,22 @@ div.my-custom-div::before {
   margin-bottom: 12px !important;
 }
 
-a.monaco-button.monaco-text-button {
+.modern-ui-notifications-dialogs.monaco-workbench
+  .notifications-list-container
+  .notification-list-item
+  .notification-list-item-buttons-container
+  > .monaco-button {
+  font-family: var(--favFont) !important;
+}
+
+a.monaco-button.monaco-text-button,
+.monaco-workbench
+  .pane-composite-part
+  .empty-pane-message-area
+  .empty-pane-message {
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c50 0%, #5d6089 100%) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-radius: 0px 10px !important;
   border-top: 2px solid var(--primary) !important;
   border-bottom: 2px solid var(--inverse_primary) !important;
@@ -1489,6 +1509,8 @@ div.badge-content {
   display: flex !important;
   justify-content: center !important;
   border-radius: 0px 7px !important;
+  font-family: var(--favFont) !important;
+  font-size: 11px !important;
 }
 
 li.action-item.icon.checked:hover .codicon::before {
@@ -1501,6 +1523,57 @@ li.action-item.icon.checked {
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
   border-radius: 22px 22px 10px 10px;
+}
+
+.viewpane-filter > .viewpane-filter-controls .monaco-action-bar .action-label {
+  /* padding: 1px !important; */
+  /* margin-left: -27px; */
+  outline: none !important;
+}
+
+.viewpane-filter
+  > .viewpane-filter-controls
+  .monaco-action-bar
+  .monaco-dropdown
+  .action-label.codicon.codicon-filter.checked {
+  border: none !important;
+  background-color: var(--inverse_primary) !important;
+  outline: none !important;
+}
+
+.viewpane-filter-container
+  > .viewpane-filter
+  > .viewpane-filter-controls
+  > .viewpane-filter-badge {
+  color: var(--primary) !important;
+  background-image: color-mix(
+    in srgb,
+    var(--primary) 50%,
+    transparent
+  ) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  border-radius: 6px !important;
+  font-family: var(--favFont) !important;
+}
+
+.modern-ui-tabs.monaco-workbench
+  .pane-composite-part
+  > .title
+  > .composite-bar-container
+  > .composite-bar
+  > .monaco-action-bar
+  .action-item
+  .action-label:not(
+    .modern-ui
+      .pane-composite-part
+      > :is(.title, .header-or-footer)
+      > .composite-bar-container
+      > .composite-bar
+      > .monaco-action-bar
+      .action-item.icon
+      .action-label.codicon
+  ) {
+  font-family: var(--favFont) !important;
 }
 
 .style-override
@@ -1554,11 +1627,15 @@ li.action-item.icon.checked a.action-label.codicon {
 
 /* Floating Error Inline-Notification Box */
 .monaco-editor .monaco-resizable-hover {
-  /*  move to prevent  disturbance */
-  top: 9rem !important;
-  /* move to prevent disturbance */
-  left: 73rem !important;
   max-width: 600px !important;
+}
+
+.modern-ui .monaco-sash.vertical:not(.disabled):after,
+.modern-ui .monaco-sash:not(.disabled):after {
+  width: 3px !important;
+  height: 3px !important;
+  background: var(--primary) !important;
+  color: var(--primary) !important;
 }
 
 .monaco-workbench
@@ -3078,7 +3155,7 @@ div.viewpane-filter div.monaco-inputbox.idle[data-keybinding-context] {
   border-bottom: 3px solid var(--inverse_primary) !important;
   border-left: 3px solid var(--primary) !important;
   border-right: 3px solid var(--inverse_primary) !important;
-  border-radius: 0px 20px !important;
+  border-radius: 0px 16px !important;
   color: var(--primary) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -3590,6 +3667,7 @@ div.notification-list-item-buttons-container
 div.notifications-center.bottom-right.visible
   span.notifications-center-header-title {
   color: var(--primary) !important;
+  font-family: var(--fav3Font) !important;
 }
 
 div.terminal-command-decoration.codicon.xterm-decoration.success.codicon-terminal-decoration-success,
@@ -4353,25 +4431,36 @@ div.product-release-date {
 /* Update Popup */
 div.update-indicator.prominent,
 .monaco-action-bar .update-indicator .indicator-label {
+  font-family: var(--favFont) !important;
+  font-size: 15px !important;
+}
+
+.monaco-action-bar .update-indicator.prominent {
+  /* left: -36.2rem !important; */
+  /* position: relative !important; */
+  border-radius: 0px 10px !important;
   box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
-  background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-top: 2px solid var(--primary) !important;
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
   border-right: 2px solid var(--inverse_primary) !important;
   color: var(--primary) !important;
-  font-family: var(--favFont) !important;
   outline: none !important;
-  border-radius: 0px 10px !important;
-  padding: 3px !important;
 }
+
+/* @media screen and (max-width: 1051px) {
+  .monaco-action-bar .update-indicator.prominent {
+    left: -150px !important;
+  }
+} */
 
 /* Highlight text style */
 .monaco-editor .selected-text {
   background-color: color-mix(
     in srgb,
-    var(--primary) 60%,
-    var(--inverse_primary) 30%
+    var(--primary) 40%,
+    transparent
   ) !important;
   box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
   filter: blur(3px) !important;
@@ -4407,6 +4496,20 @@ button.action-button {
   font-family: var(--favFont) !important;
   outline: none !important;
   border-radius: 0px 16px !important;
+}
+
+.sponsor.clickable span {
+  color: var(--primary) !important;
+}
+
+.verified-publisher > .extension-verified-publisher-domain {
+  font-family: var(--favFont) !important;
+  font-size: 15px !important;
+  color: color-mix(
+    in srgb,
+    var(--primary) 60%,
+    var(--secondary) 20%
+  ) !important;
 }
 
 div.product-info div.product-logo {
@@ -4681,6 +4784,7 @@ ul.actions-container li.action-item.focused a.action-label {
 
 .monaco-workbench > .notifications-toasts .codicon.codicon-error {
   color: var(--primary) !important;
+  font-family: var(--favFont) !important;
 }
 
 /* import cost extension, GitLens style optional*/
@@ -4957,9 +5061,9 @@ div.view-lines.monaco-mouse-cursor-text
 }
 
 /* Hover Styling for Extension and others */
-.monaco-hover.workbench-hover {
-  /* background: transparent !important; */
-}
+/* .monaco-hover.workbench-hover {
+  background: transparent !important;
+} */
 
 .modern-ui-tabs
   .settings-editor
@@ -5390,7 +5494,7 @@ div.monaco-icon-label.file-icon.name-file-icon.css-ext-file-icon.ext-file-icon.c
 
 .plugin-list-widget .plugin-card-grid.plugin-inventory-list {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c30 0%, #2a2d38 90%) !important;
+  background-image: linear-gradient(#3c3c30 0%, #2a2d38 100%) !important;
   border-top: 2px solid var(--primary) !important;
   border-bottom: 2px solid var(--inverse_primary) !important;
   border-left: 2px solid var(--primary) !important;
@@ -5401,23 +5505,24 @@ div.monaco-icon-label.file-icon.name-file-icon.css-ext-file-icon.ext-file-icon.c
 .plugin-list-widget .plugin-card-section-count {
   border-radius: 0px 6px !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c30 0%, #2a2d38 90%) !important;
+  background-image: linear-gradient(#3c3c30 0%, #2a2d38 100%) !important;
   color: var(--primary) !important;
   margin-bottom: 1px !important;
 }
 
 .extension-editor code:not(:empty) {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c30 0%, #2a2d38 90%) !important;
+  background-image: linear-gradient(#3c3c30 0%, #2a2d38 100%) !important;
   color: var(--primary) !important;
   font-family: var(--favFont) !important;
+  font-size: 113% !important;
 }
 
 .plugin-list-widget .customization-home-row:hover {
   border: 1px solid var(--primary) !important;
   border-radius: 0px 12px !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c30 0%, #2a2d38 70%) !important;
+  background-image: linear-gradient(#3c3c30 0%, #2a2d38 100%) !important;
 }
 
 /* End of style  */
