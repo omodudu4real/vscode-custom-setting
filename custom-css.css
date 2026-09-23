@@ -3126,10 +3126,6 @@ div.monaco-custom-toggle.codicon.codicon-case-sensitive.checked::before {
   /* margin: 0px 5px 3px 2px !important; */
 }
 
-.monaco-findInput > .controls {
-  right: 10px !important;
-}
-
 .monaco-editor .find-widget .matchesCount {
   font-family: var(--fav3Font) !important;
 }
@@ -3141,9 +3137,7 @@ div.monaco-custom-toggle.codicon.codicon-case-sensitive.checked::before {
 }
 
 .monaco-findInput > .controls {
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 0px 10px !important;
+  right: 10px !important;
 }
 
 div.monaco-submenu.menubar-menu-items-holder.context-view.monaco-menu-container
@@ -3170,6 +3164,32 @@ div.monaco-submenu.menubar-menu-items-holder.context-view.monaco-menu-container
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   height: 28px !important;
+}
+
+.monaco-inputbox > .ibwrapper {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 0px 12px 4px 14px !important;
+}
+
+.extension-list-item
+  > .details
+  > .header-container
+  > .header
+  .extension-kind-indicator {
+  font-family: var(--favFont) !important;
+  font-size: 12px !important;
+  color: color-mix(
+    in srgb,
+    var(--secondary) 50%,
+    var(--primary) 18%
+  ) !important;
+}
+
+.modern-ui.monaco-workbench .monaco-icon-label:after,
+.modern-ui.monaco-workbench .explorer-folders-view .explorer-item:after {
+  font-family: var(--favFont) !important;
+  font-size: 14px !important;
 }
 
 div.codicon.codicon-light-bulb,
