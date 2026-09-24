@@ -1187,6 +1187,17 @@ a.action-label.codicon.extension-action.label.prominent.install.action-dropdown 
   background-color: var(--primary) !important;
 }
 
+.interactive-session
+  .chat-input-toolbars
+  > .chat-execute-toolbar
+  .monaco-action-bar
+  .action-item.chat-submit-button:not(.disabled)
+  > .action-label {
+  border-radius: 0px 10px !important;
+  background: var(--primary) !important;
+  color: var(--inverse_primary) !important;
+}
+
 span.install-count span.count {
   color: var(--primary) !important;
 }
