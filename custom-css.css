@@ -1177,6 +1177,12 @@ div.message-container span.message-text span.message {
   color: var(--primary) !important;
 }
 
+.plugin-list-widget .virtualized-section-loading {
+  font-family: var(--fav3Font) !important;
+  color: var(--primary) !important;
+  font-size: 13px !important;
+}
+
 a.action-label.codicon.extension-action.label.prominent.install.action-dropdown {
   background-color: var(--primary) !important;
 }
@@ -2369,11 +2375,10 @@ div.xterm-slider {
   position: absolute !important;
   right: 2px !important;
   left: auto !important;
-  width: 3px !important;
+  width: 2px !important;
   background: var(--primary) !important;
   border-radius: 9999px !important;
-  border-style: solid !important;
-  border-color: black !important;
+  border: 1px solid var(--primary) !important;
   margin-right: 6px;
 }
 
@@ -3199,6 +3204,25 @@ div.lightBulbWidget.codicon.codicon-sparkle-filled::before,
 div.lightBulbWidget.codicon.codicon-lightbulb-sparkle::after,
 div.lightBulbWidget.codicon.codicon-lightbulb-sparkle::before {
   color: var(--primary) !important;
+}
+
+.mcp-server-item .mcp-server-name {
+  font-family: var(--favFont) !important;
+  font-size: 17px !important;
+  color: var(--primary) !important;
+}
+
+.monaco-switch {
+  background: color-mix(in srgb, var(--secondary) 16%, transparent);
+}
+
+.monaco-switch.checked {
+  border-color: var(--primary) !important;
+  background: var(--primary) !important;
+}
+
+.monaco-switch.checked .monaco-switch-thumb {
+  background: var(--inverse_primary) !important;
 }
 
 div.monaco-list-row.group-header[role='separator'] span {
@@ -5449,6 +5473,45 @@ div.monaco-icon-label.file-icon.name-file-icon.css-ext-file-icon.ext-file-icon.c
   color: var(--primary) !important;
 }
 
+.ai-customization-management-editor .editor-back-button:focus-visible {
+  outline: 2px solid var(--primary) !important;
+  border-radius: 0px 10px !important;
+}
+
+.ai-customization-management-editor .editor-item-path {
+  font-family: var(--favFont) !important;
+  color: color-mix(
+    in srgb,
+    var(--primary) 30%,
+    var(inverse_primary) 74%
+  ) !important;
+  font-size: 13px !important;
+}
+
+.ai-customization-management-editor .editor-item-name {
+  font-family: var(--favFont) !important;
+  font-size: 17px !important;
+  color: var(--primary) !important;
+}
+
+.ai-customization-management-editor .mcp-detail-container .mcp-detail-header {
+  border-radius: 5px !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+}
+
+.ai-customization-list-item .item-name {
+  color: color-mix(
+    in srgb,
+    var(--inverse_primary) 20%,
+    var(--primary) 80%
+  ) !important;
+}
+
+.ai-customization-list-item .item-description {
+  color: var(--primary) !important;
+}
+
 .ai-customization-management-editor .welcome-prompts-input-row {
   border-radius: 0px 20px !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
@@ -5471,7 +5534,8 @@ div.monaco-icon-label.file-icon.name-file-icon.css-ext-file-icon.ext-file-icon.c
 .mcp-list-widget .mcp-empty-state .empty-text,
 .plugin-list-widget .plugin-list-item-name,
 .ai-customization-list-widget .section-title-header .section-title,
-.plugin-list-widget .plugin-list-item-name {
+.plugin-list-widget .plugin-list-item-name,
+.ai-customization-list-widget .list-empty-state .empty-state-text {
   font-family: var(--fav3Font) !important;
   color: color-mix(
     in srgb,
@@ -5489,7 +5553,8 @@ div.monaco-icon-label.file-icon.name-file-icon.css-ext-file-icon.ext-file-icon.c
 .mcp-list-widget .mcp-empty-state .empty-subtext,
 .plugin-list-widget .plugin-list-item-description,
 .ai-customization-list-widget .section-title-header .section-title-description,
-.plugin-list-widget .plugin-list-item-description {
+.plugin-list-widget .plugin-list-item-description,
+.ai-customization-list-widget .list-empty-state .empty-state-subtext {
   color: var(--primary) !important;
   font-family: var(--favFont) !important;
   font-size: 13px !important;
@@ -5497,7 +5562,7 @@ div.monaco-icon-label.file-icon.name-file-icon.css-ext-file-icon.ext-file-icon.c
 
 .plugin-list-widget .plugin-list-item-status.disabled {
   color: var(--inverse_primary) !important;
-  background: color-mix(in srgb, var(--primary) 40%, transparent) !important;
+  background: var(--inverse_surface) !important;
 }
 
 .plugin-list-widget .plugin-enable-switch.checked {
