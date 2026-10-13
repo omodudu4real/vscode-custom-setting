@@ -5739,4 +5739,19 @@ div.path-label {
   background-image: linear-gradient(#3c3c30 0%, #2a2d38 100%) !important;
 }
 
+codicon-close-small:before {
+  color: var(--primary) !important;
+}
+
+.modern-ui-tabs.modern-ui-connected-editor-tabs.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title.tabs
+  .tabs-container
+  > .tab:not(.sticky-compact)
+  .label-suffix {
+  color: var(--inverse_primary) !important;
+}
+
 /* End of style  */
