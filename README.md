@@ -201,8 +201,15 @@ Make it your own.
 - Fluent Icons
 - Prettier
 - ESLint
-
----
+- VScode command server
+- Docker
+- React Dev Dark Theme
+- Containers
+- Gitlens inspect
+- GitLens
+- Azure
+- Harper
+- ***
 
 # Roadmap
 
@@ -236,3 +243,106 @@ This project is licensed under the MIT License.
 - Microsoft Visual Studio Code
 - Custom CSS and JS Loader
 - The VS Code community
+
+# How to Make Automatic Color Switching Work on GNOME
+
+This guide sets up Matugen so it regenerates your colors every time you change your wallpaper.
+
+## Setup
+
+1. Install curl:
+
+   ```bash
+   sudo apt install curl
+   ```
+
+2. Install Rust:
+
+   ```bash
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   ```
+
+3. Load Rust into your current terminal:
+
+   ```bash
+   source "$HOME/.cargo/env"
+   ```
+
+4. Install Matugen:
+
+   ```bash
+   cargo install matugen
+   ```
+
+5. Install the tool that watches your wallpaper for changes:
+
+   ```bash
+   sudo apt install inotify-tools
+   ```
+
+6. Create a small script that triggers Matugen when the wallpaper changes:
+
+   ```bash
+   nano ~/.local/bin/matugen-watch
+   ```
+
+7. Paste this into the script:
+
+   ```bash
+   #!/usr/bin/env bash
+
+   # Re-run matugen whenever Ubuntu replaces ~/.config/background
+   export PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
+
+   dir="$HOME/.config"
+   file="$dir/background"
+   last=""
+
+   apply() {
+     [ -f "$file" ] || return
+     sum="$(sha256sum "$file" | cut -d' ' -f1)"
+     [ "$sum" = "$last" ] && return   # skip duplicate events
+     last="$sum"
+     matugen image "$(realpath "$file")" -m dark --source-color-index 0
+   }
+
+   apply   # run once at login
+
+   inotifywait -m -q -e close_write,moved_to,create --format '%f' "$dir" |
+   while read -r name; do
+     [ "$name" = "background" ] || continue
+     sleep 1   # let the copy finish
+     apply
+   done
+   ```
+
+8. Make the script executable:
+
+   ```bash
+   chmod +x ~/.local/bin/matugen-watch
+   ```
+
+## Autostart
+
+1. Create the autostart file:
+
+   ```bash
+   mkdir -p ~/.config/autostart
+   nano ~/.config/autostart/matugen-watch.desktop
+   ```
+
+2. Paste this into the editor:
+
+   ```ini
+   [Desktop Entry]
+   Type=Application
+   Name=Matugen Watch
+   Exec=/home/omodudu/.local/bin/matugen-watch
+   X-GNOME-Autostart-enabled=true
+   ```
+
+3. Log out and back in, then check that the watcher is running:
+
+   ```bash
+   pgrep -af matugen-watch
+   ```

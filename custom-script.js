@@ -61,7 +61,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			});
 	});
 
-	// Make sure to observe the target node (e.g., document.body)
+	// Make sure to observe the target node (e.g., document.Body)
 	myObservation.observe(document.body, {
 		childList: true,
 		subtree: true,

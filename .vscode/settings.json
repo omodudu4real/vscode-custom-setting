@@ -35,5 +35,8 @@
     "viewpane"
   ],
   "workbench.commandPalette.preserveInput": true,
-  "js/ts.experimental.useTsgo": false
+  "js/ts.experimental.useTsgo": false,
+  "editor.fontSize": 17,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "notebook.defaultFormatter": "esbenp.prettier-vscode"
 }
