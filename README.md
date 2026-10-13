@@ -208,8 +208,18 @@ Make it your own.
 - Gitlens inspect
 - GitLens
 - Azure
+- Auto Import
 - Harper
-- ***
+- Import Cost
+- JavaScript (ES6) code snippet
+- JavaScript and TypeScript Nightly
+- ES7+ React/Redux/React-Native snippets
+- React Hooks Snippets
+- Jest
+- Docker
+- 
+
+---
 
 # Roadmap
 
