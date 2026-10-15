@@ -5754,4 +5754,10 @@ codicon-close-small:before {
   color: var(--inverse_primary) !important;
 }
 
+.workspace-trust-editor.trusted
+  .workspace-trust-features
+  .workspace-trust-limitations.trusted {
+  outline: var(--primary) !important;
+}
+
 /* End of style  */

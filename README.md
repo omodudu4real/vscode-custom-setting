@@ -217,7 +217,7 @@ Make it your own.
 - React Hooks Snippets
 - Jest
 - Docker
-- 
+- Rasi
 
 ---
 
