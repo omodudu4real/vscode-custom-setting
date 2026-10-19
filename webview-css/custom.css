@@ -1,0 +1,5 @@
+body {
+  background: rgba(255, 105, 180, 0.15) !important;
+  outline: 4px solid hotpink !important;
+  outline-offset: -4px !important;
+}

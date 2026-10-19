@@ -152,7 +152,7 @@ Reload Custom CSS and JS
 
 # Linux & macOS
 
-If VS Code cannot modify itself, change the ownership of the installation directory.
+If VS Code cannot modify itself, change the ownership of the installation directory. and make sure you run this command on every update
 
 ```bash
 sudo chown -R $(whoami) "$(which code)"
@@ -218,6 +218,7 @@ Make it your own.
 - Jest
 - Docker
 - Rasi
+- Code Runner
 
 ---
 
