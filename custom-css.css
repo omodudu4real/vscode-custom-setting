@@ -5760,4 +5760,12 @@ codicon-close-small:before {
   outline: var(--primary) !important;
 }
 
+.codicon-close-small:before {
+  color: var(--primary) !important;
+}
+
+.monaco-dropdown > .dropdown-label {
+  margin: 6px 6px 0px 0px !important;
+}
+
 /* End of style  */

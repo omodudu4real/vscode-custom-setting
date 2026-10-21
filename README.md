@@ -357,3 +357,11 @@ This guide sets up Matugen so it regenerates your colors every time you change y
    ```bash
    pgrep -af matugen-watch
    ```
+
+   ***
+
+   # USE THE INSTALL SCRIPT
+
+- you can use the install script to install the program directly and also make sure you don't change the location of the install script in folder structure.
+
+## ENJOY!!!
