@@ -1,0 +1,428 @@
+# WACK - Sonoma Lockscreen
+# Copyright (C) 2026 rinzler69-wastaken
+msgid ""
+msgstr ""
+"Project-Id-Version: wack-lockscreen-clock@rinzler69-wastaken.github.com\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-09 00:00+0000\n"
+"Last-Translator: rinzler69-wastaken\n"
+"Language-Team: WACK Project\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "more"
+msgstr "más"
+
+msgid "Press Shift + N to view notifications"
+msgstr "Presiona Shift + N para ver las notificaciones"
+
+msgid "Sleep prevented by an active process"
+msgstr "Suspensión impedida por un proceso activo"
+
+msgid "Home"
+msgstr "Inicio"
+
+msgid "Resources"
+msgstr "Recursos"
+
+msgid "Extension Repo"
+msgstr "Repositorio de la extensión"
+
+msgid "Open on GitHub"
+msgstr "Abrir en GitHub"
+
+msgid "Enjoying this extension?"
+msgstr "¿Te gusta esta extensión?"
+
+msgid "Consider supporting its development!"
+msgstr "¡Considera apoyar su desarrollo!"
+
+msgid "Ko-fi"
+msgstr "Ko-fi"
+
+msgid "Open Ko-fi"
+msgstr "Abrir Ko-fi"
+
+msgid "Saweria"
+msgstr "Saweria"
+
+msgid "Open Saweria"
+msgstr "Abrir Saweria"
+
+msgid "Upgrade to [PRO]"
+msgstr "Mejorar a [PRO]"
+
+msgid "Check PRO features of this extension on this extension's GitHub repo."
+msgstr "Consulta las funciones PRO de esta extensión en su repositorio de GitHub."
+
+msgid "Visit documentation on GitHub"
+msgstr "Visitar la documentación en GitHub"
+
+msgid "Configuration"
+msgstr "Configuración"
+
+msgid "General"
+msgstr "General"
+
+msgid "Password Field Indicators"
+msgstr "Indicadores del campo de contraseña"
+
+msgid "Show Caps Lock and keyboard layout icons inside the password field."
+msgstr "Muestra iconos de Bloq Mayús y distribución de teclado dentro del campo de contraseña."
+
+msgid "Cursor Blinking"
+msgstr "Parpadeo del cursor"
+
+msgid "Enable or disable text cursor blinking in the password field."
+msgstr "Activa o desactiva el parpadeo del cursor en el campo de contraseña."
+
+msgid "Custom Lockscreen Wallpaper"
+msgstr "Fondo de pantalla de bloqueo personalizado"
+
+msgid "Use a custom image overlay for the lockscreen background."
+msgstr "Usa una imagen personalizada como fondo de la pantalla de bloqueo."
+
+msgid "Wallpaper Image Path"
+msgstr "Ruta de la imagen de fondo"
+
+msgid "No image selected"
+msgstr "Ninguna imagen seleccionada"
+
+msgid "Select Lockscreen Wallpaper"
+msgstr "Seleccionar fondo de pantalla de bloqueo"
+
+msgid "Images and Slideshows"
+msgstr "Imágenes y presentaciones"
+
+msgid "Select Image File"
+msgstr "Seleccionar archivo de imagen"
+
+msgid "Select"
+msgstr "Seleccionar"
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Per-Monitor Wallpapers"
+msgstr "Fondos por monitor"
+
+msgid "Monitors without their own wallpaper use the one above."
+msgstr "Los monitores sin fondo propio usarán el seleccionado arriba."
+
+msgid "Default"
+msgstr "Predeterminado"
+
+msgid "Use the Default Wallpaper"
+msgstr "Usar el fondo predeterminado"
+
+msgid "Clock and Date"
+msgstr "Reloj y fecha"
+
+msgid "Clock Weight"
+msgstr "Grosor del reloj"
+
+msgid "Font weight of the lockscreen time."
+msgstr "Grosor de la tipografía de la hora en la pantalla de bloqueo."
+
+msgid "Restore defaults"
+msgstr "Restaurar valores predeterminados"
+
+msgid "Light"
+msgstr "Fina"
+
+msgid "Regular"
+msgstr "Regular"
+
+msgid "Medium"
+msgstr "Media"
+
+msgid "Semibold"
+msgstr "Seminegrita"
+
+msgid "Bold"
+msgstr "Negrita"
+
+msgid "Heavy"
+msgstr "Gruesa"
+
+msgid "Clock Format"
+msgstr "Formato del reloj"
+
+msgid "Override the system 12/24-hour setting on the lockscreen."
+msgstr "Invalida la configuración de 12/24 horas del sistema en la pantalla de bloqueo."
+
+msgid "System"
+msgstr "Sistema"
+
+msgid "12-hour"
+msgstr "12 horas"
+
+msgid "24-hour"
+msgstr "24 horas"
+
+msgid "Date Style"
+msgstr "Estilo de fecha"
+
+msgid "Choose between shortened and full date names."
+msgstr "Elige entre nombres de fecha abreviados o completos."
+
+msgid "Short"
+msgstr "Corto"
+
+msgid "Full"
+msgstr "Completo"
+
+msgid "Wallpaper-Tinted Clock"
+msgstr "Reloj tintado con el fondo"
+
+msgid "Tint the clock and date with a light shade of the wallpaper colour."
+msgstr "Aplica al reloj y la fecha un tono suave del color del fondo de pantalla."
+
+msgid "Lockscreen Mode"
+msgstr "Modo de pantalla de bloqueo"
+
+msgid "Mode"
+msgstr "Modo"
+
+msgid "Legacy"
+msgstr "Clásico"
+
+msgid "Cupertino"
+msgstr "Cupertino"
+
+msgid "A complete macOS Sonoma-inspired lockscreen layout (Click user-icon to switch users)."
+msgstr "Un diseño completo inspirado en macOS Sonoma (haz clic en el icono de usuario para cambiar de usuario)."
+
+msgid "macOS Sonoma-style clock over the classic, GNOME-compliant layout and flow."
+msgstr "Reloj estilo macOS Sonoma sobre el diseño y flujo clásico compatible con GNOME."
+
+msgid "Sonoma Status Corner"
+msgstr "Iconos de estado estilo Sonoma"
+
+msgid "Restyle the top-right battery, network and input source icons."
+msgstr "Rediseña los iconos de batería, red y fuente de entrada en la esquina superior derecha."
+
+msgid "Always Show User Widget"
+msgstr "Mostrar siempre el elemento de usuario"
+
+msgid "Hides notifications by default. Press Shift+N to show notifications."
+msgstr "Oculta las notificaciones de forma predeterminada. Presiona Shift+N para mostrarlas."
+
+msgid "Prompt Vibrancy"
+msgstr "Vibración del campo de contraseña"
+
+msgid "Adaptive color and depth enhancements for the password field."
+msgstr "Mejoras adaptativas de color y profundidad para el campo de contraseña."
+
+msgid "Lightweight, color-based mode."
+msgstr "Modo ligero basado en colores."
+
+msgid "Advanced, blur-based mode."
+msgstr "Modo avanzado basado en desenfoque."
+
+msgid "Tonal"
+msgstr "Tonal"
+
+msgid "Acrylic"
+msgstr "Acrílico"
+
+msgid "Show message when locked"
+msgstr "Mostrar mensaje en pantalla de bloqueo"
+
+msgid "Set..."
+msgstr "Definir..."
+
+msgid "Set a message to appear on the lockscreen"
+msgstr "Escribe el mensaje que aparecerá en la pantalla de bloqueo"
+
+msgid "OK"
+msgstr "Aceptar"
+
+msgid "Unlock Crossfade"
+msgstr "Transición suave de desbloqueo"
+
+msgid "Crossfade the lockscreen with desktop when unlocking (automatically disabled in Power Saver mode)."
+msgstr "Transición suave entre la pantalla de bloqueo y el escritorio al desbloquear (desactivada en modo Ahorro de energía)."
+
+msgid "Requires WACK Shell to be installed and enabled."
+msgstr "Requiere que WACK Shell esté instalado y activado."
+
+msgid "Requires WACK Shell to be enabled."
+msgstr "Requiere que WACK Shell esté activado."
+
+msgid "Crossfade Speed"
+msgstr "Velocidad de transición"
+
+msgid "Slower"
+msgstr "Más lenta"
+
+msgid "Faster"
+msgstr "Más rápida"
+
+msgid "Clock Animation"
+msgstr "Animación del reloj"
+
+msgid "Applied to the date and time while opening the password prompt"
+msgstr "Se aplica a la fecha y la hora al abrir la solicitud de contraseña"
+
+msgid "Scale Down"
+msgstr "Reducir"
+
+msgid "Zoom Up"
+msgstr "Zoom hacia arriba"
+
+msgid "Slide Up"
+msgstr "Deslizar hacia arriba"
+
+msgid "Fade"
+msgstr "Desvanecer"
+
+msgid "Prompt Animation"
+msgstr "Animación de solicitud"
+
+msgid "Applied to the authentication prompt while it appears"
+msgstr "Se aplica a la solicitud de autenticación al aparecer"
+
+msgid "GNOME Default"
+msgstr "Predeterminado de GNOME"
+
+msgid "Rise"
+msgstr "Elevación"
+
+msgid "Zoom"
+msgstr "Zoom"
+
+msgid "Reset Animations"
+msgstr "Restablecer animaciones"
+
+msgid "Reset animations"
+msgstr "Restablecer animaciones"
+
+msgid "Display and Power"
+msgstr "Pantalla y energía"
+
+msgid "Keep Screen On"
+msgstr "Mantener pantalla encendida"
+
+msgid "Prevent the screen from immediately turning off when locked. The screen will still turn off after the normal timeout duration set in system settings."
+msgstr "Evita que la pantalla se apague inmediatamente al bloquear. Se apagará tras el tiempo de espera configurado en el sistema."
+
+msgid "Only on AC Power"
+msgstr "Solo con corriente alterna (CA)"
+
+msgid "Only keep the screen on if the system is plugged in"
+msgstr "Mantiene la pantalla encendida solo si el equipo está conectado a la corriente"
+
+msgid "Escape to Sleep / Suspend"
+msgstr "Tecla Escape para suspender"
+
+msgid "Press Escape on the lock screen to sleep display (or suspend)"
+msgstr "Presiona Escape en la pantalla de bloqueo para apagar la pantalla (o suspender)"
+
+msgid "Extras"
+msgstr "Extras"
+
+msgid "[PRO] GDM Expansion"
+msgstr "[PRO] Expansión GDM"
+
+msgid "Status: Enabled. Custom layout is active on GDM."
+msgstr "Estado: Activado. El diseño personalizado está activo en GDM."
+
+msgid "Status: Disabled."
+msgstr "Estado: Desactivado."
+
+msgid "Enabled"
+msgstr "Activado"
+
+msgid "Disabled"
+msgstr "Desactivado"
+
+msgid "Cupertino System Actions"
+msgstr "Acciones del sistema estilo Cupertino"
+
+msgid "Show Suspend, Restart and Power Off under the login user list, replacing the Quick Settings power menu."
+msgstr "Muestra Suspender, Reiniciar y Apagar bajo la lista de usuarios, reemplazando el menú de energía de Ajustes rápidos."
+
+msgid "Dim Background Wallpaper"
+msgstr "Atenuar fondo de pantalla"
+
+msgid "Apply a subtle 15% darkening overlay to the login wallpaper for enhanced contrast."
+msgstr "Aplica una superposición sutil del 15% para oscurecer el fondo de inicio de sesión y mejorar el contraste."
+
+msgid "GDM Expansion Documentation"
+msgstr "Documentación de la expansión GDM"
+
+msgid "Revert GDM login screen layout to GNOME Default. See repository instructions."
+msgstr "Restaura el diseño de la pantalla de inicio de sesión de GDM al predeterminado de GNOME. Consulta las instrucciones del repositorio."
+
+msgid "Open repository documentation"
+msgstr "Abrir documentación del repositorio"
+
+msgid "Extension is not installed system-wide in /usr/share."
+msgstr "La extensión no está instalada a nivel de sistema en /usr/share."
+
+msgid "GDM expansion modules (src/pro) are missing system-wide."
+msgstr "Faltan los módulos de expansión de GDM (src/pro) en el sistema."
+
+msgid "GDM session mode is not enabled in system-wide metadata."
+msgstr "El modo de sesión GDM no está activado en los metadatos del sistema."
+
+msgid "GDM dconf override configuration (/etc/dconf/db/gdm.d) is missing."
+msgstr "Falta la configuración de anulación de dconf para GDM (/etc/dconf/db/gdm.d)."
+
+msgid "GDM integration is not configured."
+msgstr "La integración con GDM no está configurada."
+
+msgid "GDM DLC Documentation"
+msgstr "Documentación del DLC de GDM"
+
+msgid "Visit the repository to view setup and installation documentation."
+msgstr "Visita el repositorio para ver la documentación de configuración e instalación."
+
+msgid "[BETA] WACK Shell Integration"
+msgstr "[BETA] Integración con WACK Shell"
+
+msgid "Installed"
+msgstr "Instalado"
+
+msgid "Not Installed"
+msgstr "No instalado"
+
+msgid "Installed. Enables crossfade transitions and Cupertino-inspired shell customisations."
+msgstr "Instalado. Habilita transiciones de desbloqueo y personalizaciones del shell inspiradas en Cupertino."
+
+msgid "Not installed. Install WACK Shell to unlock transition effects."
+msgstr "No instalado. Instala WACK Shell para desbloquear efectos de transición."
+
+msgid "WACK Shell Repository"
+msgstr "Repositorio de WACK Shell"
+
+msgid "Open the WACK Shell repository for documentation and updates."
+msgstr "Abre el repositorio de WACK Shell para ver la documentación y actualizaciones."
+
+msgid "Open WACK Shell repository"
+msgstr "Abrir repositorio de WACK Shell"
+
+msgid "Visit the repository to view installation instructions and release packages."
+msgstr "Visita el repositorio para ver instrucciones de instalación y paquetes de lanzamiento."
+
+msgid "Clear Visual Cache"
+msgstr "Limpiar caché visual"
+
+msgid "Clears temporary visual data used for wallpapers and vibrancy effects. It will be regenerated automatically."
+msgstr "Elimina los datos visuales temporales usados para fondos y efectos de vibración. Se regenerarán automáticamente."
+
+msgid "Clear"
+msgstr "Limpiar"
+
+msgid "Clears the visual cache used for wallpapers and vibrancy effects"
+msgstr "Limpia la caché visual usada para fondos de pantalla y efectos"
+
+msgid "Visual cache cleared successfully!"
+msgstr "¡Caché visual limpiada correctamente!"
+
+msgid "Failed to clear cache:"
+msgstr "Error al limpiar la caché:"
+

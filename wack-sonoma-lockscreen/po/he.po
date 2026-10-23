@@ -1,0 +1,428 @@
+# WACK - Sonoma Lockscreen
+# Copyright (C) 2026 rinzler69-wastaken
+msgid ""
+msgstr ""
+"Project-Id-Version: wack-lockscreen-clock@rinzler69-wastaken.github.com\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-09 00:00+0000\n"
+"Last-Translator: rinzler69-wastaken\n"
+"Language-Team: WACK Project\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "more"
+msgstr "עוד"
+
+msgid "Press Shift + N to view notifications"
+msgstr "הקש Shift + N כדי להציג התראות"
+
+msgid "Sleep prevented by an active process"
+msgstr "ההשהיה נמנעה על ידי תהליך פעيل"
+
+msgid "Home"
+msgstr "בית"
+
+msgid "Resources"
+msgstr "משאבים"
+
+msgid "Extension Repo"
+msgstr "מאגר ההרחבה"
+
+msgid "Open on GitHub"
+msgstr "פתיחה ב־GitHub"
+
+msgid "Enjoying this extension?"
+msgstr "נהנה מההרחבה?"
+
+msgid "Consider supporting its development!"
+msgstr "שקול לתמוך בפיתוח שלה!"
+
+msgid "Ko-fi"
+msgstr "Ko-fi"
+
+msgid "Open Ko-fi"
+msgstr "פתיחת Ko-fi"
+
+msgid "Saweria"
+msgstr "Saweria"
+
+msgid "Open Saweria"
+msgstr "פתיחת Saweria"
+
+msgid "Upgrade to [PRO]"
+msgstr "שדروג ל־[PRO]"
+
+msgid "Check PRO features of this extension on this extension's GitHub repo."
+msgstr "בדוק את תכונות ה־PRO של הרחבה זו במאגר ה־GitHub שלה."
+
+msgid "Visit documentation on GitHub"
+msgstr "צפייה בתיעוד ב־GitHub"
+
+msgid "Configuration"
+msgstr "הגדרות"
+
+msgid "General"
+msgstr "כללי"
+
+msgid "Password Field Indicators"
+msgstr "מחווני שדה סיסמה"
+
+msgid "Show Caps Lock and keyboard layout icons inside the password field."
+msgstr "הצגת סמלי Caps Lock ופריסת מקלדת בתוך שדה הסיסמה."
+
+msgid "Cursor Blinking"
+msgstr "הבהוב סמן"
+
+msgid "Enable or disable text cursor blinking in the password field."
+msgstr "הפעלה או השבתה של הבהוב סמן הטקסט בשדה הסיסמה."
+
+msgid "Custom Lockscreen Wallpaper"
+msgstr "רקע מותאם אישית למסך הנעילה"
+
+msgid "Use a custom image overlay for the lockscreen background."
+msgstr "שימוש בתמונה מותאמת אישית כרקע למסך הנעילה."
+
+msgid "Wallpaper Image Path"
+msgstr "נתיב תמונת הרקע"
+
+msgid "No image selected"
+msgstr "לא נבחרה תמונה"
+
+msgid "Select Lockscreen Wallpaper"
+msgstr "בחירת רקע למסך הנעילה"
+
+msgid "Images and Slideshows"
+msgstr "תמונות ומצגות"
+
+msgid "Select Image File"
+msgstr "בחירת קובץ תמונה"
+
+msgid "Select"
+msgstr "בחירה"
+
+msgid "Cancel"
+msgstr "ביטול"
+
+msgid "Per-Monitor Wallpapers"
+msgstr "רקעים לפי צג"
+
+msgid "Monitors without their own wallpaper use the one above."
+msgstr "צגים ללא רקע משלהם ישתמשו ברקע שהוגדר למעלה."
+
+msgid "Default"
+msgstr "ברירת מחדל"
+
+msgid "Use the Default Wallpaper"
+msgstr "שימוש ברקע ברירת המחדל"
+
+msgid "Clock and Date"
+msgstr "שעון ותאריך"
+
+msgid "Clock Weight"
+msgstr "משקל גופן השעון"
+
+msgid "Font weight of the lockscreen time."
+msgstr "משקל הגופן של השעה במסך הנעילה."
+
+msgid "Restore defaults"
+msgstr "שחזור ברירות מחדל"
+
+msgid "Light"
+msgstr "קל"
+
+msgid "Regular"
+msgstr "רגיל"
+
+msgid "Medium"
+msgstr "בינוני"
+
+msgid "Semibold"
+msgstr "עבה למחצה"
+
+msgid "Bold"
+msgstr "עבה"
+
+msgid "Heavy"
+msgstr "מודגש מאוד"
+
+msgid "Clock Format"
+msgstr "מבנה השעון"
+
+msgid "Override the system 12/24-hour setting on the lockscreen."
+msgstr "עקיפת הגדרת 12/24 שעות של המערכת במסך הנעילה."
+
+msgid "System"
+msgstr "מערכת"
+
+msgid "12-hour"
+msgstr "12 שעות"
+
+msgid "24-hour"
+msgstr "24 שעות"
+
+msgid "Date Style"
+msgstr "סגנון תאריך"
+
+msgid "Choose between shortened and full date names."
+msgstr "בחירה בין שמות תאריכים מקוצרים למלאים."
+
+msgid "Short"
+msgstr "קצר"
+
+msgid "Full"
+msgstr "מלא"
+
+msgid "Wallpaper-Tinted Clock"
+msgstr "שעון מגוון לפי הרקע"
+
+msgid "Tint the clock and date with a light shade of the wallpaper colour."
+msgstr "גוון את השעון והתאריך בגוון בהיר של צבע הרקע."
+
+msgid "Lockscreen Mode"
+msgstr "מצב מסך נעילה"
+
+msgid "Mode"
+msgstr "מצב"
+
+msgid "Legacy"
+msgstr "קלאסי"
+
+msgid "Cupertino"
+msgstr "קופרטינו"
+
+msgid "A complete macOS Sonoma-inspired lockscreen layout (Click user-icon to switch users)."
+msgstr "פריסת מסך נעילה מלאה בהשראת macOS Sonoma (לחץ על סמל המשתמש כדי להחליף משתמש)."
+
+msgid "macOS Sonoma-style clock over the classic, GNOME-compliant layout and flow."
+msgstr "שעון בסגנון macOS Sonoma על גבי הפריסה הקלאסית של GNOME."
+
+msgid "Sonoma Status Corner"
+msgstr "פינת מצב Sonoma"
+
+msgid "Restyle the top-right battery, network and input source icons."
+msgstr "עיצוב מחדש של סמלי הסוללה, הרשת ומקור הקלט בפינה הימנית העליונה."
+
+msgid "Always Show User Widget"
+msgstr "הצגת רכיב המשתמש תמיד"
+
+msgid "Hides notifications by default. Press Shift+N to show notifications."
+msgstr "מסתיר התראות כברירת מחדל. הקש Shift+N כדי להציג התראות."
+
+msgid "Prompt Vibrancy"
+msgstr "חיוניות שדה הסיסמה"
+
+msgid "Adaptive color and depth enhancements for the password field."
+msgstr "שיפורי צבע ועומק מותאמים אישית לשדה הסיסמה."
+
+msgid "Lightweight, color-based mode."
+msgstr "מצב קל משקל מבוסס צבע."
+
+msgid "Advanced, blur-based mode."
+msgstr "מצב מתקדם מבוסס טשטוש."
+
+msgid "Tonal"
+msgstr "טונאלי"
+
+msgid "Acrylic"
+msgstr "אקרילי"
+
+msgid "Show message when locked"
+msgstr "הצגת הודעה כשהמסך נעול"
+
+msgid "Set..."
+msgstr "הגדרה..."
+
+msgid "Set a message to appear on the lockscreen"
+msgstr "הגדרת הודעה שתופיע במסך הנעילה"
+
+msgid "OK"
+msgstr "אישור"
+
+msgid "Unlock Crossfade"
+msgstr "עמעום במעבר בעת פתיחה"
+
+msgid "Crossfade the lockscreen with desktop when unlocking (automatically disabled in Power Saver mode)."
+msgstr "מעבר רך ממסך הנעילה לשולחן העבודה בעת שחרור הנעילה (מושבת אוטומטית במצב חיסכון בסוללה)."
+
+msgid "Requires WACK Shell to be installed and enabled."
+msgstr "דורש התקנה והפעלה של WACK Shell."
+
+msgid "Requires WACK Shell to be enabled."
+msgstr "דורש הפעלה של WACK Shell."
+
+msgid "Crossfade Speed"
+msgstr "מהירות עמעום"
+
+msgid "Slower"
+msgstr "איטי יותר"
+
+msgid "Faster"
+msgstr "מהיר יותר"
+
+msgid "Clock Animation"
+msgstr "הנפשת שעון"
+
+msgid "Applied to the date and time while opening the password prompt"
+msgstr "מוחל על התאריך והשעה בעת פתיחת שדה הסיסמה"
+
+msgid "Scale Down"
+msgstr "הקטנה"
+
+msgid "Zoom Up"
+msgstr "הגדלה כלפי מעלה"
+
+msgid "Slide Up"
+msgstr "החלקה למעלה"
+
+msgid "Fade"
+msgstr "עמעום"
+
+msgid "Prompt Animation"
+msgstr "הנפשת שדה הזנה"
+
+msgid "Applied to the authentication prompt while it appears"
+msgstr "מוחל על שדה האימות בעת הופעתו"
+
+msgid "GNOME Default"
+msgstr "ברירת מחדל של GNOME"
+
+msgid "Rise"
+msgstr "עלייה"
+
+msgid "Zoom"
+msgstr "זום"
+
+msgid "Reset Animations"
+msgstr "איפוס הנפשות"
+
+msgid "Reset animations"
+msgstr "איפוס הנפשות"
+
+msgid "Display and Power"
+msgstr "תצוגה והפעלה"
+
+msgid "Keep Screen On"
+msgstr "השארת המסך דולק"
+
+msgid "Prevent the screen from immediately turning off when locked. The screen will still turn off after the normal timeout duration set in system settings."
+msgstr "מונע מהמסך להיכבות מיד בעת הנעילה. המסך ייכבה לאחר זמן ההמתנה הרגיל שנקבע בהגדרות המערכת."
+
+msgid "Only on AC Power"
+msgstr "בחיבור לחשמל בלבד"
+
+msgid "Only keep the screen on if the system is plugged in"
+msgstr "השאר את המסך דולק רק כאשר המחשב מחובר לחשמל"
+
+msgid "Escape to Sleep / Suspend"
+msgstr "Escape להשהיה / שינה"
+
+msgid "Press Escape on the lock screen to sleep display (or suspend)"
+msgstr "הקש Escape במסך הנعילה כדי לכבות את התצוגה (או לעבור למצב השהיה)"
+
+msgid "Extras"
+msgstr "תוספות"
+
+msgid "[PRO] GDM Expansion"
+msgstr "[PRO] הרחבת GDM"
+
+msgid "Status: Enabled. Custom layout is active on GDM."
+msgstr "מצב: פעיל. הפריסה המותאמת אישית פעילה ב־GDM."
+
+msgid "Status: Disabled."
+msgstr "מצב: מושבת."
+
+msgid "Enabled"
+msgstr "פעיל"
+
+msgid "Disabled"
+msgstr "מושבת"
+
+msgid "Cupertino System Actions"
+msgstr "פעולות מערכת Cupertino"
+
+msgid "Show Suspend, Restart and Power Off under the login user list, replacing the Quick Settings power menu."
+msgstr "הצגת 'השהה', 'הפעל מחדש' ו'כיבוי' מתחת לרשימת המשתמשים, במקום תפריט הכיבוי בהגדרות המהירות."
+
+msgid "Dim Background Wallpaper"
+msgstr "עמעום רקע שולחן העבודה"
+
+msgid "Apply a subtle 15% darkening overlay to the login wallpaper for enhanced contrast."
+msgstr "החלת שכבת עמעום עדינה של 15% על רקע מסך הכניסה לשיפור הניגודיות."
+
+msgid "GDM Expansion Documentation"
+msgstr "תיעוד הרחבת GDM"
+
+msgid "Revert GDM login screen layout to GNOME Default. See repository instructions."
+msgstr "החזרת פריסת מסך הכניסה של GDM לברירת המחדל של GNOME. ראה הוראות במאגר."
+
+msgid "Open repository documentation"
+msgstr "פתיחת תיעוד המאגר"
+
+msgid "Extension is not installed system-wide in /usr/share."
+msgstr "ההרחבה אינה מותקנת ברמת המערכת ב־/usr/share."
+
+msgid "GDM expansion modules (src/pro) are missing system-wide."
+msgstr "מודולי הרחבת GDM (src/pro) חסרים ברמת המערכת."
+
+msgid "GDM session mode is not enabled in system-wide metadata."
+msgstr "מצב הפעלת GDM אינו מופעל במטא־נתונים של המערכת."
+
+msgid "GDM dconf override configuration (/etc/dconf/db/gdm.d) is missing."
+msgstr "תצורת עקיפת dconf של GDM (/etc/dconf/db/gdm.d) חסרה."
+
+msgid "GDM integration is not configured."
+msgstr "שילוב GDM אינו מוגדר."
+
+msgid "GDM DLC Documentation"
+msgstr "תיעוד GDM DLC"
+
+msgid "Visit the repository to view setup and installation documentation."
+msgstr "בקר במאגר כדי לצפות בתיעוד ההגדרה וההתקנה."
+
+msgid "[BETA] WACK Shell Integration"
+msgstr "[BETA] שילוב WACK Shell"
+
+msgid "Installed"
+msgstr "מותקן"
+
+msgid "Not Installed"
+msgstr "אינו מותקן"
+
+msgid "Installed. Enables crossfade transitions and Cupertino-inspired shell customisations."
+msgstr "מותקן. מאפשר מעברי עמעום והתאמות אישיות של המעטפת בהשראת Cupertino."
+
+msgid "Not installed. Install WACK Shell to unlock transition effects."
+msgstr "אינו מותקן. התקן את WACK Shell כדי לקבל אפקטי מעבר."
+
+msgid "WACK Shell Repository"
+msgstr "מאגר WACK Shell"
+
+msgid "Open the WACK Shell repository for documentation and updates."
+msgstr "פתיחת מאגר WACK Shell לצפייה בתיעוד ועדכונים."
+
+msgid "Open WACK Shell repository"
+msgstr "פתיחת מאגר WACK Shell"
+
+msgid "Visit the repository to view installation instructions and release packages."
+msgstr "בקר במאגר כדי לצפות בהוראות ההתקנה ובחבילות ההפצה."
+
+msgid "Clear Visual Cache"
+msgstr "ניקוי מטמון חזותי"
+
+msgid "Clears temporary visual data used for wallpapers and vibrancy effects. It will be regenerated automatically."
+msgstr "מנקה נתונים חזותיים זמניים המשמשים לרקעים ואפקטים. הם ייווצרו מחדש באופן אוטומטי."
+
+msgid "Clear"
+msgstr "ניקוי"
+
+msgid "Clears the visual cache used for wallpapers and vibrancy effects"
+msgstr "מנקה את המטמון החזותי המשמש לרקעים ואפקטים"
+
+msgid "Visual cache cleared successfully!"
+msgstr "המטמון החזותי נוקה בהצלחה!"
+
+msgid "Failed to clear cache:"
+msgstr "ניקוי המטמון נכשל:"
+

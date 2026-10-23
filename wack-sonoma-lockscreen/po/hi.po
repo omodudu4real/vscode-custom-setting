@@ -1,0 +1,428 @@
+# WACK - Sonoma Lockscreen
+# Copyright (C) 2026 rinzler69-wastaken
+msgid ""
+msgstr ""
+"Project-Id-Version: wack-lockscreen-clock@rinzler69-wastaken.github.com\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-09 00:00+0000\n"
+"Last-Translator: rinzler69-wastaken\n"
+"Language-Team: WACK Project\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "more"
+msgstr "अधिक"
+
+msgid "Press Shift + N to view notifications"
+msgstr "सूचनाएं देखने के लिए Shift + N दबाएं"
+
+msgid "Sleep prevented by an active process"
+msgstr "सक्रिय प्रक्रिया द्वारा सस्पेंड रोका गया"
+
+msgid "Home"
+msgstr "होम"
+
+msgid "Resources"
+msgstr "संसाधन"
+
+msgid "Extension Repo"
+msgstr "एक्सटेंशन रिपॉजिटरी"
+
+msgid "Open on GitHub"
+msgstr "GitHub पर खोलें"
+
+msgid "Enjoying this extension?"
+msgstr "क्या आपको यह एक्सटेंशन पसंद आ रहा है?"
+
+msgid "Consider supporting its development!"
+msgstr "इसके विकास का समर्थन करने पर विचार करें!"
+
+msgid "Ko-fi"
+msgstr "Ko-fi"
+
+msgid "Open Ko-fi"
+msgstr "Ko-fi खोलें"
+
+msgid "Saweria"
+msgstr "Saweria"
+
+msgid "Open Saweria"
+msgstr "Saweria खोलें"
+
+msgid "Upgrade to [PRO]"
+msgstr "[PRO] में अपग्रेड करें"
+
+msgid "Check PRO features of this extension on this extension's GitHub repo."
+msgstr "इस एक्सटेंशन की GitHub रिपॉजिटरी पर PRO सुविधाएं देखें।"
+
+msgid "Visit documentation on GitHub"
+msgstr "GitHub पर दस्तावेज़ देखें"
+
+msgid "Configuration"
+msgstr "कॉन्फ़िगरेशन"
+
+msgid "General"
+msgstr "सामान्य"
+
+msgid "Password Field Indicators"
+msgstr "पासवर्ड फ़ील्ड संकेतक"
+
+msgid "Show Caps Lock and keyboard layout icons inside the password field."
+msgstr "पासवर्ड फ़ील्ड के अंदर Caps Lock और कीबोर्ड लेआउट आइकन दिखाएं।"
+
+msgid "Cursor Blinking"
+msgstr "कर्सर ब्लिंक करना"
+
+msgid "Enable or disable text cursor blinking in the password field."
+msgstr "पासवर्ड फ़ील्ड में टेक्स्ट कर्सर का ब्लिंक होना सक्षम या अक्षम करें।"
+
+msgid "Custom Lockscreen Wallpaper"
+msgstr "कस्टम लॉक स्क्रीन वॉलपेपर"
+
+msgid "Use a custom image overlay for the lockscreen background."
+msgstr "लॉक स्क्रीन पृष्ठभूमि के लिए एक कस्टम छवि का उपयोग करें।"
+
+msgid "Wallpaper Image Path"
+msgstr "वॉलपेपर छवि पथ"
+
+msgid "No image selected"
+msgstr "कोई छवि चयनित नहीं"
+
+msgid "Select Lockscreen Wallpaper"
+msgstr "लॉक स्क्रीन वॉलपेपर चुनें"
+
+msgid "Images and Slideshows"
+msgstr "छवियां और स्लाइडशो"
+
+msgid "Select Image File"
+msgstr "छवि फ़ाइल चुनें"
+
+msgid "Select"
+msgstr "चुनें"
+
+msgid "Cancel"
+msgstr "रद्द करें"
+
+msgid "Per-Monitor Wallpapers"
+msgstr "प्रत्येक मॉनिटर के लिए वॉलपेपर"
+
+msgid "Monitors without their own wallpaper use the one above."
+msgstr "जिन मॉनिटरों का अपना वॉलपेपर नहीं है वे ऊपर दिए गए वॉलपेपर का उपयोग करेंगे।"
+
+msgid "Default"
+msgstr "डिफ़ॉल्ट"
+
+msgid "Use the Default Wallpaper"
+msgstr "डिफ़ॉल्ट वॉलपेपर का उपयोग करें"
+
+msgid "Clock and Date"
+msgstr "घड़ी और दिनांक"
+
+msgid "Clock Weight"
+msgstr "घड़ी का फ़ॉन्ट भार"
+
+msgid "Font weight of the lockscreen time."
+msgstr "लॉक स्क्रीन समय का फ़ॉन्ट भार।"
+
+msgid "Restore defaults"
+msgstr "डिफ़ॉल्ट पुनर्स्थापित करें"
+
+msgid "Light"
+msgstr "लाइट"
+
+msgid "Regular"
+msgstr "रेगुलर"
+
+msgid "Medium"
+msgstr "मीडियम"
+
+msgid "Semibold"
+msgstr "सेमी-बोल्ड"
+
+msgid "Bold"
+msgstr "बोल्ड"
+
+msgid "Heavy"
+msgstr "हैवी"
+
+msgid "Clock Format"
+msgstr "घड़ी प्रारूप"
+
+msgid "Override the system 12/24-hour setting on the lockscreen."
+msgstr "लॉक स्क्रीन पर सिस्टम की 12/24-घंटे की सेटिंग को बदलें।"
+
+msgid "System"
+msgstr "सिस्टम"
+
+msgid "12-hour"
+msgstr "12-घंटे"
+
+msgid "24-hour"
+msgstr "24-घंटे"
+
+msgid "Date Style"
+msgstr "दिनांक शैली"
+
+msgid "Choose between shortened and full date names."
+msgstr "संक्षिप्त और पूर्ण दिनांक नामों के बीच चुनें।"
+
+msgid "Short"
+msgstr "संक्षिप्त"
+
+msgid "Full"
+msgstr "पूर्ण"
+
+msgid "Wallpaper-Tinted Clock"
+msgstr "वॉलपेपर-रंग वाली घड़ी"
+
+msgid "Tint the clock and date with a light shade of the wallpaper colour."
+msgstr "घड़ी और तारीख को वॉलपेपर के हल्के रंग से रंगें।"
+
+msgid "Lockscreen Mode"
+msgstr "लॉक स्क्रीन मोड"
+
+msgid "Mode"
+msgstr "मोड"
+
+msgid "Legacy"
+msgstr "क्लासिक"
+
+msgid "Cupertino"
+msgstr "क्यूपर्टिनो"
+
+msgid "A complete macOS Sonoma-inspired lockscreen layout (Click user-icon to switch users)."
+msgstr "macOS Sonoma से प्रेरित एक पूर्ण लॉक स्क्रीन लेआउट (उपयोगकर्ता बदलने के लिए उपयोगकर्ता आइकन पर क्लिक करें)।"
+
+msgid "macOS Sonoma-style clock over the classic, GNOME-compliant layout and flow."
+msgstr "क्लासिक, GNOME-अनुरूप लेआउट पर macOS Sonoma-शैली की घड़ी।"
+
+msgid "Sonoma Status Corner"
+msgstr "सोनोमा स्थिति कोना"
+
+msgid "Restyle the top-right battery, network and input source icons."
+msgstr "ऊपरी दाएं कोने के बैटरी, नेटवर्क और इनपुट स्रोत आइकन का रूप बदलें।"
+
+msgid "Always Show User Widget"
+msgstr "हमेशा उपयोगकर्ता विजेट दिखाएं"
+
+msgid "Hides notifications by default. Press Shift+N to show notifications."
+msgstr "डिफ़ॉल्ट रूप से सूचनाएं छुपाता है। सूचनाएं देखने के लिए Shift+N दबाएं।"
+
+msgid "Prompt Vibrancy"
+msgstr "संकेत जीवंतता"
+
+msgid "Adaptive color and depth enhancements for the password field."
+msgstr "पासवर्ड फ़ील्ड के लिए अनुकूली रंग और गहराई संवर्द्धन।"
+
+msgid "Lightweight, color-based mode."
+msgstr "हल्का, रंग-आधारित मोड।"
+
+msgid "Advanced, blur-based mode."
+msgstr "उन्नत, धुंधलापन-आधारित मोड।"
+
+msgid "Tonal"
+msgstr "टोनल"
+
+msgid "Acrylic"
+msgstr "एक्रिलिक"
+
+msgid "Show message when locked"
+msgstr "लॉक होने पर संदेश दिखाएं"
+
+msgid "Set..."
+msgstr "सेट करें..."
+
+msgid "Set a message to appear on the lockscreen"
+msgstr "लॉक स्क्रीन पर दिखाई देने वाला संदेश सेट करें"
+
+msgid "OK"
+msgstr "ठीक है"
+
+msgid "Unlock Crossfade"
+msgstr "अनलॉक क्रॉसफ़ेड"
+
+msgid "Crossfade the lockscreen with desktop when unlocking (automatically disabled in Power Saver mode)."
+msgstr "अनलॉक करते समय लॉक स्क्रीन और डेस्कटॉप के बीच स्मूथ क्रॉसफ़ेड (पावर सेवर मोड में स्वतः अक्षम)।"
+
+msgid "Requires WACK Shell to be installed and enabled."
+msgstr "WACK Shell स्थापित और सक्षम होना आवश्यक है।"
+
+msgid "Requires WACK Shell to be enabled."
+msgstr "WACK Shell सक्षम होना आवश्यक है।"
+
+msgid "Crossfade Speed"
+msgstr "क्रॉसफ़ेड गति"
+
+msgid "Slower"
+msgstr "धीमी"
+
+msgid "Faster"
+msgstr "तेज़"
+
+msgid "Clock Animation"
+msgstr "घड़ी एनीमेशन"
+
+msgid "Applied to the date and time while opening the password prompt"
+msgstr "पासवर्ड संकेत खोलते समय दिनांक और समय पर लागू होता है"
+
+msgid "Scale Down"
+msgstr "छोटा करें"
+
+msgid "Zoom Up"
+msgstr "ज़ूम अप"
+
+msgid "Slide Up"
+msgstr "ऊपर स्लाइड करें"
+
+msgid "Fade"
+msgstr "फ़ेड"
+
+msgid "Prompt Animation"
+msgstr "संकेत एनीमेशन"
+
+msgid "Applied to the authentication prompt while it appears"
+msgstr "प्रमाणीकरण संकेत प्रकट होते समय लागू होता है"
+
+msgid "GNOME Default"
+msgstr "GNOME डिफ़ॉल्ट"
+
+msgid "Rise"
+msgstr "उभार"
+
+msgid "Zoom"
+msgstr "ज़ूम"
+
+msgid "Reset Animations"
+msgstr "एनीमेशन रीसेट करें"
+
+msgid "Reset animations"
+msgstr "एनीमेशन रीसेट करें"
+
+msgid "Display and Power"
+msgstr "डिस्प्ले और पावर"
+
+msgid "Keep Screen On"
+msgstr "स्क्रीन चालू रखें"
+
+msgid "Prevent the screen from immediately turning off when locked. The screen will still turn off after the normal timeout duration set in system settings."
+msgstr "लॉक होने पर स्क्रीन को तुरंत बंद होने से रोकें। सिस्टम सेटिंग्स में निर्धारित सामान्य समय के बाद स्क्रीन बंद हो जाएगी।"
+
+msgid "Only on AC Power"
+msgstr "केवल एसी पावर पर"
+
+msgid "Only keep the screen on if the system is plugged in"
+msgstr "स्क्रीन को केवल तभी चालू रखें जब सिस्टम पावर से जुड़ा हो"
+
+msgid "Escape to Sleep / Suspend"
+msgstr "स्लीप / सस्पेंड के लिए Escape"
+
+msgid "Press Escape on the lock screen to sleep display (or suspend)"
+msgstr "डिस्प्ले को स्लीप (या सस्पेंड) करने के लिए लॉक स्क्रीन पर Escape दबाएं"
+
+msgid "Extras"
+msgstr "अतिरिक्त"
+
+msgid "[PRO] GDM Expansion"
+msgstr "[PRO] GDM विस्तार"
+
+msgid "Status: Enabled. Custom layout is active on GDM."
+msgstr "स्थिति: सक्षम। GDM पर कस्टम लेआउट सक्रिय है।"
+
+msgid "Status: Disabled."
+msgstr "स्थिति: अक्षम।"
+
+msgid "Enabled"
+msgstr "सक्षम"
+
+msgid "Disabled"
+msgstr "अक्षम"
+
+msgid "Cupertino System Actions"
+msgstr "क्यूपर्टिनो सिस्टम क्रियाएं"
+
+msgid "Show Suspend, Restart and Power Off under the login user list, replacing the Quick Settings power menu."
+msgstr "त्वरित सेटिंग्स पावर मेनू को बदलकर लॉगिन उपयोगकर्ता सूची के नीचे सस्पेंड, पुनरारंभ और पावर बंद दिखाएं।"
+
+msgid "Dim Background Wallpaper"
+msgstr "पृष्ठभूमि वॉलपेपर को मंद करें"
+
+msgid "Apply a subtle 15% darkening overlay to the login wallpaper for enhanced contrast."
+msgstr "बेहतर कंट्रास्ट के लिए लॉगिन वॉलपेपर पर 15% गहरा ओवरले लागू करें।"
+
+msgid "GDM Expansion Documentation"
+msgstr "GDM विस्तार दस्तावेज़"
+
+msgid "Revert GDM login screen layout to GNOME Default. See repository instructions."
+msgstr "GDM लॉगिन स्क्रीन लेआउट को GNOME डिफ़ॉल्ट पर वापस लाएं। रिपॉजिटरी निर्देश देखें।"
+
+msgid "Open repository documentation"
+msgstr "रिपॉजिटरी दस्तावेज़ खोलें"
+
+msgid "Extension is not installed system-wide in /usr/share."
+msgstr "एक्सटेंशन /usr/share में सिस्टम-व्यापी स्थापित नहीं है।"
+
+msgid "GDM expansion modules (src/pro) are missing system-wide."
+msgstr "GDM विस्तार मॉड्यूल (src/pro) सिस्टम-व्यापी गायब हैं।"
+
+msgid "GDM session mode is not enabled in system-wide metadata."
+msgstr "GDM सत्र मोड सिस्टम-व्यापी मेटाडेटा में सक्षम नहीं है।"
+
+msgid "GDM dconf override configuration (/etc/dconf/db/gdm.d) is missing."
+msgstr "GDM dconf ओवरराइड कॉन्फ़िगरेशन (/etc/dconf/db/gdm.d) गायब है।"
+
+msgid "GDM integration is not configured."
+msgstr "GDM एकीकरण कॉन्फ़िगर नहीं है।"
+
+msgid "GDM DLC Documentation"
+msgstr "GDM DLC दस्तावेज़"
+
+msgid "Visit the repository to view setup and installation documentation."
+msgstr "सेटअप और इंस्टॉलेशन दस्तावेज़ देखने के लिए रिपॉजिटरी पर जाएं।"
+
+msgid "[BETA] WACK Shell Integration"
+msgstr "[BETA] WACK Shell एकीकरण"
+
+msgid "Installed"
+msgstr "स्थापित"
+
+msgid "Not Installed"
+msgstr "स्थापित नहीं है"
+
+msgid "Installed. Enables crossfade transitions and Cupertino-inspired shell customisations."
+msgstr "स्थापित है। क्रॉसफ़ेड संक्रमण और क्यूपर्टिनो-प्रेरित शैल अनुकूलन सक्षम करता है।"
+
+msgid "Not installed. Install WACK Shell to unlock transition effects."
+msgstr "स्थापित नहीं है। संक्रमण प्रभाव अनलॉक करने के लिए WACK Shell स्थापित करें।"
+
+msgid "WACK Shell Repository"
+msgstr "WACK Shell रिपॉजिटरी"
+
+msgid "Open the WACK Shell repository for documentation and updates."
+msgstr "दस्तावेज़ीकरण और अपडेट के लिए WACK Shell रिपॉजिटरी खोलें।"
+
+msgid "Open WACK Shell repository"
+msgstr "WACK Shell रिपॉजिटरी खोलें"
+
+msgid "Visit the repository to view installation instructions and release packages."
+msgstr "स्थापना निर्देश और रिलीज़ पैकेज देखने के लिए रिपॉजिटरी पर जाएं।"
+
+msgid "Clear Visual Cache"
+msgstr "विज़ुअल कैश साफ़ करें"
+
+msgid "Clears temporary visual data used for wallpapers and vibrancy effects. It will be regenerated automatically."
+msgstr "वॉलपेपर और प्रभाव के लिए उपयोग किए जाने वाले अस्थायी डेटा को साफ़ करता है। यह स्वतः पुनर्जीवित हो जाएगा।"
+
+msgid "Clear"
+msgstr "साफ़ करें"
+
+msgid "Clears the visual cache used for wallpapers and vibrancy effects"
+msgstr "वॉलपेपर और प्रभाव के लिए उपयोग किए जाने वाले विज़ुअल कैश को साफ़ करता है"
+
+msgid "Visual cache cleared successfully!"
+msgstr "विज़ुअल कैश सफलतापूर्वक साफ़ किया गया!"
+
+msgid "Failed to clear cache:"
+msgstr "कैश साफ़ करने में विफल:"
+

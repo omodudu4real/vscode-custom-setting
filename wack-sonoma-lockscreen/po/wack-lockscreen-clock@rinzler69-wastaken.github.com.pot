@@ -1,0 +1,428 @@
+# WACK - Sonoma Lockscreen
+# Copyright (C) 2026 rinzler69-wastaken
+msgid ""
+msgstr ""
+"Project-Id-Version: wack-lockscreen-clock@rinzler69-wastaken.github.com\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-09 00:00+0000\n"
+"Last-Translator: rinzler69-wastaken\n"
+"Language-Team: WACK Project\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "more"
+msgstr ""
+
+msgid "Press Shift + N to view notifications"
+msgstr ""
+
+msgid "Sleep prevented by an active process"
+msgstr ""
+
+msgid "Home"
+msgstr ""
+
+msgid "Resources"
+msgstr ""
+
+msgid "Extension Repo"
+msgstr ""
+
+msgid "Open on GitHub"
+msgstr ""
+
+msgid "Enjoying this extension?"
+msgstr ""
+
+msgid "Consider supporting its development!"
+msgstr ""
+
+msgid "Ko-fi"
+msgstr ""
+
+msgid "Open Ko-fi"
+msgstr ""
+
+msgid "Saweria"
+msgstr ""
+
+msgid "Open Saweria"
+msgstr ""
+
+msgid "Upgrade to [PRO]"
+msgstr ""
+
+msgid "Check PRO features of this extension on this extension's GitHub repo."
+msgstr ""
+
+msgid "Visit documentation on GitHub"
+msgstr ""
+
+msgid "Configuration"
+msgstr ""
+
+msgid "General"
+msgstr ""
+
+msgid "Password Field Indicators"
+msgstr ""
+
+msgid "Show Caps Lock and keyboard layout icons inside the password field."
+msgstr ""
+
+msgid "Cursor Blinking"
+msgstr ""
+
+msgid "Enable or disable text cursor blinking in the password field."
+msgstr ""
+
+msgid "Custom Lockscreen Wallpaper"
+msgstr ""
+
+msgid "Use a custom image overlay for the lockscreen background."
+msgstr ""
+
+msgid "Wallpaper Image Path"
+msgstr ""
+
+msgid "No image selected"
+msgstr ""
+
+msgid "Select Lockscreen Wallpaper"
+msgstr ""
+
+msgid "Images and Slideshows"
+msgstr ""
+
+msgid "Select Image File"
+msgstr ""
+
+msgid "Select"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Per-Monitor Wallpapers"
+msgstr ""
+
+msgid "Monitors without their own wallpaper use the one above."
+msgstr ""
+
+msgid "Default"
+msgstr ""
+
+msgid "Use the Default Wallpaper"
+msgstr ""
+
+msgid "Clock and Date"
+msgstr ""
+
+msgid "Clock Weight"
+msgstr ""
+
+msgid "Font weight of the lockscreen time."
+msgstr ""
+
+msgid "Restore defaults"
+msgstr ""
+
+msgid "Light"
+msgstr ""
+
+msgid "Regular"
+msgstr ""
+
+msgid "Medium"
+msgstr ""
+
+msgid "Semibold"
+msgstr ""
+
+msgid "Bold"
+msgstr ""
+
+msgid "Heavy"
+msgstr ""
+
+msgid "Clock Format"
+msgstr ""
+
+msgid "Override the system 12/24-hour setting on the lockscreen."
+msgstr ""
+
+msgid "System"
+msgstr ""
+
+msgid "12-hour"
+msgstr ""
+
+msgid "24-hour"
+msgstr ""
+
+msgid "Date Style"
+msgstr ""
+
+msgid "Choose between shortened and full date names."
+msgstr ""
+
+msgid "Short"
+msgstr ""
+
+msgid "Full"
+msgstr ""
+
+msgid "Wallpaper-Tinted Clock"
+msgstr ""
+
+msgid "Tint the clock and date with a light shade of the wallpaper colour."
+msgstr ""
+
+msgid "Lockscreen Mode"
+msgstr ""
+
+msgid "Mode"
+msgstr ""
+
+msgid "Legacy"
+msgstr ""
+
+msgid "Cupertino"
+msgstr ""
+
+msgid "A complete macOS Sonoma-inspired lockscreen layout (Click user-icon to switch users)."
+msgstr ""
+
+msgid "macOS Sonoma-style clock over the classic, GNOME-compliant layout and flow."
+msgstr ""
+
+msgid "Sonoma Status Corner"
+msgstr ""
+
+msgid "Restyle the top-right battery, network and input source icons."
+msgstr ""
+
+msgid "Always Show User Widget"
+msgstr ""
+
+msgid "Hides notifications by default. Press Shift+N to show notifications."
+msgstr ""
+
+msgid "Prompt Vibrancy"
+msgstr ""
+
+msgid "Adaptive color and depth enhancements for the password field."
+msgstr ""
+
+msgid "Lightweight, color-based mode."
+msgstr ""
+
+msgid "Advanced, blur-based mode."
+msgstr ""
+
+msgid "Tonal"
+msgstr ""
+
+msgid "Acrylic"
+msgstr ""
+
+msgid "Show message when locked"
+msgstr ""
+
+msgid "Set..."
+msgstr ""
+
+msgid "Set a message to appear on the lockscreen"
+msgstr ""
+
+msgid "OK"
+msgstr ""
+
+msgid "Unlock Crossfade"
+msgstr ""
+
+msgid "Crossfade the lockscreen with desktop when unlocking (automatically disabled in Power Saver mode)."
+msgstr ""
+
+msgid "Requires WACK Shell to be installed and enabled."
+msgstr ""
+
+msgid "Requires WACK Shell to be enabled."
+msgstr ""
+
+msgid "Crossfade Speed"
+msgstr ""
+
+msgid "Slower"
+msgstr ""
+
+msgid "Faster"
+msgstr ""
+
+msgid "Clock Animation"
+msgstr ""
+
+msgid "Applied to the date and time while opening the password prompt"
+msgstr ""
+
+msgid "Scale Down"
+msgstr ""
+
+msgid "Zoom Up"
+msgstr ""
+
+msgid "Slide Up"
+msgstr ""
+
+msgid "Fade"
+msgstr ""
+
+msgid "Prompt Animation"
+msgstr ""
+
+msgid "Applied to the authentication prompt while it appears"
+msgstr ""
+
+msgid "GNOME Default"
+msgstr ""
+
+msgid "Rise"
+msgstr ""
+
+msgid "Zoom"
+msgstr ""
+
+msgid "Reset Animations"
+msgstr ""
+
+msgid "Reset animations"
+msgstr ""
+
+msgid "Display and Power"
+msgstr ""
+
+msgid "Keep Screen On"
+msgstr ""
+
+msgid "Prevent the screen from immediately turning off when locked. The screen will still turn off after the normal timeout duration set in system settings."
+msgstr ""
+
+msgid "Only on AC Power"
+msgstr ""
+
+msgid "Only keep the screen on if the system is plugged in"
+msgstr ""
+
+msgid "Escape to Sleep / Suspend"
+msgstr ""
+
+msgid "Press Escape on the lock screen to sleep display (or suspend)"
+msgstr ""
+
+msgid "Extras"
+msgstr ""
+
+msgid "[PRO] GDM Expansion"
+msgstr ""
+
+msgid "Status: Enabled. Custom layout is active on GDM."
+msgstr ""
+
+msgid "Status: Disabled."
+msgstr ""
+
+msgid "Enabled"
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "Cupertino System Actions"
+msgstr ""
+
+msgid "Show Suspend, Restart and Power Off under the login user list, replacing the Quick Settings power menu."
+msgstr ""
+
+msgid "Dim Background Wallpaper"
+msgstr ""
+
+msgid "Apply a subtle 15% darkening overlay to the login wallpaper for enhanced contrast."
+msgstr ""
+
+msgid "GDM Expansion Documentation"
+msgstr ""
+
+msgid "Revert GDM login screen layout to GNOME Default. See repository instructions."
+msgstr ""
+
+msgid "Open repository documentation"
+msgstr ""
+
+msgid "Extension is not installed system-wide in /usr/share."
+msgstr ""
+
+msgid "GDM expansion modules (src/pro) are missing system-wide."
+msgstr ""
+
+msgid "GDM session mode is not enabled in system-wide metadata."
+msgstr ""
+
+msgid "GDM dconf override configuration (/etc/dconf/db/gdm.d) is missing."
+msgstr ""
+
+msgid "GDM integration is not configured."
+msgstr ""
+
+msgid "GDM DLC Documentation"
+msgstr ""
+
+msgid "Visit the repository to view setup and installation documentation."
+msgstr ""
+
+msgid "[BETA] WACK Shell Integration"
+msgstr ""
+
+msgid "Installed"
+msgstr ""
+
+msgid "Not Installed"
+msgstr ""
+
+msgid "Installed. Enables crossfade transitions and Cupertino-inspired shell customisations."
+msgstr ""
+
+msgid "Not installed. Install WACK Shell to unlock transition effects."
+msgstr ""
+
+msgid "WACK Shell Repository"
+msgstr ""
+
+msgid "Open the WACK Shell repository for documentation and updates."
+msgstr ""
+
+msgid "Open WACK Shell repository"
+msgstr ""
+
+msgid "Visit the repository to view installation instructions and release packages."
+msgstr ""
+
+msgid "Clear Visual Cache"
+msgstr ""
+
+msgid "Clears temporary visual data used for wallpapers and vibrancy effects. It will be regenerated automatically."
+msgstr ""
+
+msgid "Clear"
+msgstr ""
+
+msgid "Clears the visual cache used for wallpapers and vibrancy effects"
+msgstr ""
+
+msgid "Visual cache cleared successfully!"
+msgstr ""
+
+msgid "Failed to clear cache:"
+msgstr ""
+

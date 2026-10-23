@@ -1,0 +1,428 @@
+# WACK - Sonoma Lockscreen
+# Copyright (C) 2026 rinzler69-wastaken
+msgid ""
+msgstr ""
+"Project-Id-Version: wack-lockscreen-clock@rinzler69-wastaken.github.com\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-10-09 00:00+0000\n"
+"Last-Translator: rinzler69-wastaken\n"
+"Language-Team: WACK Project\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "more"
+msgstr "περισσότερα"
+
+msgid "Press Shift + N to view notifications"
+msgstr "Πατήστε Shift + N για προβολή ειδοποιήσεων"
+
+msgid "Sleep prevented by an active process"
+msgstr "Η αναστολή λειτουργίας αποτράπηκε από ενεργή διεργασία"
+
+msgid "Home"
+msgstr "Αρχική"
+
+msgid "Resources"
+msgstr "Πόροι"
+
+msgid "Extension Repo"
+msgstr "Αποθετήριο επέκτασης"
+
+msgid "Open on GitHub"
+msgstr "Άνοιγμα στο GitHub"
+
+msgid "Enjoying this extension?"
+msgstr "Σας αρέσει αυτή η επέκταση;"
+
+msgid "Consider supporting its development!"
+msgstr "Σκεφτείτε να υποστηρίξετε την ανάπτυξή της!"
+
+msgid "Ko-fi"
+msgstr "Ko-fi"
+
+msgid "Open Ko-fi"
+msgstr "Άνοιγμα Ko-fi"
+
+msgid "Saweria"
+msgstr "Saweria"
+
+msgid "Open Saweria"
+msgstr "Άνοιγμα Saweria"
+
+msgid "Upgrade to [PRO]"
+msgstr "Αναβάθμιση σε [PRO]"
+
+msgid "Check PRO features of this extension on this extension's GitHub repo."
+msgstr "Δείτε τις δυνατότητες PRO στο αποθετήριο GitHub της επέκτασης."
+
+msgid "Visit documentation on GitHub"
+msgstr "Επίσκεψη τεκμηρίωσης στο GitHub"
+
+msgid "Configuration"
+msgstr "Ρυθμίσεις"
+
+msgid "General"
+msgstr "Γενικά"
+
+msgid "Password Field Indicators"
+msgstr "Δείκτες πεδίου κωδικού πρόσβασης"
+
+msgid "Show Caps Lock and keyboard layout icons inside the password field."
+msgstr "Εμφάνιση εικονιδίων Caps Lock και διάταξης πληκτρολογίου μέσα στο πεδίο κωδικού."
+
+msgid "Cursor Blinking"
+msgstr "Αναλαμπή δρομέα"
+
+msgid "Enable or disable text cursor blinking in the password field."
+msgstr "Ενεργοποίηση ή απενεργοποίηση αναλαμπής του δρομέα στο πεδίο κωδικού."
+
+msgid "Custom Lockscreen Wallpaper"
+msgstr "Προσαρμοσμένη ταπετσαρία οθόνης κλειδώματος"
+
+msgid "Use a custom image overlay for the lockscreen background."
+msgstr "Χρήση προσαρμοσμένης εικόνας για το φόντο της οθόνης κλειδώματος."
+
+msgid "Wallpaper Image Path"
+msgstr "Διαδρομή εικόνας ταπετσαρίας"
+
+msgid "No image selected"
+msgstr "Δεν έχει επιλεγεί εικόνα"
+
+msgid "Select Lockscreen Wallpaper"
+msgstr "Επιλογή ταπετσαρίας οθόνης κλειδώματος"
+
+msgid "Images and Slideshows"
+msgstr "Εικόνες και παρουσιάσεις"
+
+msgid "Select Image File"
+msgstr "Επιλογή αρχείου εικόνας"
+
+msgid "Select"
+msgstr "Επιλογή"
+
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+msgid "Per-Monitor Wallpapers"
+msgstr "Ταπετσαρίες ανά οθόνη"
+
+msgid "Monitors without their own wallpaper use the one above."
+msgstr "Οι οθόνες χωρίς δική τους ταπετσαρία χρησιμοποιούν την παραπάνω."
+
+msgid "Default"
+msgstr "Προεπιλογή"
+
+msgid "Use the Default Wallpaper"
+msgstr "Χρήση της προεπιλεγμένης ταπετσαρίας"
+
+msgid "Clock and Date"
+msgstr "Ρολόι και ημερομηνία"
+
+msgid "Clock Weight"
+msgstr "Πάχος γραμματοσειράς ρολογιού"
+
+msgid "Font weight of the lockscreen time."
+msgstr "Πάχος γραμματοσειράς της ώρας στην οθόνη κλειδώματος."
+
+msgid "Restore defaults"
+msgstr "Επαναφορά προεπιλογών"
+
+msgid "Light"
+msgstr "Ελαφρύ"
+
+msgid "Regular"
+msgstr "Κανονικό"
+
+msgid "Medium"
+msgstr "Μεσαίο"
+
+msgid "Semibold"
+msgstr "Ημίπαχυ"
+
+msgid "Bold"
+msgstr "Έντονο"
+
+msgid "Heavy"
+msgstr "Πολύ έντονο"
+
+msgid "Clock Format"
+msgstr "Μορφή ρολογιού"
+
+msgid "Override the system 12/24-hour setting on the lockscreen."
+msgstr "Παράκαμψη της ρύθμισης 12/24 ωρών του συστήματος στην οθόνη κλειδώματος."
+
+msgid "System"
+msgstr "Σύστημα"
+
+msgid "12-hour"
+msgstr "12ωρο"
+
+msgid "24-hour"
+msgstr "24ωρο"
+
+msgid "Date Style"
+msgstr "Στυλ ημερομηνίας"
+
+msgid "Choose between shortened and full date names."
+msgstr "Επιλέξτε ανάμεσα σε συντομευμένα ή πλήρη ονόματα ημερομηνιών."
+
+msgid "Short"
+msgstr "Σύντομο"
+
+msgid "Full"
+msgstr "Πλήρες"
+
+msgid "Wallpaper-Tinted Clock"
+msgstr "Ρολόι στο χρώμα της ταπετσαρίας"
+
+msgid "Tint the clock and date with a light shade of the wallpaper colour."
+msgstr "Χρωματίστε το ρολόι και την ημερομηνία με μια ελαφριά απόχρωση της ταπετσαρίας."
+
+msgid "Lockscreen Mode"
+msgstr "Λειτουργία οθόνης κλειδώματος"
+
+msgid "Mode"
+msgstr "Λειτουργία"
+
+msgid "Legacy"
+msgstr "Κλασικό"
+
+msgid "Cupertino"
+msgstr "Cupertino"
+
+msgid "A complete macOS Sonoma-inspired lockscreen layout (Click user-icon to switch users)."
+msgstr "Πλήρης διάταξη εμπνευσμένη από το macOS Sonoma (κάντε κλικ στο εικονίδιο χρήστη για εναλλαγή)."
+
+msgid "macOS Sonoma-style clock over the classic, GNOME-compliant layout and flow."
+msgstr "Ρολόι τύπου macOS Sonoma πάνω από την κλασική διάταξη του GNOME."
+
+msgid "Sonoma Status Corner"
+msgstr "Γωνία κατάστασης Sonoma"
+
+msgid "Restyle the top-right battery, network and input source icons."
+msgstr "Επανασχεδιασμός των εικονιδίων μπαταρίας, δικτύου και πηγής εισόδου επάνω δεξιά."
+
+msgid "Always Show User Widget"
+msgstr "Πάντα εμφάνιση widget χρήστη"
+
+msgid "Hides notifications by default. Press Shift+N to show notifications."
+msgstr "Απόκρυψη ειδοποιήσεων από προεπιλογή. Πατήστε Shift+N για εμφάνιση."
+
+msgid "Prompt Vibrancy"
+msgstr "Ζωντάνια πεδίου κωδικού"
+
+msgid "Adaptive color and depth enhancements for the password field."
+msgstr "Προσαρμοστικές βελτιώσεις χρώματος και βάθους για το πεδίο κωδικού."
+
+msgid "Lightweight, color-based mode."
+msgstr "Ελαφριά λειτουργία βασισμένη στο χρώμα."
+
+msgid "Advanced, blur-based mode."
+msgstr "Προηγμένη λειτουργία βασισμένη στο θόλωμα."
+
+msgid "Tonal"
+msgstr "Τονικό"
+
+msgid "Acrylic"
+msgstr "Ακρυλικό"
+
+msgid "Show message when locked"
+msgstr "Εμφάνιση μηνύματος στο κλείδωμα"
+
+msgid "Set..."
+msgstr "Ορισμός..."
+
+msgid "Set a message to appear on the lockscreen"
+msgstr "Ορίστε ένα μήνυμα που θα εμφανίζεται στην οθόνη κλειδώματος"
+
+msgid "OK"
+msgstr "OK"
+
+msgid "Unlock Crossfade"
+msgstr "Ομαλή μετάβαση ξεκλειδώματος"
+
+msgid "Crossfade the lockscreen with desktop when unlocking (automatically disabled in Power Saver mode)."
+msgstr "Ομαλή μετάβαση από την οθόνη κλειδώματος στην επιφάνεια εργασίας (απενεργοποιείται στη λειτουργία εξοικονόμησης ενέργειας)."
+
+msgid "Requires WACK Shell to be installed and enabled."
+msgstr "Απαιτείται εγκατάσταση και ενεργοποίηση του WACK Shell."
+
+msgid "Requires WACK Shell to be enabled."
+msgstr "Απαιτείται ενεργοποίηση του WACK Shell."
+
+msgid "Crossfade Speed"
+msgstr "Ταχύτητα μετάβασης"
+
+msgid "Slower"
+msgstr "Πιο αργά"
+
+msgid "Faster"
+msgstr "Πιο γρήγορα"
+
+msgid "Clock Animation"
+msgstr "Εφέ ρολογιού"
+
+msgid "Applied to the date and time while opening the password prompt"
+msgstr "Εφαρμόζεται στην ημερομηνία και την ώρα κατά το άνοιγμα του κωδικού"
+
+msgid "Scale Down"
+msgstr "Σμίκρυνση"
+
+msgid "Zoom Up"
+msgstr "Μεγέθυνση προς τα πάνω"
+
+msgid "Slide Up"
+msgstr "Ολίσθηση προς τα πάνω"
+
+msgid "Fade"
+msgstr "Ομαλή εξασθένηση"
+
+msgid "Prompt Animation"
+msgstr "Εφέ προτροπής"
+
+msgid "Applied to the authentication prompt while it appears"
+msgstr "Εφαρμόζεται στην προτροπή ελέγχου ταυτότητας κατά την εμφάνισή της"
+
+msgid "GNOME Default"
+msgstr "Προεπιλογή GNOME"
+
+msgid "Rise"
+msgstr "Άνοδος"
+
+msgid "Zoom"
+msgstr "Εστίαση"
+
+msgid "Reset Animations"
+msgstr "Επαναφορά εφέ"
+
+msgid "Reset animations"
+msgstr "Επαναφορά εφέ"
+
+msgid "Display and Power"
+msgstr "Οθόνη και ενέργεια"
+
+msgid "Keep Screen On"
+msgstr "Διατήρηση οθόνης ενεργής"
+
+msgid "Prevent the screen from immediately turning off when locked. The screen will still turn off after the normal timeout duration set in system settings."
+msgstr "Αποτρέπει την άμεση απενεργοποίηση της οθόνης στο κλείδωμα. Η οθόνη θα απενεργοποιηθεί μετά το κανονικό χρονικό όριο του συστήματος."
+
+msgid "Only on AC Power"
+msgstr "Μόνο σε τροφοδοσία ρεύματος"
+
+msgid "Only keep the screen on if the system is plugged in"
+msgstr "Διατήρηση της οθόνης ενεργής μόνο όταν η συσκευή είναι συνδεδεμένη στο ρεύμα"
+
+msgid "Escape to Sleep / Suspend"
+msgstr "Πλήκτρο Escape για αναστολή"
+
+msgid "Press Escape on the lock screen to sleep display (or suspend)"
+msgstr "Πατήστε Escape στην οθόνη κλειδώματος για απενεργοποίηση οθόνης (ή αναστολή)"
+
+msgid "Extras"
+msgstr "Πρόσθετα"
+
+msgid "[PRO] GDM Expansion"
+msgstr "[PRO] Επέκταση GDM"
+
+msgid "Status: Enabled. Custom layout is active on GDM."
+msgstr "Κατάσταση: Ενεργό. Η προσαρμοσμένη διάταξη είναι ενεργή στο GDM."
+
+msgid "Status: Disabled."
+msgstr "Κατάσταση: Ανενεργό."
+
+msgid "Enabled"
+msgstr "Ενεργό"
+
+msgid "Disabled"
+msgstr "Ανενεργό"
+
+msgid "Cupertino System Actions"
+msgstr "Ενέργειες συστήματος Cupertino"
+
+msgid "Show Suspend, Restart and Power Off under the login user list, replacing the Quick Settings power menu."
+msgstr "Εμφάνιση Αναστολής, Επανεκκίνησης και Απενεργοποίησης κάτω από τη λίστα χρηστών, αντικαθιστώντας το μενού λειτουργίας."
+
+msgid "Dim Background Wallpaper"
+msgstr "Σκίαση ταπετσαρίας φόντου"
+
+msgid "Apply a subtle 15% darkening overlay to the login wallpaper for enhanced contrast."
+msgstr "Εφαρμογή διακριτικής σκίασης 15% στην ταπετσαρία σύνδεσης για βελτιωμένη αντίθεση."
+
+msgid "GDM Expansion Documentation"
+msgstr "Τεκμηρίωση επέκτασης GDM"
+
+msgid "Revert GDM login screen layout to GNOME Default. See repository instructions."
+msgstr "Επαναφορά της διάταξης σύνδεσης GDM στην προεπιλογή του GNOME. Δείτε τις οδηγίες του αποθετηρίου."
+
+msgid "Open repository documentation"
+msgstr "Άνοιγμα τεκμηρίωσης αποθετηρίου"
+
+msgid "Extension is not installed system-wide in /usr/share."
+msgstr "Η επέκταση δεν είναι εγκατεστημένη καθολικά στο /usr/share."
+
+msgid "GDM expansion modules (src/pro) are missing system-wide."
+msgstr "Οι μονάδες επέκτασης GDM (src/pro) λείπουν από το σύστημα."
+
+msgid "GDM session mode is not enabled in system-wide metadata."
+msgstr "Η λειτουργία συνεδρίας GDM δεν είναι ενεργοποιημένη στα μεταδεδομένα του συστήματος."
+
+msgid "GDM dconf override configuration (/etc/dconf/db/gdm.d) is missing."
+msgstr "Η διαμόρφωση dconf για το GDM (/etc/dconf/db/gdm.d) λείπει."
+
+msgid "GDM integration is not configured."
+msgstr "Η ενσωμάτωση GDM δεν έχει ρυθμιστεί."
+
+msgid "GDM DLC Documentation"
+msgstr "Τεκμηρίωση GDM DLC"
+
+msgid "Visit the repository to view setup and installation documentation."
+msgstr "Επισκεφθείτε το αποθετήριο για να δείτε την τεκμηρίωση εγκατάστασης και ρύθμισης."
+
+msgid "[BETA] WACK Shell Integration"
+msgstr "[BETA] Ενσωμάτωση WACK Shell"
+
+msgid "Installed"
+msgstr "Εγκατεστημένο"
+
+msgid "Not Installed"
+msgstr "Δεν είναι εγκατεστημένο"
+
+msgid "Installed. Enables crossfade transitions and Cupertino-inspired shell customisations."
+msgstr "Εγκατεστημένο. Ενεργοποιεί ομαλές μεταβάσεις και προσαρμογές του κελύφους τύπου Cupertino."
+
+msgid "Not installed. Install WACK Shell to unlock transition effects."
+msgstr "Δεν είναι εγκατεστημένο. Εγκαταστήστε το WACK Shell για να ξεκλειδώσετε τα εφέ μετάβασης."
+
+msgid "WACK Shell Repository"
+msgstr "Αποθετήριο WACK Shell"
+
+msgid "Open the WACK Shell repository for documentation and updates."
+msgstr "Ανοίξτε το αποθετήριο WACK Shell για τεκμηρίωση και ενημερώσεις."
+
+msgid "Open WACK Shell repository"
+msgstr "Άνοιγμα αποθετηρίου WACK Shell"
+
+msgid "Visit the repository to view installation instructions and release packages."
+msgstr "Επισκεφθείτε το αποθετήριο για οδηγίες εγκατάστασης και πακέτα εκδόσεων."
+
+msgid "Clear Visual Cache"
+msgstr "Εκκαθάριση μνήμης γραφικών"
+
+msgid "Clears temporary visual data used for wallpapers and vibrancy effects. It will be regenerated automatically."
+msgstr "Εκκαθαρίζει τα προσωρινά δεδομένα γραφικών για ταπετσαρίες και εφέ. Θα αναγεννηθούν αυτόματα."
+
+msgid "Clear"
+msgstr "Εκκαθάριση"
+
+msgid "Clears the visual cache used for wallpapers and vibrancy effects"
+msgstr "Εκκαθαρίζει την προσωρινή μνήμη γραφικών για ταπετσαρίες και εφέ"
+
+msgid "Visual cache cleared successfully!"
+msgstr "Η προσωρινή μνήμη γραφικών εκκαθαρίστηκε επιτυχώς!"
+
+msgid "Failed to clear cache:"
+msgstr "Αποτυχία εκκαθάρισης προσωρινής μνήμης:"
+
