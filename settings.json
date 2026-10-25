@@ -212,6 +212,7 @@
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.gpuAcceleration": "off",
 
   // CURSOR
   "editor.cursorWidth": 4,
@@ -465,7 +466,7 @@
       "class": { "underline": true },
       "interface": { "underline": true },
       "enum": { "strikethrough": true },
-      "type": { "strikethrough": true },
+      "type": { "strikethrough": true, "underline": true },
       "struct": { "underline": true }
     }
   },

@@ -3953,6 +3953,8 @@ div.monaco-scrollable-element div.monaco-list-rows {
 }
 
 /* Change Cursor style */
+/* Editor's cursor   */
+/* note: this style is for line cursor type user, if you like the block style you can tweak this style  */
 .monaco-editor .cursor {
   background-color: color-mix(
     in srgb,
@@ -3964,6 +3966,17 @@ div.monaco-scrollable-element div.monaco-list-rows {
   border-radius: 0px 26px !important;
   box-shadow: 0 0 8px var(--primary) !important;
   filter: drop-shadow(0 0 5px #3c3c50);
+}
+
+/*  Terminal's cursor */
+.xterm .xterm-cursor {
+  background-color: color-mix(in srgb, var(--primary) 50%, transparent);
+  filter: drop-shadow(0 0 5px #3c3c50);
+  border-radius: 0px 8px !important;
+  border: 3px solid var(--primary) !important;
+  padding: 0px 1px 0px 1px !important;
+  height: 14px !important;
+  width: 2px !important;
 }
 
 /* All Bracket levels */
