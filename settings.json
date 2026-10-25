@@ -1,12 +1,9 @@
 {
-  // THEME & UI
-  "workbench.iconTheme": "symbols",
-  "workbench.colorTheme": "React Dev Theme (dark)",
   "workbench.list.smoothScrolling": true,
 
   // Point VS Code to your global Biome binary
 
-  "biome.lsp.bin": "/home/omodudu/.nvm/versions/node/v24.20.0/bin/biome",
+  "biome.lsp.bin": "/home/omodudu/.nvm/versions/node/v26.10.0/bin/biome",
   "biome.enabled": true,
   "biome.requireConfiguration": false,
   "biome.css.linter.enabled": false,
@@ -402,7 +399,6 @@
   "liveServer.settings.donotVerifyTags": true,
   "workbench.secondarySideBar.defaultVisibility": "visible",
   "chat.agent.enabled": false,
-  "workbench.productIconTheme": "fluent-icons",
 
   "symbols.hidesExplorerArrows": false,
   "window.menuStyle": "custom",
@@ -416,13 +412,6 @@
   "custom_css_hot_reload.hotReloadMode": "onChange",
   "window.titleBarStyle": "native",
   "workbench.editor.useModal": "off",
-
-  // CUSTOM CSS AND SCRIPTS SETTINGS FOR VSCODE
-  "vscode_custom_css.imports": [
-    "file:///home/omodudu/.VSC_customize/custom-css.css",
-    "file:///home/omodudu/.VSC_customize/custom-script.js",
-    "file:///home/omodudu/.VSC_customize/colors/colors.css"
-  ],
 
   "editor.formatOnPaste": true,
   "editor.wrapOnEscapedLineFeeds": true,
@@ -453,8 +442,6 @@
   "harper.dialect": "American",
   "cSpell.userWords": ["caffiend", "fanta", "hypr", "Insatiates", "Muhammed"],
   "@azure.argTenant": "",
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-4o-mini",
   "editor.tabSize": 2,
   "editor.linkedEditing": true,
   "editor.codeActions.triggerOnFocusChange": true,
@@ -463,7 +450,32 @@
   "js/ts.experimental.useTsgo": true,
 
   // Guild Lines
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "React Dev Theme (dark)",
+  "notebook.defaultFormatter": "esbenp.prettier-vscode",
+  "evenBetterToml.formatter.alignComments": false,
+  "evenBetterToml.formatter.alignEntries": false,
+
+  // Underline of the Object, struct, type, enums, class, and interface -- to enable new class name for proper customizing with custom css and js loader extension
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      "class": { "underline": true },
+      "interface": { "underline": true },
+      "enum": { "strikethrough": true },
+      "type": { "strikethrough": true },
+      "struct": { "underline": true }
+    }
+  },
+
+  // CUSTOM CSS AND SCRIPTS SETTINGS FOR VSCODE
+  "vscode_custom_css.imports": [
+    "file:///home/omodudu/.VSC_customize/custom-css.css",
+    "file:///home/omodudu/.VSC_customize/custom-script.js",
+    "file:///home/omodudu/.VSC_customize/colors/colors.css"
+  ]
 
   // Commands for reference:
   // sudo chown -R $(whoami) "$(which code)"
