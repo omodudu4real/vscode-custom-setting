@@ -18,8 +18,13 @@ if "script-src 'sha256-" not in clean or "</body>" not in clean:
     print("Unexpected index.html structure. Not touching it.")
     sys.exit(1)
 
+css = ""
+SHARED = os.path.join(os.path.dirname(BASE), "colors", "colors.css")
+if os.path.exists(SHARED):
+    with open(SHARED, encoding="utf-8") as f:
+        css += f.read() + "\n"
 with open(CSS_FILE, encoding="utf-8") as f:
-    css = f.read()
+    css += f.read()
 
 js = """
 (function () {

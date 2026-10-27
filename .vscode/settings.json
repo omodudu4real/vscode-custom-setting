@@ -34,6 +34,17 @@
     "ucodicon",
     "viewpane"
   ],
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Apply webview CSS",
+        "type": "shell",
+        "command": "sudo python3 ${workspaceFolder}/webview-css/apply.py",
+        "problemMatcher": []
+      }
+    ]
+  },
   "workbench.commandPalette.preserveInput": true,
   "js/ts.experimental.useTsgo": false,
   "editor.fontSize": 17,
