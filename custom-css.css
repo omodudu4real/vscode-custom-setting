@@ -5822,9 +5822,16 @@ div.rendered-markdown ul li::marker {
 }
 
 /* Start of style enabled through tokinization  */
+span.mtk3 {
+  color: #569cd6 !important;
+  font-family: var(--favFont) !important;
+  font-size: 16px !important;
+}
+
 span.mtk19.mtku,
 span.mtk19.mtks,
-span.mtk19.mtku.mtks {
+span.mtk19.mtku.mtks,
+span.mtk6.mtki.mtku.mtks {
   text-decoration: none !important;
   position: relative !important;
 }
@@ -5859,4 +5866,31 @@ span.mtk19.mtku.mtks::after {
     var(--primary) 100%
   ) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+}
+
+/* ---------- Slim scrollbar ---------- */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Thumb: 8px box minus 3px transparent borders = 2px visible line */
+*::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 9999px;
+}
+
+/* Thumb on hover: 4px visible line, secondary color */
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+  background-clip: padding-box;
+  border-width: 2px;
 }

@@ -1,5 +1,44 @@
-/* Evtension Details Page Style  */
-/* Header */
+/* ---------- Slim scrollbar ---------- */
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track,
+*::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Thumb: 8px box minus 3px transparent borders = 2px visible line */
+*::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  background-clip: padding-box;
+  border: 3px solid transparent;
+  border-radius: 9999px;
+}
+
+/* Thumb on hover: 4px visible line, secondary color */
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+  background-clip: padding-box;
+  border-width: 2px;
+}
+
+/* ---------- Animation definitions (defined once) ---------- */
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes animatedBorder {
+  to {
+    --angle: 360deg;
+  }
+}
+
+/* ---------- Header ---------- */
 h1,
 h2,
 h3 {
@@ -27,7 +66,7 @@ h3#starting-from-extension-version-60-to-be-compatible-with-vscode-158-the-cssjs
   padding: 0px !important;
 }
 
-/* Anchor tags */
+/* ---------- Anchor tags ---------- */
 h1 a,
 h2 a,
 h3 a {
@@ -48,12 +87,11 @@ strong a {
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
-/* description */
+/* ---------- Description ---------- */
 p {
   color: var(--primary) !important;
 }
 
-/* description anchor link */
 p a,
 li a {
   color: color-mix(
@@ -63,7 +101,6 @@ li a {
   ) !important;
 }
 
-/* Description list items */
 ul li strong {
   color: var(--primary) !important;
 }
@@ -74,9 +111,7 @@ li::marker {
   color: color-mix(in srgb, var(--primary) 65%, transparent) !important;
 }
 
-/* Description list items code style  */
-
-/* description code tag */
+/* ---------- Inline code ---------- */
 p code,
 p kbd,
 ul li code,
@@ -86,7 +121,8 @@ h2 code,
 h3 code,
 h4 code,
 h5 code,
-h6 code {
+h6 code,
+td code {
   font-family: var(--fav3Font) !important;
   color: color-mix(
     in srgb,
@@ -98,45 +134,81 @@ h6 code {
   border-radius: 0px 6px !important;
 }
 
+/* ================================================================
+   ANIMATED BORDER: img, video, svg, figure images
+   ================================================================ */
+a img,
+p img,
+figure img,
+video,
+svg:not(button.code-block-copy-button svg) {
+  border: var(--bw, 4px) solid transparent !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background:
+    linear-gradient(#3c3c50 0%, #2a2b38 100%) padding-box,
+    conic-gradient(from var(--angle), transparent 75%, var(--primary))
+      border-box,
+    conic-gradient(
+        from calc(var(--angle) + 180deg),
+        transparent 75%,
+        var(--inverse_primary)
+      )
+      border-box !important;
+  animation: 15s animatedBorder linear infinite !important;
+}
+
 /* image icon */
 a img,
 p img {
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  --bw: 3px;
   border-radius: 0px 16px !important;
-  border-top: 3px solid var(--primary) !important;
-  border-bottom: 3px solid var(--inverse_primary) !important;
-  border-left: 3px solid var(--primary) !important;
-  border-right: 3px solid var(--inverse_primary) !important;
 }
 
 a img {
   padding: 5px !important;
 }
+
 p img {
   padding: 20px !important;
 }
 
-figure a img,
+/* images in figures (placed after p img so it wins) */
 figure img {
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  --bw: 2px;
   border-radius: 0px 16px !important;
   padding: 20px !important;
-  border-top: 2px solid var(--primary) !important;
-  border-bottom: 2px solid var(--inverse_primary) !important;
-  border-left: 2px solid var(--primary) !important;
-  border-right: 2px solid var(--inverse_primary) !important;
 }
 
-/* tokenization style */
+/* video */
+video {
+  --bw: 4px;
+  padding: 20px !important;
+  border-radius: 0px 36px !important;
+}
+
+/* svg (copy button svg excluded) */
+svg:not(button.code-block-copy-button svg) {
+  --bw: 4px;
+  height: 70% !important;
+  width: 88% !important;
+  padding: 40px 20px !important;
+  border-radius: 0px 65px !important;
+}
+
+/* ---------- Code blocks ---------- */
 pre {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-radius: 0px 46px !important;
 }
 
-/* BlockQuote */
+.code-block-copy-button {
+  color: var(--primary) !important;
+  background-color: var(--inverse_primary) !important;
+  border-radius: 0px 16px !important;
+}
+
+/* ---------- BlockQuote ---------- */
 blockquote {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
@@ -144,12 +216,11 @@ blockquote {
   border-left: 2px solid var(--primary) !important;
 }
 
-/* BlockQuote horizontal rule */
 hr {
   border-bottom: 5px solid var(--primary) !important;
 }
 
-/* tanle customization */
+/* ---------- Table ---------- */
 tbody tr th,
 table thead tr th {
   color: var(--primary) !important;
@@ -167,19 +238,7 @@ th {
   border-bottom: 3px solid var(--inverse_primary) !important;
 }
 
-td code {
-  font-family: var(--fav3Font) !important;
-  color: color-mix(
-    in srgb,
-    var(--primary) 15%,
-    var(--inverse-primary) 69%
-  ) !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-radius: 0px 6px !important;
-}
-
-/* Scroll to Top Button */
+/* ---------- Scroll to Top Button ---------- */
 a#scroll-to-top {
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   border-color: var(--primary) !important;
@@ -190,88 +249,3 @@ a#scroll-to-top {
   border-left: 3px solid var(--primary) !important;
   border-right: 3px solid var(--inverse_primary) !important;
 }
-
-/* Welcome page style the iframe part */
-/* a:-webkit-any-link {
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-color: var(--primary) !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  padding: 20px !important;
-  border-top: 2px solid var(--primary) !important;
-  border-bottom: 2px solid var(--inverse_primary) !important;
-  border-left: 2px solid var(--primary) !important;
-  border-right: 2px solid var(--inverse_primary) !important;
-} */
-
-/* Keyframe border definition */
-/* @keyframes animatedBorder {
-  from {
-    --angle: 0deg;
-  }
-  to {
-    --angle: 360deg;
-  }
-}
-
-@property --angle {
-  syntax: '<angle>';
-  initial-value: 0deg;
-  inherits: false;
-} */
-
-svg {
-  height: 70% !important;
-  width: 88% !important;
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-color: var(--primary) !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  padding: 40px 20px !important;
-  border-radius: 0px 65px !important;
-  border-top: 4px solid var(--primary) !important;
-  border-bottom: 4px solid var(--inverse_primary) !important;
-  border-left: 4px solid var(--primary) !important;
-  border-right: 4px solid var(--inverse_primary) !important;
-}
-
-video {
-  /* position: relative !important; */
-  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-  border-color: var(--primary) !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-  padding: 20px !important;
-  border-radius: 0px 36px !important;
-  border-top: 4px solid var(--primary) !important;
-  border-bottom: 4px solid var(--inverse_primary) !important;
-  border-left: 4px solid var(--primary) !important;
-  border-right: 4px solid var(--inverse_primary) !important;
-}
-
-/*
-video::before,
-video::after {
-  content: '' !important;
-  display: block !important;
-  position: absolute !important;
-  height: 128px !important;
-  width: 128px !important;
-  border-radius: 0px 34px;
-  padding: 10px !important;
-  z-index: -1 !important;
-  animation: 15s animatedBorder linear infinite !important;
-}
-
-video::after {
-  background-image: conic-gradient(
-    from var(--angle),
-    transparent 75%,
-    var(--primary)
-  );
-}
-
-video::before {
-  background-image: conic-gradient(
-    from calc(var(--angle) + 180deg),
-    transparent 75%,
-    var(--inverse_primary)
-  );
-} */
