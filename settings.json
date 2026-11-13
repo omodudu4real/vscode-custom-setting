@@ -19,9 +19,6 @@
   "editor.occurrencesHighlight": "off",
   "editor.selectionHighlight": false,
 
-  // Keeps wrapped lines indented to match the original line's indentation
-  "editor.wrappingIndent": "indent",
-
   // LANGUAGE FORMATTERS
   "[css]": {
     "biome.enabled": false,
@@ -119,90 +116,7 @@
   "editor.cursorStyle": "line",
   "editor.stickyScroll.enabled": false,
 
-  // FONT STYLING IN DOCUMENT & TOKEN COLORS
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": "source",
-        "settings": {
-          "foreground": "#d4d4d4"
-        }
-      },
-      {
-        "scope": "storage.type.function.arrow",
-        "settings": {
-          "fontStyle": "italic"
-        }
-      },
-      {
-        "scope": [
-          "comment",
-          "punctuation.definition.comment",
-          "comment.line.double-slash",
-          "comment.block"
-        ],
-        "settings": {
-          "foreground": "#008c7d",
-          "fontStyle": "italic"
-        }
-      },
-      {
-        "scope": [
-          "entity.name.type.class",
-          "keyword",
-          "storage.modifier",
-          "storage.type",
-          "support.class.builtin",
-          "keyword.control",
-          "constant.language",
-          "entity.other.attribute-name",
-          "entity.name.method",
-          "support.function",
-          "support.function.dom",
-          "support.variable.property.dom",
-          "variable.language.this"
-        ],
-        "settings": {
-          "fontStyle": "italic"
-        }
-      },
-      {
-        "scope": [
-          "support.function.builtin.js",
-          "support.function.dom.js",
-          "variable.other.property.js"
-        ],
-        "settings": {
-          "fontStyle": "italic"
-        }
-      },
-      {
-        "scope": ["entity.name.function.js"],
-        "settings": {
-          "fontStyle": ""
-        }
-      },
-      {
-        "scope": [
-          "invalid",
-          "keyword.operator",
-          "constant.numeric.css",
-          "keyword.other.unit.px.css",
-          "constant.numeric.decimal.js",
-          "constant.numeric.json"
-        ],
-        "settings": {
-          "fontStyle": ""
-        }
-      },
-      {
-        "scope": "keyword.other.dotenv",
-        "settings": {
-          "foreground": "#FF000000"
-        }
-      }
-    ]
-  },
+  // breadcrumbs
   "breadcrumbs.enabled": false,
 
   // TERMINAL CONFIGURATION
@@ -443,7 +357,6 @@
   "harper.dialect": "American",
   "cSpell.userWords": ["caffiend", "fanta", "hypr", "Insatiates", "Muhammed"],
   "@azure.argTenant": "",
-  "editor.tabSize": 2,
   "editor.linkedEditing": true,
   "editor.codeActions.triggerOnFocusChange": true,
   "editor.formatOnSave": true,
@@ -461,14 +374,113 @@
 
   // Underline of the Object, struct, type, enums, class, and interface -- to enable new class name for proper customizing with custom css and js loader extension
   "editor.semanticTokenColorCustomizations": {
-    "enabled": true,
-    "rules": {
-      "class": { "underline": true },
-      "interface": { "underline": true },
-      "enum": { "strikethrough": true },
-      "type": { "strikethrough": true, "underline": true },
-      "struct": { "underline": true }
+    "[Default Dark+]": {
+      // this will not work because i like my therem already so to fix it make sure the enabled is completely removed and use the theme you want inside of defualt dark+ i.e change it to the theme name instead of Default Dark+
+      "enabled": true,
+      "rules": {
+        "class": { "underline": true },
+        "interface": { "underline": true },
+        "enum": { "strikethrough": true },
+        "type": { "strikethrough": true, "underline": true },
+        "struct": { "underline": true },
+        "number": "#90A4AE",
+        "string": {
+          "foreground": "#90A4AE",
+          "italic": true
+        }
+      }
     }
+  },
+
+  // FONT STYLING IN DOCUMENT & TOKEN COLORS
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "source",
+        "settings": {
+          "foreground": "#d4d4d4"
+        }
+      },
+      {
+        "scope": "storage.type.function.arrow",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "storage.type.function.js",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "comment",
+          "punctuation.definition.comment",
+          "comment.line.double-slash",
+          "comment.block"
+        ],
+        "settings": {
+          "foreground": "#008c7d",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "entity.name.type.class",
+          "keyword",
+          "storage.modifier",
+          "storage.type",
+          "support.class.builtin",
+          "keyword.control",
+          "constant.language",
+          "entity.other.attribute-name",
+          "entity.name.method",
+          "support.function",
+          "support.function.dom",
+          "support.variable.property.dom",
+          "variable.language.this"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": [
+          "support.function.builtin.js",
+          "support.function.dom.js",
+          "variable.other.property.js"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": ["entity.name.function.js"],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": [
+          "invalid",
+          "keyword.operator",
+          "constant.numeric.css",
+          "keyword.other.unit.px.css",
+          "constant.numeric.decimal.js",
+          "constant.numeric.json"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": "keyword.other.dotenv",
+        "settings": {
+          "foreground": "#FF000000"
+        }
+      }
+    ]
   },
 
   // CUSTOM CSS AND SCRIPTS SETTINGS FOR VSCODE
@@ -476,7 +488,12 @@
     "file:///home/omodudu/.VSC_customize/custom-css.css",
     "file:///home/omodudu/.VSC_customize/custom-script.js",
     "file:///home/omodudu/.VSC_customize/colors/colors.css"
-  ]
+  ],
+  "claudeCode.preferredLocation": "panel",
+  "workbench.settings.applyToAllProfiles": ["editor.indentSize"],
+  "evenBetterToml.formatter.indentString": "2",
+  "editor.wrappingIndent": "none",
+  "editor.tabSize": 2
 
   // Commands for reference:
   // sudo chown -R $(whoami) "$(which code)"

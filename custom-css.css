@@ -1826,28 +1826,6 @@ div.editor-widget.suggest-widget.shows-details.visible {
   font-family: var(--fav3Font) !important;
 }
 
-/* Code Comment Style */
-.mtk25 {
-  font-family: var(--commentFont) !important;
-  font-style: italic !important;
-  color: var(--inverse_primary) !important;
-  font-weight: bold;
-}
-
-/* Span Code */
-span.mtk1 {
-  font-family: var(--fav2Font) !important;
-  font-size: 15px !important;
-  font-style: Italic !important;
-}
-
-span.mtk6.mtki,
-span.mtk17,
-span.mtk16.mtki,
-span.mtk6 {
-  font-size: 16px !important;
-}
-
 /* Close Button */
 .modern-ui-tabs
   .part.editor
@@ -1890,6 +1868,7 @@ div.notification-list-item.expanded {
 }
 
 /* Ligature Enabler */
+span.mtk16,
 span.mtk16.mtki {
   font-family: var(--cursiveFont) !important;
 }
@@ -2129,7 +2108,7 @@ a.action-label.single-terminal-tab {
   font-size: 13px !important;
 }
 
-/* Progress bit */
+/* Progress bar bit */
 div.monaco-progress-container.active.infinite div.progress-bit {
   background-color: var(--primary) !important;
   border-radius: 100px !important;
@@ -3970,7 +3949,7 @@ div.monaco-scrollable-element div.monaco-list-rows {
 }
 
 /*  Terminal's cursor */
-.xterm .xterm-cursor {
+/* .xterm .xterm-cursor {
   background-color: color-mix(in srgb, var(--primary) 50%, transparent);
   filter: drop-shadow(0 0 5px #3c3c50);
   border-radius: 0px 8px !important;
@@ -3978,7 +3957,7 @@ div.monaco-scrollable-element div.monaco-list-rows {
   padding: 0px 1px 0px 1px !important;
   height: 14px !important;
   width: 2px !important;
-}
+} */
 
 /* All Bracket levels */
 .monaco-editor [class*='bracket-highlighting-'] {
@@ -5084,30 +5063,32 @@ div.markdown-hover
   padding: 8px !important;
 }
 
-/* Indentation Guils Line */
+/* Indentation Guide Lines */
 /* Active Scope Guide */
 .monaco-editor .lines-content .core-guide-indent.indent-active {
   border-left: 3px solid var(--primary) !important;
-  filter: drop-shadow(0 0 4px var(--primary));
+  filter: drop-shadow(0 0 4px var(--primary)) !important;
+  /* display: none !important; */
 }
 
 /* Inactive Scope Guides */
 .monaco-editor .lines-content .core-guide-indent {
-  filter: drop-shadow(0 0 3px var(--primary));
+  filter: drop-shadow(0 0 3px var(--primary)) !important;
   border-left: 1px solid var(--on_primary) !important;
+  /* display: none !important; */
 }
 
 /* Explorer Guild line */
 /* Explorer — active guide */
 .monaco-workbench .indent-guide.active {
   border-left: 3px solid var(--primary) !important;
-  filter: drop-shadow(0 0 4px var(--primary));
+  filter: drop-shadow(0 0 3px var(--primary)) !important;
 }
 
 /* Explorer — inactive guides */
 .monaco-workbench .indent-guide {
   border-left: 1px solid var(--on_primary) !important;
-  filter: drop-shadow(0 0 3px var(--primary));
+  filter: drop-shadow(0 0 3px var(--primary)) !important;
 }
 
 /* Debug content style */
@@ -5821,13 +5802,64 @@ div.rendered-markdown ul li::marker {
   color: color-mix(in srgb, var(--primary) 65%, transparent) !important;
 }
 
-/* Start of style enabled through tokinization  */
-span.mtk3 {
-  color: #569cd6 !important;
+/* Span Code */
+span.mtk1 {
   font-family: var(--favFont) !important;
+  font-size: 15px !important;
+  font-style: Italic !important;
+}
+
+span.mtk6.mtki,
+span.mtk17,
+span.mtk16.mtki,
+span.mtk6 {
   font-size: 16px !important;
 }
 
+/* Code Comment Style */
+.mtk25 {
+  font-family: var(--commentFont) !important;
+  font-style: italic !important;
+  color: var(--inverse_primary) !important;
+  font-weight: bold;
+}
+
+span.mtk14,
+span.mtk13,
+span.mtk7,
+span.mtk13.mtki {
+  font-family: var(--favFont) !important;
+}
+
+span.mtk3,
+span.mtk18 {
+  font-family: var(--cursiveFont) !important;
+  font-style: italic !important;
+}
+
+span.mtk3 {
+  color: #90a4ae !important;
+}
+
+/* this will underline the !important function, const, let and symbols like the =, ===, ==, =>, <=, >= etc so for that i comment it out  */
+/* span.mtk16.mtki {
+  position: relative !important;
+}
+
+span.mtk16.mtki::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 2px;
+  border-radius: 99px !important;
+  background: var(--primary);
+  box-shadow: 0 0 6px var(--primary);
+  pointer-events: none;
+} */
+
+/* Start of style enabled through tokinization  */
 span.mtk19.mtku,
 span.mtk19.mtks,
 span.mtk19.mtku.mtks,
