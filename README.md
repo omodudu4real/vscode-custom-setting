@@ -8,7 +8,7 @@ This project enhances the default VS Code experience with improved layouts, refi
 
 ---
 
-# Preview
+## Preview
 
 > **Screenshots and GIFs coming soon**
 
@@ -26,7 +26,7 @@ This project enhances the default VS Code experience with improved layouts, refi
 
 ---
 
-# Features
+## Features
 
 - Modern VS Code interface redesign
 - Beautiful notification animations
@@ -41,7 +41,7 @@ This project enhances the default VS Code experience with improved layouts, refi
 
 ---
 
-# Performance
+## Performance
 
 Performance was one of the goals while developing this project.
 
@@ -57,7 +57,7 @@ Some optimizations include:
 
 ---
 
-# Requirements
+## Requirements
 
 Install the following VS Code extension:
 
@@ -65,7 +65,7 @@ Install the following VS Code extension:
 
 ---
 
-# Installation
+## Installation
 
 ## 1. Install Custom CSS and JS Loader
 
@@ -73,7 +73,7 @@ Install the extension from the Visual Studio Code Marketplace.
 
 ---
 
-## 2. Clone this repository
+## 2. Clone This Repository
 
 ```bash
 git clone https://github.com/your-username/your-repository.git
@@ -81,7 +81,7 @@ git clone https://github.com/your-username/your-repository.git
 
 ---
 
-## 3. Copy the project files
+## 3. Copy the Project Files
 
 Place the CSS and JavaScript files somewhere on your computer.
 
@@ -99,7 +99,7 @@ or
 
 ---
 
-## 4. Update your settings.json
+## 4. Update Your Settings.JSON
 
 Add:
 
@@ -140,7 +140,7 @@ Restart VS Code.
 
 ---
 
-## 6. Reload after making changes
+## 6. Reload After Making Changes
 
 Whenever you modify the CSS or JavaScript files, run:
 
@@ -150,7 +150,7 @@ Reload Custom CSS and JS
 
 ---
 
-# Linux & macOS
+## Linux & macOS
 
 If VS Code cannot modify itself, change the ownership of the installation directory. and make sure you run this command on every update
 
@@ -165,11 +165,11 @@ If your installation directory is different, replace:
 /usr/share/code
 ```
 
-with the correct location.
+With the correct location.
 
 ---
 
-# Customization
+## Customization
 
 Feel free to customize:
 
@@ -186,7 +186,7 @@ Make it your own.
 
 ---
 
-# Recommended Fonts
+## Recommended Fonts
 
 - Fira Code
 - Cascadia Code
@@ -194,7 +194,7 @@ Make it your own.
 
 ---
 
-# Recommended Extensions
+## Recommended Extensions
 
 - Custom CSS and JS Loader
 - Material Icon Theme
@@ -219,23 +219,64 @@ Make it your own.
 - Docker
 - Rasi
 - Code Runner
+- Comment tagged templates
+- Template Literal IntelliSense
 
 ---
 
-# Roadmap
+## Configuring Prettier Globally
+
+1. Install prettier and prettier-plugin-embed:
+
+   ```bash
+   npm install -g prettier prettier-plugin-embed
+   ```
+
+2. Open VScode JSON setting and add this
+
+   ```bash
+   {
+     "plugins": ["prettier-plugin-embed"],
+     "embeddedLanguageFormatting": "auto"
+   }
+   ```
+
+3. Create Prettier Global Configuration
+
+   ```bash
+   mkdir -p ~/.config/prettier
+   nano ~/.config/prettier/.prettierrc.json
+   ```
+
+4. Put this inside
+
+   ```bash
+   {
+      "plugins": ["prettier-plugin-embed"],
+      "embeddedLanguageFormatting": "auto"
+   }
+   ```
+
+5. Configure VScode to use that configuration add it inside of JSON setting
+
+   ```bash
+   "prettier.configPath": "${userHome}/.config/prettier/.prettierrc.json"
+   ```
+
+## Road Map
 
 - [x] Notification redesign
 - [x] Extension panel redesign
 - [x] Custom animations
 - [x] JavaScript enhancements
-- [ ] Activity Bar redesign
-- [ ] Search panel redesign
-- [ ] Settings redesign
-- [ ] Command Palette redesign
+- [x] Activity Bar redesign
+- [x] Search panel redesign
+- [x] Settings redesign
+- [x] Command Palette redesign
 
 ---
 
-# Contributing
+## Contributing
 
 Suggestions, bug reports, and pull requests are welcome.
 
@@ -243,19 +284,19 @@ If you have ideas for improving the interface or performance, feel free to open 
 
 ---
 
-# License
+## License
 
 This project is licensed under the MIT License.
 
 ---
 
-# Acknowledgements
+## Acknowledgments
 
 - Microsoft Visual Studio Code
 - Custom CSS and JS Loader
 - The VS Code community
 
-# How to Make Automatic Color Switching Work on GNOME
+## How to Make Automatic Color Switching Work on GNOME
 
 This guide sets up Matugen so it regenerates your colors every time you change your wallpaper.
 
@@ -364,4 +405,4 @@ This guide sets up Matugen so it regenerates your colors every time you change y
 
 - you can use the install script to install the program directly and also make sure you don't change the location of the install script in folder structure.
 
-## ENJOY!!!
+## ENJOY

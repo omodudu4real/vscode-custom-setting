@@ -5068,14 +5068,12 @@ div.markdown-hover
 .monaco-editor .lines-content .core-guide-indent.indent-active {
   border-left: 3px solid var(--primary) !important;
   filter: drop-shadow(0 0 4px var(--primary)) !important;
-  /* display: none !important; */
 }
 
 /* Inactive Scope Guides */
 .monaco-editor .lines-content .core-guide-indent {
   filter: drop-shadow(0 0 3px var(--primary)) !important;
   border-left: 1px solid var(--on_primary) !important;
-  /* display: none !important; */
 }
 
 /* Explorer Guild line */
@@ -5841,7 +5839,7 @@ span.mtk3 {
   color: #90a4ae !important;
 }
 
-/* this will underline the !important function, const, let and symbols like the =, ===, ==, =>, <=, >= etc so for that i comment it out  */
+/* this will underline the !important css attribute in css,  function, const, let and symbols like the =, ===, ==, =>, <=, >= etc so for that i commented it out  */
 /* span.mtk16.mtki {
   position: relative !important;
 }
@@ -5899,6 +5897,43 @@ span.mtk19.mtku.mtks::after {
   ) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
 }
+
+.monaco-workbench.modern-ui-frosted-glass:not(.hc-black):not(.hc-light)
+  .monaco-menu-container {
+  background: none !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.monaco-workbench.modern-ui-frosted-glass:not(.hc-black):not(.hc-light)
+  .monaco-menu-container::before,
+.monaco-workbench.modern-ui-frosted-glass:not(.hc-black):not(.hc-light)
+  .monaco-menu-container::after {
+  display: none !important;
+  content: none !important;
+}
+
+div.context-view.monaco-component.context-view-menu-motion.monaco-menu-container.top.left
+  div.monaco-scrollable-element
+  div.monaco-menu
+  div.monaco-action-bar.vertical
+  ul.actions-container
+  div.monaco-scrollable-element {
+  background: none !important;
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+  margin-left: 3px !important;
+}
+
+/* .context-view.monaco-component.monaco-menu-container.top.right div.monaco-menu{
+  height: 20px !important;
+} */
 
 /* ---------- Slim scrollbar ---------- */
 *::-webkit-scrollbar {

@@ -11,6 +11,8 @@
   // FORMATTING
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnType": true,
+  "prettier.resolveGlobalModules": true,
+  "prettier.configPath": "/home/omodudu/.config/prettier/.prettierrc.json",
 
   // Enables word wrap globally at the viewport boundary
   "editor.wordWrap": "on",
@@ -29,16 +31,16 @@
     }
   },
   "[javascript]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescriptreact]": {
-    "editor.defaultFormatter": "biomejs.biome"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   // PRETTIER
