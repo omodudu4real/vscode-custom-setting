@@ -8,10 +8,11 @@
   "biome.requireConfiguration": false,
   "biome.css.linter.enabled": false,
 
+  "biome.configurationPath": "/home/omodudu/.config/biome/biome.json",
+
   // FORMATTING
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnType": true,
-
 
   // Enables word wrap globally at the viewport boundary
   "editor.wordWrap": "on",
@@ -49,6 +50,12 @@
   "prettier.bracketSameLine": true,
   "prettier.arrowParens": "avoid",
   "prettier.jsxSingleQuote": true,
+
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
 
   // ESLINT
   "eslint.validate": [
@@ -356,7 +363,11 @@
   },
 
   "harper.dialect": "American",
-  "cSpell.userWords": ["caffiend", "fanta", "hypr", "Insatiates", "Muhammed"],
+  "harper.linters.Spaces": false,
+  "harper.linters.OrthographicConsistency": false,
+  "harper.linters.SentenceCapitalization": false,
+  "harper.userDictPath": "/home/omodudu/.config/harper-ls/dictionary.txt",
+
   "@azure.argTenant": "",
   "editor.linkedEditing": true,
   "editor.codeActions.triggerOnFocusChange": true,

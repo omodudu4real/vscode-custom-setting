@@ -250,7 +250,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (!shadow.querySelector('#custom-menu-style')) {
       const style = document.createElement('style');
       style.id = 'custom-menu-style';
-      style.textContent = `
+      style.textContent = /* css */ `
       .monaco-menu {
         box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
         background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;

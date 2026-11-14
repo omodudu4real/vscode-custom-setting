@@ -220,7 +220,8 @@ Make it your own.
 - Rasi
 - Code Runner
 - Comment tagged templates
-- Template Literal IntelliSense
+- VScode-Styled-Component
+- Lit-Plugin
 
 ---
 

@@ -5830,9 +5830,14 @@ span.mtk13.mtki {
 }
 
 span.mtk3,
-span.mtk18 {
+span.mtk18,
+span.mtk16 {
   font-family: var(--cursiveFont) !important;
   font-style: italic !important;
+}
+
+.monaco-editor.showUnused .squiggly-inline-unnecessary {
+  opacity: 0.529 !important;
 }
 
 span.mtk3 {
