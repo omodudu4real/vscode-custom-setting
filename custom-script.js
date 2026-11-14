@@ -71,7 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   // ✅ Use a counter to avoid endless retries
   let retryCount = 0;
-  const maxRetries = 20; // ~10 seconds (20 * 500ms)
+  const maxRetries = 20; // ~10 seconds (20 * 500 milliseconds)
 
   const checkElement = setInterval(() => {
     const commandDialog = document.querySelector('.quick-input-widget');
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('✅ Command dialog observer attached.');
   }
 
-  // Key listener: Ctrl+P / Cmd+P opens palette → run blur
+  // Key listener: Control+P / Cmd+P opens palette → run blur
   document.addEventListener('keydown', event => {
     if ((event.metaKey || event.ctrlKey) && event.key === 'p') {
       event.preventDefault();
@@ -229,16 +229,14 @@ document.addEventListener('keydown', e => {
     if (accountIcon) {
       accountIcon.click();
 
-      setTimeout(() => {
-        debugger;
-      }, 150);
+      setTimeout(() => {}, 150);
     }
   }
 });
 
 /* Styling the RightClick and other popups
 this is done here because it's a lifecycle
-element so it get destroyed and re-born. */
+element so it get destroyed and reborn. */
 
 window.addEventListener('DOMContentLoaded', () => {
   const rootObserver = new MutationObserver(() => {
