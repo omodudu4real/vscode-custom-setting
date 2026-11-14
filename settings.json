@@ -11,8 +11,7 @@
   // FORMATTING
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnType": true,
-  "prettier.resolveGlobalModules": true,
-  "prettier.configPath": "/home/omodudu/.config/prettier/.prettierrc.json",
+
 
   // Enables word wrap globally at the viewport boundary
   "editor.wordWrap": "on",

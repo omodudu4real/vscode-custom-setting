@@ -224,45 +224,6 @@ Make it your own.
 
 ---
 
-## Configuring Prettier Globally
-
-1. Install prettier and prettier-plugin-embed:
-
-   ```bash
-   npm install -g prettier prettier-plugin-embed
-   ```
-
-2. Open VScode JSON setting and add this
-
-   ```bash
-   {
-     "plugins": ["prettier-plugin-embed"],
-     "embeddedLanguageFormatting": "auto"
-   }
-   ```
-
-3. Create Prettier Global Configuration
-
-   ```bash
-   mkdir -p ~/.config/prettier
-   nano ~/.config/prettier/.prettierrc.json
-   ```
-
-4. Put this inside
-
-   ```bash
-   {
-      "plugins": ["prettier-plugin-embed"],
-      "embeddedLanguageFormatting": "auto"
-   }
-   ```
-
-5. Configure VScode to use that configuration add it inside of JSON setting
-
-   ```bash
-   "prettier.configPath": "${userHome}/.config/prettier/.prettierrc.json"
-   ```
-
 ## Road Map
 
 - [x] Notification redesign

@@ -1,53 +1,56 @@
 {
-  "cSpell.words": [
-    "Akaya",
-    "Aluminance",
-    "Cartograph",
-    "Cclip",
-    "Cdefs",
-    "cgmr",
-    "Cmask",
-    "colorpicker",
-    "Cpath",
-    "Crect",
-    "Csvg",
-    "descriptioncontainer",
-    "Fclip",
-    "Fdefs",
-    "Fmask",
-    "Fsvg",
-    "Fwww",
-    "ibwrapper",
-    "inputbox",
-    "Italize",
-    "Kanadaka",
-    "linematch",
-    "mtki",
-    "namae",
-    "omodudu",
-    "overlaymessage",
-    "Slidder",
-    "thumbsdown",
-    "thumbsup",
-    "ttitle",
-    "twistie",
-    "ucodicon",
-    "viewpane"
-  ],
-  "tasks": {
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "Apply webview CSS",
-        "type": "shell",
-        "command": "sudo python3 ${workspaceFolder}/webview-css/apply.py",
-        "problemMatcher": []
-      }
-    ]
-  },
-  "workbench.commandPalette.preserveInput": true,
-  "js/ts.experimental.useTsgo": false,
-  "editor.fontSize": 17,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "notebook.defaultFormatter": "esbenp.prettier-vscode"
+	"cSpell.words": [
+		"Akaya",
+		"Aluminance",
+		"Cartograph",
+		"Cclip",
+		"Cdefs",
+		"cgmr",
+		"Cmask",
+		"colorpicker",
+		"Cpath",
+		"Crect",
+		"Csvg",
+		"descriptioncontainer",
+		"Fclip",
+		"Fdefs",
+		"Fmask",
+		"Fsvg",
+		"Fwww",
+		"ibwrapper",
+		"inputbox",
+		"Italize",
+		"Kanadaka",
+		"linematch",
+		"mtki",
+		"namae",
+		"omodudu",
+		"overlaymessage",
+		"Slidder",
+		"thumbsdown",
+		"thumbsup",
+		"ttitle",
+		"twistie",
+		"ucodicon",
+		"viewpane"
+	],
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Apply webview CSS",
+				"type": "shell",
+				"command": "sudo python3 ${workspaceFolder}/webview-css/apply.py",
+				"problemMatcher": []
+			}
+		]
+	},
+	"workbench.commandPalette.preserveInput": true,
+	"js/ts.experimental.useTsgo": false,
+	"editor.fontSize": 17,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"notebook.defaultFormatter": "esbenp.prettier-vscode",
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
