@@ -229,7 +229,9 @@ document.addEventListener('keydown', e => {
     if (accountIcon) {
       accountIcon.click();
 
-      setTimeout(() => {}, 150);
+      setTimeout(() => {
+        debugger;
+      }, 150);
     }
   }
 });
@@ -301,7 +303,6 @@ window.addEventListener('DOMContentLoaded', () => {
           border-radius: 0px 26px !important;
           background: none !important;
           backdrop-filter: none !important;
-          -webkit-backdrop-filter: none !important;
           box-shadow: none !important;
         }
 
@@ -316,6 +317,11 @@ window.addEventListener('DOMContentLoaded', () => {
           display: none !important;
           content: none !important;
         }
+
+        div.context-view.monaco-component.context-view-menu-motion.monaco-menu-container.fixed.top.right
+          div.monaco-scrollable-element {
+          border-radius: 0px 26px !important;
+        }
       `;
       shadow.appendChild(style);
     }
@@ -327,8 +333,6 @@ window.addEventListener('DOMContentLoaded', () => {
   });
   ``;
 });
-
-/* Video Styles */
 
 /* command Palette */
 const commandPalette = new MutationObserver(() => {

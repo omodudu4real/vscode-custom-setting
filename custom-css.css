@@ -5819,7 +5819,14 @@ span.mtk6 {
   font-family: var(--commentFont) !important;
   font-style: italic !important;
   color: var(--inverse_primary) !important;
-  font-weight: bold;
+  font-weight: bold !important;
+}
+
+span.mtk9 {
+  font-family: var(--commentFont) !important;
+  font-weight: bold !important;
+  font-style: italic !important;
+  color: var(--on_error_container) !important;
 }
 
 span.mtk14,
