@@ -3263,6 +3263,10 @@ div.pane.horizontal[data-keybinding-context]
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
 }
 
+div[id='list_id_*'].monaco-list-row.selected {
+  border-radius: 0px 10px !important;
+}
+
 div.split-view-view.visible div.pane.horizontal div.pane-header {
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
