@@ -251,57 +251,72 @@ window.addEventListener('DOMContentLoaded', () => {
       const style = document.createElement('style');
       style.id = 'custom-menu-style';
       style.textContent = /* css */ `
-      .monaco-menu {
-        box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
-        background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
-        border-radius: 0px 26px !important;
-        border: 4px solid var(--primary) !important;
-        outline: 1px !important;
-        padding-bottom: 0px !important;
-        color: var(--primary) !important;
-        overflow: hidden !important;
-      }
+        .monaco-menu {
+          box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+          background-image: linear-gradient(
+            #3c3c50 0%,
+            #2a2b38 100%
+          ) !important;
+          border-radius: 0px 26px !important;
+          border: 4px solid var(--primary) !important;
+          outline: 1px !important;
+          padding-bottom: 0px !important;
+          color: var(--primary) !important;
+          overflow: hidden !important;
+        }
 
-      /* this removes the left over background color */
-      .monaco-scrollable-element {
-        background-color: transparent !important;
-      }
+        /* this removes the left over background color */
+        .monaco-scrollable-element {
+          background-color: transparent !important;
+        }
 
-      /* menu hover effect */
+        /* menu hover effect */
 
+        .codicon-menu-selection:before {
+          color: var(--primary) !important;
+        }
 
-			.codicon-menu-selection:before {
-			color: var(--primary) !important
-			}
+        .monaco-menu
+          .monaco-action-bar.vertical
+          .submenu-indicator.codicon::before {
+          color: var(--primary) !important;
+        }
 
-			.monaco-menu .monaco-action-bar.vertical .submenu-indicator.codicon::before{
-			color: var(--primary) !important
-			}
+        /* This ensures the text inside actually uses your variable */
+        .monaco-menu .action-label,
+        .monaco-menu .keybinding,
+        .monaco-menu .action-menu-item {
+          color: var(--primary) !important;
+        }
 
+        /* This removes the before background in the menu */
+        :host-context(
+            .monaco-workbench.modern-ui-frosted-glass:not(.hc-black):not(
+                .hc-light
+              ).monaco-enable-motion
+          )
+          .monaco-menu-container:not(.monaco-submenu):not(
+            .context-view-menu-motion-closing
+          ) {
+          border-radius: 0px 26px !important;
+          background: none !important;
+          backdrop-filter: none !important;
+          -webkit-backdrop-filter: none !important;
+          box-shadow: none !important;
+        }
 
-      /* This ensures the text inside actually uses your variable */
-      .monaco-menu .action-label,
-      .monaco-menu .keybinding,
-      .monaco-menu .action-menu-item {
-        color: var(--primary) !important;
-      }
-
-			/* This removes the before background in the menu */
-			:host-context(.monaco-workbench.modern-ui-frosted-glass:not(.hc-black):not(.hc-light).monaco-enable-motion) .monaco-menu-container:not(.monaco-submenu):not(.context-view-menu-motion-closing) {
-  border-radius: 0px 26px !important;
-  background: none !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  box-shadow: none !important;
-}
-
-:host-context(.monaco-workbench.modern-ui-frosted-glass:not(.hc-black):not(.hc-light).monaco-enable-motion) .monaco-menu-container:not(.monaco-submenu):not(.context-view-menu-motion-closing)::before {
-  display: none !important;
-  content: none !important;
-}
-
-
-    `;
+        :host-context(
+            .monaco-workbench.modern-ui-frosted-glass:not(.hc-black):not(
+                .hc-light
+              ).monaco-enable-motion
+          )
+          .monaco-menu-container:not(.monaco-submenu):not(
+            .context-view-menu-motion-closing
+          )::before {
+          display: none !important;
+          content: none !important;
+        }
+      `;
       shadow.appendChild(style);
     }
   });
