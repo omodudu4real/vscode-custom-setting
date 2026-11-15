@@ -5827,10 +5827,8 @@ span.mtk6 {
 }
 
 span.mtk9 {
-  font-family: var(--commentFont) !important;
-  font-weight: bold !important;
-  font-style: italic !important;
-  color: var(--on_error_container) !important;
+  font-family: var(--tagFont) !important;
+  opacity: 0.78 !important;
 }
 
 span.mtk14,

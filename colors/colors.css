@@ -3,112 +3,111 @@
 * Generated with Matugen
 */
 :root {
-    --favFont: 'Akaya Kanadaka';
-    --fav2Font: 'Cascadia Code';
-    /* --commentFont: 'Cartograph CF'; main comment font */
-    --commentFont: 'Malthon DEMO';
-    --cursiveFont: 'Fira Code iScript';
-    --ligatureFont: 'Fira Code';
+  --favFont: 'Akaya Kanadaka';
+  --fav2Font: 'Cascadia Code';
+  /* --commentFont: 'Cartograph CF'; main comment font */
+  --commentFont: 'Malthon DEMO';
+  --cursiveFont: 'Fira Code iScript';
+  --ligatureFont: 'Fira Code';
+  --tagFont: 'Courgette';
 
+  --background: #15130c;
 
-    --background: #15130c;
+  --error: #ffb4ab;
 
-    --error: #ffb4ab;
+  --error_container: #93000a;
 
-    --error_container: #93000a;
+  --inverse_on_surface: #333027;
 
-    --inverse_on_surface: #333027;
+  --inverse_primary: #6a5f11;
 
-    --inverse_primary: #6a5f11;
+  --inverse_surface: #e8e2d4;
 
-    --inverse_surface: #e8e2d4;
+  --on_background: #e8e2d4;
 
-    --on_background: #e8e2d4;
+  --on_error: #690005;
 
-    --on_error: #690005;
+  --on_error_container: #ffdad6;
 
-    --on_error_container: #ffdad6;
+  --on_primary: #383100;
 
-    --on_primary: #383100;
+  --on_primary_container: #f4e489;
 
-    --on_primary_container: #f4e489;
+  --on_primary_fixed: #201c00;
 
-    --on_primary_fixed: #201c00;
+  --on_primary_fixed_variant: #514700;
 
-    --on_primary_fixed_variant: #514700;
+  --on_secondary: #353117;
 
-    --on_secondary: #353117;
+  --on_secondary_container: #ece3bd;
 
-    --on_secondary_container: #ece3bd;
+  --on_secondary_fixed: #201c05;
 
-    --on_secondary_fixed: #201c05;
+  --on_secondary_fixed_variant: #4c472b;
 
-    --on_secondary_fixed_variant: #4c472b;
+  --on_surface: #e8e2d4;
 
-    --on_surface: #e8e2d4;
+  --on_surface_variant: #ccc6b5;
 
-    --on_surface_variant: #ccc6b5;
+  --on_tertiary: #123725;
 
-    --on_tertiary: #123725;
+  --on_tertiary_container: #c3ecd1;
 
-    --on_tertiary_container: #c3ecd1;
+  --on_tertiary_fixed: #002112;
 
-    --on_tertiary_fixed: #002112;
+  --on_tertiary_fixed_variant: #2a4e3a;
 
-    --on_tertiary_fixed_variant: #2a4e3a;
+  --outline: #959180;
 
-    --outline: #959180;
+  --outline_variant: #4a4739;
 
-    --outline_variant: #4a4739;
+  --primary: #d7c770;
 
-    --primary: #d7c770;
+  --primary_container: #514700;
 
-    --primary_container: #514700;
+  --primary_fixed: #f4e489;
 
-    --primary_fixed: #f4e489;
+  --primary_fixed_dim: #d7c770;
 
-    --primary_fixed_dim: #d7c770;
+  --scrim: #000000;
 
-    --scrim: #000000;
+  --secondary: #cfc7a2;
 
-    --secondary: #cfc7a2;
+  --secondary_container: #4c472b;
 
-    --secondary_container: #4c472b;
+  --secondary_fixed: #ece3bd;
 
-    --secondary_fixed: #ece3bd;
+  --secondary_fixed_dim: #cfc7a2;
 
-    --secondary_fixed_dim: #cfc7a2;
+  --shadow: #000000;
 
-    --shadow: #000000;
+  --source_color: #7b7451;
 
-    --source_color: #7b7451;
+  --surface: #15130c;
 
-    --surface: #15130c;
+  --surface_bright: #3c3930;
 
-    --surface_bright: #3c3930;
+  --surface_container: #222017;
 
-    --surface_container: #222017;
+  --surface_container_high: #2c2a21;
 
-    --surface_container_high: #2c2a21;
+  --surface_container_highest: #37352b;
 
-    --surface_container_highest: #37352b;
+  --surface_container_low: #1d1c13;
 
-    --surface_container_low: #1d1c13;
+  --surface_container_lowest: #100e07;
 
-    --surface_container_lowest: #100e07;
+  --surface_dim: #15130c;
 
-    --surface_dim: #15130c;
+  --surface_tint: #d7c770;
 
-    --surface_tint: #d7c770;
+  --surface_variant: #4a4739;
 
-    --surface_variant: #4a4739;
+  --tertiary: #a8d0b6;
 
-    --tertiary: #a8d0b6;
+  --tertiary_container: #2a4e3a;
 
-    --tertiary_container: #2a4e3a;
+  --tertiary_fixed: #c3ecd1;
 
-    --tertiary_fixed: #c3ecd1;
-
-    --tertiary_fixed_dim: #a8d0b6;
-
+  --tertiary_fixed_dim: #a8d0b6;
 }
