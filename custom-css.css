@@ -682,7 +682,7 @@ div.monaco-icon-label.codicon-settings-editor-label-icon.predefined-file-icon.ta
 }
 
 .modern-ui .monaco-list .monaco-list-row:not(.separator) {
-  border-radius: 0px 16px !important;
+  border-radius: 0px 10px !important;
 }
 
 .modern-ui.monaco-workbench .monaco-count-badge:not(.long) {
@@ -2655,8 +2655,8 @@ div[id^='list_id_2_'].monaco-list-row:hover:not(.selected):not(.focused) {
 
 div.monaco-resizable-hover div.monaco-hover.fade-in {
   border-radius: 0px 26px !important;
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
-  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b38 100%) !important;
   border-top: 4px solid var(--primary) !important;
   border-bottom: 4px solid var(--inverse_primary) !important;
   border-left: 4px solid var(--primary) !important;
@@ -2698,8 +2698,8 @@ div.rendered-markdown p img {
 }
 
 div.monaco-hover.fade-in div.monaco-scrollable-element .monaco-hover-content {
-  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.1) !important;
-  background-image: linear-gradient(#3c3c52 0%, #2a2b29 100%) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c52 0%, #2a2b38 100%) !important;
 }
 
 div.colorpicker-widget div.colorpicker-body:not(.opacity-strip) {
@@ -4690,6 +4690,20 @@ div.menubar-menu-title:not(
   .extension-action.action-dropdown {
   background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
   box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  margin-top: -2px !important;
+  margin-left: 3px !important;
+}
+
+.extension-editor
+  > .header
+  > .details
+  > .actions-status-container
+  > .monaco-action-bar
+  > .actions-container
+  > .action-item.action-dropdown-item:not(.empty)
+  > .monaco-dropdown
+  .extension-action.label {
+  margin-right: -2px !important;
 }
 
 div.quick-input-and-message div.quick-input-message {
@@ -5974,4 +5988,282 @@ div.context-view.monaco-component.context-view-menu-motion.monaco-menu-container
   background: var(--secondary);
   background-clip: padding-box;
   border-width: 2px;
+}
+
+.extension-list-item
+  .monaco-action-bar
+  > .actions-container
+  > .action-item.action-dropdown-item
+  > .monaco-dropdown
+  .extension-action.label {
+  margin-top: -3px !important;
+}
+
+.monaco-dropdown > .dropdown-label {
+  margin: 6px 6px 0px 3px !important;
+}
+
+li.action-item.menu-entry
+  div.monaco-dropdown
+  div.dropdown-label
+  a.action-label.codicon.codicon-gitlens-gitlens {
+  transform: translateY(-2px) scale(0.77);
+}
+
+.customization-discovery-title-row,
+.customization-discovery-section-title,
+.customization-discovery-card-body
+  .ai-customization-management-editor
+  .ai-customization-embedded-detail
+  .embedded-detail-description,
+.ai-customization-management-editor
+  .ai-customization-embedded-detail
+  .embedded-detail-name,
+.ai-customization-management-editor
+  .ai-customization-embedded-detail
+  .embedded-detail-description,
+.ai-customization-management-editor
+  .ai-customization-embedded-detail
+  .embedded-detail-section-title,
+.ai-customization-management-editor .sidebar-migration-label,
+.ai-customization-management-editor .sidebar-migration-count,
+.ai-customization-management-editor
+  .tools-list-widget
+  .section-title-header
+  .section-title-description,
+.monaco-highlighted-label,
+.ai-customization-management-editor
+  .tools-list-widget
+  .list-empty-state
+  .empty-state-text,
+.customization-migration-dashboard h1,
+.customization-migration-dashboard .migration-tree-item-label,
+.customization-discovery-card-description,
+.customization-discovery-card-heading,
+.ai-customization-management-editor
+  .tools-list-widget
+  .section-title-header
+  .section-title {
+  color: var(--primary) !important;
+}
+
+.ai-customization-group-header .group-label,
+span.tools-list-row-label {
+  color: var(--primary) !important;
+  opacity: 0.74 !important;
+}
+
+.ai-customization-management-editor
+  .ai-customization-embedded-detail
+  .embedded-detail-fact-value,
+.ai-customization-management-editor .tools-list-row-subtext,
+.ai-customization-management-editor
+  .tools-list-widget
+  .list-empty-state
+  .empty-state-subtext,
+.customization-discovery-description,
+.customization-discovery-card-metadata,
+.chat-customization-migration-notice
+  .chat-customization-migration-notice-content
+  span,
+.customization-discovery-state,
+.customization-migration-dashboard .migration-tree-item-source,
+.ai-customization-management-editor .tools-list-row-count,
+.agent-host-permissions-button .agent-host-mode-permission-summary {
+  color: color-mix(
+    in srgb,
+    var(--primary) 15%,
+    var(--inverse_primary) 70%
+  ) !important;
+}
+
+.customization-migration-dashboard .migration-intro {
+  color: color-mix(
+    in srgb,
+    var(--primary) 15%,
+    var(--inverse_primary) 70%
+  ) !important;
+  opacity: 0.78 !important;
+}
+
+.customization-discovery-show-all {
+  color: var(--inverse_primary) !important;
+}
+
+.codicon-filter:before {
+  transform: translateY(-2px) scale(1.1) !important;
+}
+
+a.action-label.codicon.codicon-filter {
+  border-radius: 4px 12px 0px 4px;
+  margin-bottom: 7px;
+  padding: 3px 1px 0px 4px;
+}
+
+li.action-item.menu-entry
+  div.monaco-dropdown
+  div.dropdown-label
+  a.action-label.codicon.codicon-filter {
+  transform: scale(1.38) !important;
+  padding: 4px 0px 0px 3px !important;
+  border-radius: 5px !important;
+}
+
+div.monaco-custom-toggle.codicon.codicon-list-filter.checked,
+div.monaco-custom-toggle.codicon.codicon-search-fuzzy.checked {
+  background: var(--inverse_primary) !important;
+  border: none !important;
+}
+
+.monaco-enable-motion .monaco-tree-type-filter {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 0px 20px;
+  padding: 5px !important;
+}
+
+div.monaco-tree-type-filter-input div.monaco-findInput {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+  border-radius: 0px 16px !important;
+  outline: none !important;
+}
+
+.ai-customization-management-editor
+  .ai-customization-embedded-detail
+  .embedded-detail-fact-label {
+  color: var(--primary) !important;
+}
+
+.ai-customization-management-editor
+  .sidebar-migration-shortcut
+  > button.sidebar-migration-button.selected,
+.ai-customization-management-editor .sidebar-home-button.selected {
+  color: var(--primary) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-radius: 0px 10px !important;
+  border: 1px solid var(--primary) !important;
+}
+
+.ai-customization-management-editor
+  .ai-customization-embedded-detail
+  .plugin-detail-flat-list {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-top: 3px solid var(--primary) !important;
+  border-bottom: 3px solid var(--inverse_primary) !important;
+  border-left: 3px solid var(--primary) !important;
+  border-right: 3px solid var(--inverse_primary) !important;
+  border-radius: 0px 18px !important;
+}
+
+.ai-customization-management-editor
+  .ai-customization-embedded-detail
+  .embedded-detail-fact-row {
+  border-bottom: 2px solid var(--in_primary) !important;
+}
+
+.interactive-session
+  .chat-input-toolbar.monaco-toolbar.responsive
+  .monaco-action-bar
+  > .actions-container
+  > .action-item.model-picker-item {
+  margin-top: 6px !important;
+}
+
+.ai-customization-management-editor
+  .sidebar-migration-shortcut
+  > button.sidebar-migration-button:hover {
+  border-radius: 0px 10px !important;
+  outline: none !important;
+  box-shadow: 3px 12px 40px rgba(0, 0, 0, 0.81) !important;
+  background-image: linear-gradient(#232325 23%, #2a2325 87%) !important;
+  border: 1px solid var(--primary) !important;
+}
+
+.ai-customization-management-editor
+  .tools-list-search-container
+  .monaco-inputbox,
+.chat-customization-migration-notice {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+  border-radius: 0px 16px !important;
+}
+
+.plugin-list-widget
+  .section-title-header
+  .section-title-actions
+  > .section-title-more-action.monaco-button {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+  border-radius: 0px 10px !important;
+}
+div.context-view.monaco-component.bottom.left
+  div.monaco-breadcrumbs-picker.show-file-icons
+  div.arrow
+  div {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-top: 2px solid var(--primary) !important;
+  border-bottom: 2px solid var(--inverse_primary) !important;
+  border-left: 2px solid var(--primary) !important;
+  border-right: 2px solid var(--inverse_primary) !important;
+  border-radius: 0px 26px !important;
+}
+
+/* Ctrl + shift + Period */
+div.context-view.monaco-component.bottom.left
+  div.monaco-breadcrumbs-picker.show-file-icons
+  div.file-icon-themable-tree.show-file-icons {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-top: 4px solid var(--primary) !important;
+  border-bottom: 4px solid var(--inverse_primary) !important;
+  border-left: 4px solid var(--primary) !important;
+  border-right: 4px solid var(--inverse_primary) !important;
+  margin-left: 20px !important;
+  border-radius: 0px 46px !important;
+  padding: 7px !important;
+}
+
+/* Ctrl + shift + Period */
+div.context-view.monaco-component.bottom.left
+  div.monaco-breadcrumbs-picker.show-file-icons
+  > div:nth-child(2) {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-top: 4px solid var(--primary) !important;
+  border-bottom: 4px solid var(--inverse_primary) !important;
+  border-left: 4px solid var(--primary) !important;
+  border-right: 4px solid var(--inverse_primary) !important;
+  margin-left: 20px !important;
+  border-radius: 0px 26px !important;
+  padding: 5px !important;
+}
+
+.customization-discovery-section.featured {
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important;
+  border-top: 4px solid var(--primary) !important;
+  border-bottom: 4px solid var(--inverse_primary) !important;
+  border-left: 4px solid var(--primary) !important;
+  border-right: 4px solid var(--inverse_primary) !important;
+  border-radius: 0px 30px !important;
+}
+
+.customization-card-primary-action.customization-discovery-card-primary {
+  outline: none !important;
 }
