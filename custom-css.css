@@ -3661,7 +3661,7 @@ div.quota-percentage span.quota-value-suffix {
 }
 
 div.quota-indicator div.quota-bit {
-  background-color: var(--in_primary) !important;
+  background-color: var(--inverse_primary) !important;
 }
 
 div.quota-details span.quota-reset {
@@ -4923,13 +4923,6 @@ ul.actions-container li.action-item.focused a.action-label {
   color: var(--primary) !important;
 }
 
-/* .monaco-hover.workbench-hover.with-pointer.extension-hover {
-  border-top: 2px solid var(--primary) !important;
-  border-left: 2px solid var(--primary) !important;
-  border-right: 2px solid var(--inverse_primary) !important;
-  border-bottom: 2px solid var(--inverse_primary) !important;
-} */
-
 .monaco-hover.workbench-hover {
   border-radius: 0px 10px !important;
 }
@@ -6048,7 +6041,8 @@ li.action-item.menu-entry
 }
 
 .ai-customization-group-header .group-label,
-span.tools-list-row-label {
+span.tools-list-row-label,
+.customization-discovery-result-description {
   color: var(--primary) !important;
   opacity: 0.74 !important;
 }
@@ -6069,7 +6063,11 @@ span.tools-list-row-label {
 .customization-discovery-state,
 .customization-migration-dashboard .migration-tree-item-source,
 .ai-customization-management-editor .tools-list-row-count,
-.agent-host-permissions-button .agent-host-mode-permission-summary {
+.agent-host-permissions-button .agent-host-mode-permission-summary,
+.ai-customization-management-editor
+  .customization-detail-mode
+  .editor-item-description,
+.customization-discovery-result-name {
   color: color-mix(
     in srgb,
     var(--primary) 15%,
@@ -6077,7 +6075,8 @@ span.tools-list-row-label {
   ) !important;
 }
 
-.customization-migration-dashboard .migration-intro {
+.customization-migration-dashboard .migration-intro,
+.customization-discovery-result-detail {
   color: color-mix(
     in srgb,
     var(--primary) 15%,
@@ -6164,8 +6163,8 @@ div.monaco-tree-type-filter-input div.monaco-findInput {
 
 .ai-customization-management-editor
   .ai-customization-embedded-detail
-  .embedded-detail-fact-row {
-  border-bottom: 2px solid var(--in_primary) !important;
+  .embedded-detail-fact-row:not(:last-child) {
+  border-bottom: 3px solid var(--inverse_primary) !important;
 }
 
 .interactive-session
@@ -6266,4 +6265,47 @@ div.context-view.monaco-component.bottom.left
 
 .customization-card-primary-action.customization-discovery-card-primary {
   outline: none !important;
+}
+
+.ai-customization-management-editor
+  .ai-customization-embedded-detail
+  .embedded-detail-icon,
+.customization-discovery-card-icon.is-fallback,
+.customization-discovery-result-icon.is-fallback,
+.customization-discovery-card-icon {
+  border: var(--bw, 4px) solid transparent !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.45) !important;
+  background:
+    linear-gradient(#3c3c50 0%, #2a2b38 100%) padding-box,
+    conic-gradient(from var(--angle), transparent 75%, var(--primary))
+      border-box,
+    conic-gradient(
+        from calc(var(--angle) + 180deg),
+        transparent 75%,
+        var(--inverse_primary)
+      )
+      border-box !important;
+  animation: 15s animatedBorder linear infinite !important;
+}
+
+.ai-customization-management-editor
+  .ai-customization-embedded-detail
+  .embedded-detail-icon {
+  padding: 10px !important;
+  --bw: 3px;
+  border-radius: 0px 16px !important;
+}
+
+.customization-discovery-card-icon.is-fallback,
+.customization-discovery-result-icon.is-fallback,
+.customization-discovery-card-icon {
+  --bw: 3px;
+  border-radius: 0px 10px !important;
+}
+
+.customization-discovery-card-icon img {
+  transform: scale(0.7) !important;
+}
+.customization-discovery-card-icon {
+  padding: 25px !important;
 }
